@@ -1,0 +1,1429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Microplastics in Clothing: A Beginner's Guide | Wove</title>
+<meta name="description" content="What microplastic fibers are, which fabrics shed them, and practical ways to reduce how much your wardrobe contributes — without overhauling everything at once." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream-50: #FBF7ED;
+  --cream-100: #F5EFE2;
+  --cream-200: #ECE3CE;
+  --cream-300: #DDD0B4;
+  --green-deep: #2D4A3E;
+  --green-700: #3D5C4F;
+  --green-500: #6B8B7B;
+  --green-300: #A4BCB0;
+  --green-100: #DCE6DF;
+  --terracotta: #B8765A;
+  --terracotta-soft: #D9A48E;
+  --ink: #1F1A14;
+  --ink-soft: #524A3D;
+  --ink-mute: #877D6A;
+  --border: #D9CFB8;
+  --border-soft: #E8DFCA;
+  --display: 'Fraunces', Georgia, serif;
+  --body: 'Lora', Georgia, serif;
+  --max-w: 1240px;
+  --content-w: 720px;
+
+  /* Site nav vars */
+  --wove-green: #5B6B54;
+  --wove-green-dark: #4A5A42;
+  --wove-green-deep-nav: #3D4D36;
+  --wove-cream: #F0EBE3;
+  --wove-cream-light: #F5F1EB;
+  --wove-charcoal: #2A2A2A;
+  --wove-text: #333333;
+  --wove-text-light: #6B6B6B;
+  --wove-text-muted: #9A9A9A;
+  --wove-border: rgba(0,0,0,0.06);
+  --radius-full: 50px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+
+body {
+  font-family: var(--body);
+  background: var(--cream-50);
+  color: var(--ink);
+  line-height: 1.7;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Reading progress */
+.progress-bar {
+  position: fixed;
+  top: 68px; left: 0;
+  height: 3px;
+  width: 0%;
+  background: var(--green-deep);
+  z-index: 99;
+  transition: width 0.1s ease-out;
+}
+
+/* ==================== SITE NAV ==================== */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(240, 235, 227, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 0 48px;
+  height: 68px;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid var(--wove-border);
+  transition: box-shadow 0.3s;
+  font-family: 'Poppins', -apple-system, sans-serif;
+}
+nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.04); }
+.nav-logo { display: flex; align-items: center; text-decoration: none; }
+.nav-logo-img { height: 40px; object-fit: contain; }
+.logo-placeholder {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 120px; height: 44px;
+  border: 2px dashed var(--wove-green); border-radius: 12px;
+  font-size: 11px; font-weight: 700; color: var(--wove-green);
+  letter-spacing: 1.5px; background: rgba(91,107,84,0.05);
+}
+.nav-links { display: flex; align-items: center; gap: 32px; }
+.nav-links a {
+  text-decoration: none; color: var(--wove-text);
+  font-size: 14px; font-weight: 500; transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--wove-green-dark); }
+.nav-cta {
+  background: var(--wove-green) !important; color: white !important;
+  padding: 10px 26px; border-radius: var(--radius-full);
+  font-weight: 600 !important; font-size: 13px !important;
+  transition: all 0.25s !important;
+}
+.nav-cta:hover {
+  background: var(--wove-green-deep-nav) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(91,107,84,0.25);
+}
+@media (max-width: 960px) {
+  nav { padding: 0 24px; }
+  .nav-links a:not(.nav-cta) { display: none; }
+}
+
+/* ==================== ARTICLE HEADER ==================== */
+.article-header {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 80px 32px 40px;
+}
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  font-weight: 500;
+  margin-bottom: 24px;
+  font-family: var(--body);
+}
+.eyebrow::before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 1px;
+  background: var(--terracotta);
+}
+.article-title {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(40px, 6vw, 72px);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  max-width: 900px;
+  margin-bottom: 32px;
+  font-variation-settings: "opsz" 144, "SOFT" 30;
+}
+.article-title em {
+  font-style: italic;
+  color: var(--green-deep);
+  font-variation-settings: "opsz" 144, "SOFT" 100;
+}
+.article-lede {
+  font-family: var(--display);
+  font-weight: 300;
+  font-size: clamp(20px, 2.2vw, 24px);
+  line-height: 1.45;
+  color: var(--ink-soft);
+  max-width: 720px;
+  margin-bottom: 40px;
+  font-style: italic;
+  font-variation-settings: "opsz" 144;
+}
+.article-meta {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: var(--ink-mute);
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-soft);
+  font-family: var(--body);
+}
+.article-meta span { display: inline-flex; align-items: center; gap: 6px; }
+.article-meta .dot { color: var(--cream-300); }
+
+/* Hero image */
+.hero-image {
+  max-width: var(--max-w);
+  margin: 0 auto 60px;
+  padding: 0 32px;
+}
+.image-placeholder {
+  position: relative;
+  background: linear-gradient(135deg, var(--green-100) 0%, var(--cream-200) 100%);
+  border: 1px solid var(--border-soft);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 40px;
+  color: var(--green-deep);
+}
+.image-placeholder.hero {
+  aspect-ratio: 3 / 2;
+  padding: 0;
+}
+.image-placeholder svg.placeholder-icon {
+  width: 48px;
+  height: 48px;
+  opacity: 0.4;
+  margin-bottom: 16px;
+}
+.image-placeholder .ph-label {
+  font-family: var(--display);
+  font-size: 14px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--green-700);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.image-placeholder .ph-alt {
+  font-family: var(--body);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--ink-soft);
+  max-width: 460px;
+  line-height: 1.5;
+}
+.image-placeholder .ph-spec {
+  font-family: var(--body);
+  font-size: 12px;
+  color: var(--ink-mute);
+  margin-top: 12px;
+  letter-spacing: 0.05em;
+}
+
+/* Main grid */
+.article-grid {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 32px 80px;
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 80px;
+  align-items: start;
+}
+@media (max-width: 960px) {
+  .article-grid { grid-template-columns: 1fr; gap: 0; }
+  .toc-aside { display: none; }
+}
+
+/* TOC */
+.toc-aside {
+  position: sticky;
+  top: 100px;
+  font-family: var(--body);
+}
+.toc-label {
+  font-family: var(--display);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-bottom: 16px;
+  font-weight: 500;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-soft);
+}
+.toc-list { list-style: none; padding: 0; margin: 0; }
+.toc-list li { margin-bottom: 10px; line-height: 1.4; }
+.toc-list li.sub { padding-left: 16px; font-size: 13px; }
+.toc-list a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+  display: block;
+  padding-left: 12px;
+  border-left: 2px solid transparent;
+}
+.toc-list a:hover {
+  color: var(--green-deep);
+  border-left-color: var(--green-300);
+}
+.toc-list a.active {
+  color: var(--green-deep);
+  border-left-color: var(--green-deep);
+  font-weight: 500;
+}
+
+/* Mobile TOC */
+.toc-mobile {
+  display: none;
+  margin: 0 32px 48px;
+  padding: 24px;
+  background: var(--cream-100);
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+}
+@media (max-width: 960px) {
+  .toc-mobile { display: block; }
+  .article-grid { padding-top: 0; }
+  .article-header { padding: 88px 24px 32px; }
+  .hero-image { padding: 0 24px; }
+  .toc-mobile { margin: 0 24px 48px; }
+  .article-grid { padding: 0 24px 80px; }
+  .article-footer { padding: 0 24px 80px; }
+}
+.toc-mobile summary {
+  font-family: var(--display);
+  font-size: 14px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--green-deep);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+.toc-mobile summary::after {
+  content: '+';
+  font-family: var(--display);
+  font-size: 22px;
+  font-weight: 300;
+  transition: transform 0.2s;
+}
+.toc-mobile[open] summary::after { content: '−'; }
+.toc-mobile summary::-webkit-details-marker { display: none; }
+.toc-mobile .toc-list { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border-soft); }
+
+/* Article body */
+.article-body {
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--ink);
+}
+.article-body p { margin-bottom: 24px; }
+.article-body p + p { margin-top: -8px; }
+
+.article-body h2 {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(28px, 3.4vw, 38px);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  color: var(--green-deep);
+  margin-top: 80px;
+  margin-bottom: 32px;
+  scroll-margin-top: 100px;
+  font-variation-settings: "opsz" 144, "SOFT" 40;
+  position: relative;
+}
+.article-body h2::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--terracotta);
+  margin-bottom: 24px;
+}
+
+.article-body h3 {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(20px, 2.2vw, 24px);
+  line-height: 1.3;
+  color: var(--ink);
+  margin-top: 48px;
+  margin-bottom: 16px;
+  scroll-margin-top: 100px;
+  font-variation-settings: "opsz" 36, "SOFT" 30;
+}
+
+.article-body a {
+  color: var(--green-deep);
+  text-decoration: none;
+  background-image: linear-gradient(var(--green-300), var(--green-300));
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 95%;
+  transition: background-size 0.2s;
+}
+.article-body a:hover {
+  background-size: 100% 100%;
+  background-image: linear-gradient(rgba(164,188,176,0.25), rgba(164,188,176,0.25));
+}
+
+.article-body strong { color: var(--ink); font-weight: 600; }
+.article-body em { font-style: italic; }
+
+.article-body ul, .article-body ol {
+  margin: 0 0 32px 0;
+  padding-left: 0;
+  list-style: none;
+}
+.article-body ul li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 14px;
+  line-height: 1.65;
+}
+.article-body ul li::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 14px;
+  width: 8px;
+  height: 8px;
+  background: var(--green-300);
+  border-radius: 50%;
+}
+.article-body ol {
+  counter-reset: ol-counter;
+}
+.article-body ol li {
+  position: relative;
+  padding-left: 44px;
+  margin-bottom: 18px;
+  counter-increment: ol-counter;
+}
+.article-body ol li::before {
+  content: counter(ol-counter, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: var(--display);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--terracotta);
+  letter-spacing: 0.08em;
+}
+
+/* Stat callouts */
+.stat-callout {
+  background: var(--cream-100);
+  border-left: 3px solid var(--terracotta);
+  padding: 32px 36px;
+  margin: 48px 0;
+  border-radius: 0 6px 6px 0;
+}
+.stat-callout .stat-number {
+  font-family: var(--display);
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 400;
+  color: var(--green-deep);
+  line-height: 1;
+  margin-bottom: 8px;
+  font-variation-settings: "opsz" 144, "SOFT" 50;
+  letter-spacing: -0.02em;
+}
+.stat-callout .stat-text {
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+.stat-callout .stat-source {
+  display: block;
+  font-size: 13px;
+  margin-top: 12px;
+  color: var(--ink-mute);
+  letter-spacing: 0.05em;
+}
+
+/* Inline image cards */
+figure { margin: 48px 0; }
+figcaption {
+  margin-top: 14px;
+  font-family: var(--body);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--ink-mute);
+  line-height: 1.5;
+  padding-left: 16px;
+  border-left: 2px solid var(--green-300);
+}
+
+/* Care symbols grid */
+.symbols-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  margin: 32px 0;
+  padding: 32px;
+  background: var(--cream-100);
+  border-radius: 8px;
+  border: 1px solid var(--border-soft);
+}
+.symbol-card { text-align: center; padding: 16px 8px; }
+.symbol-card svg {
+  width: 48px; height: 48px;
+  margin: 0 auto 10px; display: block;
+  color: var(--green-deep);
+}
+.symbol-card .sym-label {
+  font-family: var(--body);
+  font-size: 13px; line-height: 1.35;
+  color: var(--ink-soft);
+}
+.symbol-card .sym-title {
+  font-family: var(--display);
+  font-weight: 500; font-size: 14px;
+  color: var(--ink); display: block; margin-bottom: 2px;
+}
+
+/* Checklist */
+.checklist {
+  background: linear-gradient(135deg, var(--green-100) 0%, var(--cream-100) 100%);
+  border-radius: 8px;
+  padding: 40px;
+  margin: 48px 0;
+  border: 1px solid var(--green-300);
+}
+.checklist h3 { margin-top: 0 !important; color: var(--green-deep) !important; }
+.checklist ol { margin-top: 24px; }
+.checklist ol li {
+  background: var(--cream-50);
+  padding: 16px 16px 16px 56px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border: 1px solid var(--border-soft);
+}
+.checklist ol li::before { left: 16px; top: 16px; font-size: 16px; }
+
+/* FAQ */
+.faq-list { margin: 32px 0; }
+.faq-item {
+  border-bottom: 1px solid var(--border-soft);
+  padding: 8px 0;
+}
+.faq-item summary {
+  font-family: var(--display);
+  font-size: 19px; font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
+  padding: 20px 40px 20px 0;
+  list-style: none;
+  position: relative;
+  transition: color 0.2s;
+  font-variation-settings: "opsz" 36, "SOFT" 30;
+}
+.faq-item summary:hover { color: var(--green-deep); }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+';
+  position: absolute; right: 0; top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--display);
+  font-size: 28px; font-weight: 300;
+  color: var(--green-deep);
+}
+.faq-item[open] summary::after { content: '−'; }
+.faq-item .faq-answer {
+  padding: 0 0 24px 0;
+  color: var(--ink-soft); line-height: 1.7;
+}
+.faq-item .faq-answer p { margin-bottom: 16px; }
+.faq-item .faq-answer p:last-child { margin-bottom: 0; }
+
+/* CTA blocks */
+.cta-block {
+  background: var(--green-deep);
+  color: var(--cream-50);
+  padding: 48px;
+  border-radius: 8px;
+  margin: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+.cta-block::before {
+  content: '';
+  position: absolute; top: -50%; right: -10%;
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(184,118,90,0.15), transparent 70%);
+  border-radius: 50%;
+}
+.cta-block .cta-eyebrow {
+  font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--terracotta-soft); margin-bottom: 12px; font-weight: 500;
+  font-family: var(--body);
+}
+.cta-block h3 {
+  font-family: var(--display);
+  font-size: clamp(22px, 2.8vw, 30px); font-weight: 400;
+  color: var(--cream-50); margin: 0 0 16px 0; line-height: 1.2;
+  font-variation-settings: "opsz" 144, "SOFT" 40;
+}
+.cta-block p {
+  color: rgba(251, 247, 237, 0.85);
+  margin-bottom: 24px; max-width: 540px;
+  font-family: var(--body); font-size: 16px;
+}
+.cta-block a.cta-link {
+  display: inline-block;
+  background: var(--cream-50); color: var(--green-deep);
+  padding: 14px 28px; text-decoration: none;
+  background-image: none;
+  border-radius: 4px;
+  font-family: var(--body); font-weight: 500; font-size: 15px;
+  letter-spacing: 0.04em;
+  transition: transform 0.2s, background 0.2s;
+}
+.cta-block a.cta-link:hover {
+  background: var(--terracotta-soft);
+  transform: translateY(-2px);
+}
+
+/* Section divider */
+.divider {
+  display: flex; justify-content: center;
+  align-items: center; margin: 80px 0; gap: 16px;
+}
+.divider::before, .divider::after {
+  content: ''; flex: 1; max-width: 60px;
+  height: 1px; background: var(--border);
+}
+.divider svg { color: var(--terracotta); opacity: 0.7; }
+
+/* Article footer */
+.article-footer {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 32px 80px;
+}
+.related-section {
+  background: var(--cream-100);
+  border-radius: 12px;
+  padding: 56px 48px;
+  margin-bottom: 48px;
+  border: 1px solid var(--border-soft);
+}
+.related-section .section-label {
+  font-family: var(--display);
+  font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--terracotta); margin-bottom: 12px; font-weight: 500;
+}
+.related-section h2 {
+  font-family: var(--display);
+  font-size: clamp(28px, 3.4vw, 36px); font-weight: 400;
+  color: var(--green-deep); margin: 0 0 32px 0;
+  font-variation-settings: "opsz" 144, "SOFT" 40;
+}
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.related-card {
+  background: var(--cream-50);
+  padding: 24px; border-radius: 6px;
+  text-decoration: none; color: var(--ink);
+  border: 1px solid var(--border-soft);
+  transition: transform 0.2s, border-color 0.2s;
+  display: block;
+}
+.related-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--green-300);
+  background-image: none;
+}
+.related-card .related-cat {
+  font-size: 11px; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--terracotta); margin-bottom: 8px;
+  font-family: var(--body);
+}
+.related-card .related-title {
+  font-family: var(--display);
+  font-size: 17px; font-weight: 500; line-height: 1.3;
+  color: var(--ink);
+  font-variation-settings: "opsz" 36, "SOFT" 30;
+}
+
+.sources-section { padding-top: 48px; border-top: 1px solid var(--border-soft); }
+.sources-section h3 {
+  font-family: var(--display);
+  font-size: 14px; letter-spacing: 0.2em; text-transform: uppercase;
+  font-weight: 500; color: var(--ink-mute); margin-bottom: 24px;
+}
+.sources-section ul { list-style: none; padding: 0; }
+.sources-section li {
+  padding: 12px 0; border-bottom: 1px solid var(--border-soft);
+  font-size: 14px; color: var(--ink-soft); line-height: 1.5;
+  font-family: var(--body);
+}
+.sources-section a {
+  color: var(--green-deep); text-decoration: underline;
+  text-decoration-color: var(--green-300); text-underline-offset: 3px;
+  background-image: none;
+}
+
+/* Drop cap */
+.drop-cap::first-letter {
+  font-family: var(--display);
+  font-size: 5em; float: left;
+  line-height: 0.85; margin: 8px 12px 0 0;
+  color: var(--green-deep); font-weight: 500;
+  font-variation-settings: "opsz" 144;
+}
+
+/* ==================== SITE FOOTER ==================== */
+footer.site-footer {
+  padding: 56px 48px 28px;
+  background: var(--wove-charcoal);
+  color: rgba(255,255,255,0.55);
+  font-family: 'Poppins', -apple-system, sans-serif;
+}
+.footer-inner { max-width: 960px; margin: 0 auto; }
+.footer-grid {
+  display: grid; grid-template-columns: 2fr 1fr 1fr;
+  gap: 56px; margin-bottom: 40px;
+}
+.footer-logo-img { height: 36px; object-fit: contain; filter: brightness(10); }
+.logo-placeholder.dark {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 120px; height: 44px;
+  border: 2px dashed rgba(255,255,255,0.3); border-radius: 12px;
+  font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.5);
+  letter-spacing: 1.5px; background: rgba(255,255,255,0.05);
+}
+.footer-brand-name { margin-bottom: 12px; }
+.footer-brand p { font-size: 13px; line-height: 1.7; max-width: 300px; }
+.footer-col h4 {
+  font-family: 'Poppins', sans-serif; color: white;
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.5px; margin-bottom: 18px;
+}
+.footer-col a {
+  display: block; color: rgba(255,255,255,0.45);
+  text-decoration: none; font-size: 13px; padding: 4px 0; transition: color 0.2s;
+}
+.footer-col a:hover { color: white; }
+.footer-bottom {
+  padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08);
+  font-size: 12px; text-align: center; color: rgba(255,255,255,0.3);
+}
+@media (max-width: 960px) {
+  footer.site-footer { padding: 56px 24px 28px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+}
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- SITE NAV -->
+<nav id="main-nav">
+  <a href="../../" class="nav-logo">
+    <img src="../../images/logo.png" alt="Wove" class="nav-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="logo-placeholder" style="display:none">LOGO</div>
+  </a>
+  <div class="nav-links">
+    <a href="../../about/">The Story</a>
+    <a href="../../#how-it-works">How It Works</a>
+    <a href="../../wovescore/">Wove Score</a>
+    <a href="../">Blog</a>
+    <a href="https://shopmy.us/shop/emmhemphill" target="_blank" rel="noopener">Shop Our Top Picks</a>
+    <a href="https://apps.apple.com/us/app/wove-score/id6755356871" class="nav-cta">Download App</a>
+  </div>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<section class="article-header">
+  <div class="eyebrow">Materials · Guide</div>
+  <h1 class="article-title">Microplastics in Clothing: A Beginner's Guide</h1>
+  <p class="article-lede">What microplastic fibers are, which fabrics shed them, and practical ways to reduce how much your wardrobe contributes — without overhauling everything at once.</p>
+  <div class="article-meta">
+    <span>By Emily Hemphill</span>
+    <span class="dot">·</span>
+    <span>13 min read</span>
+    <span class="dot">·</span>
+    <span>Updated May 2026</span>
+  </div>
+</section>
+
+<!-- HERO IMAGE -->
+<div class="hero-image">
+  <figure>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="A washing machine releasing microfiber particles into water, illustrating how synthetic clothing sheds microplastics during laundering." style="width:100%;height:auto;display:block;border-radius:6px;">
+  <defs>
+    <linearGradient id="mpBg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f5f0e1"/>
+      <stop offset="1" stop-color="#e9e3cf"/>
+    </linearGradient>
+    <linearGradient id="washer" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#3a5a40"/>
+      <stop offset="1" stop-color="#2d4a2b"/>
+    </linearGradient>
+    <radialGradient id="drum" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#a9c9da"/>
+      <stop offset="0.5" stop-color="#6c9aae"/>
+      <stop offset="1" stop-color="#3d6478"/>
+    </radialGradient>
+    <linearGradient id="waterStream" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#6c9aae" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#6c9aae" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="520" fill="url(#mpBg)"/>
+  <g transform="translate(720,90)">
+    <rect x="0" y="0" width="320" height="380" rx="14" fill="url(#washer)" stroke="#1a2d1a" stroke-width="1.5"/>
+    <rect x="20" y="30" width="280" height="50" rx="6" fill="#1a2d1a"/>
+    <circle cx="60" cy="55" r="10" fill="#a3b18a"/>
+    <circle cx="100" cy="55" r="6" fill="#588157" opacity="0.6"/>
+    <circle cx="125" cy="55" r="6" fill="#588157" opacity="0.6"/>
+    <rect x="155" y="50" width="120" height="10" rx="3" fill="#588157" opacity="0.4"/>
+    <rect x="155" y="65" width="80" height="6" rx="2" fill="#588157" opacity="0.6"/>
+    <circle cx="160" cy="220" r="125" fill="#1a2d1a"/>
+    <circle cx="160" cy="220" r="115" fill="url(#drum)"/>
+    <circle cx="160" cy="220" r="105" fill="none" stroke="#1a2d1a" stroke-width="1" opacity="0.4"/>
+    <g opacity="0.5">
+      <circle cx="120" cy="180" r="3" fill="#1a2d1a"/>
+      <circle cx="200" cy="200" r="3" fill="#1a2d1a"/>
+      <circle cx="180" cy="260" r="3" fill="#1a2d1a"/>
+      <circle cx="120" cy="240" r="3" fill="#1a2d1a"/>
+      <circle cx="220" cy="240" r="3" fill="#1a2d1a"/>
+      <circle cx="100" cy="220" r="3" fill="#1a2d1a"/>
+    </g>
+    <g stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.85" fill="none">
+      <path d="M 110 200 Q 130 195 150 205 Q 170 215 190 210"/>
+      <path d="M 100 230 Q 130 240 160 235 Q 190 230 210 240"/>
+      <path d="M 130 170 Q 150 165 180 175"/>
+      <path d="M 130 260 Q 150 270 190 265"/>
+    </g>
+  </g>
+  <g opacity="0.9">
+    <path d="M 720 380 Q 700 410 680 420 Q 660 430 640 425 Q 620 420 610 410 Q 600 400 605 390" stroke="url(#waterStream)" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <g stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" fill="none">
+      <path d="M 690 405 Q 680 410 670 408"/>
+      <path d="M 660 415 Q 645 420 632 415"/>
+      <path d="M 620 405 Q 612 400 608 392"/>
+      <path d="M 680 395 Q 670 397 660 395"/>
+      <path d="M 650 425 Q 640 428 632 425"/>
+      <path d="M 700 395 Q 692 392 685 388"/>
+    </g>
+  </g>
+  <g transform="translate(80,180)">
+    <text x="0" y="0" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700" fill="#2d4a2b">Microplastics</text>
+    <text x="0" y="64" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700" fill="#2d4a2b">in Clothing</text>
+    <line x1="0" y1="88" x2="80" y2="88" stroke="#588157" stroke-width="3"/>
+    <text x="0" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#4a4a4a">A beginner's guide to what they are,</text>
+    <text x="0" y="146" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#4a4a4a">where they come from, and how to shed less.</text>
+  </g>
+</svg>
+  </figure>
+</div>
+
+<!-- MOBILE TOC -->
+<details class="toc-mobile">
+  <summary>What's Inside</summary>
+  <ul class="toc-list">
+    <li><a href="#what-are-microplastics">What Are Microplastics?</a></li>
+    <li><a href="#which-fabrics-shed">Which Fabrics Shed Most?</a></li>
+    <li><a href="#how-clothes-release">How Clothes Release Microplastics</a></li>
+    <li><a href="#how-to-reduce">How to Reduce Microplastics</a></li>
+    <li><a href="#natural-alternatives">Natural Fiber Alternatives</a></li>
+    <li><a href="#bigger-picture">The Bigger Picture</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+</details>
+
+<!-- MAIN GRID -->
+<div class="article-grid">
+  <article class="article-body">
+
+    <p class="drop-cap">If you've ever pulled a soft fleece out of the dryer and watched a thin film of lint come off in your hand, you've seen it. That fluff isn't just dust — it's a stream of microscopic plastic fibers that's been working its way out of your clothes, into your laundry water, and out into the world.</p>
+
+    <p>This is the part of fabric most people never learned to think about. The label tells you the garment is 100% polyester, or 60% cotton 40% acrylic, but it doesn't say anything about what that fiber does once you start wearing it, washing it, and eventually wearing it out. That's the gap this guide is here to fill.</p>
+
+    <p><strong>Microplastics in clothing</strong> are tiny plastic particles — less than five millimeters long — that synthetic fabrics shed every time they're worn, washed, or dried. They've been found in oceans, rivers, drinking water, soil, the air, and, increasingly, in human blood and tissue. The good news is that with a few changes to how you shop and launder, you can meaningfully reduce how much your wardrobe contributes. That's what this guide is for.</p>
+
+    <h2 id="what-are-microplastics">What Are Microplastics?</h2>
+
+    <p>A <strong>microplastic</strong> is any plastic particle smaller than five millimeters across — roughly the size of a sesame seed, or smaller. When microplastics come from textiles, they take the shape of tiny thread-like fragments, which scientists usually call <strong>microfibers</strong>. The two terms get used somewhat interchangeably, but for clothing the more precise word is microfiber: a sub-five-millimeter plastic filament shed from a synthetic garment.</p>
+
+    <figure>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-label="A scale comparison showing how small microplastic fibers are. A typical microfiber, a sesame seed, and a grain of rice are shown along a 5 millimeter reference ruler, with everything above 5 mm marked as outside the microplastic range." style="width:100%;height:auto;display:block;">
+<rect width="1200" height="480" fill="#faf6e9"/>
+<text x="60" y="58" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#2d4a2b">Microplastics, to scale</text>
+<text x="60" y="88" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#4a4a4a">Anything smaller than 5 millimeters counts. Most microfibers from clothing are much smaller.</text>
+<g transform="translate(100,160)">
+<line x1="0" y1="100" x2="1000" y2="100" stroke="#2d4a2b" stroke-width="2"/>
+<g font-family="system-ui, sans-serif" font-size="13" fill="#2d4a2b">
+<line x1="0" y1="94" x2="0" y2="106" stroke="#2d4a2b" stroke-width="2"/>
+<text x="0" y="128" text-anchor="middle">0 mm</text>
+<line x1="200" y1="94" x2="200" y2="106" stroke="#2d4a2b" stroke-width="2"/>
+<text x="200" y="128" text-anchor="middle">1 mm</text>
+<line x1="400" y1="94" x2="400" y2="106" stroke="#2d4a2b" stroke-width="2"/>
+<text x="400" y="128" text-anchor="middle">2 mm</text>
+<line x1="600" y1="94" x2="600" y2="106" stroke="#2d4a2b" stroke-width="2"/>
+<text x="600" y="128" text-anchor="middle">3 mm</text>
+<line x1="800" y1="94" x2="800" y2="106" stroke="#2d4a2b" stroke-width="2"/>
+<text x="800" y="128" text-anchor="middle">4 mm</text>
+<line x1="1000" y1="94" x2="1000" y2="106" stroke="#2d4a2b" stroke-width="2"/>
+<text x="1000" y="128" text-anchor="middle">5 mm</text>
+</g>
+<g transform="translate(100,0)">
+<rect x="-6" y="92" width="12" height="16" fill="#3a5a40"/>
+<line x1="0" y1="60" x2="0" y2="92" stroke="#3a5a40" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="0" y="50" font-family="system-ui, sans-serif" font-size="13" fill="#1a1a1a" text-anchor="middle">Typical microfiber</text>
+<text x="0" y="30" font-family="system-ui, sans-serif" font-size="11" fill="#6b6b6b" text-anchor="middle">0.36 – 0.7 mm</text>
+</g>
+<g transform="translate(600,0)">
+<ellipse cx="0" cy="100" rx="22" ry="9" fill="#faf6e9" stroke="#3a5a40" stroke-width="1.5"/>
+<line x1="0" y1="60" x2="0" y2="88" stroke="#3a5a40" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="0" y="50" font-family="system-ui, sans-serif" font-size="13" fill="#1a1a1a" text-anchor="middle">Sesame seed</text>
+<text x="0" y="30" font-family="system-ui, sans-serif" font-size="11" fill="#6b6b6b" text-anchor="middle">about 3 mm</text>
+</g>
+<g transform="translate(960,0)">
+<ellipse cx="0" cy="100" rx="36" ry="14" fill="#a3b18a" stroke="#2d4a2b" stroke-width="1.5"/>
+<line x1="0" y1="60" x2="0" y2="84" stroke="#3a5a40" stroke-width="1" stroke-dasharray="3 3"/>
+<text x="-10" y="50" font-family="system-ui, sans-serif" font-size="13" fill="#1a1a1a" text-anchor="middle">Grain of rice</text>
+<text x="-10" y="30" font-family="system-ui, sans-serif" font-size="11" fill="#6b6b6b" text-anchor="middle">about 5 mm — the ceiling</text>
+</g>
+</g>
+<g transform="translate(60,380)">
+<rect width="1080" height="70" rx="10" fill="#ffffff" stroke="#a3b18a" stroke-width="1.5"/>
+<text x="24" y="32" font-family="Georgia, serif" font-size="16" font-weight="700" fill="#2d4a2b">The takeaway</text>
+<text x="24" y="56" font-family="system-ui, sans-serif" font-size="14" fill="#4a4a4a">Most microfibers are invisible to the eye. They pass through fabric weave, washing machine drains, and wastewater treatment plants.</text>
+</g>
+</svg>
+    </figure>
+
+    <p>A few things worth knowing up front about where they come from and how they behave:</p>
+
+    <ul>
+      <li><strong>Most are too small for wastewater treatment to catch.</strong> Research from the University of Plymouth measured microfibers at average lengths of 360 to 660 micrometers (about 0.36 to 0.66 mm), with diameters around 12 to 16 micrometers. That's small enough to pass through most filtration systems and continue downstream into rivers and oceans.</li>
+      <li><strong>They come from any plastic-based fiber.</strong> Polyester, nylon, acrylic, spandex, polypropylene, and acetate all shed plastic microfibers. Cotton, linen, hemp, wool, and silk shed <em>fibers</em> too — but those fibers are biodegradable and aren't classified as microplastic pollution.</li>
+      <li><strong>They're a "primary" source of ocean microplastic.</strong> Unlike the secondary microplastics created when larger plastic items break down over time, microfibers enter the environment already small, directly from your washing machine, dryer vent, and clothing as you wear it.</li>
+    </ul>
+
+    <p>For context: a 2017 report by the International Union for Conservation of Nature (IUCN) estimated that <a href="https://iucn.org/news/secretariat/201702/invisible-plastic-particles-textiles-and-tyres-major-source-ocean-pollution-%E2%80%93-iucn-study">approximately 35% of microplastics released to oceans globally originate from washing synthetic textiles</a>, making textiles the single largest source of primary microplastic pollution in marine environments. That's not an abstraction. It's the laundry running in your basement, multiplied by every household on earth.</p>
+
+    <div class="stat-callout">
+      <div class="stat-number">35%</div>
+      <div class="stat-text">of all microplastics released to oceans globally originate from washing synthetic textiles — the single largest primary source.</div>
+      <span class="stat-source">— IUCN, 2017</span>
+    </div>
+
+    <h2 id="which-fabrics-shed">Which Fabrics Shed Most?</h2>
+
+    <p>The short answer: <strong>anything plastic-based.</strong> The longer answer is that shedding varies a lot by fiber type, by how the yarn is spun, by how the fabric is knit or woven, and by how worn out the garment already is.</p>
+
+    <figure>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" role="img" aria-label="A horizontal bar chart comparing relative microplastic shedding from common clothing materials. Acrylic and fleece polyester shed the most, woven polyester sheds less, polyester-cotton blends shed slightly less, and natural fibers do not contribute plastic microfibers." style="width:100%;height:auto;display:block;">
+  <rect width="1200" height="580" fill="#f5f0e1"/>
+  <text x="60" y="58" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#2d4a2b">Relative microplastic shedding by fabric</text>
+  <text x="60" y="88" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#4a4a4a">Based on washing studies. Exact numbers vary by garment, but the ranking is consistent.</text>
+  <g transform="translate(60,140)" font-family="system-ui, sans-serif">
+    <g transform="translate(0,0)">
+      <text x="0" y="22" font-size="15" font-weight="600" fill="#1a1a1a">Acrylic</text>
+      <text x="220" y="22" font-size="12" fill="#6b6b6b">knit sweaters, fleece, fluffy yarns</text>
+      <rect x="0" y="32" width="900" height="28" rx="4" fill="#ffffff" stroke="#dad7cd"/>
+      <rect x="0" y="32" width="870" height="28" rx="4" fill="#c2410c"/>
+      <text x="884" y="51" font-size="13" font-weight="700" fill="#ffffff" text-anchor="end">Highest shedder</text>
+    </g>
+    <g transform="translate(0,80)">
+      <text x="0" y="22" font-size="15" font-weight="600" fill="#1a1a1a">Polyester (fleece, jersey)</text>
+      <text x="220" y="22" font-size="12" fill="#6b6b6b">fleece jackets, t-shirts, leggings</text>
+      <rect x="0" y="32" width="900" height="28" rx="4" fill="#ffffff" stroke="#dad7cd"/>
+      <rect x="0" y="32" width="780" height="28" rx="4" fill="#c2410c" opacity="0.85"/>
+    </g>
+    <g transform="translate(0,160)">
+      <text x="0" y="22" font-size="15" font-weight="600" fill="#1a1a1a">Polyester (woven)</text>
+      <text x="220" y="22" font-size="12" fill="#6b6b6b">dress shirts, lining, performance wovens</text>
+      <rect x="0" y="32" width="900" height="28" rx="4" fill="#ffffff" stroke="#dad7cd"/>
+      <rect x="0" y="32" width="380" height="28" rx="4" fill="#d97706" opacity="0.85"/>
+    </g>
+    <g transform="translate(0,240)">
+      <text x="0" y="22" font-size="15" font-weight="600" fill="#1a1a1a">Nylon</text>
+      <text x="220" y="22" font-size="12" fill="#6b6b6b">activewear, hosiery, swimwear</text>
+      <rect x="0" y="32" width="900" height="28" rx="4" fill="#ffffff" stroke="#dad7cd"/>
+      <rect x="0" y="32" width="280" height="28" rx="4" fill="#d97706" opacity="0.7"/>
+    </g>
+    <g transform="translate(0,320)">
+      <text x="0" y="22" font-size="15" font-weight="600" fill="#1a1a1a">Polyester-cotton blend</text>
+      <text x="220" y="22" font-size="12" fill="#6b6b6b">basic tees, sheets, uniforms</text>
+      <rect x="0" y="32" width="900" height="28" rx="4" fill="#ffffff" stroke="#dad7cd"/>
+      <rect x="0" y="32" width="320" height="28" rx="4" fill="#d97706" opacity="0.6"/>
+    </g>
+    <g transform="translate(0,400)">
+      <text x="0" y="22" font-size="15" font-weight="600" fill="#1a1a1a">100% natural fibers</text>
+      <text x="220" y="22" font-size="12" fill="#6b6b6b">cotton, linen, hemp, wool, silk</text>
+      <rect x="0" y="32" width="900" height="28" rx="4" fill="#ffffff" stroke="#3a5a40" stroke-width="2"/>
+      <rect x="0" y="32" width="0" height="28" rx="4" fill="#3a5a40"/>
+      <text x="14" y="51" font-size="13" font-weight="700" fill="#3a5a40">No plastic microfibers shed</text>
+    </g>
+  </g>
+</svg>
+    </figure>
+
+    <p>A few patterns worth knowing:</p>
+
+    <ul>
+      <li><strong>Acrylic is consistently the worst offender.</strong> Plymouth University research found acrylic fabrics shed significantly more microfibers per wash than polyester or polyester-cotton blends. Acrylic shows up most often in cozy knit sweaters, fleece-feel scarves, and budget faux-wool pieces.</li>
+      <li><strong>Polyester fleece and jersey shed more than woven polyester.</strong> Loose, fluffy, mechanically-treated polyester (think fleece jackets, soft jersey t-shirts, athleisure) breaks apart far more than tightly-woven polyester (dress shirts, lining fabric). One study found mechanically-treated polyester samples released about six times more microfibers than tightly-woven nylon samples.</li>
+      <li><strong>Polyester now dominates global apparel production.</strong> It accounts for <a href="https://www.commonobjective.co/article/microfibres-what-to-know-and-do-beatplasticpollution">roughly 62% of all fibers produced</a> and sheds on average about six times more microfibers than nylon. That combination — high market share and high shedding rate — is why polyester is the single biggest contributor to the textile microplastic problem.</li>
+      <li><strong>Blends still shed plastic.</strong> A 60/40 cotton-polyester sheet still releases polyester microfibers. The 40% plastic part doesn't get a pass because there's cotton next to it.</li>
+      <li><strong>Natural fibers shed too, but it's not microplastic pollution.</strong> Cotton, wool, linen, hemp, and silk do release fiber fragments during wear and washing. Those fragments break down in the environment instead of accumulating in the food chain. They're an entirely different problem — really, not a problem in the same sense at all.</li>
+    </ul>
+
+    <p>So when you're standing in a store or scrolling a product page, the most useful filter is fiber content. <strong>Anything labeled 100% polyester, 100% acrylic, 100% nylon — or any blend that's mostly synthetic — will shed plastic microfibers as long as you own it.</strong></p>
+
+    <h2 id="how-clothes-release">How Clothes Release Microplastics</h2>
+
+    <p>Most people associate microplastic shedding with washing. Washing is the biggest single trigger, but it's not the only one. Microfibers get released at every stage of a garment's life — from the factory floor to the bottom of a thrift store donation bin years later.</p>
+
+    <figure>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" role="img" aria-label="A diagram showing four stages where clothing releases microfibers into the environment: manufacturing, wearing, washing, and drying." style="width:100%;height:auto;display:block;">
+  <rect width="1200" height="460" fill="#faf6e9"/>
+  <text x="60" y="58" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#2d4a2b">Where microfibers escape</text>
+  <text x="60" y="88" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#4a4a4a">Every stage of a garment's life releases some microfiber load. The biggest hits cluster around laundry.</text>
+  <g transform="translate(60,140)">
+    <line x1="120" y1="100" x2="1020" y2="100" stroke="#a3b18a" stroke-width="3"/>
+    <g transform="translate(120,100)">
+      <circle cx="0" cy="0" r="36" fill="#ffffff" stroke="#588157" stroke-width="2"/>
+      <text x="0" y="6" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#2d4a2b" text-anchor="middle">1</text>
+      <text x="0" y="-60" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#2d4a2b" text-anchor="middle">Manufacturing</text>
+      <text x="0" y="60" font-family="system-ui, sans-serif" font-size="12" fill="#4a4a4a" text-anchor="middle">Cutting, spinning,</text>
+      <text x="0" y="76" font-family="system-ui, sans-serif" font-size="12" fill="#4a4a4a" text-anchor="middle">dyeing, finishing.</text>
+      <text x="0" y="100" font-family="system-ui, sans-serif" font-size="11" font-style="italic" fill="#6b6b6b" text-anchor="middle">Released to factory</text>
+      <text x="0" y="115" font-family="system-ui, sans-serif" font-size="11" font-style="italic" fill="#6b6b6b" text-anchor="middle">air and wastewater.</text>
+    </g>
+    <g transform="translate(420,100)">
+      <circle cx="0" cy="0" r="36" fill="#ffffff" stroke="#588157" stroke-width="2"/>
+      <text x="0" y="6" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#2d4a2b" text-anchor="middle">2</text>
+      <text x="0" y="-60" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#2d4a2b" text-anchor="middle">Wearing</text>
+      <text x="0" y="60" font-family="system-ui, sans-serif" font-size="12" fill="#4a4a4a" text-anchor="middle">Friction from skin,</text>
+      <text x="0" y="76" font-family="system-ui, sans-serif" font-size="12" fill="#4a4a4a" text-anchor="middle">furniture, seatbelts.</text>
+      <text x="0" y="100" font-family="system-ui, sans-serif" font-size="11" font-style="italic" fill="#6b6b6b" text-anchor="middle">~400 fibers per gram</text>
+      <text x="0" y="115" font-family="system-ui, sans-serif" font-size="11" font-style="italic" fill="#6b6b6b" text-anchor="middle">in 20 min of activity.</text>
+    </g>
+    <g transform="translate(720,100)">
+      <circle cx="0" cy="0" r="36" fill="#c2410c" stroke="#a82e08" stroke-width="2"/>
+      <text x="0" y="6" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+      <text x="0" y="-60" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#c2410c" text-anchor="middle">Washing</text>
+      <text x="0" y="60" font-family="system-ui, sans-serif" font-size="12" fill="#4a4a4a" text-anchor="middle">Mechanical action,</text>
+      <text x="0" y="76" font-family="system-ui, sans-serif" font-size="12" fill="#4a4a4a" text-anchor="middle">heat, detergent.</text>
+      <text x="0" y="100" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#c2410c" text-anchor="middle">~700,000 fibers per</text>
+      <text x="0" y="115" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#c2410c" text-anchor="middle">6 kg wash load.</text>
+    </g>
+    <g transform="translate(1020,100)">
+      <circle cx="0" cy="0" r="36" fill="#ffffff" stroke="#588157" stroke-width="2"/>
+      <text x="0" y="6" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#2d4a2b" text-anchor="middle">4</text>
+      <text x="0" y="-60" font-family="Georgia, serif" font-size="17" font-weight="700" fill="#2d4a2b" text-anchor="middle">Drying</text>
+      <text x="0" y="60" font-family="system-ui, sans-serif" font-size="12" fill="#4a4a4a" text-anchor="middle">Tumbling at heat,</text>
+      <text x="0" y="76" font-family="system-ui, sans-serif" font-size="12" fill="#4a4a4a" text-anchor="middle">vent to outdoor air.</text>
+      <text x="0" y="100" font-family="system-ui, sans-serif" font-size="11" font-style="italic" fill="#6b6b6b" text-anchor="middle">Significant release</text>
+      <text x="0" y="115" font-family="system-ui, sans-serif" font-size="11" font-style="italic" fill="#6b6b6b" text-anchor="middle">to atmosphere.</text>
+    </g>
+  </g>
+</svg>
+    </figure>
+
+    <h3>Washing — the headline source</h3>
+
+    <p>This is the one most people have heard about. A 2016 study at the University of Plymouth, published in <em>Marine Pollution Bulletin</em>, established the now-widely-cited figure: a single 6-kilogram wash load of synthetic fabric can release <a href="https://www.plymouth.ac.uk/news/washing-clothes-releases-thousands-of-microplastic-particles-into-environment-study-shows">over 700,000 microfibers</a> per wash. Later research from Italy's National Research Council using actual household washing machines arrived at a similar range — <a href="https://www.nature.com/articles/s41598-019-43023-x">640,000 to 1.5 million microfibers per load</a>, depending on the garment.</p>
+
+    <div class="stat-callout">
+      <div class="stat-number">700,000</div>
+      <div class="stat-text">microfibers can be released in a single 6 kg wash load of synthetic fabric.</div>
+      <span class="stat-source">— University of Plymouth, 2016</span>
+    </div>
+
+    <p>Three things drive how much shedding happens in a given load:</p>
+
+    <ul>
+      <li><strong>Fabric type.</strong> Fleece, jersey, and acrylic shed dramatically more than tightly-woven fabrics.</li>
+      <li><strong>Wash conditions.</strong> Higher temperatures, longer cycles, more aggressive agitation, and lower water-to-fabric ratios (small loads) all increase shedding.</li>
+      <li><strong>Garment age and condition.</strong> New garments shed more in their first few washes than older ones. Worn-out fabric that's already starting to break down also sheds heavily as fibers begin to fragment.</li>
+    </ul>
+
+    <p>Microfibers exit the washing machine in the wastewater stream. Wastewater treatment plants capture a meaningful share but not all — and the fibers that make it through enter rivers and oceans directly. Captured fibers often end up in sewage sludge, which in many areas is applied to farmland as fertilizer, transferring microplastics from water systems to soil systems.</p>
+
+    <h3>Wearing — the underestimated source</h3>
+
+    <p>Until recently, scientists assumed wear was a minor contributor compared to washing. A 2020 study from the University of Plymouth and Italy's IPCB-CNR overturned that. Researchers found that <a href="https://www.plymouth.ac.uk/news/wearing-clothes-could-release-more-microfibres-to-the-environment-than-washing-them">up to 4,000 fibers per gram could be released during a single conventional wash, while up to 400 fibers per gram of fabric could be shed during just 20 minutes of normal activity</a>. Scaled up to a typical wardrobe and a typical year, the researchers estimated that one person could release roughly 300 million polyester microfibers per year through washing — and more than 900 million per year just from wearing them.</p>
+
+    <p>The mechanism is friction. Every time a synthetic garment rubs against another fabric, against a chair, against a seatbelt, against your skin — fibers break off and become airborne. Those fibers settle in the dust in your home, end up in indoor air, get inhaled, and eventually wash into outdoor environments through dust and rain.</p>
+
+    <h3>Drying — the air-pollution route</h3>
+
+    <p>Tumble drying agitates fabric just as much as washing, but the fibers it releases mostly vent to the outdoor air rather than the wastewater stream. Dryer lint is a small visible sample of what's leaving the vent; far more is too small to catch in the lint trap. In homes where the dryer vents directly outdoors, that exhaust becomes a continuous low-level source of atmospheric microplastic.</p>
+
+    <h3>Manufacturing — the upstream problem</h3>
+
+    <p>Long before a garment ever reaches you, the spinning, weaving, cutting, dyeing, and finishing processes shed fibers at the factory. Those fibers go into local air, factory wastewater, and the surrounding environment. It's why microfiber pollution is often concentrated near textile manufacturing hubs.</p>
+
+    <h2 id="how-to-reduce">How to Reduce Microplastics</h2>
+
+    <p>The most effective intervention happens at the point of purchase — before a synthetic garment ever enters your closet. But there's a lot you can also do with the clothes you already own, especially around laundry habits. Here's a layered approach, ordered roughly by impact:</p>
+
+    <p><strong>1. Buy fewer synthetic garments.</strong> This is the single most effective lever, and the one most often skipped over. A 100% cotton, linen, hemp, or wool item simply does not shed plastic microfibers — ever. Prioritizing natural fibers for the categories you wear and wash most often (base layers, tees, sheets, underwear, sleepwear) does more than any wash-cycle adjustment.</p>
+
+    <p><strong>2. Wash less often.</strong> Most clothes don't need to be washed after every wear. Jeans, sweaters, outerwear, and many tops can be worn multiple times before they actually need cleaning. The University of Plymouth's headline recommendation in much of their microfiber research is exactly this: simply wash synthetic garments less.</p>
+
+    <p><strong>3. Wash in cold water on shorter, gentler cycles.</strong> Heat, long agitation times, and aggressive cycles all increase fiber shedding. Cold water, shorter cycles, and the delicate setting all reduce it. Use the lowest setting that actually cleans the load.</p>
+
+    <p><strong>4. Wash full loads.</strong> Smaller, partial loads have more water-per-garment and more mechanical action per garment. The same Italian research that estimated 640,000 to 1.5 million fibers per load also found that smaller loads release significantly more fibers <em>per kilogram</em> of fabric. A fuller load means less shedding overall.</p>
+
+    <p><strong>5. Use a microfiber-capture tool.</strong> Several products on the market are designed specifically to catch microfibers before they leave the washer:</p>
+
+    <ul>
+      <li><strong>Guppyfriend wash bag.</strong> A mesh bag you place synthetic items inside before washing. Independent testing shows it captures a meaningful share of shed fibers and also reduces shedding in the first place by buffering mechanical action.</li>
+      <li><strong>Cora Ball.</strong> A spiked ball that goes loose in the drum and snags free-floating fibers.</li>
+      <li><strong>Installed lint filters.</strong> Filtrol, PlanetCare, and similar after-market filters install on the washing machine drain line. These capture the highest share of fibers (research suggests well over 80% in many setups) but require installation and periodic filter changes.</li>
+    </ul>
+
+    <p><strong>6. Hang dry when you can.</strong> Skipping the dryer removes the air-pollution leg of the cycle entirely. It also extends garment life, which means fewer replacement purchases (synthetic or otherwise).</p>
+
+    <p><strong>7. Front-loading machines tend to be gentler.</strong> If you're already replacing an appliance, front-loaders typically agitate less aggressively than top-loaders and shed somewhat less per load. This isn't a reason to replace a working washing machine, but it's worth knowing.</p>
+
+    <p><strong>8. Replace synthetic items intentionally as they wear out.</strong> You don't need to throw away a closet full of polyester to make a difference. As synthetic pieces wear out, replace them with natural-fiber alternatives. Over a few years, the composition of your wardrobe shifts meaningfully without a single big purchase.</p>
+
+    <h2 id="natural-alternatives">Natural Fiber Alternatives</h2>
+
+    <p>The simplest way to avoid contributing to microplastic pollution from clothing is to choose fibers that aren't plastic to begin with. Six categories are worth knowing — five long-established naturals, plus one increasingly common semi-synthetic that performs better than typical synthetics.</p>
+
+    <figure>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" role="img" aria-label="Six natural and semi-natural fiber alternatives that do not shed plastic microfibers: cotton, linen, hemp, wool, silk, and Tencel lyocell." style="width:100%;height:auto;display:block;">
+  <defs>
+    <style>
+      .fcard { fill: #ffffff; stroke: #dad7cd; stroke-width: 1.5; }
+      .fname { font-family: Georgia, serif; font-size: 20px; font-weight: 700; fill: #2d4a2b; }
+      .fdesc { font-family: system-ui, sans-serif; font-size: 13px; fill: #4a4a4a; }
+    </style>
+  </defs>
+  <rect width="1200" height="460" fill="#faf6e9"/>
+  <text x="60" y="58" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#2d4a2b">Six fabrics that don't shed plastic</text>
+  <text x="60" y="88" font-family="system-ui, sans-serif" font-size="16" fill="#4a4a4a">Natural and cellulose-based alternatives to synthetic clothing.</text>
+  <g transform="translate(60,140)">
+    <rect class="fcard" width="170" height="280" rx="10"/>
+    <g transform="translate(85,80)">
+      <circle cx="0" cy="0" r="26" fill="#ffffff" stroke="#2d4a2b" stroke-width="2"/>
+      <circle cx="-10" cy="-6" r="11" fill="#ffffff" stroke="#2d4a2b" stroke-width="2"/>
+      <circle cx="11" cy="-5" r="11" fill="#ffffff" stroke="#2d4a2b" stroke-width="2"/>
+      <circle cx="0" cy="11" r="11" fill="#ffffff" stroke="#2d4a2b" stroke-width="2"/>
+    </g>
+    <text class="fname" x="85" y="170" text-anchor="middle">Cotton</text>
+    <text class="fdesc" x="85" y="200" text-anchor="middle">Soft and breathable.</text>
+    <text class="fdesc" x="85" y="220" text-anchor="middle">Choose organic to</text>
+    <text class="fdesc" x="85" y="240" text-anchor="middle">avoid PFAS and</text>
+    <text class="fdesc" x="85" y="260" text-anchor="middle">pesticide residue.</text>
+  </g>
+  <g transform="translate(250,140)">
+    <rect class="fcard" width="170" height="280" rx="10"/>
+    <g transform="translate(85,80)">
+      <path d="M 0 -32 Q -6 -16 0 0 Q 6 -16 0 -32 Z" fill="#a3b18a" stroke="#3a5a40" stroke-width="1.5"/>
+      <path d="M -18 -8 Q -13 -2 0 0 Q -8 -18 -18 -8 Z" fill="#a3b18a" stroke="#3a5a40" stroke-width="1.5"/>
+      <path d="M 18 -8 Q 13 -2 0 0 Q 8 -18 18 -8 Z" fill="#a3b18a" stroke="#3a5a40" stroke-width="1.5"/>
+      <line x1="0" y1="0" x2="0" y2="36" stroke="#3a5a40" stroke-width="2"/>
+    </g>
+    <text class="fname" x="85" y="170" text-anchor="middle">Linen</text>
+    <text class="fdesc" x="85" y="200" text-anchor="middle">Naturally absorbent</text>
+    <text class="fdesc" x="85" y="220" text-anchor="middle">and antimicrobial.</text>
+    <text class="fdesc" x="85" y="240" text-anchor="middle">Excellent for warm</text>
+    <text class="fdesc" x="85" y="260" text-anchor="middle">weather wear.</text>
+  </g>
+  <g transform="translate(440,140)">
+    <rect class="fcard" width="170" height="280" rx="10"/>
+    <g transform="translate(85,80)">
+      <path d="M 0 0 L -3 -30 L 3 -30 Z" fill="#3a5a40"/>
+      <path d="M 0 0 L -28 -14 L -23 -7 Z" fill="#3a5a40"/>
+      <path d="M 0 0 L 28 -14 L 23 -7 Z" fill="#3a5a40"/>
+      <path d="M 0 0 L -23 12 L -18 18 Z" fill="#588157"/>
+      <path d="M 0 0 L 23 12 L 18 18 Z" fill="#588157"/>
+      <path d="M 0 0 L -8 28 L 8 28 Z" fill="#588157"/>
+      <line x1="0" y1="0" x2="0" y2="36" stroke="#3a5a40" stroke-width="2"/>
+    </g>
+    <text class="fname" x="85" y="170" text-anchor="middle">Hemp</text>
+    <text class="fdesc" x="85" y="200" text-anchor="middle">Strong and durable.</text>
+    <text class="fdesc" x="85" y="220" text-anchor="middle">Grown with very</text>
+    <text class="fdesc" x="85" y="240" text-anchor="middle">little water or</text>
+    <text class="fdesc" x="85" y="260" text-anchor="middle">pesticide input.</text>
+  </g>
+  <g transform="translate(630,140)">
+    <rect class="fcard" width="170" height="280" rx="10"/>
+    <g transform="translate(85,80)">
+      <ellipse cx="0" cy="0" rx="28" ry="22" fill="#faf6e9" stroke="#3a5a40" stroke-width="2"/>
+      <circle cx="-13" cy="-9" r="7" fill="#faf6e9" stroke="#3a5a40" stroke-width="2"/>
+      <circle cx="0" cy="-12" r="7" fill="#faf6e9" stroke="#3a5a40" stroke-width="2"/>
+      <circle cx="13" cy="-9" r="7" fill="#faf6e9" stroke="#3a5a40" stroke-width="2"/>
+      <ellipse cx="0" cy="8" rx="8" ry="6" fill="#3a5a40"/>
+      <circle cx="-2" cy="6" r="1.2" fill="#faf6e9"/>
+      <circle cx="3" cy="6" r="1.2" fill="#faf6e9"/>
+    </g>
+    <text class="fname" x="85" y="170" text-anchor="middle">Wool</text>
+    <text class="fdesc" x="85" y="200" text-anchor="middle">Naturally water- and</text>
+    <text class="fdesc" x="85" y="220" text-anchor="middle">odor-resistant. Needs</text>
+    <text class="fdesc" x="85" y="240" text-anchor="middle">no chemical finish</text>
+    <text class="fdesc" x="85" y="260" text-anchor="middle">to perform.</text>
+  </g>
+  <g transform="translate(820,140)">
+    <rect class="fcard" width="170" height="280" rx="10"/>
+    <g transform="translate(85,80)">
+      <ellipse cx="0" cy="0" rx="18" ry="28" fill="#faf6e9" stroke="#3a5a40" stroke-width="2"/>
+      <path d="M -13 -15 Q 0 -8 13 -15 M -13 0 Q 0 7 13 0 M -13 15 Q 0 22 13 15" stroke="#3a5a40" stroke-width="1.5" fill="none"/>
+    </g>
+    <text class="fname" x="85" y="170" text-anchor="middle">Silk</text>
+    <text class="fdesc" x="85" y="200" text-anchor="middle">Smooth and</text>
+    <text class="fdesc" x="85" y="220" text-anchor="middle">temperature-regulating.</text>
+    <text class="fdesc" x="85" y="240" text-anchor="middle">Ideal for next-to-skin</text>
+    <text class="fdesc" x="85" y="260" text-anchor="middle">layers.</text>
+  </g>
+  <g transform="translate(1010,140)">
+    <rect class="fcard" width="130" height="280" rx="10"/>
+    <g transform="translate(65,80)">
+      <path d="M -16 -28 L 16 -28 L 12 28 L -12 28 Z" fill="#a3b18a" stroke="#3a5a40" stroke-width="2"/>
+      <line x1="-12" y1="-20" x2="12" y2="-20" stroke="#3a5a40" stroke-width="1"/>
+      <line x1="-12" y1="-10" x2="12" y2="-10" stroke="#3a5a40" stroke-width="1"/>
+      <line x1="-12" y1="0" x2="12" y2="0" stroke="#3a5a40" stroke-width="1"/>
+      <line x1="-12" y1="10" x2="12" y2="10" stroke="#3a5a40" stroke-width="1"/>
+      <line x1="-12" y1="20" x2="12" y2="20" stroke="#3a5a40" stroke-width="1"/>
+    </g>
+    <text class="fname" x="65" y="170" text-anchor="middle">Tencel</text>
+    <text class="fdesc" x="65" y="200" text-anchor="middle">Wood pulp-based</text>
+    <text class="fdesc" x="65" y="220" text-anchor="middle">cellulose fiber.</text>
+    <text class="fdesc" x="65" y="240" text-anchor="middle">Biodegradable,</text>
+    <text class="fdesc" x="65" y="260" text-anchor="middle">silky drape.</text>
+  </g>
+</svg>
+    </figure>
+
+    <p>Worth noting on <strong>Tencel</strong> (and similar wood-pulp cellulose fibers like lyocell and modal): these are technically "semi-synthetic" — they're manufactured rather than grown directly — but the underlying fiber is cellulose, which biodegrades. They don't contribute to plastic microfiber pollution. For a lot of categories where polyester used to be the default (drapey blouses, soft loungewear, sheets), Tencel-blend natural fabrics are now a credible alternative.</p>
+
+    <p>A few notes worth knowing:</p>
+
+    <ul>
+      <li><strong>Bamboo viscose isn't the same as natural bamboo.</strong> Most "bamboo" clothing is actually rayon made from bamboo through a heavily chemical-intensive process. It does biodegrade, but the production process is meaningfully more polluting than Tencel's closed-loop lyocell process.</li>
+      <li><strong>Recycled polyester is still polyester.</strong> rPET is a meaningful improvement on virgin polyester from a <em>raw material</em> standpoint, but the finished garment sheds microplastic at essentially the same rate. Recycled doesn't mean non-shedding.</li>
+      <li><strong>Wool blends count as wool, mostly.</strong> A merino wool sweater with 5–10% nylon for stretch will shed <em>some</em> plastic, but far less than a 100% acrylic equivalent.</li>
+    </ul>
+
+    <p>For more on what's actually printed on the tag, <a href="/blog/how-to-read-clothing-labels">our guide to reading clothing labels</a> walks through fiber content, percentages, certifications, and what they all really mean.</p>
+
+    <h2 id="bigger-picture">The Bigger Picture</h2>
+
+    <p>Microplastic pollution from clothing is one of those problems that's bigger and more recent than most people realize. The EEA estimates <a href="https://www.eea.europa.eu/en/analysis/publications/microplastics-from-textiles-towards-a-circular-economy-for-textiles-in-europe">between 200,000 and 500,000 tonnes of microplastics from textiles enter the global marine environment each year</a>. Microplastics have been detected in human blood, lungs, breast milk, placentas, and stool samples. They've been found in Antarctic snow and at the bottom of the Mariana Trench. They are, at this point, everywhere.</p>
+
+    <p>The regulatory response has lagged behind. Unlike PFAS in apparel, which is now being actively banned at the state level — <a href="/blog/pfas-in-clothing">our PFAS in clothing guide</a> walks through that in detail — microplastic shedding from clothing isn't directly regulated in the US. France passed a law in 2020 requiring microfiber filters on new washing machines starting in 2025, the first national-scale policy of its kind. The EU is studying similar requirements. In the US, the conversation is happening at the state level (California has explored it), but nothing has passed yet.</p>
+
+    <p>What this means in practice is that for now, this category is shaped almost entirely by consumer demand. Brands that have moved away from virgin polyester, that have invested in cellulose-based fibers, that have started disclosing fiber content beyond what's legally required — they're responding to shoppers who've started asking. The more shoppers ask, the faster it moves.</p>
+
+    <div class="cta-block">
+      <div class="cta-eyebrow">Wove App</div>
+      <h3>See the microplastic risk before you buy.</h3>
+      <p>The Wove app scores clothing A–F based on fiber content, microplastic risk, and PFAS concerns — so you can make the call at checkout.</p>
+      <a href="https://apps.apple.com/us/app/wove-score/id6755356871" class="cta-link">Download the app →</a>
+    </div>
+
+    <h2 id="faq">FAQ</h2>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>What are microplastics in clothing?</summary>
+        <div class="faq-answer">
+          <p>Microplastics in clothing are tiny plastic fibers — less than five millimeters long — that synthetic fabrics shed during wear, washing, and drying. Because they're so small, most pass through wastewater treatment plants and end up in rivers, oceans, soil, the air, and ultimately the food chain and the human body. Any fabric made from polyester, nylon, acrylic, spandex, polypropylene, or acetate sheds plastic microfibers. Natural fibers like cotton, linen, hemp, wool, and silk also shed fibers, but those break down and don't qualify as microplastic pollution.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Which clothing materials shed the most microplastics?</summary>
+        <div class="faq-answer">
+          <p>Acrylic shows the highest shedding rates in laboratory wash studies, followed by polyester fleece and jersey. Tightly woven polyester sheds significantly less than loosely-knit polyester. Polyester-cotton blends still shed plastic from the polyester portion. Nylon sheds less per wash than polyester, but is still a meaningful contributor. Polyester is the biggest aggregate problem globally because it accounts for roughly 62% of all fibers produced — both its shedding rate and its market share matter.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How many microplastics does one wash release?</summary>
+        <div class="faq-answer">
+          <p>Research from the University of Plymouth found that a 6-kilogram (about 13-pound) wash load of synthetic fabric can release over 700,000 microfibers per cycle. Later research using household washing machines measured 640,000 to 1.5 million fibers per load, depending on the garment. Some studies measuring fleece-heavy loads have estimated several million fibers per cycle.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Are microplastics in clothing harmful?</summary>
+        <div class="faq-answer">
+          <p>Researchers are still actively studying the human health impacts of microplastics, but findings so far raise real concern. Microplastics have been detected in human blood, lungs, breast milk, placentas, and stool samples. Animal studies have shown associations with inflammation, oxidative stress, and endocrine disruption. The chemicals that hitch a ride on microplastics — including additives, PFAS, dyes, and flame retardants — may be as concerning as the plastic particles themselves. The cautious read is that microplastic exposure is worth reducing where you can, even if the full picture is still developing.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How can I reduce microplastics from my clothes?</summary>
+        <div class="faq-answer">
+          <p>In rough order of impact: buy fewer synthetic garments and prioritize natural fibers for the items you wash most often. Wash synthetic clothes less frequently and in cold water on shorter cycles. Wash full loads rather than partial ones. Use a microfiber capture tool like a Guppyfriend bag, Cora Ball, or an installed lint filter on the washer drain. Hang dry rather than tumble dry when possible. Replace synthetic pieces with natural-fiber alternatives as they wear out.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Does washing in cold water actually help?</summary>
+        <div class="faq-answer">
+          <p>Yes. Higher water temperatures, longer cycles, and more aggressive agitation all increase fiber shedding. Cold water alone won't eliminate the problem, but the difference compared to hot water washing is meaningful — and cold water is gentler on clothes overall, which extends garment life.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Are natural fibers really microplastic-free?</summary>
+        <div class="faq-answer">
+          <p>Yes, in the sense that matters. Natural fibers — cotton, linen, hemp, wool, silk — release fiber fragments during wear and washing, but those fragments are biodegradable cellulose or protein. They don't accumulate in the environment as microplastic pollution. Tencel and lyocell (wood-pulp cellulose fibers) are technically semi-synthetic but biodegrade similarly to natural fibers, so they also don't contribute to microplastic pollution.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is recycled polyester better than regular polyester?</summary>
+        <div class="faq-answer">
+          <p>Recycled polyester (rPET) is an improvement on virgin polyester from a raw-material standpoint — it diverts plastic bottles from landfill and uses less energy to produce — but the finished garment sheds microplastic at essentially the same rate as virgin polyester. "Recycled" isn't a synonym for "doesn't shed." For microplastic concerns specifically, recycled polyester offers no advantage over conventional polyester.</p>
+        </div>
+      </details>
+    </div>
+
+  </article>
+
+  <!-- DESKTOP TOC -->
+  <aside class="toc-aside">
+    <div class="toc-label">In this guide</div>
+    <ul class="toc-list">
+      <li><a href="#what-are-microplastics">What Are Microplastics?</a></li>
+      <li><a href="#which-fabrics-shed">Which Fabrics Shed Most?</a></li>
+      <li><a href="#how-clothes-release">How Clothes Release Microplastics</a></li>
+      <li><a href="#how-to-reduce">How to Reduce Microplastics</a></li>
+      <li><a href="#natural-alternatives">Natural Fiber Alternatives</a></li>
+      <li><a href="#bigger-picture">The Bigger Picture</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </aside>
+</div>
+
+<!-- ARTICLE FOOTER -->
+<div class="article-footer">
+  <section class="related-section">
+    <div class="section-label">Keep Reading</div>
+    <h2>Related guides from Wove</h2>
+    <div class="related-grid">
+      <a href="/blog/pfas-in-clothing/" class="related-card">
+        <div class="related-cat">Chemical Safety</div>
+        <div class="related-title">PFAS in Clothing: What It Is and How to Avoid It</div>
+      </a>
+      <a href="/blog/how-to-read-clothing-labels/" class="related-card">
+        <div class="related-cat">Fabric Guide</div>
+        <div class="related-title">How to Read Clothing Labels: A Complete Guide to Fabrics, Care, and Quality</div>
+      </a>
+      <a href="#" class="related-card">
+        <div class="related-cat">Fabric Guide</div>
+        <div class="related-title">Natural vs. Synthetic Fabrics: A Side-by-Side Guide <em style="font-size:12px;font-weight:400;color:var(--ink-mute)">(coming soon)</em></div>
+      </a>
+      <a href="#" class="related-card">
+        <div class="related-cat">Care Guide</div>
+        <div class="related-title">How to Make Your Clothes Last Longer <em style="font-size:12px;font-weight:400;color:var(--ink-mute)">(coming soon)</em></div>
+      </a>
+    </div>
+  </section>
+
+  <section class="sources-section">
+    <h3>Sources &amp; further reading</h3>
+    <ul>
+      <li>Napper, I.E. and Thompson, R.C. (2016). <a href="https://www.sciencedirect.com/science/article/abs/pii/S0025326X16307639" target="_blank" rel="noopener">Release of synthetic microplastic plastic fibres from domestic washing machines: Effects of fabric type and washing conditions</a>. <em>Marine Pollution Bulletin</em>.</li>
+      <li>De Falco, F., et al. (2019). <a href="https://www.nature.com/articles/s41598-019-43023-x" target="_blank" rel="noopener">The contribution of washing processes of synthetic clothes to microplastic pollution</a>. <em>Scientific Reports</em>.</li>
+      <li>De Falco, F., Cocca, M., Avella, M., Thompson, R.C. (2020). <a href="https://www.plymouth.ac.uk/news/wearing-clothes-could-release-more-microfibres-to-the-environment-than-washing-them" target="_blank" rel="noopener">Wearing clothes could release more microfibres to the environment than washing them</a>. <em>Environmental Science &amp; Technology</em> / University of Plymouth.</li>
+      <li>IUCN (Boucher, J. and Friot, D., 2017). <a href="https://iucn.org/news/secretariat/201702/invisible-plastic-particles-textiles-and-tyres-major-source-ocean-pollution-%E2%80%93-iucn-study" target="_blank" rel="noopener">Invisible plastic particles from textiles and tyres a major source of ocean pollution</a>.</li>
+      <li>European Environment Agency. <a href="https://www.eea.europa.eu/en/analysis/publications/microplastics-from-textiles-towards-a-circular-economy-for-textiles-in-europe" target="_blank" rel="noopener">Microplastics from textiles: towards a circular economy for textiles in Europe</a>.</li>
+      <li>Greenpeace. <a href="https://www.greenpeace.org/international/story/6956/what-are-microfibers-and-why-are-our-clothes-polluting-the-oceans/" target="_blank" rel="noopener">What are microfibers and why are our clothes polluting the oceans?</a></li>
+      <li>Common Objective. <a href="https://www.commonobjective.co/article/microfibres-what-to-know-and-do-beatplasticpollution" target="_blank" rel="noopener">Fashion's Impact On The World's Oceans</a>.</li>
+      <li>Fashion Revolution. <a href="https://www.fashionrevolution.org/our-clothes-shed-microfibres-heres-what-we-can-do/" target="_blank" rel="noopener">Our clothes shed microfibres — here's what we can do</a>.</li>
+    </ul>
+  </section>
+</div>
+
+<!-- SITE FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-name">
+          <img src="../../images/logo.png" alt="Wove" class="footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="logo-placeholder dark" style="display:none">LOGO</div>
+        </div>
+        <p>Shop consciously. Live comfortably. Wove brings transparency to the fashion industry — no ads, no brand deals, just the truth about your fabrics.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Project</h4>
+        <a href="../../about/">The Story</a>
+        <a href="../../wovescore/">Wove Score</a>
+        <a href="../../contact/">Contact</a>
+        <a href="https://shopmy.us/shop/emmhemphill" target="_blank" rel="noopener">Shop Our Top Picks</a>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <a href="../">Blog</a>
+        <a href="../../privacypolicy/">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 Wove LLC. Shop consciously. Live comfortably.</div>
+  </div>
+</footer>
+
+<script>
+// Reading progress bar
+window.addEventListener('scroll', () => {
+  const bar = document.getElementById('progressBar');
+  const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+  bar.style.width = scrolled + '%';
+});
+
+// Nav scroll state
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); });
+
+// TOC active state
+const tocLinks = document.querySelectorAll('.toc-aside .toc-list a');
+const sections = [...tocLinks].map(a => document.getElementById(a.getAttribute('href').slice(1))).filter(Boolean);
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      tocLinks.forEach(link => link.classList.remove('active'));
+      const activeLink = document.querySelector(`.toc-aside .toc-list a[href="#${entry.target.id}"]`);
+      if (activeLink) activeLink.classList.add('active');
+    }
+  });
+}, { rootMargin: '-30% 0px -60% 0px' });
+
+sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>
