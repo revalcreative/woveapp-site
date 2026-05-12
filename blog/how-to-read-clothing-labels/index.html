@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to Read Clothing Labels: A Complete Guide to Fabrics, Care, and Quality | Wove</title>
+<meta name="description" content="Learn how to read clothing labels like a pro. A complete guide to fabric composition, care symbols, certifications, and what every tag really tells you about quality." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream-50: #FBF7ED;
+  --cream-100: #F5EFE2;
+  --cream-200: #ECE3CE;
+  --cream-300: #DDD0B4;
+  --green-deep: #2D4A3E;
+  --green-700: #3D5C4F;
+  --green-500: #6B8B7B;
+  --green-300: #A4BCB0;
+  --green-100: #DCE6DF;
+  --terracotta: #B8765A;
+  --terracotta-soft: #D9A48E;
+  --ink: #1F1A14;
+  --ink-soft: #524A3D;
+  --ink-mute: #877D6A;
+  --border: #D9CFB8;
+  --border-soft: #E8DFCA;
+  --display: 'Fraunces', Georgia, serif;
+  --body: 'Lora', Georgia, serif;
+  --max-w: 1240px;
+  --content-w: 720px;
+
+  /* Site nav vars */
+  --wove-green: #5B6B54;
+  --wove-green-dark: #4A5A42;
+  --wove-green-deep-nav: #3D4D36;
+  --wove-cream: #F0EBE3;
+  --wove-cream-light: #F5F1EB;
+  --wove-charcoal: #2A2A2A;
+  --wove-text: #333333;
+  --wove-text-light: #6B6B6B;
+  --wove-text-muted: #9A9A9A;
+  --wove-border: rgba(0,0,0,0.06);
+  --radius-full: 50px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+
+body {
+  font-family: var(--body);
+  background: var(--cream-50);
+  color: var(--ink);
+  line-height: 1.7;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Reading progress */
+.progress-bar {
+  position: fixed;
+  top: 68px; left: 0;
+  height: 3px;
+  width: 0%;
+  background: var(--green-deep);
+  z-index: 99;
+  transition: width 0.1s ease-out;
+}
+
+/* ==================== SITE NAV ==================== */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(240, 235, 227, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 0 48px;
+  height: 68px;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid var(--wove-border);
+  transition: box-shadow 0.3s;
+  font-family: 'Poppins', -apple-system, sans-serif;
+}
+nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.04); }
+.nav-logo { display: flex; align-items: center; text-decoration: none; }
+.nav-logo-img { height: 40px; object-fit: contain; }
+.logo-placeholder {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 120px; height: 44px;
+  border: 2px dashed var(--wove-green); border-radius: 12px;
+  font-size: 11px; font-weight: 700; color: var(--wove-green);
+  letter-spacing: 1.5px; background: rgba(91,107,84,0.05);
+}
+.nav-links { display: flex; align-items: center; gap: 32px; }
+.nav-links a {
+  text-decoration: none; color: var(--wove-text);
+  font-size: 14px; font-weight: 500; transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--wove-green-dark); }
+.nav-cta {
+  background: var(--wove-green) !important; color: white !important;
+  padding: 10px 26px; border-radius: var(--radius-full);
+  font-weight: 600 !important; font-size: 13px !important;
+  transition: all 0.25s !important;
+}
+.nav-cta:hover {
+  background: var(--wove-green-deep-nav) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(91,107,84,0.25);
+}
+@media (max-width: 960px) {
+  nav { padding: 0 24px; }
+  .nav-links a:not(.nav-cta) { display: none; }
+}
+
+/* ==================== ARTICLE HEADER ==================== */
+.article-header {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 80px 32px 40px;
+}
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  font-weight: 500;
+  margin-bottom: 24px;
+  font-family: var(--body);
+}
+.eyebrow::before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 1px;
+  background: var(--terracotta);
+}
+.article-title {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(40px, 6vw, 72px);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  max-width: 900px;
+  margin-bottom: 32px;
+  font-variation-settings: "opsz" 144, "SOFT" 30;
+}
+.article-title em {
+  font-style: italic;
+  color: var(--green-deep);
+  font-variation-settings: "opsz" 144, "SOFT" 100;
+}
+.article-lede {
+  font-family: var(--display);
+  font-weight: 300;
+  font-size: clamp(20px, 2.2vw, 24px);
+  line-height: 1.45;
+  color: var(--ink-soft);
+  max-width: 720px;
+  margin-bottom: 40px;
+  font-style: italic;
+  font-variation-settings: "opsz" 144;
+}
+.article-meta {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: var(--ink-mute);
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-soft);
+  font-family: var(--body);
+}
+.article-meta span { display: inline-flex; align-items: center; gap: 6px; }
+.article-meta .dot { color: var(--cream-300); }
+
+/* Hero image */
+.hero-image {
+  max-width: var(--max-w);
+  margin: 0 auto 60px;
+  padding: 0 32px;
+}
+.image-placeholder {
+  position: relative;
+  background: linear-gradient(135deg, var(--green-100) 0%, var(--cream-200) 100%);
+  border: 1px solid var(--border-soft);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 40px;
+  color: var(--green-deep);
+}
+.image-placeholder.hero {
+  aspect-ratio: 3 / 2;
+  padding: 0;
+}
+.image-placeholder svg.placeholder-icon {
+  width: 48px;
+  height: 48px;
+  opacity: 0.4;
+  margin-bottom: 16px;
+}
+.image-placeholder .ph-label {
+  font-family: var(--display);
+  font-size: 14px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--green-700);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.image-placeholder .ph-alt {
+  font-family: var(--body);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--ink-soft);
+  max-width: 460px;
+  line-height: 1.5;
+}
+.image-placeholder .ph-spec {
+  font-family: var(--body);
+  font-size: 12px;
+  color: var(--ink-mute);
+  margin-top: 12px;
+  letter-spacing: 0.05em;
+}
+
+/* Main grid */
+.article-grid {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 32px 80px;
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 80px;
+  align-items: start;
+}
+@media (max-width: 960px) {
+  .article-grid { grid-template-columns: 1fr; gap: 0; }
+  .toc-aside { display: none; }
+}
+
+/* TOC */
+.toc-aside {
+  position: sticky;
+  top: 100px;
+  font-family: var(--body);
+}
+.toc-label {
+  font-family: var(--display);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-bottom: 16px;
+  font-weight: 500;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-soft);
+}
+.toc-list { list-style: none; padding: 0; margin: 0; }
+.toc-list li { margin-bottom: 10px; line-height: 1.4; }
+.toc-list li.sub { padding-left: 16px; font-size: 13px; }
+.toc-list a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+  display: block;
+  padding-left: 12px;
+  border-left: 2px solid transparent;
+}
+.toc-list a:hover {
+  color: var(--green-deep);
+  border-left-color: var(--green-300);
+}
+.toc-list a.active {
+  color: var(--green-deep);
+  border-left-color: var(--green-deep);
+  font-weight: 500;
+}
+
+/* Mobile TOC */
+.toc-mobile {
+  display: none;
+  margin: 0 32px 48px;
+  padding: 24px;
+  background: var(--cream-100);
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+}
+@media (max-width: 960px) {
+  .toc-mobile { display: block; }
+  .article-grid { padding-top: 0; }
+  .article-header { padding: 88px 24px 32px; }
+  .hero-image { padding: 0 24px; }
+  .toc-mobile { margin: 0 24px 48px; }
+  .article-grid { padding: 0 24px 80px; }
+  .article-footer { padding: 0 24px 80px; }
+}
+.toc-mobile summary {
+  font-family: var(--display);
+  font-size: 14px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--green-deep);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+.toc-mobile summary::after {
+  content: '+';
+  font-family: var(--display);
+  font-size: 22px;
+  font-weight: 300;
+  transition: transform 0.2s;
+}
+.toc-mobile[open] summary::after { content: '−'; }
+.toc-mobile summary::-webkit-details-marker { display: none; }
+.toc-mobile .toc-list { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border-soft); }
+
+/* Article body */
+.article-body {
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--ink);
+}
+.article-body p { margin-bottom: 24px; }
+.article-body p + p { margin-top: -8px; }
+
+.article-body h2 {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(28px, 3.4vw, 38px);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  color: var(--green-deep);
+  margin-top: 80px;
+  margin-bottom: 32px;
+  scroll-margin-top: 100px;
+  font-variation-settings: "opsz" 144, "SOFT" 40;
+  position: relative;
+}
+.article-body h2::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--terracotta);
+  margin-bottom: 24px;
+}
+
+.article-body h3 {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(20px, 2.2vw, 24px);
+  line-height: 1.3;
+  color: var(--ink);
+  margin-top: 48px;
+  margin-bottom: 16px;
+  scroll-margin-top: 100px;
+  font-variation-settings: "opsz" 36, "SOFT" 30;
+}
+
+.article-body a {
+  color: var(--green-deep);
+  text-decoration: none;
+  background-image: linear-gradient(var(--green-300), var(--green-300));
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 95%;
+  transition: background-size 0.2s;
+}
+.article-body a:hover {
+  background-size: 100% 100%;
+  background-image: linear-gradient(rgba(164,188,176,0.25), rgba(164,188,176,0.25));
+}
+
+.article-body strong { color: var(--ink); font-weight: 600; }
+.article-body em { font-style: italic; }
+
+.article-body ul, .article-body ol {
+  margin: 0 0 32px 0;
+  padding-left: 0;
+  list-style: none;
+}
+.article-body ul li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 14px;
+  line-height: 1.65;
+}
+.article-body ul li::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 14px;
+  width: 8px;
+  height: 8px;
+  background: var(--green-300);
+  border-radius: 50%;
+}
+.article-body ol {
+  counter-reset: ol-counter;
+}
+.article-body ol li {
+  position: relative;
+  padding-left: 44px;
+  margin-bottom: 18px;
+  counter-increment: ol-counter;
+}
+.article-body ol li::before {
+  content: counter(ol-counter, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: var(--display);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--terracotta);
+  letter-spacing: 0.08em;
+}
+
+/* Stat callouts */
+.stat-callout {
+  background: var(--cream-100);
+  border-left: 3px solid var(--terracotta);
+  padding: 32px 36px;
+  margin: 48px 0;
+  border-radius: 0 6px 6px 0;
+}
+.stat-callout .stat-number {
+  font-family: var(--display);
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 400;
+  color: var(--green-deep);
+  line-height: 1;
+  margin-bottom: 8px;
+  font-variation-settings: "opsz" 144, "SOFT" 50;
+  letter-spacing: -0.02em;
+}
+.stat-callout .stat-text {
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+.stat-callout .stat-source {
+  display: block;
+  font-size: 13px;
+  margin-top: 12px;
+  color: var(--ink-mute);
+  letter-spacing: 0.05em;
+}
+
+/* Inline image cards */
+figure { margin: 48px 0; }
+figcaption {
+  margin-top: 14px;
+  font-family: var(--body);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--ink-mute);
+  line-height: 1.5;
+  padding-left: 16px;
+  border-left: 2px solid var(--green-300);
+}
+
+/* Care symbols grid */
+.symbols-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  margin: 32px 0;
+  padding: 32px;
+  background: var(--cream-100);
+  border-radius: 8px;
+  border: 1px solid var(--border-soft);
+}
+.symbol-card { text-align: center; padding: 16px 8px; }
+.symbol-card svg {
+  width: 48px; height: 48px;
+  margin: 0 auto 10px; display: block;
+  color: var(--green-deep);
+}
+.symbol-card .sym-label {
+  font-family: var(--body);
+  font-size: 13px; line-height: 1.35;
+  color: var(--ink-soft);
+}
+.symbol-card .sym-title {
+  font-family: var(--display);
+  font-weight: 500; font-size: 14px;
+  color: var(--ink); display: block; margin-bottom: 2px;
+}
+
+/* Checklist */
+.checklist {
+  background: linear-gradient(135deg, var(--green-100) 0%, var(--cream-100) 100%);
+  border-radius: 8px;
+  padding: 40px;
+  margin: 48px 0;
+  border: 1px solid var(--green-300);
+}
+.checklist h3 { margin-top: 0 !important; color: var(--green-deep) !important; }
+.checklist ol { margin-top: 24px; }
+.checklist ol li {
+  background: var(--cream-50);
+  padding: 16px 16px 16px 56px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border: 1px solid var(--border-soft);
+}
+.checklist ol li::before { left: 16px; top: 16px; font-size: 16px; }
+
+/* FAQ */
+.faq-list { margin: 32px 0; }
+.faq-item {
+  border-bottom: 1px solid var(--border-soft);
+  padding: 8px 0;
+}
+.faq-item summary {
+  font-family: var(--display);
+  font-size: 19px; font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
+  padding: 20px 40px 20px 0;
+  list-style: none;
+  position: relative;
+  transition: color 0.2s;
+  font-variation-settings: "opsz" 36, "SOFT" 30;
+}
+.faq-item summary:hover { color: var(--green-deep); }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+';
+  position: absolute; right: 0; top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--display);
+  font-size: 28px; font-weight: 300;
+  color: var(--green-deep);
+}
+.faq-item[open] summary::after { content: '−'; }
+.faq-item .faq-answer {
+  padding: 0 0 24px 0;
+  color: var(--ink-soft); line-height: 1.7;
+}
+.faq-item .faq-answer p { margin-bottom: 16px; }
+.faq-item .faq-answer p:last-child { margin-bottom: 0; }
+
+/* CTA blocks */
+.cta-block {
+  background: var(--green-deep);
+  color: var(--cream-50);
+  padding: 48px;
+  border-radius: 8px;
+  margin: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+.cta-block::before {
+  content: '';
+  position: absolute; top: -50%; right: -10%;
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(184,118,90,0.15), transparent 70%);
+  border-radius: 50%;
+}
+.cta-block .cta-eyebrow {
+  font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--terracotta-soft); margin-bottom: 12px; font-weight: 500;
+  font-family: var(--body);
+}
+.cta-block h3 {
+  font-family: var(--display);
+  font-size: clamp(22px, 2.8vw, 30px); font-weight: 400;
+  color: var(--cream-50); margin: 0 0 16px 0; line-height: 1.2;
+  font-variation-settings: "opsz" 144, "SOFT" 40;
+}
+.cta-block p {
+  color: rgba(251, 247, 237, 0.85);
+  margin-bottom: 24px; max-width: 540px;
+  font-family: var(--body); font-size: 16px;
+}
+.cta-block a.cta-link {
+  display: inline-block;
+  background: var(--cream-50); color: var(--green-deep);
+  padding: 14px 28px; text-decoration: none;
+  background-image: none;
+  border-radius: 4px;
+  font-family: var(--body); font-weight: 500; font-size: 15px;
+  letter-spacing: 0.04em;
+  transition: transform 0.2s, background 0.2s;
+}
+.cta-block a.cta-link:hover {
+  background: var(--terracotta-soft);
+  transform: translateY(-2px);
+}
+
+/* Section divider */
+.divider {
+  display: flex; justify-content: center;
+  align-items: center; margin: 80px 0; gap: 16px;
+}
+.divider::before, .divider::after {
+  content: ''; flex: 1; max-width: 60px;
+  height: 1px; background: var(--border);
+}
+.divider svg { color: var(--terracotta); opacity: 0.7; }
+
+/* Article footer */
+.article-footer {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 32px 80px;
+}
+.related-section {
+  background: var(--cream-100);
+  border-radius: 12px;
+  padding: 56px 48px;
+  margin-bottom: 48px;
+  border: 1px solid var(--border-soft);
+}
+.related-section .section-label {
+  font-family: var(--display);
+  font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--terracotta); margin-bottom: 12px; font-weight: 500;
+}
+.related-section h2 {
+  font-family: var(--display);
+  font-size: clamp(28px, 3.4vw, 36px); font-weight: 400;
+  color: var(--green-deep); margin: 0 0 32px 0;
+  font-variation-settings: "opsz" 144, "SOFT" 40;
+}
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.related-card {
+  background: var(--cream-50);
+  padding: 24px; border-radius: 6px;
+  text-decoration: none; color: var(--ink);
+  border: 1px solid var(--border-soft);
+  transition: transform 0.2s, border-color 0.2s;
+  display: block;
+}
+.related-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--green-300);
+  background-image: none;
+}
+.related-card .related-cat {
+  font-size: 11px; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--terracotta); margin-bottom: 8px;
+  font-family: var(--body);
+}
+.related-card .related-title {
+  font-family: var(--display);
+  font-size: 17px; font-weight: 500; line-height: 1.3;
+  color: var(--ink);
+  font-variation-settings: "opsz" 36, "SOFT" 30;
+}
+
+.sources-section { padding-top: 48px; border-top: 1px solid var(--border-soft); }
+.sources-section h3 {
+  font-family: var(--display);
+  font-size: 14px; letter-spacing: 0.2em; text-transform: uppercase;
+  font-weight: 500; color: var(--ink-mute); margin-bottom: 24px;
+}
+.sources-section ul { list-style: none; padding: 0; }
+.sources-section li {
+  padding: 12px 0; border-bottom: 1px solid var(--border-soft);
+  font-size: 14px; color: var(--ink-soft); line-height: 1.5;
+  font-family: var(--body);
+}
+.sources-section a {
+  color: var(--green-deep); text-decoration: underline;
+  text-decoration-color: var(--green-300); text-underline-offset: 3px;
+  background-image: none;
+}
+
+/* Drop cap */
+.drop-cap::first-letter {
+  font-family: var(--display);
+  font-size: 5em; float: left;
+  line-height: 0.85; margin: 8px 12px 0 0;
+  color: var(--green-deep); font-weight: 500;
+  font-variation-settings: "opsz" 144;
+}
+
+/* ==================== SITE FOOTER ==================== */
+footer.site-footer {
+  padding: 56px 48px 28px;
+  background: var(--wove-charcoal);
+  color: rgba(255,255,255,0.55);
+  font-family: 'Poppins', -apple-system, sans-serif;
+}
+.footer-inner { max-width: 960px; margin: 0 auto; }
+.footer-grid {
+  display: grid; grid-template-columns: 2fr 1fr 1fr;
+  gap: 56px; margin-bottom: 40px;
+}
+.footer-logo-img { height: 36px; object-fit: contain; filter: brightness(10); }
+.logo-placeholder.dark {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 120px; height: 44px;
+  border: 2px dashed rgba(255,255,255,0.3); border-radius: 12px;
+  font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.5);
+  letter-spacing: 1.5px; background: rgba(255,255,255,0.05);
+}
+.footer-brand-name { margin-bottom: 12px; }
+.footer-brand p { font-size: 13px; line-height: 1.7; max-width: 300px; }
+.footer-col h4 {
+  font-family: 'Poppins', sans-serif; color: white;
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.5px; margin-bottom: 18px;
+}
+.footer-col a {
+  display: block; color: rgba(255,255,255,0.45);
+  text-decoration: none; font-size: 13px; padding: 4px 0; transition: color 0.2s;
+}
+.footer-col a:hover { color: white; }
+.footer-bottom {
+  padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08);
+  font-size: 12px; text-align: center; color: rgba(255,255,255,0.3);
+}
+@media (max-width: 960px) {
+  footer.site-footer { padding: 56px 24px 28px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+}
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- SITE NAV -->
+<nav id="main-nav">
+  <a href="../../" class="nav-logo">
+    <img src="../../images/logo.png" alt="Wove" class="nav-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="logo-placeholder" style="display:none">LOGO</div>
+  </a>
+  <div class="nav-links">
+    <a href="../../about/">The Story</a>
+    <a href="../../#how-it-works">How It Works</a>
+    <a href="../../wovescore/">Wove Score</a>
+    <a href="../">Blog</a>
+    <a href="https://shopmy.us/shop/emmhemphill" target="_blank" rel="noopener">Shop Our Top Picks</a>
+    <a href="https://apps.apple.com/us/app/wove-score/id6755356871" class="nav-cta">Download App</a>
+  </div>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<section class="article-header">
+  <div class="eyebrow">Fabric Guide · Pillar Article</div>
+  <h1 class="article-title">How to Read Clothing Labels: A Complete Guide to <em>Fabrics, Care, and Quality</em></h1>
+  <p class="article-lede">The tiny tag tucked into the side seam of every garment is the closest thing your clothes have to a nutrition label. Here's how to actually read it.</p>
+  <div class="article-meta">
+    <span>By Emily Hemphill</span>
+    <span class="dot">·</span>
+    <span>12 min read</span>
+    <span class="dot">·</span>
+    <span>Updated May 2026</span>
+  </div>
+</section>
+
+<!-- HERO IMAGE -->
+<div class="hero-image">
+  <figure>
+    <div class="image-placeholder hero">
+      <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+      <div class="ph-label">Hero Image</div>
+      <div class="ph-alt">"Woman holding a clothing tag and reading the fabric composition and care symbols on a garment"</div>
+      <div class="ph-spec">1200 × 800 · how-to-read-clothing-labels-hero.jpg</div>
+    </div>
+  </figure>
+</div>
+
+<!-- MOBILE TOC -->
+<details class="toc-mobile">
+  <summary>What's Inside</summary>
+  <ul class="toc-list">
+    <li><a href="#why-reading-clothing-labels-matters">Why Reading Labels Matters</a></li>
+    <li><a href="#whats-on-a-clothing-label">The Three Core Components</a></li>
+    <li><a href="#how-to-read-fabric-composition-labels">Reading Fabric Composition</a></li>
+    <li><a href="#how-to-read-care-labels">Care Labels: Symbol Guide</a></li>
+    <li><a href="#country-of-origin">Country of Origin</a></li>
+    <li><a href="#certifications-and-trust-marks">Certifications</a></li>
+    <li><a href="#red-flags-clothing-labels">Red Flags to Watch</a></li>
+    <li><a href="#clothing-labels-quality">Labels &amp; Quality</a></li>
+    <li><a href="#quick-checklist">30-Second Checklist</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+</details>
+
+<!-- MAIN GRID -->
+<div class="article-grid">
+  <article class="article-body">
+
+    <p class="drop-cap">Most of us have, at some point, pulled a favorite sweater out of the dryer to find it now fits a small child. Or noticed a brand-new shirt pilling within three washes. Or wondered, mid-checkout, what "modal" actually is and whether we should care.</p>
+
+    <p>The answer to almost all of these everyday clothing mysteries lives on a tiny tag we rarely read.</p>
+
+    <p>According to a <a href="https://www.statista.com/statistics/1057335/frequency-of-reading-washing-instructions-on-clothing-labels/" target="_blank" rel="noopener">survey by the American Cleaning Institute</a>, only about 35% of American consumers say they <em>always</em> read the washing instructions on a clothing tag before doing laundry — and around 6% admit they never check at all.</p>
+
+    <div class="stat-callout">
+      <div class="stat-number">35%</div>
+      <div class="stat-text">of American consumers say they <em>always</em> read clothing tag washing instructions before doing laundry. About 6% never check at all.</div>
+      <span class="stat-source">— American Cleaning Institute via Statista, 2019</span>
+    </div>
+
+    <p>A separate <a href="https://medcraveonline.com/JTEFT/knowledge-and-usage-of-clothing-labels-among-students-in-tertiary-institutions.html" target="_blank" rel="noopener">academic study published in the <em>Journal of Textile Engineering &amp; Fashion Technology</em></a> found that fewer than 10% of students surveyed had a <em>high</em> level of knowledge about clothing labels — most landed somewhere in the "average" range, which, in practice, means missing a lot of the information their clothes are quietly trying to tell them.</p>
+
+    <p>The good news: once you know what to look for, clothing labels become genuinely useful. They can tell you whether something will last, whether it's likely to shrink, whether it's likely to shed microplastics, and even whether it's worth the price tag.</p>
+
+    <p>This is a complete guide to how to read clothing labels — fabric composition, care instructions, country of origin, certifications, and the small details that signal quality (or the lack of it).</p>
+
+    <h2 id="why-reading-clothing-labels-matters">Why Reading Clothing Labels Matters</h2>
+
+    <p>Clothing labels aren't decoration. In the US, the <a href="https://www.ftc.gov/legal-library/browse/rules/care-labeling-rule" target="_blank" rel="noopener">Federal Trade Commission's Care Labeling Rule</a> requires that most garments include a label disclosing fiber content, country of origin, manufacturer or dealer identity, and care instructions. That information exists for a reason — and ignoring it has real costs.</p>
+
+    <p>Here's what a quick label check can help you do:</p>
+
+    <ul>
+      <li><strong>Extend the life of your clothes.</strong> Industry estimates suggest that following care label instructions can extend a garment's usable life by 50–80%. The Care Label Project has gone as far as to say that a significant share of clothing gets thrown out too early, and improper care is one of the biggest culprits.</li>
+      <li><strong>Avoid laundry disasters.</strong> Shrinking, fading, stretching, and pilling are almost always preventable with two seconds of label reading.</li>
+      <li><strong>Make smarter purchases.</strong> A label tells you whether the price tag matches the construction. A $90 cashmere blend that's actually 5% cashmere and 95% acrylic is not what most shoppers think they're buying.</li>
+      <li><strong>Protect your health.</strong> Some finishes and treatments — wrinkle-free coatings, stain-resistant sprays, certain dyes — can contain chemicals you may want to avoid, especially in clothing that sits close to the skin for hours. (More on this in our guide to <a href="/blog/pfas-in-clothing">PFAS in clothing</a>.)</li>
+      <li><strong>Lower your environmental footprint.</strong> Knowing what a garment is made of helps you understand how it will behave in the wash (including <a href="/blog/microplastics-in-clothing">microplastic shedding</a>), water use, dye runoff, and how it can be recycled or composted at end of life.</li>
+    </ul>
+
+    <p>In other words: the label is the closest thing your clothes have to a nutrition label. Once you can read it, you can shop and care for your wardrobe with a lot more intention.</p>
+
+    <h2 id="whats-on-a-clothing-label">What's on a Clothing Label: The Three Core Components</h2>
+
+    <figure>
+      <div class="image-placeholder">
+        <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+        <div class="ph-label">Image 2 · Anatomy of a Label</div>
+        <div class="ph-alt">"Close-up of a clothing label showing fabric composition, care symbol instructions, and country of origin information"</div>
+        <div class="ph-spec">1200 × 800 · anatomy-of-a-clothing-label.jpg · ANNOTATED</div>
+      </div>
+      <figcaption>An annotated close-up showing the three sections every clothing label includes.</figcaption>
+    </figure>
+
+    <p>A typical garment usually has two tags — a brand tag and a care/content tag — and together they cover three categories of information.</p>
+
+    <h3>1. Fabric Composition</h3>
+    <p>This is the list of fibers and the percentage of each. It's the most important part of any clothing label, because the fiber dictates almost everything else: how it feels, how it wears, how it should be washed, how it ages, and how it impacts the environment.</p>
+
+    <h3>2. Care Instructions</h3>
+    <p>Usually a row of small symbols — tubs, triangles, squares, circles — that tell you exactly how to wash, bleach, dry, iron, and (where applicable) dry-clean the garment. Many labels also include a written version in English (and often in French and Spanish, especially on items sold in North America).</p>
+
+    <h3>3. Country of Origin and Manufacturer Info</h3>
+    <p>This is the "Made in ___" line, plus a registered identification number or company name. It points to where the garment was assembled and who's legally responsible for it.</p>
+
+    <p>Some labels include a fourth bonus category — certifications. We'll get to those.</p>
+
+    <h2 id="how-to-read-fabric-composition-labels">How to Read Fabric Composition Labels</h2>
+
+    <p>Fabric composition is listed by weight, in descending order, with each fiber's percentage of the total garment. For example: <em>60% Cotton, 35% Polyester, 5% Elastane.</em></p>
+
+    <figure>
+      <div class="image-placeholder">
+        <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <div class="ph-label">Image 3 · Blend Close-Up</div>
+        <div class="ph-alt">"Clothing label showing fiber blend composition with percentages of cotton polyester and elastane"</div>
+        <div class="ph-spec">1200 × 800 · clothing-label-fabric-composition-percentages.jpg</div>
+      </div>
+    </figure>
+
+    <p>To actually <em>understand</em> what you're reading, it helps to know which family each fiber belongs to.</p>
+
+    <h3 id="natural-fibers">Natural Fibers</h3>
+
+    <figure>
+      <div class="image-placeholder">
+        <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5z"/></svg>
+        <div class="ph-label">Image 4 · Natural Fiber Flat Lay</div>
+        <div class="ph-alt">"Natural fiber fabric swatches including cotton linen wool and silk in neutral tones"</div>
+        <div class="ph-spec">1200 × 800 · natural-fiber-fabrics.jpg</div>
+      </div>
+    </figure>
+
+    <p>Natural fibers come from plants or animals. They tend to be more breathable, biodegradable, and (in general) more skin-friendly. They also tend to be more expensive to produce.</p>
+
+    <ul>
+      <li><strong>Cotton.</strong> Soft, breathable, machine-washable. Look for "organic cotton" if you want to avoid heavy pesticide exposure during cultivation. (<a href="/blog/organic-cotton-guide">More on organic cotton →</a>)</li>
+      <li><strong>Linen.</strong> Made from flax. Cool, strong, slightly textured. Gets softer with every wash.</li>
+      <li><strong>Hemp.</strong> Similar to linen but even more durable. Naturally resistant to mildew and UV.</li>
+      <li><strong>Wool.</strong> A protein fiber from sheep (or merino, alpaca, cashmere, mohair, etc.). Insulating, naturally odor-resistant, often requires gentler care.</li>
+      <li><strong>Silk.</strong> A protein fiber spun by silkworms. Lightweight, lustrous, temperature-regulating, and almost always delicate.</li>
+    </ul>
+
+    <h3 id="semi-synthetic-fibers">Semi-Synthetic Fibers</h3>
+    <p>These are made from natural raw materials (usually wood pulp) that have been chemically processed into fibers. The quality of the processing matters a lot.</p>
+    <ul>
+      <li><strong>Rayon / Viscose.</strong> Made from wood cellulose. Soft and drapey, but the production process is often chemically intensive.</li>
+      <li><strong>Modal.</strong> A type of rayon, typically from beech wood. Softer and more durable than standard viscose.</li>
+      <li><strong>Lyocell (often sold as Tencel).</strong> Made from sustainably sourced wood pulp in a closed-loop process that recycles 99% of the solvent used. Generally the most eco-friendly option in this category.</li>
+      <li><strong>Cupro.</strong> Made from cotton linter (the fuzz left over after ginning). Silky feel, often used as a silk alternative.</li>
+      <li><strong>Bamboo.</strong> Almost always sold as "bamboo viscose" or "bamboo rayon," which means it's been heavily processed. Truly mechanically processed bamboo (sometimes called "bamboo linen") is rare.</li>
+    </ul>
+
+    <h3 id="synthetic-fibers">Synthetic Fibers</h3>
+
+    <figure>
+      <div class="image-placeholder">
+        <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        <div class="ph-label">Image 5 · Synthetic Tags</div>
+        <div class="ph-alt">"Clothing tags showing synthetic fiber content including polyester nylon and elastane"</div>
+        <div class="ph-spec">1200 × 800 · synthetic-fiber-clothing-labels.jpg</div>
+      </div>
+    </figure>
+
+    <p>These are petroleum-derived — essentially plastic spun into thread. They're cheap, durable, stretchy, and quick-drying. They also <a href="/blog/microplastics-in-clothing">shed microplastics</a> with every wash and don't biodegrade.</p>
+    <ul>
+      <li><strong>Polyester.</strong> The most common synthetic in apparel. Wrinkle-resistant, sweat-trapping, and a major source of microfiber pollution.</li>
+      <li><strong>Nylon (Polyamide).</strong> Strong, smooth, often used in activewear, swimwear, and hosiery.</li>
+      <li><strong>Acrylic.</strong> Wool-like in feel. Common in sweaters and knitwear. Tends to pill heavily.</li>
+      <li><strong>Spandex / Elastane / Lycra.</strong> The stretchy fiber. Usually appears at 1–10% to add give to other fabrics. Different names, same fiber.</li>
+      <li><strong>Acetate.</strong> A plant-based fiber that behaves more like a synthetic. Often used as a lining.</li>
+    </ul>
+
+    <h3 id="reading-fiber-blends">Reading Fiber Blends and Percentages</h3>
+    <p>Blends are where most people get tripped up. A few quick rules of thumb:</p>
+    <ul>
+      <li>The <strong>first fiber listed dominates the garment's behavior.</strong> A "55% linen, 45% cotton" shirt will feel more like linen than a "45% linen, 55% cotton" one.</li>
+      <li><strong>A small amount of synthetic changes everything.</strong> Even 3–5% spandex makes a fabric stretchy. Even 10% polyester makes a fabric shed microplastics.</li>
+      <li><strong>"Performance" blends are usually mostly synthetic.</strong> If it says "moisture-wicking" or "quick-dry," expect the composition to skew heavily toward polyester or nylon.</li>
+      <li><strong>High natural-fiber percentages signal quality.</strong> A 100% cotton T-shirt, a 100% linen dress, or a wool sweater with 90%+ wool are usually built to last longer than their blended counterparts.</li>
+    </ul>
+
+    <h3 id="what-100-percent-really-means">What "100%" Really Means (and Doesn't)</h3>
+    <p>"100% cotton" tells you what the fabric is made of — not how the cotton was grown, dyed, or finished. It doesn't tell you whether pesticides were used, whether formaldehyde-based wrinkle-resistant treatments were applied, or whether the dye contains heavy metals.</p>
+
+    <p>This is why pairing fiber-content reading with certification reading matters — and why we built <a href="https://apps.apple.com/us/app/wove-score/id6755356871">Wove</a>, which scores clothing A–F based on fiber content, microplastic risk, and chemical concerns. The label gives you the raw data; the app helps you interpret it.</p>
+
+    <div class="divider">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><circle cx="10" cy="10" r="3"/></svg>
+    </div>
+
+    <h2 id="how-to-read-care-labels">How to Read Care Labels: A Symbol-by-Symbol Guide</h2>
+
+    <p>Care labels use a standardized set of symbols developed so that instructions can travel across languages. In the US, the symbols follow <a href="https://www.astm.org/d5489-18.html" target="_blank" rel="noopener">ASTM D5489 standards</a>; in Europe, they follow <a href="https://www.iso.org/standard/74758.html" target="_blank" rel="noopener">ISO 3758</a>. They're nearly identical.</p>
+
+    <p>There are five basic symbol families, always in this order: <strong>Wash, Bleach, Dry, Iron, Professional Cleaning.</strong></p>
+
+    <h3>Washing Symbols (the Tub)</h3>
+    <p>The wash symbol looks like a small bucket or tub of water.</p>
+
+    <div class="symbols-grid">
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 16 L14 16 L14 12 L34 12 L34 16 L42 16 L40 40 L8 40 Z" stroke-linejoin="round"/></svg>
+        <span class="sym-title">Plain Tub</span>
+        <div class="sym-label">Machine wash</div>
+      </div>
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 16 L14 16 L14 12 L34 12 L34 16 L42 16 L40 40 L8 40 Z" stroke-linejoin="round"/><path d="M16 24 Q20 20 24 24 Q28 28 32 24 M20 28 L20 32 M24 28 L24 32 M28 28 L28 32" stroke-linecap="round"/></svg>
+        <span class="sym-title">Hand in Tub</span>
+        <div class="sym-label">Hand wash only</div>
+      </div>
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 16 L14 16 L14 12 L34 12 L34 16 L42 16 L40 40 L8 40 Z" stroke-linejoin="round"/><circle cx="24" cy="26" r="3" fill="currentColor"/></svg>
+        <span class="sym-title">One Dot</span>
+        <div class="sym-label">Cold wash (~30°C)</div>
+      </div>
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 16 L14 16 L14 12 L34 12 L34 16 L42 16 L40 40 L8 40 Z" stroke-linejoin="round"/><circle cx="19" cy="26" r="2.5" fill="currentColor"/><circle cx="29" cy="26" r="2.5" fill="currentColor"/></svg>
+        <span class="sym-title">Two Dots</span>
+        <div class="sym-label">Warm wash (~40°C)</div>
+      </div>
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 16 L14 16 L14 12 L34 12 L34 16 L42 16 L40 40 L8 40 Z" stroke-linejoin="round"/><circle cx="16" cy="26" r="2" fill="currentColor"/><circle cx="24" cy="26" r="2" fill="currentColor"/><circle cx="32" cy="26" r="2" fill="currentColor"/></svg>
+        <span class="sym-title">Three Dots</span>
+        <div class="sym-label">Hot wash (~50°C)</div>
+      </div>
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 16 L14 16 L14 12 L34 12 L34 16 L42 16 L40 40 L8 40 Z" stroke-linejoin="round"/><line x1="6" y1="6" x2="42" y2="42" stroke-linecap="round"/></svg>
+        <span class="sym-title">Tub with X</span>
+        <div class="sym-label">Do not wash</div>
+      </div>
+    </div>
+
+    <p><strong>Lines under the tub</strong> indicate the cycle: no line = normal, one line = permanent press / synthetic, two lines = delicate / gentle. <strong>Numbers inside the tub</strong> (common on European labels) show the maximum water temperature in Celsius.</p>
+
+    <h3>Bleaching Symbols (the Triangle)</h3>
+
+    <div class="symbols-grid">
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M24 8 L42 40 L6 40 Z" stroke-linejoin="round"/></svg>
+        <span class="sym-title">Empty Triangle</span>
+        <div class="sym-label">Any bleach okay</div>
+      </div>
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M24 8 L42 40 L6 40 Z" stroke-linejoin="round"/><line x1="16" y1="22" x2="20" y2="30"/><line x1="22" y1="22" x2="26" y2="30"/></svg>
+        <span class="sym-title">Diagonal Lines</span>
+        <div class="sym-label">Non-chlorine bleach only</div>
+      </div>
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M24 8 L42 40 L6 40 Z" stroke-linejoin="round"/><line x1="8" y1="10" x2="40" y2="38" stroke-linecap="round"/></svg>
+        <span class="sym-title">Triangle with X</span>
+        <div class="sym-label">Do not bleach</div>
+      </div>
+    </div>
+
+    <h3>Drying Symbols (the Square)</h3>
+    <p>The square is the umbrella drying symbol, but the marking inside changes everything.</p>
+
+    <div class="symbols-grid">
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="6" width="36" height="36" rx="2"/><circle cx="24" cy="24" r="10"/></svg>
+        <span class="sym-title">Square + Circle</span>
+        <div class="sym-label">Tumble dry</div>
+      </div>
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="6" width="36" height="36" rx="2"/><line x1="6" y1="18" x2="42" y2="18"/></svg>
+        <span class="sym-title">Horizontal Line</span>
+        <div class="sym-label">Dry flat</div>
+      </div>
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="6" width="36" height="36" rx="2"/><line x1="24" y1="10" x2="24" y2="38"/></svg>
+        <span class="sym-title">Vertical Line</span>
+        <div class="sym-label">Drip dry</div>
+      </div>
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="6" width="36" height="36" rx="2"/><line x1="16" y1="10" x2="16" y2="38"/><line x1="24" y1="10" x2="24" y2="38"/><line x1="32" y1="10" x2="32" y2="38"/></svg>
+        <span class="sym-title">Three Vertical</span>
+        <div class="sym-label">Line dry</div>
+      </div>
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="6" width="36" height="36" rx="2"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        <span class="sym-title">Diagonal Corner</span>
+        <div class="sym-label">Dry in the shade</div>
+      </div>
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="6" width="36" height="36" rx="2"/><circle cx="24" cy="24" r="10"/><line x1="8" y1="8" x2="40" y2="40" stroke-linecap="round"/></svg>
+        <span class="sym-title">Tumble + X</span>
+        <div class="sym-label">Do not tumble dry</div>
+      </div>
+    </div>
+
+    <h3>Ironing Symbols (the Iron)</h3>
+
+    <div class="symbols-grid">
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 32 Q6 18 24 18 Q42 18 42 32 L40 36 L8 36 Z" stroke-linejoin="round"/></svg>
+        <span class="sym-title">Plain Iron</span>
+        <div class="sym-label">Iron any temperature</div>
+      </div>
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 32 Q6 18 24 18 Q42 18 42 32 L40 36 L8 36 Z" stroke-linejoin="round"/><circle cx="24" cy="27" r="2" fill="currentColor"/></svg>
+        <span class="sym-title">One Dot</span>
+        <div class="sym-label">Low (synthetics)</div>
+      </div>
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 32 Q6 18 24 18 Q42 18 42 32 L40 36 L8 36 Z" stroke-linejoin="round"/><circle cx="19" cy="27" r="2" fill="currentColor"/><circle cx="29" cy="27" r="2" fill="currentColor"/></svg>
+        <span class="sym-title">Two Dots</span>
+        <div class="sym-label">Medium (wool, silk)</div>
+      </div>
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 32 Q6 18 24 18 Q42 18 42 32 L40 36 L8 36 Z" stroke-linejoin="round"/><circle cx="16" cy="27" r="1.8" fill="currentColor"/><circle cx="24" cy="27" r="1.8" fill="currentColor"/><circle cx="32" cy="27" r="1.8" fill="currentColor"/></svg>
+        <span class="sym-title">Three Dots</span>
+        <div class="sym-label">High (cotton, linen)</div>
+      </div>
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 32 Q6 18 24 18 Q42 18 42 32 L40 36 L8 36 Z" stroke-linejoin="round"/><line x1="8" y1="8" x2="40" y2="40" stroke-linecap="round"/></svg>
+        <span class="sym-title">Iron with X</span>
+        <div class="sym-label">Do not iron</div>
+      </div>
+    </div>
+
+    <h3>Professional Cleaning Symbols (the Circle)</h3>
+
+    <div class="symbols-grid">
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="16"/></svg>
+        <span class="sym-title">Empty Circle</span>
+        <div class="sym-label">Dry clean</div>
+      </div>
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="16"/><text x="24" y="29" text-anchor="middle" font-family="serif" font-size="14" fill="currentColor" stroke="none">P</text></svg>
+        <span class="sym-title">Circle with P</span>
+        <div class="sym-label">Petroleum solvent</div>
+      </div>
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="16"/><text x="24" y="29" text-anchor="middle" font-family="serif" font-size="14" fill="currentColor" stroke="none">F</text></svg>
+        <span class="sym-title">Circle with F</span>
+        <div class="sym-label">Specific solvents</div>
+      </div>
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="16"/><text x="24" y="29" text-anchor="middle" font-family="serif" font-size="14" fill="currentColor" stroke="none">W</text></svg>
+        <span class="sym-title">Circle with W</span>
+        <div class="sym-label">Wet clean only</div>
+      </div>
+      <div class="symbol-card">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2"><circle cx="24" cy="24" r="16"/><line x1="9" y1="9" x2="39" y2="39" stroke-linecap="round"/></svg>
+        <span class="sym-title">Circle with X</span>
+        <div class="sym-label">Do not dry clean</div>
+      </div>
+    </div>
+
+    <p>If the only care symbol you remember is "dots = heat level," you'll get more than halfway to caring for almost anything correctly.</p>
+
+    <figure>
+      <div class="image-placeholder">
+        <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg>
+        <div class="ph-label">★ Image 6 · Care Symbol Cheat Sheet ★</div>
+        <div class="ph-alt">"Complete clothing care label symbol guide showing washing bleaching drying ironing and dry cleaning instructions"</div>
+        <div class="ph-spec">1200 × 1200 + 1000 × 1500 Pinterest · clothing-care-label-symbols-guide.jpg · HIGHEST PRIORITY</div>
+      </div>
+      <figcaption>The most-saved image from a pillar like this — worth investing in a designer-quality version.</figcaption>
+    </figure>
+
+    <h2 id="country-of-origin">Country of Origin and What It Can Tell You</h2>
+
+    <figure>
+      <div class="image-placeholder">
+        <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div class="ph-label">Image 7 · Made-In Tag</div>
+        <div class="ph-alt">"Clothing label showing country of origin and Made In tag with manufacturer information"</div>
+        <div class="ph-spec">1200 × 800 · clothing-label-country-of-origin.jpg</div>
+      </div>
+    </figure>
+
+    <p>The "Made in ___" line is often skimmed over, but it can hint at a few useful things.</p>
+    <p>It's not a perfect signal of quality (excellent and terrible clothing can come from almost anywhere), but it's a data point worth noticing — especially when paired with the rest of the label.</p>
+
+    <p>Things country of origin can suggest:</p>
+    <ul>
+      <li><strong>Labor and environmental standards.</strong> Countries with stronger regulations may produce garments with cleaner dye runoff and safer working conditions.</li>
+      <li><strong>Distance traveled.</strong> A shirt that traveled three continents has a different carbon story than one made closer to where you live.</li>
+      <li><strong>Specialization.</strong> Italy is known for fine wool and leather, Portugal for cotton knits, Japan for selvedge denim, Peru for Pima cotton. A garment made in a region known for the fiber it contains often signals genuine craft.</li>
+    </ul>
+
+    <p>What country of origin <em>can't</em> tell you: the actual fiber source. A "Made in Italy" tag means the garment was assembled in Italy, not that the cotton was grown there.</p>
+
+    <h2 id="certifications-and-trust-marks">Certifications and Trust Marks Worth Looking For</h2>
+
+    <figure>
+      <div class="image-placeholder">
+        <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+        <div class="ph-label">Image 8 · Certification Logos</div>
+        <div class="ph-alt">"Trusted textile certifications including GOTS organic OEKO-TEX and Bluesign logos for non-toxic clothing"</div>
+        <div class="ph-spec">1200 × 1200 · clothing-certifications-gots-oeko-tex.jpg</div>
+      </div>
+    </figure>
+
+    <p>Certifications aren't required on labels, but more brands are adding them — and they can be helpful shortcuts for spotting better-quality, lower-toxicity garments.</p>
+
+    <p>A few of the most credible ones:</p>
+    <ul>
+      <li><strong><a href="https://global-standard.org/" target="_blank" rel="noopener">GOTS (Global Organic Textile Standard)</a>.</strong> The gold standard for organic textiles. Covers the entire supply chain, from raw material to finished product, including dye and chemical inputs.</li>
+      <li><strong><a href="https://www.oeko-tex.com/en/our-standards/oeko-tex-standard-100" target="_blank" rel="noopener">OEKO-TEX Standard 100</a>.</strong> Tests finished products for harmful substances, including heavy metals, formaldehyde, and certain PFAS chemicals.</li>
+      <li><strong><a href="https://www.oeko-tex.com/en/our-standards/made-in-green-by-oeko-tex" target="_blank" rel="noopener">OEKO-TEX MADE IN GREEN</a>.</strong> Combines the Standard 100 testing with traceability and social responsibility.</li>
+      <li><strong><a href="https://www.bluesign.com/" target="_blank" rel="noopener">Bluesign</a>.</strong> Focuses on responsible chemical use throughout textile manufacturing.</li>
+      <li><strong><a href="https://textileexchange.org/grs/" target="_blank" rel="noopener">GRS (Global Recycled Standard)</a> and RCS (Recycled Claim Standard).</strong> Verify recycled content claims.</li>
+      <li><strong><a href="https://www.c2ccertified.org/" target="_blank" rel="noopener">Cradle to Cradle Certified</a>.</strong> Evaluates products on material health, recyclability, renewable energy, water, and social fairness.</li>
+      <li><strong><a href="https://textileexchange.org/rws/" target="_blank" rel="noopener">Responsible Wool Standard (RWS)</a> and Responsible Down Standard (RDS).</strong> Animal-welfare focused.</li>
+    </ul>
+
+    <p>A logo on the label is more meaningful than a vague claim ("eco-friendly," "natural," "green") elsewhere on the garment.</p>
+
+    <div class="cta-block">
+      <div class="cta-eyebrow">Skip the guesswork</div>
+      <h3>Let Wove read the label for you.</h3>
+      <p>The Wove app scores clothing A–F based on fiber content, microplastic risk, and chemical concerns — so you know exactly what you're buying before you check out.</p>
+      <a href="https://apps.apple.com/us/app/wove-score/id6755356871" class="cta-link">Download the app →</a>
+    </div>
+
+    <h2 id="red-flags-clothing-labels">Red Flags to Watch For on Clothing Labels</h2>
+
+    <figure>
+      <div class="image-placeholder">
+        <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        <div class="ph-label">Image 9 · Red Flag Labels</div>
+        <div class="ph-alt">"Clothing tag with wrinkle-free and stain-resistant treatments that may contain PFAS forever chemicals"</div>
+        <div class="ph-spec">1200 × 800 · clothing-label-red-flags-pfas.jpg</div>
+      </div>
+    </figure>
+
+    <p>A few patterns are worth pausing on:</p>
+    <ul>
+      <li><strong>Vague composition.</strong> Anything that lists "other fibers" without specifying what they are.</li>
+      <li><strong>Heavy synthetic blends in skin-contact items.</strong> Underwear, bras, leggings, base layers, and pajamas spend hours against your skin. A label that's 90%+ polyester or nylon may not be the best fit for these categories, especially if you're sensitive to chemical finishes.</li>
+      <li><strong>"Wrinkle-free," "no-iron," "permanent press" claims.</strong> These finishes are often achieved with formaldehyde-based resins. Some brands have moved to safer alternatives, but the label rarely tells you which.</li>
+      <li><strong>"Stain-resistant," "water-repellent," "DWR" (durable water repellent), "PFC-free" not specified.</strong> These coatings have historically been made with <a href="/blog/pfas-in-clothing">PFAS ("forever chemicals")</a>. Look for an explicit "PFAS-free" or "PFC-free" claim, or a certification like OEKO-TEX or Bluesign that screens for them.</li>
+      <li><strong>Antimicrobial finishes.</strong> Often labeled with names like "silver-ion," "Polygiene," or "freshness technology." These can be useful, but worth a closer look if you're trying to minimize chemical exposure.</li>
+      <li><strong>"Dry Clean Only" on a basic item.</strong> Research from Ipsos MORI found that roughly one in three consumers actively avoids garments labeled dry clean only. If a simple item requires professional cleaning, ask yourself whether the construction or fabric truly demands it — or whether you'll just wear it less.</li>
+    </ul>
+
+    <p>None of these are automatic dealbreakers. They're invitations to look more closely.</p>
+
+    <h2 id="clothing-labels-quality">How Clothing Labels Connect to Quality and Longevity</h2>
+
+    <p>There's a quiet correlation between <strong>labels that share more information</strong> and <strong>garments that are made to last.</strong> Brands willing to put their fiber sources, certifications, and detailed care instructions on the tag tend to be the same brands that pay attention to construction, seam finishing, and fabric weight.</p>
+
+    <p>A few quality cues that show up at the label level:</p>
+    <ul>
+      <li><strong>Fiber content lists that name specific origins</strong> (Supima cotton, merino wool from a named region, European linen) — these are usually higher-quality versions of the fiber.</li>
+      <li><strong>Care labels that include nuanced instructions</strong> ("turn inside out before washing," "do not wring," "reshape while damp") — these often signal a brand that has actually tested the garment.</li>
+      <li><strong>Certifications</strong> that span the supply chain rather than just one slice of it.</li>
+      <li><strong>Country-of-origin lines that match the fiber's natural geography.</strong></li>
+    </ul>
+
+    <p>Read enough labels and you start to build an internal database. The brands you trust will start to stand out, and the ones cutting corners will become obvious.</p>
+
+    <div class="checklist">
+      <h3 id="quick-checklist" style="font-family: var(--display); font-size: 26px; font-weight: 400;">Quick Checklist: Read a Clothing Label in Under 30 Seconds</h3>
+      <p style="color: var(--ink-soft); margin-bottom: 0;">Next time you're shopping (in store or online), run through this:</p>
+      <ol>
+        <li><strong>Find the fiber composition.</strong> What is it actually made of?</li>
+        <li><strong>Check the first fiber listed.</strong> That's what dominates the garment.</li>
+        <li><strong>Look for high natural-fiber percentages</strong> if longevity, breathability, or low microplastic shedding matters to you.</li>
+        <li><strong>Scan for synthetic blends in skin-contact items</strong> and decide if that's a tradeoff you're okay with.</li>
+        <li><strong>Check the care instructions.</strong> Can you actually live with this maintenance routine?</li>
+        <li><strong>Look for certifications</strong> like GOTS, OEKO-TEX, or Bluesign.</li>
+        <li><strong>Glance at the country of origin</strong> — does it line up with where this fiber is typically produced?</li>
+        <li><strong>Watch for finish-related red flags:</strong> wrinkle-free, stain-resistant, antimicrobial, etc.</li>
+      </ol>
+    </div>
+
+    <figure>
+      <div class="image-placeholder">
+        <svg class="placeholder-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        <div class="ph-label">★ Image 10 · Pinterest Checklist Graphic ★</div>
+        <div class="ph-alt">"Quick checklist for reading clothing labels including fabric composition care instructions and certifications"</div>
+        <div class="ph-spec">1000 × 1500 Pinterest · how-to-read-clothing-label-checklist.jpg · PRIORITY</div>
+      </div>
+      <figcaption>Vertical save/share graphic optimized for Pinterest and Instagram repurposing.</figcaption>
+    </figure>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>Are fabric content labels legally required?</summary>
+        <div class="faq-answer">
+          <p>Yes, in most countries. In the US, the <a href="https://www.ftc.gov/legal-library/browse/rules/textile-fiber-products-identification-act-rules" target="_blank" rel="noopener">Textile Fiber Products Identification Act</a> requires apparel sold in the country to disclose fiber content, country of origin, and manufacturer identity. The Care Labeling Rule additionally requires care instructions. Similar regulations exist in the EU, UK, Canada, and Australia.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What does "100% cotton" actually mean?</summary>
+        <div class="faq-answer">
+          <p>It means the fabric itself is made entirely of cotton fiber — not that the garment is unprocessed. Dyes, finishes, sewing thread, and trims (buttons, zippers, elastic) are not included in the fiber-content claim and may not be 100% cotton themselves.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Are bamboo fabrics actually natural?</summary>
+        <div class="faq-answer">
+          <p>Usually, no — at least not in the way most shoppers assume. The vast majority of bamboo clothing is "bamboo viscose," meaning bamboo cellulose was chemically processed into rayon. It functions and behaves like a semi-synthetic fiber. Truly mechanically processed bamboo (sometimes labeled "bamboo linen") exists but is uncommon.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Why do my synthetic clothes shed lint and fuzz?</summary>
+        <div class="faq-answer">
+          <p>Synthetic fibers like polyester, nylon, and acrylic shed microscopic plastic fibers — <a href="/blog/microplastics-in-clothing">microplastics</a> — every time they're washed (and worn). The visible lint is just the largest version of what's happening at the microscopic level. A high-natural-fiber wardrobe sheds biodegradable fiber instead.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I tell if a label is hiding PFAS or other concerning chemicals?</summary>
+        <div class="faq-answer">
+          <p>The honest answer: you often can't tell from the label alone. Look for explicit "PFAS-free" or "PFC-free" claims, and prioritize garments certified by <a href="https://www.oeko-tex.com/en/our-standards/oeko-tex-standard-100" target="_blank" rel="noopener">OEKO-TEX Standard 100</a>, GOTS, or Bluesign — these certifications screen for many problematic chemicals. Stain-resistant, water-repellent, wrinkle-free, and antimicrobial finishes are the most common categories where PFAS and other chemical treatments show up.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Are care label instructions always accurate?</summary>
+        <div class="faq-answer">
+          <p>Mostly, but not always. Many brands default to "Dry Clean Only" as a liability shield, even when a garment could safely be washed at home. Wool, silk, and some delicates are often more washable than their labels suggest — cold water, gentle detergent, and air drying can do the job. When in doubt, hand-wash a small inconspicuous spot first to test for colorfastness and shrinkage.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I trust "eco-friendly" or "sustainable" claims on labels?</summary>
+        <div class="faq-answer">
+          <p>Be skeptical of unverified language. "Eco-friendly," "natural," "green," "conscious," and "sustainable" are not regulated terms and can mean almost anything (or nothing). Trust certifications and specific, verifiable claims — like "GOTS-certified organic cotton" or "100% recycled polyester, GRS-certified" — over vague marketing language.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What should I do with old clothing labels?</summary>
+        <div class="faq-answer">
+          <p>Hang on to them, at least until you've washed the garment for the first time. After that, if a label itches, you can carefully snip it out — but consider photographing the care instructions first so you don't lose them.</p>
+        </div>
+      </details>
+    </div>
+
+    <div class="divider">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><circle cx="10" cy="10" r="3"/></svg>
+    </div>
+
+    <h2>The Bottom Line</h2>
+    <p>Clothing labels are a quiet superpower hiding in plain sight. They tell you what you're really buying, how to keep it alive, and whether it's worth your money. The <a href="https://medcraveonline.com/JTEFT/knowledge-and-usage-of-clothing-labels-among-students-in-tertiary-institutions.html" target="_blank" rel="noopener">MedCrave study</a> found that most consumers fall into the "average knowledge, average usage" category when it comes to labels — which means there's a real, easy gap to close.</p>
+    <p>Once you've gotten in the habit of flipping the tag before you buy, the rest follows naturally: better purchases, longer-lasting clothes, fewer laundry mistakes, and a wardrobe that quietly reflects what actually matters to you.</p>
+    <p>The label is doing its job. The question is whether we're reading it.</p>
+
+  </article>
+
+  <!-- DESKTOP TOC -->
+  <aside class="toc-aside">
+    <div class="toc-label">In this guide</div>
+    <ul class="toc-list">
+      <li><a href="#why-reading-clothing-labels-matters">Why It Matters</a></li>
+      <li><a href="#whats-on-a-clothing-label">Three Core Components</a></li>
+      <li><a href="#how-to-read-fabric-composition-labels">Fabric Composition</a></li>
+      <li class="sub"><a href="#natural-fibers">Natural Fibers</a></li>
+      <li class="sub"><a href="#semi-synthetic-fibers">Semi-Synthetic Fibers</a></li>
+      <li class="sub"><a href="#synthetic-fibers">Synthetic Fibers</a></li>
+      <li class="sub"><a href="#reading-fiber-blends">Reading Blends</a></li>
+      <li class="sub"><a href="#what-100-percent-really-means">What "100%" Means</a></li>
+      <li><a href="#how-to-read-care-labels">Care Symbol Guide</a></li>
+      <li><a href="#country-of-origin">Country of Origin</a></li>
+      <li><a href="#certifications-and-trust-marks">Certifications</a></li>
+      <li><a href="#red-flags-clothing-labels">Red Flags</a></li>
+      <li><a href="#clothing-labels-quality">Labels &amp; Quality</a></li>
+      <li><a href="#quick-checklist">30-Second Checklist</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </aside>
+</div>
+
+<!-- ARTICLE FOOTER -->
+<div class="article-footer">
+  <section class="related-section">
+    <div class="section-label">Keep Reading</div>
+    <h2>Related guides from Wove</h2>
+    <div class="related-grid">
+      <a href="/blog/pfas-in-clothing" class="related-card">
+        <div class="related-cat">Chemicals</div>
+        <div class="related-title">What Is PFAS in Clothing and How to Avoid It</div>
+      </a>
+      <a href="/blog/microplastics-in-clothing" class="related-card">
+        <div class="related-cat">Materials</div>
+        <div class="related-title">Microplastics in Clothing: A Beginner's Guide</div>
+      </a>
+      <a href="/blog/organic-cotton-guide" class="related-card">
+        <div class="related-cat">Fabric Guide</div>
+        <div class="related-title">The Complete Guide to Organic Cotton</div>
+      </a>
+      <a href="/blog/non-toxic-basics" class="related-card">
+        <div class="related-cat">Wardrobe</div>
+        <div class="related-title">Non-Toxic Basics: Underwear, Bras &amp; Base Layers</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="sources-section">
+    <h3>Sources &amp; further reading</h3>
+    <ul>
+      <li>Diyaolu, I., Soyebo, K., &amp; Abaniwu, M. (2024). <a href="https://medcraveonline.com/JTEFT/knowledge-and-usage-of-clothing-labels-among-students-in-tertiary-institutions.html" target="_blank" rel="noopener">Knowledge and usage of clothing labels among students in tertiary institutions</a>. <em>Journal of Textile Engineering &amp; Fashion Technology</em>, 10(1), 26–30.</li>
+      <li>American Cleaning Institute via Statista. <a href="https://www.statista.com/statistics/1057335/frequency-of-reading-washing-instructions-on-clothing-labels/" target="_blank" rel="noopener">Frequency of reading washing instructions on clothing labels in the United States</a>, August 2019.</li>
+      <li>US Federal Trade Commission. <a href="https://www.ftc.gov/legal-library/browse/rules/care-labeling-rule" target="_blank" rel="noopener">Care Labeling Rule</a> and <a href="https://www.ftc.gov/legal-library/browse/rules/textile-fiber-products-identification-act-rules" target="_blank" rel="noopener">Textile Fiber Products Identification Act</a>.</li>
+      <li>Ipsos MORI Consumer Laundry Habits Survey, 2016.</li>
+      <li>ASTM International. <a href="https://www.astm.org/d5489-18.html" target="_blank" rel="noopener">Standard D5489 — Care Labeling of Apparel</a>.</li>
+      <li>ISO 3758. <a href="https://www.iso.org/standard/74758.html" target="_blank" rel="noopener">Textiles — Care Labelling Code Using Symbols</a>.</li>
+    </ul>
+  </section>
+</div>
+
+<!-- SITE FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-name">
+          <img src="../../images/logo.png" alt="Wove" class="footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="logo-placeholder dark" style="display:none">LOGO</div>
+        </div>
+        <p>Shop consciously. Live comfortably. Wove brings transparency to the fashion industry — no ads, no brand deals, just the truth about your fabrics.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Project</h4>
+        <a href="../../about/">The Story</a>
+        <a href="../../wovescore/">Wove Score</a>
+        <a href="../../contact/">Contact</a>
+        <a href="https://shopmy.us/shop/emmhemphill" target="_blank" rel="noopener">Shop Our Top Picks</a>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <a href="../">Blog</a>
+        <a href="../../privacypolicy/">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 Wove LLC. Shop consciously. Live comfortably.</div>
+  </div>
+</footer>
+
+<script>
+// Reading progress bar
+window.addEventListener('scroll', () => {
+  const bar = document.getElementById('progressBar');
+  const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+  bar.style.width = scrolled + '%';
+});
+
+// Nav scroll state
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); });
+
+// TOC active state
+const tocLinks = document.querySelectorAll('.toc-aside .toc-list a');
+const sections = [...tocLinks].map(a => document.getElementById(a.getAttribute('href').slice(1))).filter(Boolean);
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      tocLinks.forEach(link => link.classList.remove('active'));
+      const activeLink = document.querySelector(`.toc-aside .toc-list a[href="#${entry.target.id}"]`);
+      if (activeLink) activeLink.classList.add('active');
+    }
+  });
+}, { rootMargin: '-30% 0px -60% 0px' });
+
+sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>
