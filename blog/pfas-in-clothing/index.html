@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PFAS in Clothing: What It Is and How to Avoid It | Wove</title>
+<meta name="description" content="A guide to forever chemicals, where they hide in your wardrobe, and how to spot them on a label — written for shoppers, not chemists." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream-50: #FBF7ED;
+  --cream-100: #F5EFE2;
+  --cream-200: #ECE3CE;
+  --cream-300: #DDD0B4;
+  --green-deep: #2D4A3E;
+  --green-700: #3D5C4F;
+  --green-500: #6B8B7B;
+  --green-300: #A4BCB0;
+  --green-100: #DCE6DF;
+  --terracotta: #B8765A;
+  --terracotta-soft: #D9A48E;
+  --ink: #1F1A14;
+  --ink-soft: #524A3D;
+  --ink-mute: #877D6A;
+  --border: #D9CFB8;
+  --border-soft: #E8DFCA;
+  --display: 'Fraunces', Georgia, serif;
+  --body: 'Lora', Georgia, serif;
+  --max-w: 1240px;
+  --content-w: 720px;
+
+  /* Site nav vars */
+  --wove-green: #5B6B54;
+  --wove-green-dark: #4A5A42;
+  --wove-green-deep-nav: #3D4D36;
+  --wove-cream: #F0EBE3;
+  --wove-cream-light: #F5F1EB;
+  --wove-charcoal: #2A2A2A;
+  --wove-text: #333333;
+  --wove-text-light: #6B6B6B;
+  --wove-text-muted: #9A9A9A;
+  --wove-border: rgba(0,0,0,0.06);
+  --radius-full: 50px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+
+body {
+  font-family: var(--body);
+  background: var(--cream-50);
+  color: var(--ink);
+  line-height: 1.7;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Reading progress */
+.progress-bar {
+  position: fixed;
+  top: 68px; left: 0;
+  height: 3px;
+  width: 0%;
+  background: var(--green-deep);
+  z-index: 99;
+  transition: width 0.1s ease-out;
+}
+
+/* ==================== SITE NAV ==================== */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(240, 235, 227, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 0 48px;
+  height: 68px;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid var(--wove-border);
+  transition: box-shadow 0.3s;
+  font-family: 'Poppins', -apple-system, sans-serif;
+}
+nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.04); }
+.nav-logo { display: flex; align-items: center; text-decoration: none; }
+.nav-logo-img { height: 40px; object-fit: contain; }
+.logo-placeholder {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 120px; height: 44px;
+  border: 2px dashed var(--wove-green); border-radius: 12px;
+  font-size: 11px; font-weight: 700; color: var(--wove-green);
+  letter-spacing: 1.5px; background: rgba(91,107,84,0.05);
+}
+.nav-links { display: flex; align-items: center; gap: 32px; }
+.nav-links a {
+  text-decoration: none; color: var(--wove-text);
+  font-size: 14px; font-weight: 500; transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--wove-green-dark); }
+.nav-cta {
+  background: var(--wove-green) !important; color: white !important;
+  padding: 10px 26px; border-radius: var(--radius-full);
+  font-weight: 600 !important; font-size: 13px !important;
+  transition: all 0.25s !important;
+}
+.nav-cta:hover {
+  background: var(--wove-green-deep-nav) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(91,107,84,0.25);
+}
+@media (max-width: 960px) {
+  nav { padding: 0 24px; }
+  .nav-links a:not(.nav-cta) { display: none; }
+}
+
+/* ==================== ARTICLE HEADER ==================== */
+.article-header {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 80px 32px 40px;
+}
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  font-weight: 500;
+  margin-bottom: 24px;
+  font-family: var(--body);
+}
+.eyebrow::before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 1px;
+  background: var(--terracotta);
+}
+.article-title {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(40px, 6vw, 72px);
+  line-height: 1.05;
+  letter-spacing: -0.025em;
+  color: var(--ink);
+  max-width: 900px;
+  margin-bottom: 32px;
+  font-variation-settings: "opsz" 144, "SOFT" 30;
+}
+.article-title em {
+  font-style: italic;
+  color: var(--green-deep);
+  font-variation-settings: "opsz" 144, "SOFT" 100;
+}
+.article-lede {
+  font-family: var(--display);
+  font-weight: 300;
+  font-size: clamp(20px, 2.2vw, 24px);
+  line-height: 1.45;
+  color: var(--ink-soft);
+  max-width: 720px;
+  margin-bottom: 40px;
+  font-style: italic;
+  font-variation-settings: "opsz" 144;
+}
+.article-meta {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: var(--ink-mute);
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-soft);
+  font-family: var(--body);
+}
+.article-meta span { display: inline-flex; align-items: center; gap: 6px; }
+.article-meta .dot { color: var(--cream-300); }
+
+/* Hero image */
+.hero-image {
+  max-width: var(--max-w);
+  margin: 0 auto 60px;
+  padding: 0 32px;
+}
+.image-placeholder {
+  position: relative;
+  background: linear-gradient(135deg, var(--green-100) 0%, var(--cream-200) 100%);
+  border: 1px solid var(--border-soft);
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 40px;
+  color: var(--green-deep);
+}
+.image-placeholder.hero {
+  aspect-ratio: 3 / 2;
+  padding: 0;
+}
+.image-placeholder svg.placeholder-icon {
+  width: 48px;
+  height: 48px;
+  opacity: 0.4;
+  margin-bottom: 16px;
+}
+.image-placeholder .ph-label {
+  font-family: var(--display);
+  font-size: 14px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--green-700);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.image-placeholder .ph-alt {
+  font-family: var(--body);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--ink-soft);
+  max-width: 460px;
+  line-height: 1.5;
+}
+.image-placeholder .ph-spec {
+  font-family: var(--body);
+  font-size: 12px;
+  color: var(--ink-mute);
+  margin-top: 12px;
+  letter-spacing: 0.05em;
+}
+
+/* Main grid */
+.article-grid {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 32px 80px;
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 80px;
+  align-items: start;
+}
+@media (max-width: 960px) {
+  .article-grid { grid-template-columns: 1fr; gap: 0; }
+  .toc-aside { display: none; }
+}
+
+/* TOC */
+.toc-aside {
+  position: sticky;
+  top: 100px;
+  font-family: var(--body);
+}
+.toc-label {
+  font-family: var(--display);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin-bottom: 16px;
+  font-weight: 500;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-soft);
+}
+.toc-list { list-style: none; padding: 0; margin: 0; }
+.toc-list li { margin-bottom: 10px; line-height: 1.4; }
+.toc-list li.sub { padding-left: 16px; font-size: 13px; }
+.toc-list a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+  display: block;
+  padding-left: 12px;
+  border-left: 2px solid transparent;
+}
+.toc-list a:hover {
+  color: var(--green-deep);
+  border-left-color: var(--green-300);
+}
+.toc-list a.active {
+  color: var(--green-deep);
+  border-left-color: var(--green-deep);
+  font-weight: 500;
+}
+
+/* Mobile TOC */
+.toc-mobile {
+  display: none;
+  margin: 0 32px 48px;
+  padding: 24px;
+  background: var(--cream-100);
+  border: 1px solid var(--border-soft);
+  border-radius: 8px;
+}
+@media (max-width: 960px) {
+  .toc-mobile { display: block; }
+  .article-grid { padding-top: 0; }
+  .article-header { padding: 88px 24px 32px; }
+  .hero-image { padding: 0 24px; }
+  .toc-mobile { margin: 0 24px 48px; }
+  .article-grid { padding: 0 24px 80px; }
+  .article-footer { padding: 0 24px 80px; }
+}
+.toc-mobile summary {
+  font-family: var(--display);
+  font-size: 14px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--green-deep);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+.toc-mobile summary::after {
+  content: '+';
+  font-family: var(--display);
+  font-size: 22px;
+  font-weight: 300;
+  transition: transform 0.2s;
+}
+.toc-mobile[open] summary::after { content: '−'; }
+.toc-mobile summary::-webkit-details-marker { display: none; }
+.toc-mobile .toc-list { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border-soft); }
+
+/* Article body */
+.article-body {
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--ink);
+}
+.article-body p { margin-bottom: 24px; }
+.article-body p + p { margin-top: -8px; }
+
+.article-body h2 {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(28px, 3.4vw, 38px);
+  line-height: 1.15;
+  letter-spacing: -0.015em;
+  color: var(--green-deep);
+  margin-top: 80px;
+  margin-bottom: 32px;
+  scroll-margin-top: 100px;
+  font-variation-settings: "opsz" 144, "SOFT" 40;
+  position: relative;
+}
+.article-body h2::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--terracotta);
+  margin-bottom: 24px;
+}
+
+.article-body h3 {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(20px, 2.2vw, 24px);
+  line-height: 1.3;
+  color: var(--ink);
+  margin-top: 48px;
+  margin-bottom: 16px;
+  scroll-margin-top: 100px;
+  font-variation-settings: "opsz" 36, "SOFT" 30;
+}
+
+.article-body a {
+  color: var(--green-deep);
+  text-decoration: none;
+  background-image: linear-gradient(var(--green-300), var(--green-300));
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 95%;
+  transition: background-size 0.2s;
+}
+.article-body a:hover {
+  background-size: 100% 100%;
+  background-image: linear-gradient(rgba(164,188,176,0.25), rgba(164,188,176,0.25));
+}
+
+.article-body strong { color: var(--ink); font-weight: 600; }
+.article-body em { font-style: italic; }
+
+.article-body ul, .article-body ol {
+  margin: 0 0 32px 0;
+  padding-left: 0;
+  list-style: none;
+}
+.article-body ul li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 14px;
+  line-height: 1.65;
+}
+.article-body ul li::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 14px;
+  width: 8px;
+  height: 8px;
+  background: var(--green-300);
+  border-radius: 50%;
+}
+.article-body ol {
+  counter-reset: ol-counter;
+}
+.article-body ol li {
+  position: relative;
+  padding-left: 44px;
+  margin-bottom: 18px;
+  counter-increment: ol-counter;
+}
+.article-body ol li::before {
+  content: counter(ol-counter, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-family: var(--display);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--terracotta);
+  letter-spacing: 0.08em;
+}
+
+/* Stat callouts */
+.stat-callout {
+  background: var(--cream-100);
+  border-left: 3px solid var(--terracotta);
+  padding: 32px 36px;
+  margin: 48px 0;
+  border-radius: 0 6px 6px 0;
+}
+.stat-callout .stat-number {
+  font-family: var(--display);
+  font-size: clamp(40px, 5vw, 56px);
+  font-weight: 400;
+  color: var(--green-deep);
+  line-height: 1;
+  margin-bottom: 8px;
+  font-variation-settings: "opsz" 144, "SOFT" 50;
+  letter-spacing: -0.02em;
+}
+.stat-callout .stat-text {
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.5;
+  color: var(--ink-soft);
+}
+.stat-callout .stat-source {
+  display: block;
+  font-size: 13px;
+  margin-top: 12px;
+  color: var(--ink-mute);
+  letter-spacing: 0.05em;
+}
+
+/* Inline image cards */
+figure { margin: 48px 0; }
+figcaption {
+  margin-top: 14px;
+  font-family: var(--body);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--ink-mute);
+  line-height: 1.5;
+  padding-left: 16px;
+  border-left: 2px solid var(--green-300);
+}
+
+/* Care symbols grid */
+.symbols-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  margin: 32px 0;
+  padding: 32px;
+  background: var(--cream-100);
+  border-radius: 8px;
+  border: 1px solid var(--border-soft);
+}
+.symbol-card { text-align: center; padding: 16px 8px; }
+.symbol-card svg {
+  width: 48px; height: 48px;
+  margin: 0 auto 10px; display: block;
+  color: var(--green-deep);
+}
+.symbol-card .sym-label {
+  font-family: var(--body);
+  font-size: 13px; line-height: 1.35;
+  color: var(--ink-soft);
+}
+.symbol-card .sym-title {
+  font-family: var(--display);
+  font-weight: 500; font-size: 14px;
+  color: var(--ink); display: block; margin-bottom: 2px;
+}
+
+/* Checklist */
+.checklist {
+  background: linear-gradient(135deg, var(--green-100) 0%, var(--cream-100) 100%);
+  border-radius: 8px;
+  padding: 40px;
+  margin: 48px 0;
+  border: 1px solid var(--green-300);
+}
+.checklist h3 { margin-top: 0 !important; color: var(--green-deep) !important; }
+.checklist ol { margin-top: 24px; }
+.checklist ol li {
+  background: var(--cream-50);
+  padding: 16px 16px 16px 56px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border: 1px solid var(--border-soft);
+}
+.checklist ol li::before { left: 16px; top: 16px; font-size: 16px; }
+
+/* FAQ */
+.faq-list { margin: 32px 0; }
+.faq-item {
+  border-bottom: 1px solid var(--border-soft);
+  padding: 8px 0;
+}
+.faq-item summary {
+  font-family: var(--display);
+  font-size: 19px; font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
+  padding: 20px 40px 20px 0;
+  list-style: none;
+  position: relative;
+  transition: color 0.2s;
+  font-variation-settings: "opsz" 36, "SOFT" 30;
+}
+.faq-item summary:hover { color: var(--green-deep); }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+';
+  position: absolute; right: 0; top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--display);
+  font-size: 28px; font-weight: 300;
+  color: var(--green-deep);
+}
+.faq-item[open] summary::after { content: '−'; }
+.faq-item .faq-answer {
+  padding: 0 0 24px 0;
+  color: var(--ink-soft); line-height: 1.7;
+}
+.faq-item .faq-answer p { margin-bottom: 16px; }
+.faq-item .faq-answer p:last-child { margin-bottom: 0; }
+
+/* CTA blocks */
+.cta-block {
+  background: var(--green-deep);
+  color: var(--cream-50);
+  padding: 48px;
+  border-radius: 8px;
+  margin: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+.cta-block::before {
+  content: '';
+  position: absolute; top: -50%; right: -10%;
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(184,118,90,0.15), transparent 70%);
+  border-radius: 50%;
+}
+.cta-block .cta-eyebrow {
+  font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--terracotta-soft); margin-bottom: 12px; font-weight: 500;
+  font-family: var(--body);
+}
+.cta-block h3 {
+  font-family: var(--display);
+  font-size: clamp(22px, 2.8vw, 30px); font-weight: 400;
+  color: var(--cream-50); margin: 0 0 16px 0; line-height: 1.2;
+  font-variation-settings: "opsz" 144, "SOFT" 40;
+}
+.cta-block p {
+  color: rgba(251, 247, 237, 0.85);
+  margin-bottom: 24px; max-width: 540px;
+  font-family: var(--body); font-size: 16px;
+}
+.cta-block a.cta-link {
+  display: inline-block;
+  background: var(--cream-50); color: var(--green-deep);
+  padding: 14px 28px; text-decoration: none;
+  background-image: none;
+  border-radius: 4px;
+  font-family: var(--body); font-weight: 500; font-size: 15px;
+  letter-spacing: 0.04em;
+  transition: transform 0.2s, background 0.2s;
+}
+.cta-block a.cta-link:hover {
+  background: var(--terracotta-soft);
+  transform: translateY(-2px);
+}
+
+/* Section divider */
+.divider {
+  display: flex; justify-content: center;
+  align-items: center; margin: 80px 0; gap: 16px;
+}
+.divider::before, .divider::after {
+  content: ''; flex: 1; max-width: 60px;
+  height: 1px; background: var(--border);
+}
+.divider svg { color: var(--terracotta); opacity: 0.7; }
+
+/* Article footer */
+.article-footer {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 32px 80px;
+}
+.related-section {
+  background: var(--cream-100);
+  border-radius: 12px;
+  padding: 56px 48px;
+  margin-bottom: 48px;
+  border: 1px solid var(--border-soft);
+}
+.related-section .section-label {
+  font-family: var(--display);
+  font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--terracotta); margin-bottom: 12px; font-weight: 500;
+}
+.related-section h2 {
+  font-family: var(--display);
+  font-size: clamp(28px, 3.4vw, 36px); font-weight: 400;
+  color: var(--green-deep); margin: 0 0 32px 0;
+  font-variation-settings: "opsz" 144, "SOFT" 40;
+}
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.related-card {
+  background: var(--cream-50);
+  padding: 24px; border-radius: 6px;
+  text-decoration: none; color: var(--ink);
+  border: 1px solid var(--border-soft);
+  transition: transform 0.2s, border-color 0.2s;
+  display: block;
+}
+.related-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--green-300);
+  background-image: none;
+}
+.related-card .related-cat {
+  font-size: 11px; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--terracotta); margin-bottom: 8px;
+  font-family: var(--body);
+}
+.related-card .related-title {
+  font-family: var(--display);
+  font-size: 17px; font-weight: 500; line-height: 1.3;
+  color: var(--ink);
+  font-variation-settings: "opsz" 36, "SOFT" 30;
+}
+
+.sources-section { padding-top: 48px; border-top: 1px solid var(--border-soft); }
+.sources-section h3 {
+  font-family: var(--display);
+  font-size: 14px; letter-spacing: 0.2em; text-transform: uppercase;
+  font-weight: 500; color: var(--ink-mute); margin-bottom: 24px;
+}
+.sources-section ul { list-style: none; padding: 0; }
+.sources-section li {
+  padding: 12px 0; border-bottom: 1px solid var(--border-soft);
+  font-size: 14px; color: var(--ink-soft); line-height: 1.5;
+  font-family: var(--body);
+}
+.sources-section a {
+  color: var(--green-deep); text-decoration: underline;
+  text-decoration-color: var(--green-300); text-underline-offset: 3px;
+  background-image: none;
+}
+
+/* Drop cap */
+.drop-cap::first-letter {
+  font-family: var(--display);
+  font-size: 5em; float: left;
+  line-height: 0.85; margin: 8px 12px 0 0;
+  color: var(--green-deep); font-weight: 500;
+  font-variation-settings: "opsz" 144;
+}
+
+/* ==================== SITE FOOTER ==================== */
+footer.site-footer {
+  padding: 56px 48px 28px;
+  background: var(--wove-charcoal);
+  color: rgba(255,255,255,0.55);
+  font-family: 'Poppins', -apple-system, sans-serif;
+}
+.footer-inner { max-width: 960px; margin: 0 auto; }
+.footer-grid {
+  display: grid; grid-template-columns: 2fr 1fr 1fr;
+  gap: 56px; margin-bottom: 40px;
+}
+.footer-logo-img { height: 36px; object-fit: contain; filter: brightness(10); }
+.logo-placeholder.dark {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 120px; height: 44px;
+  border: 2px dashed rgba(255,255,255,0.3); border-radius: 12px;
+  font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.5);
+  letter-spacing: 1.5px; background: rgba(255,255,255,0.05);
+}
+.footer-brand-name { margin-bottom: 12px; }
+.footer-brand p { font-size: 13px; line-height: 1.7; max-width: 300px; }
+.footer-col h4 {
+  font-family: 'Poppins', sans-serif; color: white;
+  font-size: 12px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: 1.5px; margin-bottom: 18px;
+}
+.footer-col a {
+  display: block; color: rgba(255,255,255,0.45);
+  text-decoration: none; font-size: 13px; padding: 4px 0; transition: color 0.2s;
+}
+.footer-col a:hover { color: white; }
+.footer-bottom {
+  padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08);
+  font-size: 12px; text-align: center; color: rgba(255,255,255,0.3);
+}
+@media (max-width: 960px) {
+  footer.site-footer { padding: 56px 24px 28px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+}
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<!-- SITE NAV -->
+<nav id="main-nav">
+  <a href="../../" class="nav-logo">
+    <img src="../../images/logo.png" alt="Wove" class="nav-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="logo-placeholder" style="display:none">LOGO</div>
+  </a>
+  <div class="nav-links">
+    <a href="../../about/">The Story</a>
+    <a href="../../#how-it-works">How It Works</a>
+    <a href="../../wovescore/">Wove Score</a>
+    <a href="../">Blog</a>
+    <a href="https://shopmy.us/shop/emmhemphill" target="_blank" rel="noopener">Shop Our Top Picks</a>
+    <a href="https://apps.apple.com/us/app/wove-score/id6755356871" class="nav-cta">Download App</a>
+  </div>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<section class="article-header">
+  <div class="eyebrow">Chemical Safety · Guide</div>
+  <h1 class="article-title">PFAS in Clothing: <em>What It Is and How to Avoid It</em></h1>
+  <p class="article-lede">A guide to forever chemicals, where they hide in your wardrobe, and how to spot them on a label — written for shoppers, not chemists.</p>
+  <div class="article-meta">
+    <span>By Emily Hemphill</span>
+    <span class="dot">·</span>
+    <span>14 min read</span>
+    <span class="dot">·</span>
+    <span>Updated May 2026</span>
+  </div>
+</section>
+
+<!-- HERO IMAGE -->
+<div class="hero-image">
+  <figure>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="A jacket with water droplets beading on its surface, illustrating PFAS-treated fabric, alongside a carbon-fluorine bond pattern representing forever chemicals." style="width:100%;max-width:1200px;height:auto;display:block;margin:0 auto;">
+  <defs>
+    <linearGradient id="bgHero" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f5f0e1"/>
+      <stop offset="1" stop-color="#e9e3cf"/>
+    </linearGradient>
+    <linearGradient id="jacket" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#3a5a40"/>
+      <stop offset="1" stop-color="#2d4a2b"/>
+    </linearGradient>
+    <radialGradient id="drop" cx="0.35" cy="0.3" r="0.7">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="0.5" stop-color="#a9c9da" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#5b8fb9"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="520" fill="url(#bgHero)"/>
+  <g opacity="0.18" stroke="#2d4a2b" stroke-width="1.4" fill="none">
+    <g transform="translate(80,90)">
+      <circle cx="0" cy="0" r="14" fill="#2d4a2b" opacity="0.35"/>
+      <text x="0" y="5" font-family="Georgia, serif" font-size="14" fill="#faf6e9" text-anchor="middle" opacity="0.9">C</text>
+      <line x1="14" y1="0" x2="60" y2="0"/>
+      <circle cx="74" cy="0" r="12" fill="#588157" opacity="0.4"/>
+      <text x="74" y="4" font-family="Georgia, serif" font-size="12" fill="#faf6e9" text-anchor="middle">F</text>
+      <line x1="0" y1="14" x2="0" y2="56"/>
+      <circle cx="0" cy="70" r="12" fill="#588157" opacity="0.4"/>
+      <text x="0" y="74" font-family="Georgia, serif" font-size="12" fill="#faf6e9" text-anchor="middle">F</text>
+    </g>
+    <g transform="translate(160,260)">
+      <circle cx="0" cy="0" r="14" fill="#2d4a2b" opacity="0.35"/>
+      <text x="0" y="5" font-family="Georgia, serif" font-size="14" fill="#faf6e9" text-anchor="middle">C</text>
+      <line x1="14" y1="0" x2="60" y2="0"/>
+      <circle cx="74" cy="0" r="12" fill="#588157" opacity="0.4"/>
+      <text x="74" y="4" font-family="Georgia, serif" font-size="12" fill="#faf6e9" text-anchor="middle">F</text>
+      <line x1="-14" y1="0" x2="-60" y2="0"/>
+      <circle cx="-74" cy="0" r="12" fill="#588157" opacity="0.4"/>
+      <text x="-74" y="4" font-family="Georgia, serif" font-size="12" fill="#faf6e9" text-anchor="middle">F</text>
+    </g>
+    <g transform="translate(100,420)">
+      <circle cx="0" cy="0" r="14" fill="#2d4a2b" opacity="0.35"/>
+      <text x="0" y="5" font-family="Georgia, serif" font-size="14" fill="#faf6e9" text-anchor="middle">C</text>
+      <line x1="14" y1="0" x2="60" y2="0"/>
+      <circle cx="74" cy="0" r="12" fill="#588157" opacity="0.4"/>
+      <text x="74" y="4" font-family="Georgia, serif" font-size="12" fill="#faf6e9" text-anchor="middle">F</text>
+    </g>
+  </g>
+  <g transform="translate(640,90)">
+    <path d="M 0 60
+             L 60 0
+             L 120 0
+             L 130 28
+             L 200 28
+             L 210 0
+             L 270 0
+             L 330 60
+             L 360 220
+             L 300 240
+             L 300 380
+             L 30 380
+             L 30 240
+             L -30 220
+             Z"
+          fill="url(#jacket)" stroke="#1a2d1a" stroke-width="1.2"/>
+    <line x1="165" y1="28" x2="165" y2="380" stroke="#dad7cd" stroke-width="2"/>
+    <g stroke="#dad7cd" stroke-width="1" opacity="0.7">
+      <line x1="158" y1="60" x2="172" y2="60"/>
+      <line x1="158" y1="90" x2="172" y2="90"/>
+      <line x1="158" y1="120" x2="172" y2="120"/>
+      <line x1="158" y1="150" x2="172" y2="150"/>
+      <line x1="158" y1="180" x2="172" y2="180"/>
+      <line x1="158" y1="210" x2="172" y2="210"/>
+      <line x1="158" y1="240" x2="172" y2="240"/>
+      <line x1="158" y1="270" x2="172" y2="270"/>
+      <line x1="158" y1="300" x2="172" y2="300"/>
+      <line x1="158" y1="330" x2="172" y2="330"/>
+    </g>
+    <ellipse cx="80" cy="120" rx="14" ry="18" fill="url(#drop)" transform="rotate(-10 80 120)"/>
+    <ellipse cx="240" cy="100" rx="11" ry="14" fill="url(#drop)" transform="rotate(8 240 100)"/>
+    <ellipse cx="120" cy="180" rx="9" ry="12" fill="url(#drop)"/>
+    <ellipse cx="270" cy="190" rx="13" ry="16" fill="url(#drop)" transform="rotate(-8 270 190)"/>
+    <ellipse cx="60" cy="220" rx="10" ry="13" fill="url(#drop)"/>
+    <ellipse cx="220" cy="260" rx="12" ry="15" fill="url(#drop)" transform="rotate(12 220 260)"/>
+    <ellipse cx="90" cy="290" rx="8" ry="10" fill="url(#drop)"/>
+    <ellipse cx="280" cy="320" rx="11" ry="14" fill="url(#drop)" transform="rotate(-15 280 320)"/>
+    <ellipse cx="50" cy="340" rx="9" ry="11" fill="url(#drop)"/>
+    <ellipse cx="195" cy="350" rx="10" ry="13" fill="url(#drop)" transform="rotate(5 195 350)"/>
+  </g>
+  <g transform="translate(280,200)">
+    <text x="0" y="0" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700" fill="#2d4a2b">PFAS in</text>
+    <text x="0" y="64" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700" fill="#2d4a2b">Clothing</text>
+    <line x1="0" y1="88" x2="80" y2="88" stroke="#588157" stroke-width="3"/>
+    <text x="0" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#4a4a4a">A guide to forever chemicals,</text>
+    <text x="0" y="146" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#4a4a4a">where they hide, and how to avoid them.</text>
+  </g>
+</svg>
+  </figure>
+</div>
+
+<!-- MOBILE TOC -->
+<details class="toc-mobile">
+  <summary>What's Inside</summary>
+  <ul class="toc-list">
+    <li><a href="#what-are-pfas">What Are PFAS?</a></li>
+    <li><a href="#where-pfas-appear">Where PFAS Appear</a></li>
+    <li><a href="#how-to-spot-pfas">How to Spot PFAS on Labels</a></li>
+    <li><a href="#how-to-avoid-pfas">How to Avoid PFAS</a></li>
+    <li><a href="#safer-alternatives">Safer Alternatives</a></li>
+    <li><a href="#regulation">Regulation Is Catching Up</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+</details>
+
+<!-- MAIN GRID -->
+<div class="article-grid">
+  <article class="article-body">
+
+    <p class="drop-cap">If you've ever picked up a rain jacket, a pair of stain-resistant pants, or a pack of wrinkle-free uniform shirts and wondered what's making them work the way they do — there's a real chance the answer is <strong>PFAS</strong>: a class of synthetic chemicals that have quietly become some of the most common — and most controversial — ingredients in modern clothing.</p>
+
+    <p>This guide walks through what <strong>PFAS in clothing</strong> actually means, where these "forever chemicals" tend to hide, how to spot them on a label, and what safer alternatives look like. It's written for shoppers, not chemists — calm, practical, and aimed at helping you make informed choices without going down a fear-based rabbit hole.</p>
+
+    <h2 id="what-are-pfas">What Are PFAS, and Why Are They Used in Clothing?</h2>
+
+    <p><strong>PFAS</strong> stands for <strong>per- and polyfluoroalkyl substances</strong> — a class of human-made chemicals built around a carbon-fluorine bond that happens to be one of the strongest chemical bonds in nature. That bond is exactly what makes them useful in consumer products, and exactly what makes them a problem in the environment.</p>
+
+    <div class="stat-callout">
+      <div class="stat-number">14,000+</div>
+      <div class="stat-text">human-made chemicals fall under the PFAS umbrella — all built around the same carbon-fluorine bond.</div>
+      <span class="stat-source">— EPA estimate</span>
+    </div>
+
+    <p>In clothing and textiles, PFAS are used to deliver three properties that are otherwise hard to achieve: <strong>water repellency, oil and grease repellency, and stain resistance.</strong> According to the European Environment Agency, <a href="https://www.eea.europa.eu/en/analysis/publications/pfas-in-textiles-in-europes-circular-economy" target="_blank" rel="noopener">both non-polymeric and polymeric forms of PFAS are used in textile products to provide water repellence, oil repellence, stain resistance, durability, and thermal stability</a>. That covers a huge slice of the modern apparel market — outdoor gear, activewear, performance uniforms, kids' clothes, school uniforms, and any garment marketed as "easy-care."</p>
+
+    <p>They've been used in textiles since at least the 1960s, when fluorinated repellents first scaled commercially. The original chemistries — long-chain compounds like PFOA and PFOS — have been phased out in the United States, but the replacements are also fluorinated, and a growing body of research suggests many of them carry similar concerns.</p>
+
+    <p>The nickname <strong>"forever chemicals"</strong> isn't marketing. It's a description of what these compounds do in the world: they don't meaningfully break down. The Environmental Working Group notes that <a href="https://www.ewg.org/news-insights/news/2022/01/new-tests-find-toxic-forever-chemicals-bedding-yoga-pants-and-other" target="_blank" rel="noopener">PFAS are persistent in the environment and do not break down</a>, and research has linked exposure to a range of health concerns including immune system effects, hormonal disruption, fertility issues, thyroid effects, and certain cancers.</p>
+
+    <p>For a shopper, the takeaway isn't that one shirt will hurt you. It's that PFAS are extremely common in clothing categories most people don't think twice about — and because they don't degrade, exposure adds up across the home, the laundry, the water supply, and the environment over time.</p>
+
+    <h2 id="where-pfas-appear">Where PFAS Appear in Clothing</h2>
+
+    <p>The single most useful pattern to know about PFAS in apparel is this: <strong>the more a garment is marketed for repellency or performance, the more likely it is to contain PFAS.</strong></p>
+
+    <p>A NEWMOA factsheet on PFAS in clothing and textiles puts numbers on this. <a href="https://www.newmoa.org/wp-content/uploads/2023/05/PFAS_ClothingandTextiles.pdf" target="_blank" rel="noopener">One study of school uniforms found that every water-resistant and stain-proof uniform tested was positive for PFAS, and a separate study of children's clothing found 79% of items tested contained PFAS — and 100% of items labeled as water- or stain-resistant did</a>. That's not a few outliers. That's the category.</p>
+
+    <div class="stat-callout">
+      <div class="stat-number">100%</div>
+      <div class="stat-text">of water- or stain-resistant children's clothing items tested in one study contained PFAS.</div>
+      <span class="stat-source">— NEWMOA, 2023</span>
+    </div>
+
+    <figure>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="A grid of six clothing categories most likely to contain PFAS: rain jackets, activewear and leggings, stain-resistant pants, school uniforms, kids' clothes, and outdoor gear." style="width:100%;max-width:1200px;height:auto;display:block;margin:0 auto;">
+  <defs>
+    <style>
+      .card { fill: #ffffff; stroke: #dad7cd; stroke-width: 1.5; }
+      .cardTitle { font-family: Georgia, serif; font-size: 24px; font-weight: 700; fill: #2d4a2b; }
+      .cardBody { font-family: system-ui, -apple-system, sans-serif; font-size: 15px; fill: #4a4a4a; }
+      .flag { fill: #c2410c; }
+      .flagBg { fill: #fef3ec; stroke: #fdd9c2; stroke-width: 1; }
+      .flagText { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; font-weight: 600; fill: #c2410c; letter-spacing: 0.5px; }
+      .icon { fill: #3a5a40; }
+      .iconLight { fill: #a3b18a; }
+    </style>
+  </defs>
+  <rect width="1200" height="700" fill="#f5f0e1"/>
+  <text x="60" y="58" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#2d4a2b">Where PFAS hide</text>
+  <text x="60" y="88" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#4a4a4a">Common clothing categories most likely to contain forever chemicals.</text>
+  <g transform="translate(60,120)">
+    <rect class="card" width="350" height="170" rx="10"/>
+    <rect class="flagBg" x="20" y="20" width="100" height="22" rx="11"/>
+    <text class="flagText" x="35" y="35">HIGH RISK</text>
+    <g transform="translate(255,30)">
+      <path d="M 5 25 L 25 5 L 35 5 L 38 12 L 60 12 L 63 5 L 73 5 L 93 25 L 100 80 L 80 85 L 80 115 L 18 115 L 18 85 L -2 80 Z" class="icon"/>
+    </g>
+    <text class="cardTitle" x="20" y="80">Rain jackets</text>
+    <text class="cardBody" x="20" y="110">Waterproof and water-resistant</text>
+    <text class="cardBody" x="20" y="130">outerwear, ski shells, and</text>
+    <text class="cardBody" x="20" y="150">technical rainwear.</text>
+  </g>
+  <g transform="translate(425,120)">
+    <rect class="card" width="350" height="170" rx="10"/>
+    <rect class="flagBg" x="20" y="20" width="100" height="22" rx="11"/>
+    <text class="flagText" x="42" y="35">WATCH</text>
+    <g transform="translate(265,30)">
+      <path d="M 30 0 L 60 0 L 70 25 L 70 110 L 50 115 L 50 60 L 40 60 L 40 115 L 20 110 L 20 25 Z" class="icon"/>
+    </g>
+    <text class="cardTitle" x="20" y="80">Activewear &amp; leggings</text>
+    <text class="cardBody" x="20" y="110">Moisture-wicking, "sweat-proof,"</text>
+    <text class="cardBody" x="20" y="130">and synthetic performance</text>
+    <text class="cardBody" x="20" y="150">fabrics with DWR finishes.</text>
+  </g>
+  <g transform="translate(790,120)">
+    <rect class="card" width="350" height="170" rx="10"/>
+    <rect class="flagBg" x="20" y="20" width="100" height="22" rx="11"/>
+    <text class="flagText" x="35" y="35">HIGH RISK</text>
+    <g transform="translate(265,30)">
+      <path d="M 20 0 L 70 0 L 65 50 L 70 110 L 50 110 L 45 60 L 40 60 L 35 110 L 15 110 L 20 50 Z" class="icon"/>
+    </g>
+    <text class="cardTitle" x="20" y="80">Stain-resistant pants</text>
+    <text class="cardBody" x="20" y="110">Chinos, khakis, and dress pants</text>
+    <text class="cardBody" x="20" y="130">marketed as stain-proof,</text>
+    <text class="cardBody" x="20" y="150">spill-proof, or easy-care.</text>
+  </g>
+  <g transform="translate(60,320)">
+    <rect class="card" width="350" height="170" rx="10"/>
+    <rect class="flagBg" x="20" y="20" width="100" height="22" rx="11"/>
+    <text class="flagText" x="35" y="35">HIGH RISK</text>
+    <g transform="translate(255,30)">
+      <path d="M 40 0 L 60 0 L 80 20 L 100 20 L 110 50 L 95 60 L 90 110 L 10 110 L 5 60 L -10 50 L 0 20 L 20 20 Z" class="icon"/>
+      <path d="M 40 0 L 50 25 L 60 0" fill="#faf6e9"/>
+    </g>
+    <text class="cardTitle" x="20" y="80">School uniforms</text>
+    <text class="cardBody" x="20" y="110">Studies have found PFAS in</text>
+    <text class="cardBody" x="20" y="130">100% of water- or stain-resistant</text>
+    <text class="cardBody" x="20" y="150">uniforms tested.</text>
+  </g>
+  <g transform="translate(425,320)">
+    <rect class="card" width="350" height="170" rx="10"/>
+    <rect class="flagBg" x="20" y="20" width="100" height="22" rx="11"/>
+    <text class="flagText" x="42" y="35">WATCH</text>
+    <g transform="translate(270,30)">
+      <path d="M 25 0 L 55 0 L 70 15 L 85 25 L 78 45 L 75 110 L 5 110 L 2 45 L -5 25 L 10 15 Z" class="icon"/>
+    </g>
+    <text class="cardTitle" x="20" y="80">Kids' clothes</text>
+    <text class="cardBody" x="20" y="110">Especially anything marketed</text>
+    <text class="cardBody" x="20" y="130">as wipeable, mess-proof, or</text>
+    <text class="cardBody" x="20" y="150">"parent-friendly."</text>
+  </g>
+  <g transform="translate(790,320)">
+    <rect class="card" width="350" height="170" rx="10"/>
+    <rect class="flagBg" x="20" y="20" width="100" height="22" rx="11"/>
+    <text class="flagText" x="35" y="35">HIGH RISK</text>
+    <g transform="translate(255,30)">
+      <path d="M 50 5 L 95 90 L 5 90 Z" class="iconLight"/>
+      <path d="M 50 5 L 70 50 L 30 50 Z" class="icon"/>
+      <rect x="40" y="90" width="20" height="25" class="icon"/>
+    </g>
+    <text class="cardTitle" x="20" y="80">Outdoor gear</text>
+    <text class="cardBody" x="20" y="110">Hiking pants, ski wear, gloves,</text>
+    <text class="cardBody" x="20" y="130">and gear with Gore-Tex or other</text>
+    <text class="cardBody" x="20" y="150">fluorinated membranes.</text>
+  </g>
+  <g transform="translate(60,530)">
+    <rect width="1080" height="130" rx="10" fill="#ffffff" stroke="#a3b18a" stroke-width="1.5"/>
+    <text x="30" y="40" font-family="Georgia, serif" font-size="20" font-weight="700" fill="#2d4a2b">The pattern to remember</text>
+    <text x="30" y="72" class="cardBody" font-size="16">The more a garment is marketed for water repellency, stain resistance, or performance,</text>
+    <text x="30" y="96" class="cardBody" font-size="16">the more likely it is to contain PFAS — regardless of fiber content listed on the label.</text>
+  </g>
+</svg>
+      <figcaption>Common clothing categories most likely to contain PFAS, from rain jackets to school uniforms.</figcaption>
+    </figure>
+
+    <p>A few categories worth flagging in particular:</p>
+    <ul>
+      <li><strong>Outdoor and rain gear.</strong> Anything sold as waterproof or water-resistant — rain jackets, ski shells, hiking pants, rain pants — has historically used PFAS in either the DWR (durable water repellent) coating, the membrane (think Gore-Tex / ePTFE), or both.</li>
+      <li><strong>Activewear and athleisure.</strong> Leggings, technical t-shirts, sports bras, and shorts with moisture-wicking or sweat-resistant marketing often have PFAS-based finishes.</li>
+      <li><strong>Workwear and uniforms.</strong> Stain-resistant khakis, chef coats, hotel uniforms, and similar items are heavily treated.</li>
+      <li><strong>School uniforms and children's clothing.</strong> This is the category that often surprises parents the most. Items marketed as "stain-proof" or "wipeable" frequently contain PFAS.</li>
+      <li><strong>Soft furnishings adjacent to clothing.</strong> Bedding, sheets, mattress protectors, shower curtains, upholstered furniture, and rugs are often treated with the same chemistries — worth knowing if you're also rethinking the home.</li>
+    </ul>
+
+    <p>EWG warns that <a href="https://www.ewg.org/news-insights/news/2022/01/new-tests-find-toxic-forever-chemicals-bedding-yoga-pants-and-other" target="_blank" rel="noopener">stain- or water-repellent fabrics deserve extra caution</a> because of how broadly PFAS treatments are applied across the textile industry. The category overlap with everyday clothing is much wider than most shoppers realize.</p>
+
+    <h2 id="how-to-spot-pfas">How to Spot PFAS on Labels and Product Descriptions</h2>
+
+    <p>Here's where it gets tricky: PFAS are almost never listed by name on a clothing tag. The Federal Trade Commission's Textile Fiber Products Identification Act requires fiber content and care instructions, but it doesn't require disclosure of chemical finishes. So most of the time, you're reading between the lines.</p>
+
+    <p>The good news: the marketing language is usually a strong tell. NEWMOA's plain rule of thumb is that items labeled <strong>waterproof, water-resistant, stain-proof, or stain-resistant</strong> are likely to contain PFAS. Watch for these phrases on hangtags, product pages, and care labels:</p>
+
+    <figure>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-label="A clothing care label illustration showing common marketing phrases that signal a garment may contain PFAS — words like waterproof, stain-resistant, easy-care, DWR finish, and performance fabric." style="width:100%;max-width:1200px;height:auto;display:block;margin:0 auto;">
+  <defs>
+    <linearGradient id="labelBg" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#fffdf6"/>
+      <stop offset="1" stop-color="#f5f0e1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="620" fill="#faf6e9"/>
+  <text x="60" y="58" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#2d4a2b">Red-flag words on labels and product pages</text>
+  <text x="60" y="88" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#4a4a4a">When you see these phrases, treat them as a signal that PFAS may be involved.</text>
+  <g transform="translate(120,140)">
+    <line x1="480" y1="-30" x2="480" y2="0" stroke="#4a4a4a" stroke-width="2"/>
+    <circle cx="480" cy="-32" r="8" fill="none" stroke="#4a4a4a" stroke-width="2"/>
+    <path d="M 0 30 L 30 0 L 930 0 L 960 30 L 960 460 L 0 460 Z" fill="url(#labelBg)" stroke="#dad7cd" stroke-width="2"/>
+    <circle cx="480" cy="15" r="6" fill="#faf6e9" stroke="#dad7cd" stroke-width="1.5"/>
+    <text x="40" y="70" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#2d4a2b" letter-spacing="2">CARE &amp; CONTENT</text>
+    <line x1="40" y1="82" x2="240" y2="82" stroke="#588157" stroke-width="2"/>
+    <text x="40" y="120" font-family="system-ui, sans-serif" font-size="16" fill="#1a1a1a">100% Polyester</text>
+    <g font-family="system-ui, sans-serif" font-size="16">
+      <rect x="40" y="145" width="280" height="36" rx="6" fill="#fef3ec" stroke="#fdd9c2"/>
+      <text x="58" y="168" fill="#c2410c" font-weight="700">⚑ Waterproof</text>
+      <rect x="340" y="145" width="280" height="36" rx="6" fill="#fef3ec" stroke="#fdd9c2"/>
+      <text x="358" y="168" fill="#c2410c" font-weight="700">⚑ Water-resistant</text>
+      <rect x="640" y="145" width="280" height="36" rx="6" fill="#fef3ec" stroke="#fdd9c2"/>
+      <text x="658" y="168" fill="#c2410c" font-weight="700">⚑ Stain-resistant</text>
+      <rect x="40" y="195" width="280" height="36" rx="6" fill="#fef3ec" stroke="#fdd9c2"/>
+      <text x="58" y="218" fill="#c2410c" font-weight="700">⚑ Stain-proof</text>
+      <rect x="340" y="195" width="280" height="36" rx="6" fill="#fef3ec" stroke="#fdd9c2"/>
+      <text x="358" y="218" fill="#c2410c" font-weight="700">⚑ Easy-care</text>
+      <rect x="640" y="195" width="280" height="36" rx="6" fill="#fef3ec" stroke="#fdd9c2"/>
+      <text x="658" y="218" fill="#c2410c" font-weight="700">⚑ Wrinkle-free</text>
+      <rect x="40" y="245" width="280" height="36" rx="6" fill="#fef3ec" stroke="#fdd9c2"/>
+      <text x="58" y="268" fill="#c2410c" font-weight="700">⚑ DWR finish</text>
+      <rect x="340" y="245" width="280" height="36" rx="6" fill="#fef3ec" stroke="#fdd9c2"/>
+      <text x="358" y="268" fill="#c2410c" font-weight="700">⚑ Performance fabric</text>
+      <rect x="640" y="245" width="280" height="36" rx="6" fill="#fef3ec" stroke="#fdd9c2"/>
+      <text x="658" y="268" fill="#c2410c" font-weight="700">⚑ Oil-resistant</text>
+      <rect x="40" y="295" width="280" height="36" rx="6" fill="#fef3ec" stroke="#fdd9c2"/>
+      <text x="58" y="318" fill="#c2410c" font-weight="700">⚑ Soil-release</text>
+      <rect x="340" y="295" width="280" height="36" rx="6" fill="#fef3ec" stroke="#fdd9c2"/>
+      <text x="358" y="318" fill="#c2410c" font-weight="700">⚑ Teflon-coated</text>
+      <rect x="640" y="295" width="280" height="36" rx="6" fill="#fef3ec" stroke="#fdd9c2"/>
+      <text x="658" y="318" fill="#c2410c" font-weight="700">⚑ Scotchgard</text>
+    </g>
+    <line x1="40" y1="360" x2="920" y2="360" stroke="#dad7cd" stroke-width="1"/>
+    <text x="40" y="395" font-family="Georgia, serif" font-size="16" font-weight="700" fill="#2d4a2b">Green-flag phrases</text>
+    <g font-family="system-ui, sans-serif" font-size="15" fill="#3a5a40">
+      <text x="40" y="425">✓ PFAS-free</text>
+      <text x="220" y="425">✓ PFC-free</text>
+      <text x="400" y="425">✓ Fluorocarbon-free</text>
+      <text x="640" y="425">✓ C0 DWR finish</text>
+    </g>
+  </g>
+</svg>
+      <figcaption>Red-flag phrases that signal likely PFAS, and green-flag labels that confirm a product is PFAS-free.</figcaption>
+    </figure>
+
+    <p>A few extra cues worth knowing:</p>
+    <ul>
+      <li><strong>"DWR finish"</strong> stands for <em>durable water repellent</em>. Historically, virtually all DWR coatings were PFAS-based. Newer "C0" or "fluorine-free" DWR finishes exist and are explicitly PFAS-free.</li>
+      <li><strong>"Teflon"</strong> and <strong>"Scotchgard"</strong> are brand-name finishes that have historically been fluorinated. Reformulated versions exist, but if the product page doesn't specify, assume PFAS until proven otherwise.</li>
+      <li><strong>"Performance fabric"</strong> is vague but often correlates — it's industry shorthand for a treated synthetic.</li>
+      <li><strong>Fiber content alone won't tell you.</strong> A "100% organic cotton" garment can still be treated with PFAS as a topical finish. Conversely, an untreated polyester shirt has no PFAS even though it has other concerns (microplastic shedding).</li>
+    </ul>
+
+    <h3>The Water Drop Test</h3>
+
+    <p>If you already own a garment and want a rough at-home check, the Ecology Center recommends a simple water drop test. <a href="https://www.ecocenter.org/test-your-products-pfas-water-droplet" target="_blank" rel="noopener">PFAS treatments cause the fabric to strongly repel water — a droplet dropped onto a PFAS-treated fabric will bead up, roll around, and typically leave no residue, while a droplet dropped onto an untreated fabric will soak in</a>.</p>
+
+    <figure>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" role="img" aria-label="Side-by-side comparison of the water drop test. On the left, a water droplet beads up on PFAS-treated fabric. On the right, a water droplet absorbs into untreated fabric." style="width:100%;max-width:1200px;height:auto;display:block;margin:0 auto;">
+  <defs>
+    <pattern id="weave" patternUnits="userSpaceOnUse" width="14" height="14" patternTransform="rotate(0)">
+      <rect width="14" height="14" fill="#dad7cd"/>
+      <path d="M 0 7 H 14 M 7 0 V 14" stroke="#c0bda6" stroke-width="2"/>
+    </pattern>
+    <pattern id="weaveAbsorb" patternUnits="userSpaceOnUse" width="14" height="14">
+      <rect width="14" height="14" fill="#c8c5ae"/>
+      <path d="M 0 7 H 14 M 7 0 V 14" stroke="#a8a589" stroke-width="2"/>
+    </pattern>
+    <radialGradient id="drop2" cx="0.3" cy="0.25" r="0.8">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="0.5" stop-color="#a9c9da"/>
+      <stop offset="1" stop-color="#5b8fb9"/>
+    </radialGradient>
+    <radialGradient id="absorbStain" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#5b8fb9" stop-opacity="0.5"/>
+      <stop offset="0.7" stop-color="#5b8fb9" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#5b8fb9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="480" fill="#f5f0e1"/>
+  <text x="60" y="58" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#2d4a2b">The water drop test</text>
+  <text x="60" y="88" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#4a4a4a">A quick at-home check for PFAS-treated fabric. Not definitive, but a useful signal.</text>
+  <g transform="translate(80,130)">
+    <rect width="480" height="240" rx="12" fill="url(#weave)" stroke="#588157" stroke-width="2"/>
+    <ellipse cx="240" cy="120" rx="48" ry="58" fill="url(#drop2)"/>
+    <ellipse cx="225" cy="100" rx="14" ry="20" fill="#ffffff" opacity="0.5"/>
+    <rect x="0" y="260" width="480" height="80" rx="8" fill="#ffffff" stroke="#dad7cd"/>
+    <text x="20" y="290" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#c2410c">⚑ Water beads up</text>
+    <text x="20" y="316" font-family="system-ui, sans-serif" font-size="15" fill="#4a4a4a">Droplet rolls off. Fabric likely has a PFAS-based</text>
+    <text x="20" y="334" font-family="system-ui, sans-serif" font-size="15" fill="#4a4a4a">finish (or wool, or a non-PFAS treatment).</text>
+  </g>
+  <g transform="translate(640,130)">
+    <rect width="480" height="240" rx="12" fill="url(#weaveAbsorb)" stroke="#a3b18a" stroke-width="2"/>
+    <ellipse cx="240" cy="120" rx="60" ry="22" fill="url(#absorbStain)"/>
+    <ellipse cx="240" cy="120" rx="40" ry="12" fill="#5b8fb9" opacity="0.35"/>
+    <rect x="0" y="260" width="480" height="80" rx="8" fill="#ffffff" stroke="#dad7cd"/>
+    <text x="20" y="290" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#3a5a40">✓ Water absorbs</text>
+    <text x="20" y="316" font-family="system-ui, sans-serif" font-size="15" fill="#4a4a4a">Droplet soaks in. Fabric is most likely untreated</text>
+    <text x="20" y="334" font-family="system-ui, sans-serif" font-size="15" fill="#4a4a4a">— a good sign in cotton, linen, or hemp.</text>
+  </g>
+</svg>
+      <figcaption>The water drop test: a quick at-home check. Strong beading on cotton or synthetic fabric is a warning sign.</figcaption>
+    </figure>
+
+    <p>One important caveat: a positive water drop result doesn't definitively prove PFAS. Wool is naturally water-repellent, and newer non-PFAS treatments (like C0 DWR or wax-based finishes) can also cause beading. But for an unlabeled cotton or polyester garment, strong beading is a reasonable warning sign.</p>
+
+    <h2 id="how-to-avoid-pfas">How to Avoid PFAS When Shopping</h2>
+
+    <p>The honest answer is that complete avoidance is hard — PFAS are present in too many product categories for any single rule to cover everything. But you can dramatically reduce exposure with a handful of habits:</p>
+
+    <p><strong>1. Reframe what you actually need.</strong> Most of us don't truly need stain-resistant pants for an office job, or fully waterproof leggings for a yoga class. When the performance claim isn't load-bearing, skip it.</p>
+
+    <p><strong>2. Skip products marketed as stain- or water-resistant when possible.</strong> The Ecology Center is direct on this: the simplest way to avoid PFAS in clothing is to <a href="https://www.ecocenter.org/test-your-products-pfas-water-droplet" target="_blank" rel="noopener">avoid products marketed as stain- or water-resistant</a>. This single filter removes a huge slice of your exposure.</p>
+
+    <p><strong>3. Prioritize untreated natural fibers.</strong> Cotton, linen, hemp, wool, and silk are inherently absorbent and almost never need chemical treatments to function. NEWMOA recommends <a href="https://www.newmoa.org/wp-content/uploads/2023/05/PFAS_ClothingandTextiles.pdf" target="_blank" rel="noopener">untreated natural fibers like cotton, linen, wool, hemp, and silk as alternatives when possible</a>.</p>
+
+    <p><strong>4. Look for explicit "PFAS-free" labeling.</strong> This includes the phrases <strong>PFAS-free, PFC-free, fluorocarbon-free,</strong> and <strong>C0 DWR.</strong> A brand that says nothing about its chemistry isn't necessarily using PFAS — but a brand that explicitly markets PFAS-free has typically done the work to verify it.</p>
+
+    <p><strong>5. Prioritize next-to-skin items first.</strong> If you're not going to overhaul everything at once, start with the layers in closest contact with your body for the longest periods of time: underwear, base layers, leggings, sports bras, kids' pajamas, and bedding. Then work outward.</p>
+
+    <p><strong>6. Use certifications as a shortcut.</strong> Look for <strong>GOTS</strong> (Global Organic Textile Standard), which prohibits PFAS in certified products; <strong>OEKO-TEX Standard 100</strong>, which tests for harmful substances including specific PFAS compounds; <strong>bluesign</strong>, which evaluates chemical inputs across the supply chain; and <strong>MADE SAFE</strong>, which screens against an explicit list of harmful chemicals including PFAS.</p>
+
+    <p><strong>7. Be skeptical of marketing claims without backup.</strong> "Eco" and "natural" mean nothing legally. "PFAS-free" backed by a certification means something. The difference matters.</p>
+
+    <h2 id="safer-alternatives">Safer Fabric and Finish Alternatives</h2>
+
+    <p>Avoiding PFAS doesn't mean giving up on water-resistant or durable clothing — it means choosing fabrics and chemistries that achieve those properties differently. There are two paths: <strong>untreated natural fibers</strong>, and <strong>PFAS-free finishes</strong> when treatment is genuinely needed.</p>
+
+    <h3>Untreated Natural Fibers</h3>
+
+    <p>For most everyday wear, untreated natural fibers do the job without any chemical finish at all. Each has different strengths:</p>
+
+    <figure>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" role="img" aria-label="Five natural fiber alternatives to PFAS-treated clothing: cotton, linen, hemp, wool, and silk. Each is shown with a simple icon and a one-line description of when it shines." style="width:100%;max-width:1200px;height:auto;display:block;margin:0 auto;">
+  <defs>
+    <style>
+      .fiberCard { fill: #ffffff; stroke: #dad7cd; stroke-width: 1.5; }
+      .fiberName { font-family: Georgia, serif; font-size: 22px; font-weight: 700; fill: #2d4a2b; }
+      .fiberDesc { font-family: system-ui, sans-serif; font-size: 13px; fill: #4a4a4a; }
+    </style>
+  </defs>
+  <rect width="1200" height="460" fill="#faf6e9"/>
+  <text x="60" y="58" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#2d4a2b">Safer natural fiber alternatives</text>
+  <text x="60" y="88" font-family="system-ui, sans-serif" font-size="16" fill="#4a4a4a">Untreated natural fibers — the simplest way to avoid PFAS in clothing.</text>
+  <g transform="translate(60,140)">
+    <rect class="fiberCard" width="210" height="280" rx="12"/>
+    <g transform="translate(105,90)">
+      <circle cx="0" cy="0" r="32" fill="#ffffff" stroke="#2d4a2b" stroke-width="2"/>
+      <circle cx="-12" cy="-8" r="14" fill="#ffffff" stroke="#2d4a2b" stroke-width="2"/>
+      <circle cx="14" cy="-6" r="14" fill="#ffffff" stroke="#2d4a2b" stroke-width="2"/>
+      <circle cx="0" cy="14" r="14" fill="#ffffff" stroke="#2d4a2b" stroke-width="2"/>
+      <path d="M -28 28 L -16 24 M 28 28 L 16 24 M 0 36 L 0 48" stroke="#3a5a40" stroke-width="2" fill="none"/>
+    </g>
+    <text class="fiberName" x="105" y="190" text-anchor="middle">Cotton</text>
+    <text class="fiberDesc" x="105" y="220" text-anchor="middle">Soft, breathable, washable.</text>
+    <text class="fiberDesc" x="105" y="240" text-anchor="middle">GOTS-certified organic</text>
+    <text class="fiberDesc" x="105" y="260" text-anchor="middle">prohibits PFAS.</text>
+  </g>
+  <g transform="translate(290,140)">
+    <rect class="fiberCard" width="210" height="280" rx="12"/>
+    <g transform="translate(105,90)">
+      <path d="M 0 -38 Q -8 -20 0 0 Q 8 -20 0 -38 Z" fill="#a3b18a" stroke="#3a5a40" stroke-width="1.5"/>
+      <path d="M -22 -10 Q -16 -2 0 0 Q -10 -22 -22 -10 Z" fill="#a3b18a" stroke="#3a5a40" stroke-width="1.5"/>
+      <path d="M 22 -10 Q 16 -2 0 0 Q 10 -22 22 -10 Z" fill="#a3b18a" stroke="#3a5a40" stroke-width="1.5"/>
+      <line x1="0" y1="0" x2="0" y2="42" stroke="#3a5a40" stroke-width="2"/>
+    </g>
+    <text class="fiberName" x="105" y="190" text-anchor="middle">Linen</text>
+    <text class="fiberDesc" x="105" y="220" text-anchor="middle">Naturally absorbent,</text>
+    <text class="fiberDesc" x="105" y="240" text-anchor="middle">cool, and antimicrobial.</text>
+    <text class="fiberDesc" x="105" y="260" text-anchor="middle">Best in warm weather.</text>
+  </g>
+  <g transform="translate(520,140)">
+    <rect class="fiberCard" width="210" height="280" rx="12"/>
+    <g transform="translate(105,90)">
+      <path d="M 0 0 L -4 -36 L 4 -36 Z" fill="#3a5a40"/>
+      <path d="M 0 0 L -34 -16 L -28 -8 Z" fill="#3a5a40"/>
+      <path d="M 0 0 L 34 -16 L 28 -8 Z" fill="#3a5a40"/>
+      <path d="M 0 0 L -28 14 L -22 22 Z" fill="#588157"/>
+      <path d="M 0 0 L 28 14 L 22 22 Z" fill="#588157"/>
+      <path d="M 0 0 L -10 34 L 10 34 Z" fill="#588157"/>
+      <line x1="0" y1="0" x2="0" y2="42" stroke="#3a5a40" stroke-width="2"/>
+    </g>
+    <text class="fiberName" x="105" y="190" text-anchor="middle">Hemp</text>
+    <text class="fiberDesc" x="105" y="220" text-anchor="middle">Strong, durable, grown</text>
+    <text class="fiberDesc" x="105" y="240" text-anchor="middle">with very little water</text>
+    <text class="fiberDesc" x="105" y="260" text-anchor="middle">or pesticide input.</text>
+  </g>
+  <g transform="translate(750,140)">
+    <rect class="fiberCard" width="210" height="280" rx="12"/>
+    <g transform="translate(105,90)">
+      <ellipse cx="0" cy="0" rx="34" ry="26" fill="#faf6e9" stroke="#3a5a40" stroke-width="2"/>
+      <circle cx="-16" cy="-10" r="9" fill="#faf6e9" stroke="#3a5a40" stroke-width="2"/>
+      <circle cx="0" cy="-14" r="9" fill="#faf6e9" stroke="#3a5a40" stroke-width="2"/>
+      <circle cx="16" cy="-10" r="9" fill="#faf6e9" stroke="#3a5a40" stroke-width="2"/>
+      <circle cx="-24" cy="2" r="7" fill="#faf6e9" stroke="#3a5a40" stroke-width="2"/>
+      <circle cx="24" cy="2" r="7" fill="#faf6e9" stroke="#3a5a40" stroke-width="2"/>
+      <ellipse cx="0" cy="10" rx="10" ry="8" fill="#3a5a40"/>
+      <circle cx="-3" cy="8" r="1.5" fill="#faf6e9"/>
+      <circle cx="3" cy="8" r="1.5" fill="#faf6e9"/>
+    </g>
+    <text class="fiberName" x="105" y="190" text-anchor="middle">Wool</text>
+    <text class="fiberDesc" x="105" y="220" text-anchor="middle">Naturally water-repellent</text>
+    <text class="fiberDesc" x="105" y="240" text-anchor="middle">and odor-resistant — no</text>
+    <text class="fiberDesc" x="105" y="260" text-anchor="middle">chemical finish needed.</text>
+  </g>
+  <g transform="translate(980,140)">
+    <rect class="fiberCard" width="160" height="280" rx="12"/>
+    <g transform="translate(80,90)">
+      <ellipse cx="0" cy="0" rx="22" ry="34" fill="#faf6e9" stroke="#3a5a40" stroke-width="2"/>
+      <path d="M -16 -18 Q 0 -10 16 -18 M -16 0 Q 0 8 16 0 M -16 18 Q 0 26 16 18" stroke="#3a5a40" stroke-width="1.5" fill="none"/>
+    </g>
+    <text class="fiberName" x="80" y="190" text-anchor="middle">Silk</text>
+    <text class="fiberDesc" x="80" y="220" text-anchor="middle">Smooth, breathable,</text>
+    <text class="fiberDesc" x="80" y="240" text-anchor="middle">temperature-regulating.</text>
+    <text class="fiberDesc" x="80" y="260" text-anchor="middle">Ideal next-to-skin.</text>
+  </g>
+</svg>
+      <figcaption>Untreated natural fibers — cotton, linen, hemp, wool, and silk — cover most everyday needs without any added chemistry.</figcaption>
+    </figure>
+
+    <p>The general rule: for everyday wear, untreated natural fibers cover most needs without any added chemistry. Where they fall short is in technical performance — sustained rain, high-output activity in wet weather, gear meant for demanding outdoor conditions. That's where PFAS-free finishes come in.</p>
+
+    <h3>PFAS-Free Finishes and Chemistries</h3>
+
+    <p>When water resistance is actually needed, there are now multiple PFAS-free alternatives on the market. bluesign explains that <a href="https://www.bluesign.com/pfas-in-clothing" target="_blank" rel="noopener">there is a wide range of waterborne products available, including polyurethane-based, polyacrylate-based, wax-based, and silicone-based repellents</a>, and they're applied using the same equipment as conventional PFAS treatments.</p>
+
+    <p>Categories to look for:</p>
+    <ul>
+      <li><strong>Polyurethane and polyacrylate-based DWRs</strong> (often marketed as "C0" finishes). Effective for moderate water repellency. Don't bioaccumulate.</li>
+      <li><strong>Wax-based coatings.</strong> Beeswax, soy wax, and waxed cotton are time-tested alternatives. Patagonia, Filson, and a number of heritage brands use waxed cotton for outerwear.</li>
+      <li><strong>Silicone-based repellents.</strong> Effective and PFAS-free, though performance can vary.</li>
+      <li><strong>Plant-derived and chitosan-based treatments.</strong> Newer chemistries derived from plant polymers and (interestingly) crustacean shells offer water and stain resistance with biodegradability.</li>
+      <li><strong>Engineered fabric construction.</strong> Some of the most promising alternatives skip chemical treatment entirely. Tightly woven natural fibers (densely spun wool, ventile cotton) can achieve water resistance through structure alone.</li>
+    </ul>
+
+    <p>The honest caveat from the industry — and from bluesign — is that performance varies by chemistry, application method, and fabric construction. For severe wet conditions (mountaineering, severe rain protection), PFAS-free alternatives are catching up but aren't always at parity. For everyday use, they're more than enough.</p>
+
+    <div class="cta-block">
+      <div class="cta-eyebrow">Skip the guesswork</div>
+      <h3>Let Wove check for PFAS concerns.</h3>
+      <p>The Wove app scores clothing A–F based on fiber content, microplastic risk, and PFAS concerns — so you can shop with confidence.</p>
+      <a href="https://apps.apple.com/us/app/wove-score/id6755356871" class="cta-link">Download the app →</a>
+    </div>
+
+    <h2 id="regulation">Regulation Is Catching Up</h2>
+
+    <p>If you've felt like awareness of PFAS in clothing has accelerated in the last year or two, it's not your imagination. The regulatory landscape is shifting fast — and the direction of travel is clear.</p>
+
+    <p>The New York State Department of Environmental Conservation's PFAS in Apparel Law, codified at <a href="https://dec.ny.gov/environmental-protection/help-for-businesses/pfas-in-apparel-law" target="_blank" rel="noopener">Section 37-0121 of the Environmental Conservation Law, prohibits the sale of apparel containing PFAS as intentionally added chemicals beginning January 1, 2025</a>. The law covers a sweeping range of items including undergarments, shirts, pants, dresses, leisurewear, formal wear, onesies, and bibs. Outdoor apparel for severe wet conditions follows by 2028.</p>
+
+    <p>California's AB 1817 takes a similar approach — restricting PFAS in textile articles starting January 1, 2025, with tightening thresholds for total organic fluorine. Colorado, Maine, Minnesota, Washington, and others are layering on their own restrictions.</p>
+
+    <p>Even where you live isn't covered by a state ban, the practical effect on national brands is significant: many large retailers — REI is one prominent example — have publicly committed to phasing out PFAS rather than maintain split product lines for different states. The category is moving, not because every shopper has demanded it, but because regulators and a critical mass of brands have decided it's not worth defending.</p>
+
+    <p>The takeaway for shoppers: you're not asking for something fringe. You're asking for something the industry itself has started conceding is the right direction.</p>
+
+    <div class="divider">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor"><circle cx="10" cy="10" r="3"/></svg>
+    </div>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>What is PFAS in clothing?</summary>
+        <div class="faq-answer">
+          <p>PFAS — per- and polyfluoroalkyl substances — are a class of more than 14,000 human-made chemicals used in textiles to provide water, oil, and stain repellency. They're often called "forever chemicals" because the carbon-fluorine bond at their core makes them extremely persistent in the environment and the human body. In clothing, they typically appear as a surface coating (DWR finish), as an additive within synthetic fibers, or as part of a waterproof membrane like Gore-Tex.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How can I tell if my clothing has PFAS?</summary>
+        <div class="faq-answer">
+          <p>The most reliable signal is marketing language: items labeled waterproof, water-resistant, stain-resistant, stain-proof, easy-care, wrinkle-free, or DWR-finished are likely to contain PFAS. Chemical finishes aren't required to be disclosed on labels in the US, so you're often reading between the lines. As a quick at-home test, the Ecology Center recommends placing a water droplet on the fabric — strong beading suggests a repellent finish, while absorption suggests untreated fabric.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Are PFAS in clothing harmful?</summary>
+        <div class="faq-answer">
+          <p>Research has linked PFAS exposure to immune system effects, hormone disruption, fertility issues, thyroid problems, and certain cancers. The risk from any single garment is low, but PFAS bioaccumulate — meaning exposure from clothing, water, food packaging, cosmetics, and other sources adds up over time. They also don't break down in the environment, so wearing and washing PFAS-treated clothing contributes to broader contamination of water and soil.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What clothing is most likely to contain PFAS?</summary>
+        <div class="faq-answer">
+          <p>The categories with the highest likelihood are: rain jackets and waterproof outerwear, ski and snow gear, activewear with moisture-wicking claims, stain-resistant pants and uniforms, school uniforms, and children's clothing marketed as wipeable or mess-proof. One study cited by NEWMOA found 100% of water- or stain-resistant children's clothing items tested contained PFAS.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>How do I find PFAS-free clothing?</summary>
+        <div class="faq-answer">
+          <p>Look for explicit labels — PFAS-free, PFC-free, fluorocarbon-free, or C0 DWR finish. Use certifications as shortcuts: GOTS prohibits PFAS in certified organic cotton, OEKO-TEX Standard 100 tests for specific PFAS compounds, bluesign evaluates supply-chain chemistry, and MADE SAFE screens against PFAS by name. Prioritizing untreated natural fibers (cotton, linen, hemp, wool, silk) for everyday wear is the simplest path.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is a DWR finish always PFAS?</summary>
+        <div class="faq-answer">
+          <p>Historically, almost all DWR (durable water repellent) finishes were PFAS-based. That's changing. "C0" DWR or "fluorine-free DWR" finishes are explicitly PFAS-free, typically using polyurethane, polyacrylate, wax, or silicone chemistries. If a brand advertises a DWR finish without specifying C0 or fluorine-free, assume it's PFAS until confirmed otherwise.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Does washing remove PFAS from clothing?</summary>
+        <div class="faq-answer">
+          <p>Washing reduces but does not eliminate PFAS — and there's a real downside: each wash releases PFAS into wastewater. As NEWMOA notes, when PFAS-containing textiles are washed, some of the PFAS exits in the wash water, which is then discharged into the sewer or septic system. Wastewater treatment plants generally cannot remove PFAS, so it eventually enters surface water and drinking water. The most effective intervention is at the point of purchase, not the point of laundry.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>What fabrics don't use PFAS?</summary>
+        <div class="faq-answer">
+          <p>Untreated natural fibers — cotton, linen, hemp, wool, silk — are the safest categories. Organic versions (GOTS-certified organic cotton in particular) explicitly prohibit PFAS in processing. Synthetic fibers like polyester and nylon don't inherently contain PFAS, but they're far more likely to be surface-treated with PFAS-based DWR or stain finishes, so the synthetic vs. natural distinction often correlates with the PFAS distinction in practice.</p>
+        </div>
+      </details>
+    </div>
+
+  </article>
+
+  <!-- DESKTOP TOC -->
+  <aside class="toc-aside">
+    <div class="toc-label">In this guide</div>
+    <ul class="toc-list">
+      <li><a href="#what-are-pfas">What Are PFAS?</a></li>
+      <li><a href="#where-pfas-appear">Where PFAS Appear</a></li>
+      <li><a href="#how-to-spot-pfas">How to Spot PFAS on Labels</a></li>
+      <li><a href="#how-to-avoid-pfas">How to Avoid PFAS</a></li>
+      <li><a href="#safer-alternatives">Safer Alternatives</a></li>
+      <li><a href="#regulation">Regulation Is Catching Up</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </aside>
+</div>
+
+<!-- ARTICLE FOOTER -->
+<div class="article-footer">
+  <section class="related-section">
+    <div class="section-label">Keep Reading</div>
+    <h2>Related guides from Wove</h2>
+    <div class="related-grid">
+      <a href="/blog/how-to-read-clothing-labels/" class="related-card">
+        <div class="related-cat">Fabric Guide</div>
+        <div class="related-title">How to Read Clothing Labels: A Complete Guide to Fabrics, Care, and Quality</div>
+      </a>
+      <a href="/blog/microplastics-in-clothing/" class="related-card">
+        <div class="related-cat">Materials</div>
+        <div class="related-title">Microplastics in Clothing: A Beginner's Guide</div>
+      </a>
+      <a href="#" class="related-card">
+        <div class="related-cat">Wardrobe</div>
+        <div class="related-title">Non-Toxic Basics: Underwear, Bras &amp; Base Layers <em style="font-style:italic;font-size:13px;color:var(--ink-mute);display:block;margin-top:4px;">(coming soon)</em></div>
+      </a>
+      <a href="#" class="related-card">
+        <div class="related-cat">Fabric Guide</div>
+        <div class="related-title">The Complete Guide to Organic Cotton <em style="font-style:italic;font-size:13px;color:var(--ink-mute);display:block;margin-top:4px;">(coming soon)</em></div>
+      </a>
+    </div>
+  </section>
+
+  <section class="sources-section">
+    <h3>Sources &amp; further reading</h3>
+    <ul>
+      <li>Environmental Working Group. <a href="https://www.ewg.org/news-insights/news/2022/01/new-tests-find-toxic-forever-chemicals-bedding-yoga-pants-and-other" target="_blank" rel="noopener">New tests find toxic 'forever chemicals' in bedding, yoga pants and other textiles</a>, January 2022.</li>
+      <li>NEWMOA. <a href="https://www.newmoa.org/wp-content/uploads/2023/05/PFAS_ClothingandTextiles.pdf" target="_blank" rel="noopener">PFAS in Clothing and Other Textiles factsheet</a>, 2023.</li>
+      <li>Ecology Center. <a href="https://www.ecocenter.org/test-your-products-pfas-water-droplet" target="_blank" rel="noopener">Test Your Products for PFAS with a Water Droplet</a>.</li>
+      <li>bluesign. <a href="https://www.bluesign.com/pfas-in-clothing" target="_blank" rel="noopener">PFAS in Clothing: Bans, Health Risks, and Safer Alternatives</a>.</li>
+      <li>New York State Department of Environmental Conservation. <a href="https://dec.ny.gov/environmental-protection/help-for-businesses/pfas-in-apparel-law" target="_blank" rel="noopener">PFAS in Apparel Law (ECL 37-0121)</a>.</li>
+      <li>European Environment Agency. <a href="https://www.eea.europa.eu/en/analysis/publications/pfas-in-textiles-in-europes-circular-economy" target="_blank" rel="noopener">PFAS in textiles in Europe's circular economy</a>.</li>
+      <li>McGill Office for Science and Society. <a href="https://www.mcgill.ca/oss/article/general-science/forever-chemicals-seem-be-forever-spotlight" target="_blank" rel="noopener">"Forever Chemicals" Seem to be Forever in the Spotlight</a>.</li>
+      <li>Toxic-Free Future. <a href="https://toxicfreefuture.org/toxic-chemicals/pfas-forever-chemicals/" target="_blank" rel="noopener">Get the Facts: PFAS "Forever Chemicals"</a>.</li>
+      <li>NRDC. <a href="https://www.nrdc.org/stories/forever-chemicals-called-pfas-show-your-food-clothes-and-home" target="_blank" rel="noopener">"Forever Chemicals" Called PFAS Show Up in Your Food, Clothes, and Home</a>.</li>
+    </ul>
+  </section>
+</div>
+
+<!-- SITE FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-name">
+          <img src="../../images/logo.png" alt="Wove" class="footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="logo-placeholder dark" style="display:none">LOGO</div>
+        </div>
+        <p>Shop consciously. Live comfortably. Wove brings transparency to the fashion industry — no ads, no brand deals, just the truth about your fabrics.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Project</h4>
+        <a href="../../about/">The Story</a>
+        <a href="../../wovescore/">Wove Score</a>
+        <a href="../../contact/">Contact</a>
+        <a href="https://shopmy.us/shop/emmhemphill" target="_blank" rel="noopener">Shop Our Top Picks</a>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <a href="../">Blog</a>
+        <a href="../../privacypolicy/">Privacy Policy</a>
+        <a href="#">Terms of Use</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 Wove LLC. Shop consciously. Live comfortably.</div>
+  </div>
+</footer>
+
+<script>
+// Reading progress bar
+window.addEventListener('scroll', () => {
+  const bar = document.getElementById('progressBar');
+  const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+  bar.style.width = scrolled + '%';
+});
+
+// Nav scroll state
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); });
+
+// TOC active state
+const tocLinks = document.querySelectorAll('.toc-aside .toc-list a');
+const sections = [...tocLinks].map(a => document.getElementById(a.getAttribute('href').slice(1))).filter(Boolean);
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      tocLinks.forEach(link => link.classList.remove('active'));
+      const activeLink = document.querySelector(`.toc-aside .toc-list a[href="#${entry.target.id}"]`);
+      if (activeLink) activeLink.classList.add('active');
+    }
+  });
+}, { rootMargin: '-30% 0px -60% 0px' });
+
+sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>

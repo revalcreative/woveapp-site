@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Non-Toxic Basics: A Buyer's Guide to Underwear, Bras & Base Layers | Wove</title>
+<meta name="description" content="A buyer's guide to non-toxic underwear, bras, and base layers — what materials and certifications actually matter, and how to shop the categories closest to your skin." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream-50: #FBF7ED;
+  --cream-100: #F5EFE2;
+  --cream-200: #ECE3CE;
+  --cream-300: #DDD0B4;
+  --green-deep: #2D4A3E;
+  --green-700: #3D5C4F;
+  --green-500: #6B8B7B;
+  --green-300: #A4BCB0;
+  --green-100: #DCE6DF;
+  --terracotta: #B8765A;
+  --terracotta-soft: #D9A48E;
+  --ink: #1F1A14;
+  --ink-soft: #524A3D;
+  --ink-mute: #877D6A;
+  --border: #D9CFB8;
+  --border-soft: #E8DFCA;
+  --display: 'Fraunces', Georgia, serif;
+  --body: 'Lora', Georgia, serif;
+  --max-w: 1240px;
+  --content-w: 720px;
+  --wove-green: #5B6B54;
+  --wove-green-dark: #4A5A42;
+  --wove-green-deep-nav: #3D4D36;
+  --wove-cream: #F0EBE3;
+  --wove-charcoal: #2A2A2A;
+  --wove-text: #333333;
+  --wove-text-light: #6B6B6B;
+  --wove-text-muted: #9A9A9A;
+  --wove-border: rgba(0,0,0,0.06);
+  --radius-full: 50px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+body {
+  font-family: var(--body);
+  background: var(--cream-50);
+  color: var(--ink);
+  line-height: 1.7;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+}
+.progress-bar {
+  position: fixed; top: 68px; left: 0;
+  height: 3px; width: 0%;
+  background: var(--green-deep);
+  z-index: 99; transition: width 0.1s ease-out;
+}
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(240, 235, 227, 0.92);
+  backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  padding: 0 48px; height: 68px;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid var(--wove-border); transition: box-shadow 0.3s;
+  font-family: 'Poppins', -apple-system, sans-serif;
+}
+nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.04); }
+.nav-logo { display: flex; align-items: center; text-decoration: none; }
+.nav-logo-img { height: 40px; object-fit: contain; }
+.logo-placeholder {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 120px; height: 44px; border: 2px dashed var(--wove-green);
+  border-radius: 12px; font-size: 11px; font-weight: 700;
+  color: var(--wove-green); letter-spacing: 1.5px; background: rgba(91,107,84,0.05);
+}
+.nav-links { display: flex; align-items: center; gap: 32px; }
+.nav-links a { text-decoration: none; color: var(--wove-text); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+.nav-links a:hover { color: var(--wove-green-dark); }
+.nav-cta {
+  background: var(--wove-green) !important; color: white !important;
+  padding: 10px 26px; border-radius: var(--radius-full);
+  font-weight: 600 !important; font-size: 13px !important; transition: all 0.25s !important;
+}
+.nav-cta:hover { background: var(--wove-green-deep-nav) !important; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(91,107,84,0.25); }
+@media (max-width: 960px) { nav { padding: 0 24px; } .nav-links a:not(.nav-cta) { display: none; } }
+
+.article-header { max-width: var(--max-w); margin: 0 auto; padding: 80px 32px 40px; }
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--terracotta); font-weight: 500; margin-bottom: 24px; font-family: var(--body);
+}
+.eyebrow::before { content: ''; display: block; width: 30px; height: 1px; background: var(--terracotta); }
+.article-title {
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(40px, 6vw, 72px); line-height: 1.05;
+  letter-spacing: -0.025em; color: var(--ink);
+  max-width: 900px; margin-bottom: 32px;
+  font-variation-settings: "opsz" 144, "SOFT" 30;
+}
+.article-title em { font-style: italic; color: var(--green-deep); font-variation-settings: "opsz" 144, "SOFT" 100; }
+.article-lede {
+  font-family: var(--display); font-weight: 300;
+  font-size: clamp(20px, 2.2vw, 24px); line-height: 1.45;
+  color: var(--ink-soft); max-width: 720px; margin-bottom: 40px;
+  font-style: italic; font-variation-settings: "opsz" 144;
+}
+.article-meta {
+  display: flex; gap: 24px; flex-wrap: wrap; font-size: 14px;
+  color: var(--ink-mute); padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-soft); font-family: var(--body);
+}
+.article-meta span { display: inline-flex; align-items: center; gap: 6px; }
+.article-meta .dot { color: var(--cream-300); }
+
+.hero-image { max-width: var(--max-w); margin: 0 auto 60px; padding: 0 32px; }
+
+.article-grid {
+  max-width: var(--max-w); margin: 0 auto;
+  padding: 0 32px 80px;
+  display: grid; grid-template-columns: 1fr 260px;
+  gap: 80px; align-items: start;
+}
+@media (max-width: 960px) { .article-grid { grid-template-columns: 1fr; gap: 0; } .toc-aside { display: none; } }
+
+.toc-aside { position: sticky; top: 100px; font-family: var(--body); }
+.toc-label {
+  font-family: var(--display); font-size: 12px; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--ink-mute); margin-bottom: 16px;
+  font-weight: 500; padding-bottom: 12px; border-bottom: 1px solid var(--border-soft);
+}
+.toc-list { list-style: none; padding: 0; margin: 0; }
+.toc-list li { margin-bottom: 10px; line-height: 1.4; }
+.toc-list li.sub { padding-left: 16px; font-size: 13px; }
+.toc-list a {
+  color: var(--ink-soft); text-decoration: none; font-size: 14px;
+  transition: color 0.2s; display: block; padding-left: 12px;
+  border-left: 2px solid transparent;
+}
+.toc-list a:hover { color: var(--green-deep); border-left-color: var(--green-300); }
+.toc-list a.active { color: var(--green-deep); border-left-color: var(--green-deep); font-weight: 500; }
+
+.toc-mobile { display: none; margin: 0 32px 48px; padding: 24px; background: var(--cream-100); border: 1px solid var(--border-soft); border-radius: 8px; }
+@media (max-width: 960px) {
+  .toc-mobile { display: block; }
+  .article-grid { padding-top: 0; }
+  .article-header { padding: 88px 24px 32px; }
+  .hero-image { padding: 0 24px; }
+  .toc-mobile { margin: 0 24px 48px; }
+  .article-grid { padding: 0 24px 80px; }
+  .article-footer { padding: 0 24px 80px; }
+}
+.toc-mobile summary {
+  font-family: var(--display); font-size: 14px; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--green-deep); cursor: pointer;
+  list-style: none; display: flex; justify-content: space-between; align-items: center; font-weight: 500;
+}
+.toc-mobile summary::after { content: '+'; font-family: var(--display); font-size: 22px; font-weight: 300; }
+.toc-mobile[open] summary::after { content: '−'; }
+.toc-mobile summary::-webkit-details-marker { display: none; }
+.toc-mobile .toc-list { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border-soft); }
+
+.article-body { font-size: 18px; line-height: 1.75; color: var(--ink); }
+.article-body p { margin-bottom: 24px; }
+.article-body p + p { margin-top: -8px; }
+.article-body h2 {
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(28px, 3.4vw, 38px); line-height: 1.15;
+  letter-spacing: -0.015em; color: var(--green-deep);
+  margin-top: 80px; margin-bottom: 32px; scroll-margin-top: 100px;
+  font-variation-settings: "opsz" 144, "SOFT" 40; position: relative;
+}
+.article-body h2::before {
+  content: ''; display: block; width: 40px; height: 1px;
+  background: var(--terracotta); margin-bottom: 24px;
+}
+.article-body h3 {
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(20px, 2.2vw, 24px); line-height: 1.3;
+  color: var(--ink); margin-top: 48px; margin-bottom: 16px;
+  scroll-margin-top: 100px; font-variation-settings: "opsz" 36, "SOFT" 30;
+}
+.article-body a {
+  color: var(--green-deep); text-decoration: none;
+  background-image: linear-gradient(var(--green-300), var(--green-300));
+  background-size: 100% 1px; background-repeat: no-repeat; background-position: 0 95%;
+  transition: background-size 0.2s;
+}
+.article-body a:hover { background-size: 100% 100%; background-image: linear-gradient(rgba(164,188,176,0.25), rgba(164,188,176,0.25)); }
+.article-body strong { color: var(--ink); font-weight: 600; }
+.article-body em { font-style: italic; }
+.article-body ul, .article-body ol { margin: 0 0 32px 0; padding-left: 0; list-style: none; }
+.article-body ul li { position: relative; padding-left: 28px; margin-bottom: 14px; line-height: 1.65; }
+.article-body ul li::before {
+  content: ''; position: absolute; left: 4px; top: 14px;
+  width: 8px; height: 8px; background: var(--green-300); border-radius: 50%;
+}
+.article-body ol { counter-reset: ol-counter; }
+.article-body ol li { position: relative; padding-left: 44px; margin-bottom: 18px; counter-increment: ol-counter; }
+.article-body ol li::before {
+  content: counter(ol-counter, decimal-leading-zero);
+  position: absolute; left: 0; top: 0;
+  font-family: var(--display); font-size: 14px; font-weight: 500;
+  color: var(--terracotta); letter-spacing: 0.08em;
+}
+
+figure { margin: 48px 0; }
+figure svg { width: 100%; height: auto; display: block; }
+figcaption {
+  margin-top: 14px; font-family: var(--body); font-style: italic;
+  font-size: 14px; color: var(--ink-mute); line-height: 1.5;
+  padding-left: 16px; border-left: 2px solid var(--green-300);
+}
+
+.faq-list { margin: 32px 0; }
+.faq-item { border-bottom: 1px solid var(--border-soft); padding: 8px 0; }
+.faq-item summary {
+  font-family: var(--display); font-size: 19px; font-weight: 500;
+  color: var(--ink); cursor: pointer; padding: 20px 40px 20px 0;
+  list-style: none; position: relative; transition: color 0.2s;
+  font-variation-settings: "opsz" 36, "SOFT" 30;
+}
+.faq-item summary:hover { color: var(--green-deep); }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+'; position: absolute; right: 0; top: 50%;
+  transform: translateY(-50%); font-family: var(--display);
+  font-size: 28px; font-weight: 300; color: var(--green-deep);
+}
+.faq-item[open] summary::after { content: '−'; }
+.faq-item .faq-answer { padding: 0 0 24px 0; color: var(--ink-soft); line-height: 1.7; }
+.faq-item .faq-answer p { margin-bottom: 16px; }
+.faq-item .faq-answer p:last-child { margin-bottom: 0; }
+
+.cta-block {
+  background: var(--green-deep); color: var(--cream-50);
+  padding: 48px; border-radius: 8px; margin: 60px 0;
+  position: relative; overflow: hidden;
+}
+.cta-block::before {
+  content: ''; position: absolute; top: -50%; right: -10%;
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(184,118,90,0.15), transparent 70%); border-radius: 50%;
+}
+.cta-block .cta-eyebrow { font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--terracotta-soft); margin-bottom: 12px; font-weight: 500; font-family: var(--body); }
+.cta-block h3 {
+  font-family: var(--display); font-size: clamp(22px, 2.8vw, 30px); font-weight: 400;
+  color: var(--cream-50); margin: 0 0 16px 0; line-height: 1.2;
+  font-variation-settings: "opsz" 144, "SOFT" 40;
+}
+.cta-block p { color: rgba(251, 247, 237, 0.85); margin-bottom: 24px; max-width: 540px; font-family: var(--body); font-size: 16px; }
+.cta-block a.cta-link {
+  display: inline-block; background: var(--cream-50); color: var(--green-deep);
+  padding: 14px 28px; text-decoration: none; background-image: none;
+  border-radius: 4px; font-family: var(--body); font-weight: 500; font-size: 15px;
+  letter-spacing: 0.04em; transition: transform 0.2s, background 0.2s;
+}
+.cta-block a.cta-link:hover { background: var(--terracotta-soft); transform: translateY(-2px); }
+
+.article-footer { max-width: var(--max-w); margin: 0 auto; padding: 0 32px 80px; }
+.related-section { background: var(--cream-100); border-radius: 12px; padding: 56px 48px; margin-bottom: 48px; border: 1px solid var(--border-soft); }
+.related-section .section-label { font-family: var(--display); font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 12px; font-weight: 500; }
+.related-section h2 { font-family: var(--display); font-size: clamp(28px, 3.4vw, 36px); font-weight: 400; color: var(--green-deep); margin: 0 0 32px 0; font-variation-settings: "opsz" 144, "SOFT" 40; }
+.related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.related-card { background: var(--cream-50); padding: 24px; border-radius: 6px; text-decoration: none; color: var(--ink); border: 1px solid var(--border-soft); transition: transform 0.2s, border-color 0.2s; display: block; }
+.related-card:hover { transform: translateY(-3px); border-color: var(--green-300); background-image: none; }
+.related-card .related-cat { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 8px; font-family: var(--body); }
+.related-card .related-title { font-family: var(--display); font-size: 17px; font-weight: 500; line-height: 1.3; color: var(--ink); font-variation-settings: "opsz" 36, "SOFT" 30; }
+
+.sources-section { padding-top: 48px; border-top: 1px solid var(--border-soft); }
+.sources-section h3 { font-family: var(--display); font-size: 14px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500; color: var(--ink-mute); margin-bottom: 24px; }
+.sources-section ul { list-style: none; padding: 0; }
+.sources-section li { padding: 12px 0; border-bottom: 1px solid var(--border-soft); font-size: 14px; color: var(--ink-soft); line-height: 1.5; font-family: var(--body); }
+.sources-section a { color: var(--green-deep); text-decoration: underline; text-decoration-color: var(--green-300); text-underline-offset: 3px; background-image: none; }
+
+.drop-cap::first-letter { font-family: var(--display); font-size: 5em; float: left; line-height: 0.85; margin: 8px 12px 0 0; color: var(--green-deep); font-weight: 500; font-variation-settings: "opsz" 144; }
+
+footer.site-footer { padding: 56px 48px 28px; background: var(--wove-charcoal); color: rgba(255,255,255,0.55); font-family: 'Poppins', -apple-system, sans-serif; }
+.footer-inner { max-width: 960px; margin: 0 auto; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 56px; margin-bottom: 40px; }
+.footer-logo-img { height: 36px; object-fit: contain; filter: brightness(10); }
+.logo-placeholder.dark { display: inline-flex; align-items: center; justify-content: center; width: 120px; height: 44px; border: 2px dashed rgba(255,255,255,0.3); border-radius: 12px; font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.5); letter-spacing: 1.5px; background: rgba(255,255,255,0.05); }
+.footer-brand-name { margin-bottom: 12px; }
+.footer-brand p { font-size: 13px; line-height: 1.7; max-width: 300px; }
+.footer-col h4 { font-family: 'Poppins', sans-serif; color: white; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 18px; }
+.footer-col a { display: block; color: rgba(255,255,255,0.45); text-decoration: none; font-size: 13px; padding: 4px 0; transition: color 0.2s; }
+.footer-col a:hover { color: white; }
+.footer-bottom { padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 12px; text-align: center; color: rgba(255,255,255,0.3); }
+@media (max-width: 960px) { footer.site-footer { padding: 56px 24px 28px; } .footer-grid { grid-template-columns: 1fr; gap: 28px; } }
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav id="main-nav">
+  <a href="../../" class="nav-logo">
+    <img src="../../images/logo.png" alt="Wove" class="nav-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="logo-placeholder" style="display:none">LOGO</div>
+  </a>
+  <div class="nav-links">
+    <a href="../../about/">The Story</a>
+    <a href="../../#how-it-works">How It Works</a>
+    <a href="../../wovescore/">Wove Score</a>
+    <a href="../">Blog</a>
+    <a href="https://shopmy.us/shop/emmhemphill" target="_blank" rel="noopener">Shop Our Top Picks</a>
+    <a href="https://apps.apple.com/us/app/wove-score/id6755356871" class="nav-cta">Download App</a>
+  </div>
+</nav>
+
+<section class="article-header">
+  <div class="eyebrow">Wardrobe · Guide</div>
+  <h1 class="article-title">Non-Toxic Basics: <em>A Buyer's Guide to Underwear, Bras &amp; Base Layers</em></h1>
+  <p class="article-lede">The categories closest to your skin — and how to shop them without the marketing fog.</p>
+  <div class="article-meta">
+    <span>By Emily Hemphill</span>
+    <span class="dot">·</span>
+    <span>11 min read</span>
+    <span class="dot">·</span>
+    <span>Updated May 2026</span>
+  </div>
+</section>
+
+<div class="hero-image">
+  <figure>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="A neatly folded stack of basics — underwear, a bra, and a base layer — next to the title 'Non-Toxic Basics: A Buyer's Guide to Underwear, Bras and Base Layers'." style="width:100%;max-width:1200px;height:auto;display:block;margin:0 auto;">
+      <defs>
+        <linearGradient id="bgNT" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#f5f0e1"/><stop offset="1" stop-color="#e9e3cf"/></linearGradient>
+        <linearGradient id="fold1" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#faf6e9"/><stop offset="1" stop-color="#e9e3cf"/></linearGradient>
+        <linearGradient id="fold2" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#a3b18a"/><stop offset="1" stop-color="#8a9a72"/></linearGradient>
+        <linearGradient id="fold3" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#588157"/><stop offset="1" stop-color="#3a5a40"/></linearGradient>
+      </defs>
+      <rect width="1200" height="520" fill="url(#bgNT)"/>
+      <g transform="translate(780,140)">
+        <g transform="translate(0,200)"><rect x="0" y="0" width="320" height="60" rx="4" fill="url(#fold3)" stroke="#2d4a2b" stroke-width="1"/><line x1="80" y1="0" x2="80" y2="60" stroke="#2d4a2b" stroke-width="0.5" opacity="0.5"/><line x1="240" y1="0" x2="240" y2="60" stroke="#2d4a2b" stroke-width="0.5" opacity="0.5"/></g>
+        <g transform="translate(20,120)"><rect x="0" y="0" width="300" height="70" rx="4" fill="url(#fold2)" stroke="#3a5a40" stroke-width="1"/><path d="M 110 25 Q 130 10 150 25 Q 170 10 190 25" stroke="#3a5a40" stroke-width="1" fill="none" opacity="0.4"/></g>
+        <g transform="translate(50,30)"><rect x="0" y="0" width="260" height="70" rx="4" fill="url(#fold1)" stroke="#dad7cd" stroke-width="1"/></g>
+        <g opacity="0.85" transform="translate(0,-30)">
+          <path d="M 0 30 Q 0 0 30 0 L 110 0 L 130 20 L 150 0 L 230 0 Q 260 0 260 30 L 260 50 L 130 80 L 0 50 Z" fill="#faf6e9" stroke="#3a5a40" stroke-width="1.5"/>
+          <line x1="130" y1="80" x2="130" y2="65" stroke="#3a5a40" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="50" cy="35" r="2" fill="#a3b18a"/>
+          <circle cx="210" cy="35" r="2" fill="#a3b18a"/>
+        </g>
+      </g>
+      <g transform="translate(60,180)">
+        <text x="0" y="0" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="700" fill="#2d4a2b">Non-Toxic Basics</text>
+        <line x1="0" y1="22" x2="80" y2="22" stroke="#588157" stroke-width="3"/>
+        <text x="0" y="64" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="400" fill="#3a5a40" font-style="italic">A buyer's guide to underwear,</text>
+        <text x="0" y="100" font-family="Georgia, 'Times New Roman', serif" font-size="28" font-weight="400" fill="#3a5a40" font-style="italic">bras &amp; base layers</text>
+        <text x="0" y="148" font-family="system-ui, -apple-system, sans-serif" font-size="17" fill="#4a4a4a">The categories closest to your skin —</text>
+        <text x="0" y="172" font-family="system-ui, -apple-system, sans-serif" font-size="17" fill="#4a4a4a">and how to shop them without the marketing fog.</text>
+      </g>
+    </svg>
+  </figure>
+</div>
+
+<details class="toc-mobile">
+  <summary>What's Inside</summary>
+  <ul class="toc-list">
+    <li><a href="#what-non-toxic-means">What "Non-Toxic" Actually Means</a></li>
+    <li><a href="#why-basics-matter-most">Why Basics Matter Most</a></li>
+    <li><a href="#the-checklist">The Non-Toxic Basics Checklist</a></li>
+    <li><a href="#underwear">How to Shop for Underwear</a></li>
+    <li><a href="#bras">How to Shop for Bras</a></li>
+    <li><a href="#base-layers">How to Shop for Base Layers</a></li>
+    <li><a href="#kids">Babies &amp; Kids</a></li>
+    <li><a href="#brands">Brands Worth Knowing</a></li>
+    <li><a href="#how-wove-helps">How Wove Helps</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+</details>
+
+<div class="article-grid">
+  <article class="article-body">
+
+    <p class="drop-cap">The first place chemical exposure from clothing actually shows up is the part most people overlook. It's not the outerwear hanging in the front of the closet. It's the drawer of basics — underwear, bras, base layers, and the soft pieces that sit against your skin for the longest hours of the day, get washed and re-worn the most often, and have the most direct path for residues to migrate.</p>
+
+    <p>If you've been working through low-tox living and trying to figure out where clothing fits in, <strong>basics are where to start.</strong> This guide walks through what "non-toxic" should actually mean for these categories, why it matters most here, which materials and certifications hold up under scrutiny, and how to shop for underwear, bras, and base layers without falling for the vague marketing that floods this space.</p>
+
+    <h2 id="what-non-toxic-means">What "non-toxic" should actually mean for basics</h2>
+
+    <p>"Non-toxic" is one of the most overused words in clothing marketing. It gets stamped on packaging with no shared definition, no certification backing, and no agreed-upon checklist. That makes it nearly meaningless as a label — and useful only when you can break it down into the four things that <em>actually</em> determine whether a garment is low-exposure or not.</p>
+
+    <p>A genuinely non-toxic basic is one where all four of the following are true:</p>
+    <ul>
+      <li><strong>The fiber itself isn't plastic.</strong> Cotton, linen, hemp, wool, silk, and Tencel don't shed microplastics. Polyester, nylon, acrylic, and spandex do. For categories that need stretch, look for blends that minimize the synthetic percentage.</li>
+      <li><strong>The fiber wasn't grown with synthetic pesticides.</strong> Conventional cotton is heavily treated; organic cotton isn't. The most reliable proof is a third-party certification like GOTS — covered in detail in our <a href="/blog/organic-cotton-guide">organic cotton guide</a>.</li>
+      <li><strong>The fabric wasn't processed with harmful chemistry.</strong> Conventional textile finishing can include formaldehyde, chlorine bleach, azo dyes, heavy metals, and PFAS-based finishes. GOTS at the processing stage and OEKO-TEX on the finished product are the two main certifications that address this.</li>
+      <li><strong>The dyes and any finishes are non-toxic.</strong> Low-impact, GOTS-approved dyes; no anti-stain or anti-odor PFAS treatments; no formaldehyde-based wrinkle-resistance. For more on the PFAS-specific concern, see our <a href="/blog/pfas-in-clothing">PFAS in clothing guide</a>.</li>
+    </ul>
+    <p>If a brand makes a non-toxic claim and can't back any of those four with a certification or a clear material disclosure, treat it as marketing. If they can back all four, you're looking at something genuinely worth paying attention to.</p>
+
+    <h2 id="why-basics-matter-most">Why this matters most for basics</h2>
+
+    <p>Basics earn their priority because of three things working together: where they sit on the body, how long they stay there, and how often they get washed and worn.</p>
+
+    <figure>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" role="img" aria-label="A diagram showing why basics matter most for non-toxic clothing choices: skin contact hours, sensitive contact areas, and laundering frequency.">
+        <rect width="1200" height="540" fill="#faf6e9"/>
+        <text x="60" y="58" font-family="Georgia,serif" font-size="30" font-weight="700" fill="#2d4a2b">Why basics matter most</text>
+        <text x="60" y="88" font-family="system-ui,sans-serif" font-size="16" fill="#4a4a4a">Three factors converge on the categories closest to the body.</text>
+        <g transform="translate(60,140)">
+          <rect width="360" height="360" rx="14" fill="#ffffff" stroke="#3a5a40" stroke-width="2"/>
+          <g transform="translate(180,90)"><circle cx="0" cy="0" r="50" fill="none" stroke="#3a5a40" stroke-width="3"/><text x="0" y="8" font-family="Georgia,serif" font-size="28" font-weight="700" fill="#3a5a40" text-anchor="middle">16+</text></g>
+          <text x="180" y="180" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#2d4a2b" text-anchor="middle">Hours of skin contact</text>
+          <text x="180" y="220" font-family="system-ui,sans-serif" font-size="14" fill="#4a4a4a" text-anchor="middle">Underwear, bras, and base layers</text>
+          <text x="180" y="240" font-family="system-ui,sans-serif" font-size="14" fill="#4a4a4a" text-anchor="middle">are against your skin for most</text>
+          <text x="180" y="260" font-family="system-ui,sans-serif" font-size="14" fill="#4a4a4a" text-anchor="middle">of the day — typically more than</text>
+          <text x="180" y="280" font-family="system-ui,sans-serif" font-size="14" fill="#4a4a4a" text-anchor="middle">16 hours when you include sleep.</text>
+          <text x="180" y="320" font-family="system-ui,sans-serif" font-size="13" fill="#6b6b6b" text-anchor="middle" font-style="italic">More contact time = more chance</text>
+          <text x="180" y="338" font-family="system-ui,sans-serif" font-size="13" fill="#6b6b6b" text-anchor="middle" font-style="italic">for residues to migrate.</text>
+        </g>
+        <g transform="translate(440,140)">
+          <rect width="360" height="360" rx="14" fill="#ffffff" stroke="#3a5a40" stroke-width="2"/>
+          <g transform="translate(180,90)">
+            <path d="M 0 -60 Q -16 -60 -16 -44 L -16 -32 Q -48 -28 -48 0 L -48 30 L -36 36 L -36 12 L -16 8 L -16 56 L 16 56 L 16 8 L 36 12 L 36 36 L 48 30 L 48 0 Q 48 -28 16 -32 L 16 -44 Q 16 -60 0 -60 Z" fill="none" stroke="#3a5a40" stroke-width="2.5"/>
+            <circle cx="-12" cy="0" r="4" fill="#c2410c"/>
+            <circle cx="12" cy="0" r="4" fill="#c2410c"/>
+            <circle cx="0" cy="40" r="4" fill="#c2410c"/>
+          </g>
+          <text x="180" y="180" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#2d4a2b" text-anchor="middle">Sensitive contact zones</text>
+          <text x="180" y="220" font-family="system-ui,sans-serif" font-size="14" fill="#4a4a4a" text-anchor="middle">Basics cover the most permeable</text>
+          <text x="180" y="240" font-family="system-ui,sans-serif" font-size="14" fill="#4a4a4a" text-anchor="middle">and chemically sensitive parts</text>
+          <text x="180" y="260" font-family="system-ui,sans-serif" font-size="14" fill="#4a4a4a" text-anchor="middle">of the body — areas where skin is</text>
+          <text x="180" y="280" font-family="system-ui,sans-serif" font-size="14" fill="#4a4a4a" text-anchor="middle">thinner and absorption is higher.</text>
+          <text x="180" y="320" font-family="system-ui,sans-serif" font-size="13" fill="#6b6b6b" text-anchor="middle" font-style="italic">Residues here matter more than</text>
+          <text x="180" y="338" font-family="system-ui,sans-serif" font-size="13" fill="#6b6b6b" text-anchor="middle" font-style="italic">on, say, a wool blazer.</text>
+        </g>
+        <g transform="translate(820,140)">
+          <rect width="320" height="360" rx="14" fill="#ffffff" stroke="#3a5a40" stroke-width="2"/>
+          <g transform="translate(160,90)">
+            <rect x="-40" y="-40" width="80" height="80" rx="8" fill="none" stroke="#3a5a40" stroke-width="2.5"/>
+            <circle cx="0" cy="0" r="22" fill="none" stroke="#3a5a40" stroke-width="2.5"/>
+            <path d="M 0 -8 Q 8 0 0 8 Q -8 0 0 -8" fill="#3a5a40" opacity="0.4"/>
+          </g>
+          <text x="160" y="180" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#2d4a2b" text-anchor="middle">Washed and worn often</text>
+          <text x="160" y="220" font-family="system-ui,sans-serif" font-size="14" fill="#4a4a4a" text-anchor="middle">Underwear and bras are</text>
+          <text x="160" y="240" font-family="system-ui,sans-serif" font-size="14" fill="#4a4a4a" text-anchor="middle">laundered far more frequently</text>
+          <text x="160" y="260" font-family="system-ui,sans-serif" font-size="14" fill="#4a4a4a" text-anchor="middle">than other categories — and</text>
+          <text x="160" y="280" font-family="system-ui,sans-serif" font-size="14" fill="#4a4a4a" text-anchor="middle">replaced more often.</text>
+          <text x="160" y="320" font-family="system-ui,sans-serif" font-size="13" fill="#6b6b6b" text-anchor="middle" font-style="italic">More washes = more cumulative</text>
+          <text x="160" y="338" font-family="system-ui,sans-serif" font-size="13" fill="#6b6b6b" text-anchor="middle" font-style="italic">microfiber and chemistry exposure.</text>
+        </g>
+      </svg>
+      <figcaption>Three reasons basics earn top priority in a non-toxic wardrobe: contact time, contact location, and wash frequency.</figcaption>
+    </figure>
+
+    <p>The combined effect is straightforward: a single conventional polyester thong might not matter, in isolation. The 30+ pairs you cycle through over a year, washed twice a week, against the most permeable skin on your body, do.</p>
+
+    <p>This is also why the upgrade pays back quickly. Basics are typically less expensive per piece than outerwear, get replaced more often anyway, and produce the biggest tangible difference in cumulative exposure when you swap them. It's the highest-leverage change you can make in a wardrobe.</p>
+
+    <h2 id="the-checklist">What to look for: the non-toxic basics checklist</h2>
+
+    <p>When you're standing in a store or scrolling a product page, here's what actually distinguishes a genuinely non-toxic basic from a marketing claim:</p>
+
+    <figure>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="A four-part checklist for non-toxic basics covering fiber, certifications, dyes and finishes, and construction details.">
+        <rect width="1200" height="720" fill="#f5f0e1"/>
+        <text x="60" y="58" font-family="Georgia,serif" font-size="30" font-weight="700" fill="#2d4a2b">The non-toxic basics checklist</text>
+        <text x="60" y="88" font-family="system-ui,sans-serif" font-size="16" fill="#4a4a4a">Four filters to apply before you buy.</text>
+        <g transform="translate(60,130)">
+          <rect width="540" height="260" rx="14" fill="#ffffff" stroke="#dad7cd" stroke-width="1.5"/>
+          <g transform="translate(30,30)"><circle cx="22" cy="22" r="22" fill="#3a5a40"/><text x="22" y="30" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">1</text></g>
+          <text x="80" y="60" font-family="Georgia,serif" font-size="22" font-weight="700" fill="#2d4a2b">Fiber content</text>
+          <text x="80" y="86" font-family="system-ui,sans-serif" font-size="14" fill="#3a5a40" font-weight="600">Read it first, every time</text>
+          <g font-family="system-ui,sans-serif" font-size="14" fill="#1a1a1a">
+            <text x="30" y="130">✓ 95–100% natural fiber main body</text>
+            <text x="30" y="156">✓ Organic cotton, linen, hemp, wool, silk, or Tencel</text>
+            <text x="30" y="182">✓ If stretch is needed, ≤10% elastane/spandex</text>
+            <text x="30" y="208">✗ Predominantly polyester, nylon, or acrylic</text>
+            <text x="30" y="234">✗ "Microfiber" — usually polyester or nylon</text>
+          </g>
+        </g>
+        <g transform="translate(620,130)">
+          <rect width="520" height="260" rx="14" fill="#ffffff" stroke="#dad7cd" stroke-width="1.5"/>
+          <g transform="translate(30,30)"><circle cx="22" cy="22" r="22" fill="#3a5a40"/><text x="22" y="30" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">2</text></g>
+          <text x="80" y="60" font-family="Georgia,serif" font-size="22" font-weight="700" fill="#2d4a2b">Certifications</text>
+          <text x="80" y="86" font-family="system-ui,sans-serif" font-size="14" fill="#3a5a40" font-weight="600">Look for the third-party seal</text>
+          <g font-family="system-ui,sans-serif" font-size="14" fill="#1a1a1a">
+            <text x="30" y="130">✓ GOTS Organic (95%+ organic fibers, full supply chain)</text>
+            <text x="30" y="156">✓ GOTS Made with Organic (70%+ organic, same chemistry)</text>
+            <text x="30" y="182">✓ OEKO-TEX Standard 100 (finished product testing)</text>
+            <text x="30" y="208">✓ MADE SAFE (explicit harmful substance list)</text>
+            <text x="30" y="234">✗ Uncertified "organic" or "natural" claims</text>
+          </g>
+        </g>
+        <g transform="translate(60,420)">
+          <rect width="540" height="260" rx="14" fill="#ffffff" stroke="#dad7cd" stroke-width="1.5"/>
+          <g transform="translate(30,30)"><circle cx="22" cy="22" r="22" fill="#3a5a40"/><text x="22" y="30" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">3</text></g>
+          <text x="80" y="60" font-family="Georgia,serif" font-size="22" font-weight="700" fill="#2d4a2b">Dyes &amp; finishes</text>
+          <text x="80" y="86" font-family="system-ui,sans-serif" font-size="14" fill="#3a5a40" font-weight="600">Often the hidden layer</text>
+          <g font-family="system-ui,sans-serif" font-size="14" fill="#1a1a1a">
+            <text x="30" y="130">✓ Undyed, natural-dyed, or GOTS-approved low-impact dyes</text>
+            <text x="30" y="156">✓ No "easy-care," "wrinkle-free," or "anti-odor" finishes</text>
+            <text x="30" y="182">✓ No "moisture-wicking" finish on a synthetic base</text>
+            <text x="30" y="208">✗ "Stain-resistant" or "anti-microbial" treatments</text>
+            <text x="30" y="234">✗ Formaldehyde-based wrinkle resistance</text>
+          </g>
+        </g>
+        <g transform="translate(620,420)">
+          <rect width="520" height="260" rx="14" fill="#ffffff" stroke="#dad7cd" stroke-width="1.5"/>
+          <g transform="translate(30,30)"><circle cx="22" cy="22" r="22" fill="#3a5a40"/><text x="22" y="30" font-family="Georgia,serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">4</text></g>
+          <text x="80" y="60" font-family="Georgia,serif" font-size="22" font-weight="700" fill="#2d4a2b">Construction details</text>
+          <text x="80" y="86" font-family="system-ui,sans-serif" font-size="14" fill="#3a5a40" font-weight="600">The trim matters too</text>
+          <g font-family="system-ui,sans-serif" font-size="14" fill="#1a1a1a">
+            <text x="30" y="130">✓ Organic cotton gusset (underwear)</text>
+            <text x="30" y="156">✓ Covered or organic-faced elastic where possible</text>
+            <text x="30" y="182">✓ Minimal synthetic trim and lace</text>
+            <text x="30" y="208">✗ Polyester gusset on otherwise-organic underwear</text>
+            <text x="30" y="234">✗ Heavy synthetic lace, mesh, or molded cups</text>
+          </g>
+        </g>
+      </svg>
+      <figcaption>The four filters that separate genuinely non-toxic basics from marketing claims.</figcaption>
+    </figure>
+
+    <p>A few honest notes on the trade-offs:</p>
+
+    <p><strong>On stretch.</strong> A meaningful share of "100% organic cotton" claims fall apart at the construction level — the body is organic cotton but the elastic waistband, the leg cuff, the gusset, or the cup is conventional synthetic. For categories that genuinely need stretch (most underwear, all bras), the realistic ceiling is usually 90–95% organic cotton with the remaining 5–10% being elastane or spandex. That's normal and not a red flag. What is a red flag: a brand that markets "organic cotton" but is actually a 50/50 organic-cotton-and-polyester blend.</p>
+
+    <p><strong>On certifications and basics specifically.</strong> GOTS allows up to 10% synthetic fiber in a "Made with Organic" garment when stretch is required, which makes it possible to GOTS-certify underwear and bras even though they contain elastane. The 70% organic threshold often becomes the practical ceiling for high-quality basics rather than a downgrade.</p>
+
+    <p><strong>On finishes.</strong> This is where a lot of conventional basics quietly fall apart. Anti-odor, moisture-wicking, stain-resistant, and wrinkle-free finishes on basics typically involve either PFAS, silver-based antimicrobials, or formaldehyde-based resins — all of which directly contact the most sensitive skin on your body all day. The cleanest basics avoid these entirely.</p>
+
+    <h2 id="underwear">How to shop for underwear</h2>
+
+    <p>Underwear is the single most worth-upgrading category in the entire closet. It sits against the most permeable skin you have, it's worn for the most hours per day of any garment, and most people own and rotate enough pairs to make the swap manageable.</p>
+
+    <p>What to look for:</p>
+    <ul>
+      <li><strong>100% (or near-100%) organic cotton body</strong>, with a small percentage of elastane only where stretch is structurally needed.</li>
+      <li><strong>Organic cotton gusset</strong> specifically. This is the most overlooked detail. Many "organic cotton" underwear brands use a polyester gusset, which defeats most of the point.</li>
+      <li><strong>GOTS or OEKO-TEX Standard 100 certification</strong> on the tag, with a license number.</li>
+      <li><strong>No "anti-odor," "moisture-wicking," "stain-resistant," or "PFAS-treated" claims</strong> — these are red flags in this category.</li>
+      <li><strong>Minimal synthetic trim</strong> — covered elastic, organic cotton or natural rubber waistbands where possible.</li>
+    </ul>
+
+    <p>What to avoid: anything described as "microfiber" (usually polyester), polyester-spandex blends marketed as "performance," and anything with the kind of slick, plasticky hand that comes from heavy synthetic content.</p>
+
+    <p>For specific brands Emily has personally vetted in this category, see <a href="https://shopmy.us/shop/emmhemphill" target="_blank" rel="noopener">her ShopMy basics collection</a>.</p>
+
+    <h2 id="bras">How to shop for bras</h2>
+
+    <p>Bras are the hardest category to fully de-synthesize. Most bras rely on molded cups, structural underwires (with the wire wrapped in synthetic channeling), and a synthetic shell on the band and straps. A 100% organic cotton bra is rare, and usually a wireless soft-cup design rather than something with structure.</p>
+
+    <p>The realistic target for bras:</p>
+    <ul>
+      <li><strong>Organic cotton or merino wool against the skin</strong>, even if the structural layer is synthetic.</li>
+      <li><strong>GOTS "Made with Organic" certification</strong> where available — this is typically the highest level achievable for bras with stretch and structure.</li>
+      <li><strong>Naturally seamless or low-construction designs.</strong> Wireless soft bras, bralettes, and sleep bras are typically easier to find in genuinely non-toxic versions than structured underwire bras.</li>
+      <li><strong>Merino wool</strong> has emerged as a strong alternative for sport and everyday bras. It's naturally moisture-wicking and odor-resistant without any chemical finish.</li>
+      <li><strong>No PFAS-based "performance" treatments</strong>, no antimicrobial silver coatings, no moisture-wicking finishes layered on top.</li>
+    </ul>
+
+    <p>What to avoid: heavily-padded molded-cup bras (almost always polyester or polyurethane foam), bras with anti-odor or antimicrobial finishes, and "performance" sports bras that emphasize moisture-wicking — these are the most likely to carry PFAS or other chemical finishes.</p>
+
+    <p>Brands like <strong>Branwyn</strong> (merino wool intimates) and <strong>Organic Basics</strong> (GOTS-certified cotton-based) are the categories worth knowing in this space. Specific picks in <a href="https://shopmy.us/shop/emmhemphill" target="_blank" rel="noopener">Emily's collection</a>.</p>
+
+    <h2 id="base-layers">How to shop for base layers</h2>
+
+    <p>Base layers are the category where the synthetic-versus-natural debate gets the most heated. Conventional performance base layers are almost universally polyester or nylon with moisture-wicking finishes — fast-drying, but heavy on plastic and often PFAS-finished. The good news is that the natural alternatives in this category actually outperform synthetic for most uses.</p>
+
+    <p>The two strong options:</p>
+    <ul>
+      <li><strong>Merino wool.</strong> Naturally moisture-wicking, temperature-regulating, odor-resistant, and warm even when damp. Lightweight merino (150–200 gsm) works for everyday wear and high-output activity; heavier weights (250 gsm+) work for cold-weather layering. No chemical finishes required.</li>
+      <li><strong>Organic cotton or organic cotton blends.</strong> Best for everyday non-athletic base layers — lounge tees, sleep layers, soft underlayers in cold-weather outfits. Less effective for high-sweat activity.</li>
+    </ul>
+
+    <p>What to avoid: anything labeled as a "performance" base layer that's predominantly synthetic, anything with antimicrobial or anti-odor finishes (these are unnecessary on merino, which handles odor naturally), and anything sold as "moisture-wicking polyester" without specifying a fluorine-free finish.</p>
+
+    <p>For sport-specific base layers, brands like <strong>Branwyn</strong> (merino, US-based) and <strong>Wool&amp;</strong> (merino) cover everyday and athletic use. For everyday cotton base layers, <strong>Harvest &amp; Mill</strong> and <strong>Organic Basics</strong> are reliable starting points.</p>
+
+    <h2 id="kids">A note on basics for babies and kids</h2>
+
+    <p>Everything in this guide applies to babies and kids — and in many ways, more strongly. Children's skin is more permeable than adult skin, they have higher surface-area-to-body-weight ratios, and their bodies are still developing. The same priority order applies: underwear, base layers, sleepwear, and anything in extended skin contact should be GOTS-certified organic cotton wherever possible.</p>
+
+    <p>A note on sleepwear specifically: in the U.S., children's pajamas legally must meet flammability standards, which historically has meant either chemical flame retardants applied to cotton, or tight-fitting pajamas made of natural fibers. Tight-fitting GOTS-certified organic cotton pajamas meet the standard naturally without flame retardants — which is the option to look for. A "snug fit, no flame retardants needed" tag is the green flag here.</p>
+
+    <h2 id="brands">Brands worth knowing</h2>
+
+    <p>A handful of brands are doing this well enough to be worth naming. This isn't a comprehensive list — it's a starting point for what genuinely non-toxic basics look like when you find them:</p>
+    <ul>
+      <li><strong>Organic Basics</strong> — GOTS-certified organic cotton underwear, bras, base layers, and t-shirts. One of the most certifications-forward brands in this category, with full transparency on fiber content and processing.</li>
+      <li><strong>Branwyn</strong> — Merino wool intimates and base layers, US-based. Strong category for those who want a synthetic-free moisture-wicking option.</li>
+      <li><strong>Harvest &amp; Mill</strong> — 100% organic cotton basics made in the US, GOTS-certified. Particularly strong for everyday tees, undershirts, and soft layers.</li>
+      <li><strong>Quince</strong> — Not exclusively non-toxic but offers OEKO-TEX-certified organic cotton and merino options at lower price points. Useful entry-level option.</li>
+      <li><strong>Pact</strong> — GOTS-certified organic cotton basics including underwear, bras, and base layers. Wide range of styles and sizes.</li>
+    </ul>
+
+    <p>For <a href="https://shopmy.us/shop/emmhemphill" target="_blank" rel="noopener">Emily's full vetted collection across these categories, see her ShopMy</a>.</p>
+
+    <h2 id="how-wove-helps">How Wove helps you check basics</h2>
+
+    <div class="cta-block">
+      <div class="cta-eyebrow">The Wove App</div>
+      <h3>Check the fiber content before you buy.</h3>
+      <p>The frustrating part of shopping non-toxic basics is how much of the work happens behind the label. Wove is an iOS app that grades clothing on an A–F scale based on fiber composition, microplastic shedding risk, and PFAS concerns. Scan a product URL, a screenshot, or a photo of the care label — and get a clear grade in seconds. No brand deals. No sponsored placements.</p>
+      <a href="https://apps.apple.com/us/app/wove-score/id6755356871" class="cta-link">Download Wove on the App Store →</a>
+    </div>
+
+    <h2 id="faq">Frequently asked questions</h2>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>What is non-toxic underwear?</summary>
+        <div class="faq-answer">
+          <p>Non-toxic underwear refers to underwear made without the chemical inputs that conventional textile production typically involves — synthetic pesticides on the fiber, harmful processing chemicals (formaldehyde, chlorine bleach, certain azo dyes), PFAS-based stain or moisture-wicking finishes, and antimicrobial treatments. In practice, the most reliable non-toxic underwear is GOTS-certified organic cotton with an organic cotton gusset, OEKO-TEX Standard 100 testing, and no chemical finishes.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Why does it matter what underwear is made of?</summary>
+        <div class="faq-answer">
+          <p>Underwear sits against the most permeable skin on your body for more hours per day than any other garment, and is laundered more frequently. That combination — high skin contact time, sensitive contact area, and frequent washing — means residual chemicals from conventional production have the most opportunity to migrate. The cumulative exposure adds up fast across the underwear you cycle through in a year.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>What's the best material for non-toxic underwear?</summary>
+        <div class="faq-answer">
+          <p>Organic cotton is the most reliable everyday material — soft, breathable, washable, and certifiable through GOTS. For categories that need stretch (most underwear), look for 90–95% organic cotton with 5–10% elastane. Merino wool works well for some users and is naturally odor-resistant. Avoid polyester, nylon, and "microfiber" underwear.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Are organic cotton bras worth it?</summary>
+        <div class="faq-answer">
+          <p>For everyday wear, particularly soft-cup and bralette styles, yes. Conventional bras frequently involve polyester or polyurethane foam cups, synthetic linings, and antimicrobial or moisture-wicking finishes — all of which sit against sensitive breast tissue for most of the day. GOTS-certified organic cotton or merino wool bras avoid those concerns. The trade-off is fewer structured underwire options.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>What certifications should I look for in basics?</summary>
+        <div class="faq-answer">
+          <p>The two most important: <strong>GOTS</strong> (Global Organic Textile Standard) — covers both fiber sourcing and chemical processing across the supply chain — and <strong>OEKO-TEX Standard 100</strong> — tests the finished product for harmful substance limits. Look for either or both on the tag, with a license number that can be verified online. MADE SAFE is also a strong third-party seal that screens against specific harmful chemicals.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Are PFAS in underwear?</summary>
+        <div class="faq-answer">
+          <p>PFAS can be present in underwear that's been treated for stain resistance, moisture-wicking, or odor control — often marketed as "performance," "athletic," or "anti-odor" underwear. Untreated organic cotton underwear doesn't contain PFAS. For more detail on how to spot PFAS in clothing, see our <a href="/blog/pfas-in-clothing">PFAS in clothing guide</a>.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Do non-toxic basics shed microplastics?</summary>
+        <div class="faq-answer">
+          <p>100% natural fiber basics — organic cotton, linen, hemp, wool, silk — don't shed plastic microfibers. Blended basics that include elastane, nylon, or polyester do shed plastic from the synthetic portion, though typically less than fully-synthetic underwear because the synthetic percentage is lower. For more on this, see our <a href="/blog/microplastics-in-clothing">microplastics in clothing guide</a>.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>What's the difference between OEKO-TEX and GOTS for underwear?</summary>
+        <div class="faq-answer">
+          <p>GOTS certifies that the fibers were grown organically <em>and</em> that the entire processing chain (spinning, weaving, dyeing, finishing) meets strict chemical and social standards. OEKO-TEX Standard 100 tests the finished product for harmful substance limits but doesn't certify how the fiber was grown. The two are complementary — GOTS is the more comprehensive certification, OEKO-TEX is a strong additional finished-product chemistry check.</p>
+        </div>
+      </details>
+    </div>
+
+  </article>
+
+  <aside class="toc-aside">
+    <div class="toc-label">In this guide</div>
+    <ul class="toc-list">
+      <li><a href="#what-non-toxic-means">What "Non-Toxic" Means</a></li>
+      <li><a href="#why-basics-matter-most">Why Basics Matter Most</a></li>
+      <li><a href="#the-checklist">The Checklist</a></li>
+      <li><a href="#underwear">Underwear</a></li>
+      <li><a href="#bras">Bras</a></li>
+      <li><a href="#base-layers">Base Layers</a></li>
+      <li><a href="#kids">Babies &amp; Kids</a></li>
+      <li><a href="#brands">Brands</a></li>
+      <li><a href="#how-wove-helps">How Wove Helps</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </aside>
+</div>
+
+<div class="article-footer">
+  <section class="related-section">
+    <div class="section-label">Keep Reading</div>
+    <h2>Related guides from Wove</h2>
+    <div class="related-grid">
+      <a href="/blog/organic-cotton-guide" class="related-card">
+        <div class="related-cat">Fabric Guide</div>
+        <div class="related-title">The Complete Guide to Organic Cotton</div>
+      </a>
+      <a href="/blog/pfas-in-clothing" class="related-card">
+        <div class="related-cat">Chemical Safety</div>
+        <div class="related-title">PFAS in Clothing: What It Is and How to Avoid It</div>
+      </a>
+      <a href="/blog/microplastics-in-clothing" class="related-card">
+        <div class="related-cat">Materials</div>
+        <div class="related-title">Microplastics in Clothing: A Beginner's Guide</div>
+      </a>
+      <a href="/blog/how-to-read-clothing-labels" class="related-card">
+        <div class="related-cat">Fabric Guide</div>
+        <div class="related-title">How to Read Clothing Labels: A Complete Guide to Fabrics, Care, and Quality</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="sources-section">
+    <h3>Sources &amp; further reading</h3>
+    <ul>
+      <li>Global Organic Textile Standard (GOTS). <a href="https://global-standard.org/certification-and-labelling/labelling/label-grades" target="_blank" rel="noopener">Label Grades</a>.</li>
+      <li>OEKO-TEX. <a href="https://www.oeko-tex.com/en/our-standards/oeko-tex-standard-100" target="_blank" rel="noopener">OEKO-TEX Standard 100</a>.</li>
+      <li>Organic Trade Association. <a href="https://ota.com/get-facts-about-organic-cotton" target="_blank" rel="noopener">Get the Facts about Organic Cotton</a>.</li>
+      <li>Environmental Working Group. <a href="https://www.ewg.org/news-insights/news/2022/01/new-tests-find-toxic-forever-chemicals-bedding-yoga-pants-and-other" target="_blank" rel="noopener">Forever Chemicals in Textiles</a>, January 2022.</li>
+      <li>MADE SAFE. <a href="https://www.madesafe.org/" target="_blank" rel="noopener">Certification Overview</a>.</li>
+      <li>Harvest &amp; Mill. <a href="https://www.harvestandmill.com/" target="_blank" rel="noopener">Non-Toxic Fabrics</a>.</li>
+    </ul>
+  </section>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-name">
+          <img src="../../images/logo.png" alt="Wove" class="footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="logo-placeholder dark" style="display:none">LOGO</div>
+        </div>
+        <p>Shop consciously. Live comfortably. Wove brings transparency to the fashion industry — no ads, no brand deals, just the truth about your fabrics.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Project</h4>
+        <a href="../../about/">The Story</a>
+        <a href="../../wovescore/">Wove Score</a>
+        <a href="../../contact/">Contact</a>
+        <a href="https://shopmy.us/shop/emmhemphill" target="_blank" rel="noopener">Shop Our Top Picks</a>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <a href="../">Blog</a>
+        <a href="../../privacypolicy/">Privacy Policy</a>
+        <a href="../../terms/">Terms of Use</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 Wove LLC. Shop consciously. Live comfortably.</div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', () => {
+  const bar = document.getElementById('progressBar');
+  const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+  bar.style.width = scrolled + '%';
+});
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); });
+const tocLinks = document.querySelectorAll('.toc-aside .toc-list a');
+const sections = [...tocLinks].map(a => document.getElementById(a.getAttribute('href').slice(1))).filter(Boolean);
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      tocLinks.forEach(link => link.classList.remove('active'));
+      const activeLink = document.querySelector(`.toc-aside .toc-list a[href="#${entry.target.id}"]`);
+      if (activeLink) activeLink.classList.add('active');
+    }
+  });
+}, { rootMargin: '-30% 0px -60% 0px' });
+sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>
