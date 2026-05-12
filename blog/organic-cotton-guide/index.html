@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Complete Guide to Organic Cotton | Wove</title>
+<meta name="description" content="What organic cotton actually is, how it differs from conventional cotton, what the certifications mean, and how to shop for it without getting greenwashed." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream-50: #FBF7ED;
+  --cream-100: #F5EFE2;
+  --cream-200: #ECE3CE;
+  --cream-300: #DDD0B4;
+  --green-deep: #2D4A3E;
+  --green-700: #3D5C4F;
+  --green-500: #6B8B7B;
+  --green-300: #A4BCB0;
+  --green-100: #DCE6DF;
+  --terracotta: #B8765A;
+  --terracotta-soft: #D9A48E;
+  --ink: #1F1A14;
+  --ink-soft: #524A3D;
+  --ink-mute: #877D6A;
+  --border: #D9CFB8;
+  --border-soft: #E8DFCA;
+  --display: 'Fraunces', Georgia, serif;
+  --body: 'Lora', Georgia, serif;
+  --max-w: 1240px;
+  --content-w: 720px;
+  --wove-green: #5B6B54;
+  --wove-green-dark: #4A5A42;
+  --wove-green-deep-nav: #3D4D36;
+  --wove-cream: #F0EBE3;
+  --wove-charcoal: #2A2A2A;
+  --wove-text: #333333;
+  --wove-text-light: #6B6B6B;
+  --wove-text-muted: #9A9A9A;
+  --wove-border: rgba(0,0,0,0.06);
+  --radius-full: 50px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+body {
+  font-family: var(--body);
+  background: var(--cream-50);
+  color: var(--ink);
+  line-height: 1.7;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+}
+.progress-bar {
+  position: fixed; top: 68px; left: 0;
+  height: 3px; width: 0%;
+  background: var(--green-deep);
+  z-index: 99; transition: width 0.1s ease-out;
+}
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(240, 235, 227, 0.92);
+  backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  padding: 0 48px; height: 68px;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid var(--wove-border); transition: box-shadow 0.3s;
+  font-family: 'Poppins', -apple-system, sans-serif;
+}
+nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.04); }
+.nav-logo { display: flex; align-items: center; text-decoration: none; }
+.nav-logo-img { height: 40px; object-fit: contain; }
+.logo-placeholder {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 120px; height: 44px; border: 2px dashed var(--wove-green);
+  border-radius: 12px; font-size: 11px; font-weight: 700;
+  color: var(--wove-green); letter-spacing: 1.5px; background: rgba(91,107,84,0.05);
+}
+.nav-links { display: flex; align-items: center; gap: 32px; }
+.nav-links a { text-decoration: none; color: var(--wove-text); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+.nav-links a:hover { color: var(--wove-green-dark); }
+.nav-cta {
+  background: var(--wove-green) !important; color: white !important;
+  padding: 10px 26px; border-radius: var(--radius-full);
+  font-weight: 600 !important; font-size: 13px !important; transition: all 0.25s !important;
+}
+.nav-cta:hover { background: var(--wove-green-deep-nav) !important; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(91,107,84,0.25); }
+@media (max-width: 960px) { nav { padding: 0 24px; } .nav-links a:not(.nav-cta) { display: none; } }
+
+.article-header { max-width: var(--max-w); margin: 0 auto; padding: 80px 32px 40px; }
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--terracotta); font-weight: 500; margin-bottom: 24px; font-family: var(--body);
+}
+.eyebrow::before { content: ''; display: block; width: 30px; height: 1px; background: var(--terracotta); }
+.article-title {
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(40px, 6vw, 72px); line-height: 1.05;
+  letter-spacing: -0.025em; color: var(--ink);
+  max-width: 900px; margin-bottom: 32px;
+  font-variation-settings: "opsz" 144, "SOFT" 30;
+}
+.article-title em { font-style: italic; color: var(--green-deep); font-variation-settings: "opsz" 144, "SOFT" 100; }
+.article-lede {
+  font-family: var(--display); font-weight: 300;
+  font-size: clamp(20px, 2.2vw, 24px); line-height: 1.45;
+  color: var(--ink-soft); max-width: 720px; margin-bottom: 40px;
+  font-style: italic; font-variation-settings: "opsz" 144;
+}
+.article-meta {
+  display: flex; gap: 24px; flex-wrap: wrap; font-size: 14px;
+  color: var(--ink-mute); padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-soft); font-family: var(--body);
+}
+.article-meta span { display: inline-flex; align-items: center; gap: 6px; }
+.article-meta .dot { color: var(--cream-300); }
+
+.hero-image { max-width: var(--max-w); margin: 0 auto 60px; padding: 0 32px; }
+
+.article-grid {
+  max-width: var(--max-w); margin: 0 auto;
+  padding: 0 32px 80px;
+  display: grid; grid-template-columns: 1fr 260px;
+  gap: 80px; align-items: start;
+}
+@media (max-width: 960px) { .article-grid { grid-template-columns: 1fr; gap: 0; } .toc-aside { display: none; } }
+
+.toc-aside { position: sticky; top: 100px; font-family: var(--body); }
+.toc-label {
+  font-family: var(--display); font-size: 12px; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--ink-mute); margin-bottom: 16px;
+  font-weight: 500; padding-bottom: 12px; border-bottom: 1px solid var(--border-soft);
+}
+.toc-list { list-style: none; padding: 0; margin: 0; }
+.toc-list li { margin-bottom: 10px; line-height: 1.4; }
+.toc-list a {
+  color: var(--ink-soft); text-decoration: none; font-size: 14px;
+  transition: color 0.2s; display: block; padding-left: 12px;
+  border-left: 2px solid transparent;
+}
+.toc-list a:hover { color: var(--green-deep); border-left-color: var(--green-300); }
+.toc-list a.active { color: var(--green-deep); border-left-color: var(--green-deep); font-weight: 500; }
+
+.toc-mobile { display: none; margin: 0 32px 48px; padding: 24px; background: var(--cream-100); border: 1px solid var(--border-soft); border-radius: 8px; }
+@media (max-width: 960px) {
+  .toc-mobile { display: block; }
+  .article-grid { padding-top: 0; }
+  .article-header { padding: 88px 24px 32px; }
+  .hero-image { padding: 0 24px; }
+  .toc-mobile { margin: 0 24px 48px; }
+  .article-grid { padding: 0 24px 80px; }
+  .article-footer { padding: 0 24px 80px; }
+}
+.toc-mobile summary {
+  font-family: var(--display); font-size: 14px; letter-spacing: 0.16em;
+  text-transform: uppercase; color: var(--green-deep); cursor: pointer;
+  list-style: none; display: flex; justify-content: space-between; align-items: center; font-weight: 500;
+}
+.toc-mobile summary::after { content: '+'; font-family: var(--display); font-size: 22px; font-weight: 300; }
+.toc-mobile[open] summary::after { content: '−'; }
+.toc-mobile summary::-webkit-details-marker { display: none; }
+.toc-mobile .toc-list { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--border-soft); }
+
+.article-body { font-size: 18px; line-height: 1.75; color: var(--ink); }
+.article-body p { margin-bottom: 24px; }
+.article-body p + p { margin-top: -8px; }
+.article-body h2 {
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(28px, 3.4vw, 38px); line-height: 1.15;
+  letter-spacing: -0.015em; color: var(--green-deep);
+  margin-top: 80px; margin-bottom: 32px; scroll-margin-top: 100px;
+  font-variation-settings: "opsz" 144, "SOFT" 40; position: relative;
+}
+.article-body h2::before {
+  content: ''; display: block; width: 40px; height: 1px;
+  background: var(--terracotta); margin-bottom: 24px;
+}
+.article-body h3 {
+  font-family: var(--display); font-weight: 500;
+  font-size: clamp(20px, 2.2vw, 24px); line-height: 1.3;
+  color: var(--ink); margin-top: 48px; margin-bottom: 16px;
+  scroll-margin-top: 100px; font-variation-settings: "opsz" 36, "SOFT" 30;
+}
+.article-body a {
+  color: var(--green-deep); text-decoration: none;
+  background-image: linear-gradient(var(--green-300), var(--green-300));
+  background-size: 100% 1px; background-repeat: no-repeat; background-position: 0 95%;
+  transition: background-size 0.2s;
+}
+.article-body a:hover { background-size: 100% 100%; background-image: linear-gradient(rgba(164,188,176,0.25), rgba(164,188,176,0.25)); }
+.article-body strong { color: var(--ink); font-weight: 600; }
+.article-body em { font-style: italic; }
+.article-body ul, .article-body ol { margin: 0 0 32px 0; padding-left: 0; list-style: none; }
+.article-body ul li { position: relative; padding-left: 28px; margin-bottom: 14px; line-height: 1.65; }
+.article-body ul li::before {
+  content: ''; position: absolute; left: 4px; top: 14px;
+  width: 8px; height: 8px; background: var(--green-300); border-radius: 50%;
+}
+.article-body ol { counter-reset: ol-counter; }
+.article-body ol li { position: relative; padding-left: 44px; margin-bottom: 18px; counter-increment: ol-counter; }
+.article-body ol li::before {
+  content: counter(ol-counter, decimal-leading-zero);
+  position: absolute; left: 0; top: 0;
+  font-family: var(--display); font-size: 14px; font-weight: 500;
+  color: var(--terracotta); letter-spacing: 0.08em;
+}
+
+figure { margin: 48px 0; }
+figure svg { width: 100%; height: auto; display: block; }
+figcaption {
+  margin-top: 14px; font-family: var(--body); font-style: italic;
+  font-size: 14px; color: var(--ink-mute); line-height: 1.5;
+  padding-left: 16px; border-left: 2px solid var(--green-300);
+}
+
+.stat-callout {
+  background: var(--cream-100); border: 1px solid var(--border-soft);
+  border-left: 4px solid var(--green-deep);
+  padding: 28px 32px; border-radius: 4px; margin: 40px 0;
+}
+.stat-callout .stat-number {
+  font-family: var(--display); font-size: clamp(36px, 5vw, 56px);
+  font-weight: 500; color: var(--green-deep); line-height: 1;
+  margin-bottom: 8px; font-variation-settings: "opsz" 144;
+}
+.stat-callout .stat-label { font-family: var(--body); font-size: 15px; color: var(--ink-soft); line-height: 1.5; }
+.stat-callout .stat-source { font-family: var(--body); font-size: 12px; color: var(--ink-mute); margin-top: 8px; }
+
+.faq-list { margin: 32px 0; }
+.faq-item { border-bottom: 1px solid var(--border-soft); padding: 8px 0; }
+.faq-item summary {
+  font-family: var(--display); font-size: 19px; font-weight: 500;
+  color: var(--ink); cursor: pointer; padding: 20px 40px 20px 0;
+  list-style: none; position: relative; transition: color 0.2s;
+  font-variation-settings: "opsz" 36, "SOFT" 30;
+}
+.faq-item summary:hover { color: var(--green-deep); }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: '+'; position: absolute; right: 0; top: 50%;
+  transform: translateY(-50%); font-family: var(--display);
+  font-size: 28px; font-weight: 300; color: var(--green-deep);
+}
+.faq-item[open] summary::after { content: '−'; }
+.faq-item .faq-answer { padding: 0 0 24px 0; color: var(--ink-soft); line-height: 1.7; }
+.faq-item .faq-answer p { margin-bottom: 16px; }
+.faq-item .faq-answer p:last-child { margin-bottom: 0; }
+
+.cta-block {
+  background: var(--green-deep); color: var(--cream-50);
+  padding: 48px; border-radius: 8px; margin: 60px 0;
+  position: relative; overflow: hidden;
+}
+.cta-block::before {
+  content: ''; position: absolute; top: -50%; right: -10%;
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(184,118,90,0.15), transparent 70%); border-radius: 50%;
+}
+.cta-block .cta-eyebrow { font-size: 12px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--terracotta-soft); margin-bottom: 12px; font-weight: 500; font-family: var(--body); }
+.cta-block h3 {
+  font-family: var(--display); font-size: clamp(22px, 2.8vw, 30px); font-weight: 400;
+  color: var(--cream-50); margin: 0 0 16px 0; line-height: 1.2;
+  font-variation-settings: "opsz" 144, "SOFT" 40;
+}
+.cta-block p { color: rgba(251, 247, 237, 0.85); margin-bottom: 24px; max-width: 540px; font-family: var(--body); font-size: 16px; }
+.cta-block a.cta-link {
+  display: inline-block; background: var(--cream-50); color: var(--green-deep);
+  padding: 14px 28px; text-decoration: none; background-image: none;
+  border-radius: 4px; font-family: var(--body); font-weight: 500; font-size: 15px;
+  letter-spacing: 0.04em; transition: transform 0.2s, background 0.2s;
+}
+.cta-block a.cta-link:hover { background: var(--terracotta-soft); transform: translateY(-2px); }
+
+.article-footer { max-width: var(--max-w); margin: 0 auto; padding: 0 32px 80px; }
+.related-section { background: var(--cream-100); border-radius: 12px; padding: 56px 48px; margin-bottom: 48px; border: 1px solid var(--border-soft); }
+.related-section .section-label { font-family: var(--display); font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 12px; font-weight: 500; }
+.related-section h2 { font-family: var(--display); font-size: clamp(28px, 3.4vw, 36px); font-weight: 400; color: var(--green-deep); margin: 0 0 32px 0; font-variation-settings: "opsz" 144, "SOFT" 40; }
+.related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.related-card { background: var(--cream-50); padding: 24px; border-radius: 6px; text-decoration: none; color: var(--ink); border: 1px solid var(--border-soft); transition: transform 0.2s, border-color 0.2s; display: block; }
+.related-card:hover { transform: translateY(-3px); border-color: var(--green-300); background-image: none; }
+.related-card .related-cat { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 8px; font-family: var(--body); }
+.related-card .related-title { font-family: var(--display); font-size: 17px; font-weight: 500; line-height: 1.3; color: var(--ink); font-variation-settings: "opsz" 36, "SOFT" 30; }
+
+.sources-section { padding-top: 48px; border-top: 1px solid var(--border-soft); }
+.sources-section h3 { font-family: var(--display); font-size: 14px; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 500; color: var(--ink-mute); margin-bottom: 24px; }
+.sources-section ul { list-style: none; padding: 0; }
+.sources-section li { padding: 12px 0; border-bottom: 1px solid var(--border-soft); font-size: 14px; color: var(--ink-soft); line-height: 1.5; font-family: var(--body); }
+.sources-section a { color: var(--green-deep); text-decoration: underline; text-decoration-color: var(--green-300); text-underline-offset: 3px; background-image: none; }
+
+.drop-cap::first-letter { font-family: var(--display); font-size: 5em; float: left; line-height: 0.85; margin: 8px 12px 0 0; color: var(--green-deep); font-weight: 500; font-variation-settings: "opsz" 144; }
+
+footer.site-footer { padding: 56px 48px 28px; background: var(--wove-charcoal); color: rgba(255,255,255,0.55); font-family: 'Poppins', -apple-system, sans-serif; }
+.footer-inner { max-width: 960px; margin: 0 auto; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 56px; margin-bottom: 40px; }
+.footer-logo-img { height: 36px; object-fit: contain; filter: brightness(10); }
+.logo-placeholder.dark { display: inline-flex; align-items: center; justify-content: center; width: 120px; height: 44px; border: 2px dashed rgba(255,255,255,0.3); border-radius: 12px; font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.5); letter-spacing: 1.5px; background: rgba(255,255,255,0.05); }
+.footer-brand-name { margin-bottom: 12px; }
+.footer-brand p { font-size: 13px; line-height: 1.7; max-width: 300px; }
+.footer-col h4 { font-family: 'Poppins', sans-serif; color: white; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 18px; }
+.footer-col a { display: block; color: rgba(255,255,255,0.45); text-decoration: none; font-size: 13px; padding: 4px 0; transition: color 0.2s; }
+.footer-col a:hover { color: white; }
+.footer-bottom { padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 12px; text-align: center; color: rgba(255,255,255,0.3); }
+@media (max-width: 960px) { footer.site-footer { padding: 56px 24px 28px; } .footer-grid { grid-template-columns: 1fr; gap: 28px; } }
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav id="main-nav">
+  <a href="../../" class="nav-logo">
+    <img src="../../images/logo.png" alt="Wove" class="nav-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="logo-placeholder" style="display:none">LOGO</div>
+  </a>
+  <div class="nav-links">
+    <a href="../../about/">The Story</a>
+    <a href="../../#how-it-works">How It Works</a>
+    <a href="../../wovescore/">Wove Score</a>
+    <a href="../">Blog</a>
+    <a href="https://shopmy.us/shop/emmhemphill" target="_blank" rel="noopener">Shop Our Top Picks</a>
+    <a href="https://apps.apple.com/us/app/wove-score/id6755356871" class="nav-cta">Download App</a>
+  </div>
+</nav>
+
+<section class="article-header">
+  <div class="eyebrow">Fabric Guide · Certifications</div>
+  <h1 class="article-title">The Complete Guide to <em>Organic Cotton</em></h1>
+  <p class="article-lede">What it is, how to spot it, and how to shop for it without falling for the marketing.</p>
+  <div class="article-meta">
+    <span>By Emily Hemphill</span>
+    <span class="dot">·</span>
+    <span>13 min read</span>
+    <span class="dot">·</span>
+    <span>Updated May 2026</span>
+  </div>
+</section>
+
+<div class="hero-image">
+  <figure>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="An open cotton boll on a plant stem with leaves, alongside the title 'The Complete Guide to Organic Cotton'." style="width:100%;max-width:1200px;height:auto;display:block;margin:0 auto;">
+      <defs>
+        <linearGradient id="bgOC" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0" stop-color="#f5f0e1"/>
+          <stop offset="1" stop-color="#e9e3cf"/>
+        </linearGradient>
+        <radialGradient id="boll" cx="0.35" cy="0.3" r="0.7">
+          <stop offset="0" stop-color="#ffffff"/>
+          <stop offset="0.7" stop-color="#faf6e9"/>
+          <stop offset="1" stop-color="#e9e3cf"/>
+        </radialGradient>
+        <linearGradient id="leaf" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0" stop-color="#588157"/>
+          <stop offset="1" stop-color="#3a5a40"/>
+        </linearGradient>
+      </defs>
+      <rect width="1200" height="520" fill="url(#bgOC)"/>
+      <g opacity="0.18" stroke="#2d4a2b" stroke-width="1.4" fill="none">
+        <path d="M 60 80 Q 90 100 80 140 Q 70 180 110 200"/>
+        <path d="M 110 200 Q 150 220 140 260 Q 130 300 170 320"/>
+        <circle cx="60" cy="80" r="4" fill="#3a5a40" opacity="0.5"/>
+        <circle cx="80" cy="140" r="4" fill="#3a5a40" opacity="0.5"/>
+        <circle cx="110" cy="200" r="4" fill="#3a5a40" opacity="0.5"/>
+        <circle cx="140" cy="260" r="4" fill="#3a5a40" opacity="0.5"/>
+        <circle cx="170" cy="320" r="4" fill="#3a5a40" opacity="0.5"/>
+      </g>
+      <g transform="translate(850,80)">
+        <line x1="0" y1="380" x2="0" y2="100" stroke="#3a5a40" stroke-width="3"/>
+        <path d="M 0 280 Q -40 260 -90 270 Q -75 240 -50 230 Q -25 235 0 250 Z" fill="url(#leaf)"/>
+        <path d="M -90 270 L -50 240" stroke="#2d4a2b" stroke-width="1" opacity="0.6"/>
+        <path d="M 0 320 Q 40 300 90 310 Q 75 280 50 270 Q 25 275 0 290 Z" fill="url(#leaf)"/>
+        <path d="M 90 310 L 50 280" stroke="#2d4a2b" stroke-width="1" opacity="0.6"/>
+        <path d="M -30 150 Q -50 130 -60 90 Q -50 60 -30 70 Q -10 80 -10 110 Z" fill="url(#leaf)" opacity="0.85"/>
+        <g transform="translate(0,140)">
+          <circle cx="0" cy="0" r="60" fill="url(#boll)" stroke="#dad7cd" stroke-width="1.5"/>
+          <circle cx="-20" cy="-12" r="28" fill="url(#boll)" stroke="#dad7cd" stroke-width="1"/>
+          <circle cx="22" cy="-10" r="28" fill="url(#boll)" stroke="#dad7cd" stroke-width="1"/>
+          <circle cx="0" cy="22" r="28" fill="url(#boll)" stroke="#dad7cd" stroke-width="1"/>
+          <circle cx="-26" cy="20" r="20" fill="url(#boll)" stroke="#dad7cd" stroke-width="1"/>
+          <circle cx="26" cy="22" r="20" fill="url(#boll)" stroke="#dad7cd" stroke-width="1"/>
+          <path d="M -40 60 L -30 80 M -10 70 L 0 90 M 20 65 L 30 85 M 40 55 L 50 75" stroke="#3a5a40" stroke-width="2" stroke-linecap="round"/>
+          <path d="M -50 50 L -55 70 M -45 70 L -50 90" stroke="#3a5a40" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M 50 50 L 55 70 M 45 70 L 50 90" stroke="#3a5a40" stroke-width="1.5" stroke-linecap="round"/>
+        </g>
+      </g>
+      <g transform="translate(100,180)">
+        <text x="0" y="0" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="700" fill="#2d4a2b">The Complete</text>
+        <text x="0" y="58" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="700" fill="#2d4a2b">Guide to</text>
+        <text x="0" y="116" font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="700" fill="#2d4a2b">Organic Cotton</text>
+        <line x1="0" y1="140" x2="80" y2="140" stroke="#588157" stroke-width="3"/>
+        <text x="0" y="172" font-family="system-ui, -apple-system, sans-serif" font-size="17" fill="#4a4a4a">What it is, how to spot it, and how to</text>
+        <text x="0" y="196" font-family="system-ui, -apple-system, sans-serif" font-size="17" fill="#4a4a4a">shop for it without falling for the marketing.</text>
+      </g>
+    </svg>
+  </figure>
+</div>
+
+<details class="toc-mobile">
+  <summary>What's Inside</summary>
+  <ul class="toc-list">
+    <li><a href="#what-is-organic-cotton">What Is Organic Cotton?</a></li>
+    <li><a href="#organic-vs-conventional">Organic vs. Conventional</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#benefits">Benefits</a></li>
+    <li><a href="#where-to-start">Where to Start</a></li>
+    <li><a href="#limits">Where It Has Limits</a></li>
+    <li><a href="#how-wove-helps">How Wove Helps</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+</details>
+
+<div class="article-grid">
+  <article class="article-body">
+
+    <p class="drop-cap">Cotton sounds simple. It's a plant. You grow it, spin it into yarn, weave it into fabric, and wear it. That's been the basic story for thousands of years.</p>
+
+    <p>What's changed in the last seventy or so years is what happens <em>between</em> the plant and the shirt. Conventional cotton is now one of the most chemically intensive crops in modern agriculture — heavily treated with synthetic pesticides, insecticides, fertilizers, and defoliants — and the fabric it becomes typically goes through dozens of additional chemical processing steps before it reaches a hanger. <strong>Organic cotton</strong> is the alternative version of that supply chain. Same plant. Very different process.</p>
+
+    <p>This guide walks through what organic cotton actually is, how it differs from conventional cotton, what the certifications mean (and which ones to actually trust), where it shines, where it has limits, and how to shop for it without getting greenwashed in the process.</p>
+
+    <h2 id="what-is-organic-cotton">What is organic cotton?</h2>
+
+    <p>Organic cotton is cotton grown according to certified organic farming standards — meaning <strong>without synthetic pesticides, synthetic fertilizers, or genetically modified seeds.</strong> The fiber must come from non-GMO plants, and the fields must be free of prohibited synthetic chemicals for at least three years before the cotton can be certified.</p>
+
+    <p>But there's a layer that surprises people: the term "organic" technically refers only to the growing of the cotton, not what happens after. A cotton plant grown organically can still be processed using chlorine bleach, formaldehyde, azo dyes, and other harmful chemicals in the spinning, weaving, dyeing, and finishing stages. This is why certifications like GOTS exist — to extend organic standards across the entire supply chain rather than just the field.</p>
+
+    <p>The basic principles behind organic cotton farming:</p>
+    <ul>
+      <li><strong>No synthetic pesticides or insecticides.</strong> Pest control relies on biological methods (beneficial insects, neem oil, trap crops) and cultural practices (crop rotation, mixed planting).</li>
+      <li><strong>No synthetic fertilizers.</strong> Fertility is built through composting, cover cropping, and animal manure.</li>
+      <li><strong>No GMO seeds.</strong> Organic cotton must be grown from non-genetically modified seed.</li>
+      <li><strong>Three-year transition.</strong> Land must be free of prohibited substances for three years before a harvest can be certified organic.</li>
+      <li><strong>Soil health as a priority.</strong> Organic farming actively builds soil structure and biodiversity rather than depleting it.</li>
+    </ul>
+
+    <div class="stat-callout">
+      <div class="stat-number">~0.95%</div>
+      <div class="stat-label">of global cotton production is certified organic — a tiny fraction of the cotton market, which is exactly why how you spend matters.</div>
+      <div class="stat-source">Source: Organic Trade Association. More recent Textile Exchange data suggests it's climbing toward ~1.4%.</div>
+    </div>
+
+    <h2 id="organic-vs-conventional">Organic cotton vs. conventional cotton</h2>
+
+    <p>The most useful way to understand organic cotton is to put it next to its conventional counterpart and look at what's actually different across the lifecycle.</p>
+
+    <figure>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" role="img" aria-label="A side-by-side comparison of conventional cotton and organic cotton across pesticides, water use, soil health, seeds, and chemical processing.">
+        <rect width="1200" height="660" fill="#f5f0e1"/>
+        <text x="60" y="58" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#2d4a2b">Organic vs. conventional cotton</text>
+        <text x="60" y="88" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#4a4a4a">The same plant — but a meaningfully different supply chain from field to fabric.</text>
+        <g transform="translate(60,130)">
+          <rect x="0" y="0" width="540" height="500" rx="14" fill="#ffffff" stroke="#dad7cd" stroke-width="1.5"/>
+          <rect x="0" y="0" width="540" height="60" rx="14" fill="#c2410c"/>
+          <rect x="0" y="46" width="540" height="14" fill="#c2410c"/>
+          <text x="270" y="38" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">Conventional cotton</text>
+          <g font-family="system-ui, sans-serif" font-size="14">
+            <g transform="translate(30,90)">
+              <text x="0" y="14" font-weight="700" fill="#2d4a2b" font-size="13" letter-spacing="0.5">PESTICIDES &amp; INSECTICIDES</text>
+              <text x="0" y="38" fill="#1a1a1a">Heavy synthetic use. Cotton accounts for an</text>
+              <text x="0" y="56" fill="#1a1a1a">outsized share of global insecticide sales despite</text>
+              <text x="0" y="74" fill="#1a1a1a">covering only ~2.5% of cultivated land.</text>
+            </g>
+            <g transform="translate(30,200)">
+              <text x="0" y="14" font-weight="700" fill="#2d4a2b" font-size="13" letter-spacing="0.5">SEEDS</text>
+              <text x="0" y="38" fill="#1a1a1a">Genetically modified seeds dominate.</text>
+              <text x="0" y="56" fill="#1a1a1a">About 75% of cotton planted globally is GM.</text>
+            </g>
+            <g transform="translate(30,290)">
+              <text x="0" y="14" font-weight="700" fill="#2d4a2b" font-size="13" letter-spacing="0.5">WATER &amp; SOIL</text>
+              <text x="0" y="38" fill="#1a1a1a">Intensive irrigation and synthetic fertilizers.</text>
+              <text x="0" y="56" fill="#1a1a1a">Tends to deplete soil structure over time.</text>
+            </g>
+            <g transform="translate(30,380)">
+              <text x="0" y="14" font-weight="700" fill="#2d4a2b" font-size="13" letter-spacing="0.5">PROCESSING</text>
+              <text x="0" y="38" fill="#1a1a1a">May include chlorine bleach, formaldehyde,</text>
+              <text x="0" y="56" fill="#1a1a1a">azo dyes, heavy metals, and chemical softeners.</text>
+              <text x="0" y="74" fill="#1a1a1a">No restriction by default.</text>
+            </g>
+          </g>
+        </g>
+        <g transform="translate(620,130)">
+          <rect x="0" y="0" width="520" height="500" rx="14" fill="#ffffff" stroke="#588157" stroke-width="2"/>
+          <rect x="0" y="0" width="520" height="60" rx="14" fill="#3a5a40"/>
+          <rect x="0" y="46" width="520" height="14" fill="#3a5a40"/>
+          <text x="260" y="38" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">Organic cotton</text>
+          <g font-family="system-ui, sans-serif" font-size="14">
+            <g transform="translate(30,90)">
+              <text x="0" y="14" font-weight="700" fill="#3a5a40" font-size="13" letter-spacing="0.5">PESTICIDES &amp; INSECTICIDES</text>
+              <text x="0" y="38" fill="#1a1a1a">No synthetic pesticides or insecticides.</text>
+              <text x="0" y="56" fill="#1a1a1a">Pest control uses biological methods — beneficial</text>
+              <text x="0" y="74" fill="#1a1a1a">insects, neem, crop rotation, and trap crops.</text>
+            </g>
+            <g transform="translate(30,200)">
+              <text x="0" y="14" font-weight="700" fill="#3a5a40" font-size="13" letter-spacing="0.5">SEEDS</text>
+              <text x="0" y="38" fill="#1a1a1a">Non-GMO seeds required. Land must be free of</text>
+              <text x="0" y="56" fill="#1a1a1a">prohibited substances for three years before</text>
+              <text x="0" y="74" fill="#1a1a1a">certification.</text>
+            </g>
+            <g transform="translate(30,290)">
+              <text x="0" y="14" font-weight="700" fill="#3a5a40" font-size="13" letter-spacing="0.5">WATER &amp; SOIL</text>
+              <text x="0" y="38" fill="#1a1a1a">Soil-building practices: composting, cover</text>
+              <text x="0" y="56" fill="#1a1a1a">cropping, manure. Organic water use estimated</text>
+              <text x="0" y="74" fill="#1a1a1a">up to ~91% lower than conventional.</text>
+            </g>
+            <g transform="translate(30,400)">
+              <text x="0" y="14" font-weight="700" fill="#3a5a40" font-size="13" letter-spacing="0.5">PROCESSING</text>
+              <text x="0" y="38" fill="#1a1a1a">If GOTS-certified: chlorine bleach,</text>
+              <text x="0" y="56" fill="#1a1a1a">formaldehyde, azo dyes, and heavy metals</text>
+              <text x="0" y="74" fill="#1a1a1a">are prohibited throughout.</text>
+            </g>
+          </g>
+        </g>
+      </svg>
+      <figcaption>Organic and conventional cotton share the same plant — but the chemical footprint from field to fabric is meaningfully different.</figcaption>
+    </figure>
+
+    <p>A few things worth knowing about the comparison:</p>
+
+    <p><strong>On the pesticide stat.</strong> Organic Authority and other widely-cited sources put cotton at <a href="https://www.organicauthority.com/buzz-news/cotton-the-worlds-dirtiest-crop" target="_blank" rel="noopener">24% of the world's insecticide market and 11% of global pesticide sales</a>, making it one of the most pesticide-intensive crops on the planet. More recent figures from the Environmental Justice Foundation revise that down to 16% of insecticides and 6% of pesticides. Either way, the headline holds: cotton uses a disproportionate share of global agricultural chemicals relative to the land it occupies.</p>
+
+    <p><strong>On water.</strong> The water comparison is contested. Older sources cite the 20,000-liters-per-kilogram figure. Recent data revises that downward to roughly 2,068 liters per kilogram on average, with wide regional variation. Organic cotton typically uses meaningfully less water than conventional — <a href="https://theroundup.org/organic-cotton-facts-statistics/" target="_blank" rel="noopener">TheRoundup's compiled industry data suggests organic cotton can use up to 91% less water</a> — but the exact gap depends a lot on how and where the cotton is grown.</p>
+
+    <p><strong>On processing.</strong> This is the most overlooked piece. A garment labeled "organic cotton" on its own says only that the fiber was grown organically. It doesn't say anything about how the fabric was bleached, dyed, or finished. For that, you need GOTS — which is what the next section is about.</p>
+
+    <div class="stat-callout">
+      <div class="stat-number">~24%</div>
+      <div class="stat-label">of the world's insecticide market goes to cotton crops — despite cotton covering only about 2.5% of global cultivated land.</div>
+      <div class="stat-source">Source: Organic Authority / Environmental Justice Foundation. More recent estimates revise the figure to ~16%.</div>
+    </div>
+
+    <h2 id="certifications">Organic cotton certifications: what they mean</h2>
+
+    <p>Cotton labeling is one of the most marketed and least regulated parts of clothing. Anyone can put "organic cotton" on a hangtag. What separates a meaningful claim from a marketing claim is a third-party certification with an audit trail.</p>
+
+    <figure>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 580" role="img" aria-label="A visual breakdown of organic cotton certifications: GOTS Organic label requires 95 percent organic fibers, GOTS Made with Organic requires 70 percent, the Organic Content Standard verifies fiber content only, and OEKO-TEX Standard 100 tests for harmful substances in the finished product.">
+        <rect width="1200" height="580" fill="#faf6e9"/>
+        <text x="60" y="58" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#2d4a2b">The certifications that actually matter</text>
+        <text x="60" y="88" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#4a4a4a">A third-party seal with an audit trail is what separates a real claim from marketing.</text>
+        <g transform="translate(60,130)">
+          <rect width="540" height="200" rx="14" fill="#ffffff" stroke="#3a5a40" stroke-width="2.5"/>
+          <g transform="translate(40,40)">
+            <circle cx="30" cy="30" r="30" fill="#3a5a40"/>
+            <text x="30" y="38" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">95%</text>
+          </g>
+          <text x="120" y="50" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#2d4a2b">GOTS — "Organic"</text>
+          <text x="120" y="76" font-family="system-ui, sans-serif" font-size="14" fill="#3a5a40" font-weight="600">The gold standard</text>
+          <text x="40" y="120" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a">Minimum 95% certified organic fibers, plus strict limits on</text>
+          <text x="40" y="140" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a">chemical inputs at every processing stage — bleach, dyes,</text>
+          <text x="40" y="160" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a">finishes — plus wastewater treatment and worker welfare.</text>
+          <text x="40" y="180" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a">The most comprehensive option available.</text>
+        </g>
+        <g transform="translate(620,130)">
+          <rect width="520" height="200" rx="14" fill="#ffffff" stroke="#588157" stroke-width="2"/>
+          <g transform="translate(40,40)">
+            <circle cx="30" cy="30" r="30" fill="#588157"/>
+            <text x="30" y="38" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">70%</text>
+          </g>
+          <text x="120" y="50" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#2d4a2b">GOTS — "Made with Organic"</text>
+          <text x="120" y="76" font-family="system-ui, sans-serif" font-size="14" fill="#588157" font-weight="600">A meaningful step up</text>
+          <text x="40" y="120" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a">Minimum 70% certified organic fibers. Same processing,</text>
+          <text x="40" y="140" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a">chemical, and social standards as "Organic" grade — just</text>
+          <text x="40" y="160" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a">a lower fiber threshold. Common in blends with elastane</text>
+          <text x="40" y="180" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a">or recycled fiber.</text>
+        </g>
+        <g transform="translate(60,350)">
+          <rect width="540" height="200" rx="14" fill="#ffffff" stroke="#a3b18a" stroke-width="2"/>
+          <g transform="translate(40,40)">
+            <circle cx="30" cy="30" r="30" fill="#a3b18a"/>
+            <text x="30" y="38" font-family="Georgia, serif" font-size="18" font-weight="700" fill="#ffffff" text-anchor="middle">OCS</text>
+          </g>
+          <text x="120" y="50" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#2d4a2b">Organic Content Standard</text>
+          <text x="120" y="76" font-family="system-ui, sans-serif" font-size="14" fill="#6b6b6b" font-weight="600">Fiber-only, not processing</text>
+          <text x="40" y="120" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a">Verifies the presence and amount of organic material</text>
+          <text x="40" y="140" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a">in the final product (5%+) and tracks it through the</text>
+          <text x="40" y="160" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a">supply chain. Doesn't restrict chemical processing.</text>
+          <text x="40" y="180" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a">Good for traceability, narrower in scope than GOTS.</text>
+        </g>
+        <g transform="translate(620,350)">
+          <rect width="520" height="200" rx="14" fill="#ffffff" stroke="#a3b18a" stroke-width="2"/>
+          <g transform="translate(40,40)">
+            <circle cx="30" cy="30" r="30" fill="#6c9aae"/>
+            <text x="30" y="38" font-family="Georgia, serif" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">OEKO</text>
+          </g>
+          <text x="120" y="50" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#2d4a2b">OEKO-TEX Standard 100</text>
+          <text x="120" y="76" font-family="system-ui, sans-serif" font-size="14" fill="#6b6b6b" font-weight="600">Tests the finished product</text>
+          <text x="40" y="120" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a">Doesn't certify organic, but tests finished textiles for</text>
+          <text x="40" y="140" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a">harmful substances including pesticide residue, heavy</text>
+          <text x="40" y="160" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a">metals, formaldehyde, azo dyes, and specific PFAS.</text>
+          <text x="40" y="180" font-family="system-ui, sans-serif" font-size="14" fill="#1a1a1a">Strong complement to GOTS, not a substitute.</text>
+        </g>
+      </svg>
+      <figcaption>The four certifications that matter most — and what each one actually covers.</figcaption>
+    </figure>
+
+    <p>How to think about which certification matters when:</p>
+    <ul>
+      <li><strong>GOTS "Organic"</strong> is what you want for items where chemistry matters most — anything against your skin for long periods, anything for babies and kids, anything you'll wash and wear repeatedly. The 95% organic threshold combined with full-supply-chain chemistry standards is the most protective label available.</li>
+      <li><strong>GOTS "Made with Organic"</strong> is genuinely meaningful and not a downgrade in processing standards — just a lower fiber threshold to accommodate small percentages of non-organic materials (often elastane in basics like underwear, or recycled fibers in blends). For categories that require stretch, this is often the highest level you'll realistically find.</li>
+      <li><strong>OCS</strong> verifies fiber content but doesn't restrict chemical processing. A garment certified OCS-only could still be processed with formaldehyde or chlorine bleach. Useful, but not a complete picture.</li>
+      <li><strong>OEKO-TEX Standard 100</strong> isn't an organic certification at all — it's a test on the finished garment for harmful substance limits. Pairing GOTS or OCS with OEKO-TEX gives you both upstream sourcing assurance and downstream chemistry assurance.</li>
+    </ul>
+
+    <p>What to be skeptical of: an "organic cotton" claim with no certification logo, license number, or third-party seal. The U.S. doesn't tightly regulate the word "organic" on clothing tags the way it does on food, so unverified claims are common.</p>
+
+    <h2 id="benefits">Benefits of organic cotton</h2>
+
+    <p>The case for organic cotton works on three levels — environmental, personal, and social — and the relative weight depends on what you care most about.</p>
+
+    <p><strong>Environmental benefits.</strong> No synthetic pesticide and fertilizer runoff into local water systems. Healthier soil that retains carbon and supports biodiversity. Less reliance on the petrochemical industry that produces most synthetic agricultural inputs. Lower water use in many cases. Better farm-level adaptability to changing climate conditions because of more resilient soil.</p>
+
+    <p><strong>Personal exposure.</strong> A finished organic cotton garment — especially a GOTS-certified one — carries far lower residues of the chemicals that conventional cotton typically passes through: pesticide residue from the field, plus formaldehyde, chlorine bleach, heavy metals, and certain azo dyes from conventional processing. This matters most for items in extended skin contact: underwear, bras, base layers, sheets, towels, and anything for babies, whose skin is more permeable and whose bodies are still developing.</p>
+
+    <p><strong>Social and farmer welfare.</strong> Conventional cotton production has well-documented links to acute pesticide poisoning among farmworkers, particularly in lower-income countries where protective equipment is less available and pesticide regulations are weaker. Organic farming dramatically reduces those exposures. GOTS specifically adds International Labour Organization-based social criteria — fair wages, freedom of association, no child or forced labor — that apply across the entire supply chain, not just the field.</p>
+
+    <p>For most of us, the biggest tangible difference at home is going to be the chemistry of the finished garment. Cotton that has been grown organically <em>and</em> processed under GOTS standards genuinely doesn't have the same chemical residue profile as a conventionally grown and conventionally processed cotton garment — particularly for items that touch your skin all day.</p>
+
+    <div class="stat-callout">
+      <div class="stat-number">Up to 91%</div>
+      <div class="stat-label">less water than conventionally grown cotton, according to compiled industry data — though the actual gap varies significantly by growing region and method.</div>
+      <div class="stat-source">Source: TheRoundup, citing industry data. Figures vary widely based on irrigation method and geography.</div>
+    </div>
+
+    <h2 id="where-to-start">Where to start with organic cotton</h2>
+
+    <p>The goal isn't to overhaul your closet overnight. The most useful approach is to prioritize the categories where organic cotton genuinely changes the chemistry of what's against your body, and let the rest catch up over time as items wear out.</p>
+
+    <figure>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" role="img" aria-label="A priority pyramid showing where to start with organic cotton, from highest impact at the bottom — underwear, bras, base layers, and baby clothes — through bedding and pajamas, t-shirts and casual wear, up to outerwear and rarely-washed items at the top.">
+        <rect width="1200" height="540" fill="#f5f0e1"/>
+        <text x="60" y="58" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#2d4a2b">Where to start with organic cotton</text>
+        <text x="60" y="88" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#4a4a4a">Prioritize what touches your skin most. Work outward from there.</text>
+        <g transform="translate(120,140)">
+          <path d="M 360 0 L 600 80 L 120 80 Z" fill="#a3b18a" opacity="0.6" stroke="#3a5a40" stroke-width="1.5"/>
+          <path d="M 120 80 L 600 80 L 720 160 L 0 160 Z" fill="#a3b18a" opacity="0.8" stroke="#3a5a40" stroke-width="1.5"/>
+          <path d="M 0 160 L 720 160 L 800 240 L -80 240 Z" fill="#588157" opacity="0.9" stroke="#3a5a40" stroke-width="1.5"/>
+          <path d="M -80 240 L 800 240 L 880 320 L -160 320 Z" fill="#3a5a40" stroke="#2d4a2b" stroke-width="1.5"/>
+          <text x="360" y="50" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#2d4a2b" text-anchor="middle">Outerwear, rarely-washed items</text>
+          <text x="360" y="68" font-family="system-ui, sans-serif" font-size="11" fill="#4a4a4a" text-anchor="middle">Lower priority — limited skin contact, less laundering</text>
+          <text x="360" y="120" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#1a1a1a" text-anchor="middle">Casual wear &amp; t-shirts</text>
+          <text x="360" y="142" font-family="system-ui, sans-serif" font-size="12" fill="#1a1a1a" text-anchor="middle">Daily but moderate skin contact</text>
+          <text x="360" y="195" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#ffffff" text-anchor="middle">Bedding, pajamas &amp; loungewear</text>
+          <text x="360" y="218" font-family="system-ui, sans-serif" font-size="12" fill="#faf6e9" text-anchor="middle">~8 hours of direct contact every night</text>
+          <text x="360" y="275" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#ffffff" text-anchor="middle">Underwear, bras, base layers &amp; baby clothes</text>
+          <text x="360" y="297" font-family="system-ui, sans-serif" font-size="12" fill="#faf6e9" text-anchor="middle">Highest priority — closest to the body for the longest hours</text>
+        </g>
+      </svg>
+      <figcaption>Start at the base of the pyramid and work up as items wear out — the biggest chemistry gains come from the categories with the most skin contact.</figcaption>
+    </figure>
+
+    <p>The framework is simple: the longer something is against your skin, and the more permeable that skin is, the more the upgrade pays off. That order in practice:</p>
+    <ol>
+      <li><strong>Underwear, bras, base layers, and baby/toddler clothes.</strong> This is where to start. These items sit against the most sensitive skin for the most hours per day, and get washed and re-worn most frequently — so any chemical residue from conventional processing has the most opportunity to migrate. For more on this category specifically, see <a href="/blog/non-toxic-basics">our guide to non-toxic basics</a>.</li>
+      <li><strong>Bedding, pajamas, and loungewear.</strong> You spend roughly a third of your life against your sheets and in your pajamas. Switching these to GOTS-certified organic cotton is a high-leverage move.</li>
+      <li><strong>Casual wear — t-shirts, soft pants, knit dresses.</strong> Daily moderate skin contact. Lower urgency than the first two tiers, but a meaningful win as items wear out and get replaced.</li>
+      <li><strong>Outerwear and rarely-laundered items.</strong> Lowest priority. A wool blazer or a denim jacket isn't a typical PFAS or microplastic concern — and isn't where organic cotton has the strongest case either.</li>
+    </ol>
+
+    <p>When in doubt, <a href="https://apps.apple.com/us/app/wove-score/id6755356871" target="_blank" rel="noopener">check what's actually in a garment with the Wove app</a> before you buy. The label doesn't always tell you, and the marketing definitely doesn't.</p>
+
+    <h2 id="limits">Where organic cotton has limits</h2>
+
+    <p>Organic cotton solves real problems, but it isn't a silver bullet. A few honest caveats worth knowing:</p>
+
+    <p><strong>It doesn't address microplastic shedding</strong> if the garment is blended with synthetic fibers. A "70% organic cotton, 30% polyester" t-shirt still sheds polyester microplastics. The organic label only governs the cotton portion. For more on this dynamic, see <a href="/blog/microplastics-in-clothing">our microplastics in clothing guide</a>.</p>
+
+    <p><strong>"Organic cotton" alone doesn't guarantee chemical-free finishing.</strong> Without a GOTS or OEKO-TEX backing, the fiber may have been grown organically and then bleached, dyed, and finished using the same chemicals as conventional cotton. The certification is the part that matters.</p>
+
+    <p><strong>Yields are lower.</strong> Organic cotton typically produces less fiber per acre than conventional cotton, which is part of why prices are higher and why farmer transition takes investment. This is a real economic challenge, not just a marketing line.</p>
+
+    <p><strong>Not all organic cotton is created equal.</strong> Organic farming in a water-stressed region with poor labor protections is meaningfully different from organic farming on a regenerative farm in a temperate climate. Certifications help, but country and brand transparency still matter.</p>
+
+    <p><strong>Price.</strong> Genuinely organic and GOTS-certified clothing typically costs 2–3× what conventional cotton equivalents do. That's a real barrier. The two ways to make it sustainable for most households: prioritize the highest-impact categories first (basics), and let everything else catch up over time as items wear out.</p>
+
+    <h2 id="how-wove-helps">How Wove helps you check fabrics</h2>
+
+    <div class="cta-block">
+      <div class="cta-eyebrow">The Wove App</div>
+      <h3>See exactly what's in the cotton before you buy.</h3>
+      <p>Reading a cotton label correctly takes more attention than most people have time for in a store: fiber percentage, certification logos, license numbers, blend ratios, country of origin, and whatever marketing language the brand has chosen to use. Wove compresses all of that into a single grade you can read in seconds.</p>
+      <p>Wove is an iOS app that scores clothing A–F based on <strong>natural fiber percentage, microplastic shedding risk, and PFAS concerns.</strong> You scan a garment — a product URL, a screenshot, or a photo of the care label — and Wove handles the lookup work. If a piece is genuinely GOTS-certified organic cotton, that's reflected in the grade. If a piece is "organic cotton blend" with 30% polyester, that's reflected too. No brand deals. No inflated grades.</p>
+      <a href="https://apps.apple.com/us/app/wove-score/id6755356871" class="cta-link">Download Wove on the App Store →</a>
+    </div>
+
+    <h2 id="faq">Frequently asked questions</h2>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>What is organic cotton?</summary>
+        <div class="faq-answer">
+          <p>Organic cotton is cotton grown according to certified organic farming standards — without synthetic pesticides, synthetic fertilizers, or genetically modified seeds. To be certified organic, the land must be free of prohibited synthetic chemicals for at least three years before harvest. When combined with a certification like GOTS, organic standards extend across the entire supply chain — including spinning, weaving, dyeing, and finishing.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>What's the difference between organic cotton and regular cotton?</summary>
+        <div class="faq-answer">
+          <p>Conventional cotton is grown with synthetic pesticides, insecticides, and fertilizers, typically from genetically modified seeds, and is often processed with chemicals like chlorine bleach, formaldehyde, and azo dyes. Organic cotton is grown without any of those inputs and — if GOTS-certified — is also processed without the harmful chemicals commonly used in conventional finishing.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>What does GOTS organic cotton mean?</summary>
+        <div class="faq-answer">
+          <p>GOTS stands for Global Organic Textile Standard. A garment labeled "Organic" under GOTS must contain at least 95% certified organic fibers; a garment labeled "Made with Organic" must contain at least 70%. Both grades require the same standards on chemical processing, wastewater treatment, and worker welfare across the entire supply chain. GOTS is the most comprehensive organic textile certification currently available.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Is organic cotton actually better for the environment?</summary>
+        <div class="faq-answer">
+          <p>Organic cotton farming eliminates synthetic pesticide and fertilizer runoff, supports soil health and biodiversity, and typically uses less water than conventional cotton. The size of the water savings depends a lot on where and how the cotton is grown. The environmental case is strongest when paired with full-supply-chain certifications like GOTS that also restrict downstream chemistry.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Is organic cotton worth the price?</summary>
+        <div class="faq-answer">
+          <p>For categories with the most skin contact — underwear, bras, base layers, baby and toddler clothes, bedding, pajamas — the chemistry difference between conventionally processed cotton and GOTS-certified organic cotton is meaningful, and worth the premium for many households. For categories with less skin contact or less frequent washing, the case is weaker. The most practical approach is to prioritize basics first.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>How do I know if cotton is really organic?</summary>
+        <div class="faq-answer">
+          <p>Look for a certification logo plus a license number. The two most credible: <strong>GOTS</strong> (full supply chain, includes chemistry and labor standards) and the <strong>Organic Content Standard (OCS)</strong> (verifies fiber content but not processing). Pair either with <strong>OEKO-TEX Standard 100</strong> for finished-product chemistry testing. An "organic cotton" claim without a certification is essentially unverified.</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Does organic cotton shed microplastics?</summary>
+        <div class="faq-answer">
+          <p>No — cotton is a natural cellulose fiber and doesn't shed plastic microfibers. However, many garments labeled as containing organic cotton are blends with polyester, nylon, or elastane. The synthetic portion does shed microplastics. If microplastic shedding is your priority, look for 100% organic cotton (or "Made with Organic" with the remaining percentage being natural fibers like elastane, which is a very small fraction).</p>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>What's the best organic cotton certification?</summary>
+        <div class="faq-answer">
+          <p>GOTS at the "Organic" label grade (95%+ organic fibers) is the most comprehensive certification available and the strongest single signal of quality. For garments that require stretch, GOTS at the "Made with Organic" grade (70%+) is usually the highest realistic level. Pairing either with OEKO-TEX Standard 100 adds finished-product chemistry assurance.</p>
+        </div>
+      </details>
+    </div>
+
+  </article>
+
+  <aside class="toc-aside">
+    <div class="toc-label">In this guide</div>
+    <ul class="toc-list">
+      <li><a href="#what-is-organic-cotton">What Is Organic Cotton?</a></li>
+      <li><a href="#organic-vs-conventional">Organic vs. Conventional</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#benefits">Benefits</a></li>
+      <li><a href="#where-to-start">Where to Start</a></li>
+      <li><a href="#limits">Where It Has Limits</a></li>
+      <li><a href="#how-wove-helps">How Wove Helps</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </aside>
+</div>
+
+<div class="article-footer">
+  <section class="related-section">
+    <div class="section-label">Keep Reading</div>
+    <h2>Related guides from Wove</h2>
+    <div class="related-grid">
+      <a href="/blog/non-toxic-basics" class="related-card">
+        <div class="related-cat">Wardrobe</div>
+        <div class="related-title">Non-Toxic Basics: A Buyer's Guide to Underwear, Bras &amp; Base Layers</div>
+      </a>
+      <a href="/blog/pfas-in-clothing" class="related-card">
+        <div class="related-cat">Chemical Safety</div>
+        <div class="related-title">PFAS in Clothing: What It Is and How to Avoid It</div>
+      </a>
+      <a href="/blog/microplastics-in-clothing" class="related-card">
+        <div class="related-cat">Materials</div>
+        <div class="related-title">Microplastics in Clothing: A Beginner's Guide</div>
+      </a>
+      <a href="/blog/how-to-read-clothing-labels" class="related-card">
+        <div class="related-cat">Fabric Guide</div>
+        <div class="related-title">How to Read Clothing Labels: A Complete Guide to Fabrics, Care, and Quality</div>
+      </a>
+    </div>
+  </section>
+
+  <section class="sources-section">
+    <h3>Sources &amp; further reading</h3>
+    <ul>
+      <li>Global Organic Textile Standard (GOTS). <a href="https://global-standard.org/certification-and-labelling/labelling/label-grades" target="_blank" rel="noopener">Label Grades</a> and <a href="https://global-standard.org/the-standard/gots-key-features/organic-fibres" target="_blank" rel="noopener">Organic Fibres</a>.</li>
+      <li>Organic Trade Association. <a href="https://ota.com/get-facts-about-organic-cotton" target="_blank" rel="noopener">Get the Facts about Organic Cotton</a>.</li>
+      <li>Textile Exchange. <a href="https://textileexchange.org/knowledge-center/reports/organic-cotton-market-report/" target="_blank" rel="noopener">Organic Cotton Market Report</a>.</li>
+      <li>Environmental Justice Foundation. <a href="https://ejfoundation.org/news-media/the-casualties-of-cotton" target="_blank" rel="noopener">The casualties of cotton</a>.</li>
+      <li>Organic Authority. <a href="https://www.organicauthority.com/buzz-news/cotton-the-worlds-dirtiest-crop" target="_blank" rel="noopener">Cotton: The World's "Dirtiest" Crop</a>.</li>
+      <li>TheRoundup. <a href="https://theroundup.org/organic-cotton-facts-statistics/" target="_blank" rel="noopener">Latest Organic Cotton Facts and Statistics</a>.</li>
+      <li>OEKO-TEX. <a href="https://www.oeko-tex.com/en/our-standards/oeko-tex-standard-100" target="_blank" rel="noopener">Standard 100 by OEKO-TEX</a>.</li>
+    </ul>
+  </section>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-name">
+          <img src="../../images/logo.png" alt="Wove" class="footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="logo-placeholder dark" style="display:none">LOGO</div>
+        </div>
+        <p>Shop consciously. Live comfortably. Wove brings transparency to the fashion industry — no ads, no brand deals, just the truth about your fabrics.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Project</h4>
+        <a href="../../about/">The Story</a>
+        <a href="../../wovescore/">Wove Score</a>
+        <a href="../../contact/">Contact</a>
+        <a href="https://shopmy.us/shop/emmhemphill" target="_blank" rel="noopener">Shop Our Top Picks</a>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <a href="../">Blog</a>
+        <a href="../../privacypolicy/">Privacy Policy</a>
+        <a href="../../terms/">Terms of Use</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 Wove LLC. Shop consciously. Live comfortably.</div>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', () => {
+  const bar = document.getElementById('progressBar');
+  const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+  bar.style.width = scrolled + '%';
+});
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); });
+const tocLinks = document.querySelectorAll('.toc-aside .toc-list a');
+const sections = [...tocLinks].map(a => document.getElementById(a.getAttribute('href').slice(1))).filter(Boolean);
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      tocLinks.forEach(link => link.classList.remove('active'));
+      const activeLink = document.querySelector(`.toc-aside .toc-list a[href="#${entry.target.id}"]`);
+      if (activeLink) activeLink.classList.add('active');
+    }
+  });
+}, { rootMargin: '-30% 0px -60% 0px' });
+sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>
