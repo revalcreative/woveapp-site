@@ -2,40 +2,44 @@
 
 /* PRIMARY — full-width green section, centered content */
 .email-capture-primary {
-  padding: 96px 48px;
+  padding: 64px 48px;
   background: #E8EDE6;
   text-align: center;
 }
 .email-capture-inner {
-  max-width: 800px;
+  max-width: 680px;
   margin: 0 auto;
 }
 .email-capture-eyebrow {
   display: inline-block; font-size: 11px; font-weight: 700;
   letter-spacing: 2px; text-transform: uppercase;
-  color: #5B6B54; margin-bottom: 16px;
+  color: #5B6B54; margin-bottom: 12px;
 }
 .email-capture-title {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: clamp(24px, 3.5vw, 38px); color: #4A5A42;
-  margin: 0 auto 14px; line-height: 1.2; font-weight: 700;
-  max-width: 640px;
+  font-size: clamp(22px, 3vw, 32px); color: #4A5A42;
+  margin: 0 auto 10px; line-height: 1.25; font-weight: 700;
+  max-width: 580px;
 }
 .email-capture-desc {
-  font-size: 16px; color: #6B6B6B;
-  margin: 0 auto 36px; line-height: 1.65;
-  max-width: 520px;
+  font-size: 15px; color: #6B6B6B;
+  margin: 0 auto 20px; line-height: 1.6;
+  max-width: 480px;
 }
 
-/* Force beehiiv form to fill the container width */
+/* Strip beehiiv wrapper margin and constrain width */
 .email-capture-primary .beehiiv-form-wrapper,
-.email-capture-secondary .beehiiv-form-wrapper { width: 100%; }
+.email-capture-secondary .beehiiv-form-wrapper {
+  width: 100%; margin: 0 !important;
+}
 .email-capture-primary .beehiiv-embed,
-.email-capture-secondary .beehiiv-embed { width: 100% !important; }
+.email-capture-secondary .beehiiv-embed {
+  width: 100% !important; display: block;
+}
 
 /* SECONDARY — two-column strip, text left / form right */
 .email-capture-secondary {
-  padding: 64px 48px;
+  padding: 48px;
   background: #fff;
   border-top: 1px solid rgba(0,0,0,0.06);
   border-bottom: 1px solid rgba(0,0,0,0.06);
@@ -47,16 +51,16 @@
 }
 .email-capture-secondary-title {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: clamp(20px, 2.5vw, 28px); font-weight: 700;
-  color: #4A5A42; margin-bottom: 8px; line-height: 1.25;
+  font-size: clamp(18px, 2vw, 24px); font-weight: 700;
+  color: #4A5A42; margin-bottom: 6px; line-height: 1.25;
 }
 .email-capture-secondary-desc {
-  font-size: 15px; color: #6B6B6B;
-  line-height: 1.6;
+  font-size: 14px; color: #6B6B6B;
+  line-height: 1.6; margin: 0;
 }
 
 @media (max-width: 768px) {
-  .email-capture-primary { padding: 72px 24px; }
-  .email-capture-secondary { padding: 56px 24px; }
-  .email-capture-secondary-inner { grid-template-columns: 1fr; gap: 24px; }
+  .email-capture-primary { padding: 56px 24px; }
+  .email-capture-secondary { padding: 40px 24px; }
+  .email-capture-secondary-inner { grid-template-columns: 1fr; gap: 20px; }
 }
