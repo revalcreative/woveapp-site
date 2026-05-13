@@ -236,6 +236,8 @@
     font-size: 14px; font-weight: 600; color: var(--wove-green-dark);
     text-decoration: underline; text-underline-offset: 3px;
     transition: color 0.2s; cursor: pointer;
+    background: none; border: none; padding: 0;
+    font-family: inherit;
   }
   .android-waitlist-link:hover { color: var(--wove-green); }
   .hero-visual {
@@ -534,7 +536,7 @@
         </a>
         <div class="android-waitlist">
           <p class="android-waitlist-platform">On Android?</p>
-          <a href="#" id="android-waitlist-trigger" class="android-waitlist-link">Join the waitlist &rarr;</a>
+          <button id="android-waitlist-trigger" class="android-waitlist-link">Join the waitlist &rarr;</button>
         </div>
       </div>
     </div>
