@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-503P7ZDSXZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-503P7ZDSXZ');
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Wove: Non-Toxic Clothing Scanner App | PFAS & Microplastics</title>
 <meta name="description" content="Scan any clothing item to instantly see its Wove Score (A+ to F) based on fabric composition, microplastic risk, and PFAS concerns. Free iOS app.">
@@ -787,6 +795,25 @@
       e.preventDefault();
       const t = document.querySelector(a.getAttribute('href'));
       if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>
+<script>
+  // App Store clicks
+  document.querySelectorAll('a[href*="apps.apple.com"]').forEach(function(el) {
+    el.addEventListener('click', function() {
+      gtag('event', 'app_store_click', { location: el.closest('section') ? el.closest('section').className : 'nav' });
+    });
+  });
+  // Android waitlist click
+  var waitlistBtn = document.getElementById('android-waitlist-trigger');
+  if (waitlistBtn) waitlistBtn.addEventListener('click', function() {
+    gtag('event', 'android_waitlist_click');
+  });
+  // PDF download
+  document.querySelectorAll('a[href$=".pdf"]').forEach(function(el) {
+    el.addEventListener('click', function() {
+      gtag('event', 'pdf_download', { file_name: el.href.split('/').pop() });
     });
   });
 </script>
