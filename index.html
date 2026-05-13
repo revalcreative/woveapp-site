@@ -223,12 +223,20 @@
     display: flex; gap: 14px; flex-wrap: wrap; align-items: center;
     animation: fadeUp 0.6s ease 0.3s both;
   }
-  .android-waitlist { margin-top: 20px; }
-  .android-waitlist-label {
-    font-size: 12px; font-weight: 600; color: var(--wove-text-light);
-    letter-spacing: 0.3px; margin-bottom: 10px;
-    text-transform: uppercase; letter-spacing: 1px;
+  .android-waitlist {
+    display: flex; flex-direction: column; justify-content: center;
+    gap: 2px; padding-left: 20px;
+    border-left: 1px solid var(--wove-border);
   }
+  .android-waitlist-platform {
+    font-size: 13px; color: var(--wove-text-light); margin: 0;
+  }
+  .android-waitlist-link {
+    font-size: 14px; font-weight: 600; color: var(--wove-green-dark);
+    text-decoration: underline; text-underline-offset: 3px;
+    transition: color 0.2s; cursor: pointer;
+  }
+  .android-waitlist-link:hover { color: var(--wove-green); }
   .hero-visual {
     display: flex; justify-content: center;
     animation: fadeUp 0.8s ease 0.3s both;
@@ -523,10 +531,10 @@
         <a href="https://apps.apple.com/us/app/wove-score/id6755356871" class="app-store-placeholder">
           <img src="./images/app-store-badge.svg" alt="Download Wove on the App Store" class="store-badge-img" onerror="this.onerror=null;this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="placeholder-box store-badge" style="display:none">APP STORE BADGE</div>
         </a>
-      </div>
-      <div class="android-waitlist">
-        <p class="android-waitlist-label">Android coming soon — join the waitlist</p>
-        <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="502dc667-05e6-42bd-8144-34c8abbe5902"></script>
+        <div class="android-waitlist">
+          <p class="android-waitlist-platform">On Android?</p>
+          <a href="#" id="android-waitlist-trigger" class="android-waitlist-link">Join the waitlist &rarr;</a>
+        </div>
       </div>
     </div>
     <div class="hero-visual">
