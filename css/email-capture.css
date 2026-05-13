@@ -1,66 +1,53 @@
 /* EMAIL CAPTURE SECTIONS — shared across all pages */
 
-/* PRIMARY — full-width green section, centered content */
-.email-capture-primary {
-  padding: 64px 48px;
-  background: #E8EDE6;
-  text-align: center;
-}
-.email-capture-inner {
-  max-width: 680px;
-  margin: 0 auto;
-}
-.email-capture-eyebrow {
-  display: inline-block; font-size: 11px; font-weight: 700;
-  letter-spacing: 2px; text-transform: uppercase;
-  color: #5B6B54; margin-bottom: 12px;
-}
-.email-capture-title {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: clamp(22px, 3vw, 32px); color: #4A5A42;
-  margin: 0 auto 10px; line-height: 1.25; font-weight: 700;
-  max-width: 580px;
-}
-.email-capture-desc {
-  font-size: 15px; color: #6B6B6B;
-  margin: 0 auto 20px; line-height: 1.6;
-  max-width: 480px;
-}
-
-/* Strip beehiiv wrapper margin and constrain width */
-.email-capture-primary .beehiiv-form-wrapper,
-.email-capture-secondary .beehiiv-form-wrapper {
-  width: 100%; margin: 0 !important;
-}
-.email-capture-primary .beehiiv-embed,
-.email-capture-secondary .beehiiv-embed {
-  width: 100% !important; display: block;
-}
-
-/* SECONDARY — two-column strip, text left / form right */
+.email-capture-primary,
 .email-capture-secondary {
-  padding: 48px;
-  background: #fff;
-  border-top: 1px solid rgba(0,0,0,0.06);
-  border-bottom: 1px solid rgba(0,0,0,0.06);
+  padding: 40px 48px;
 }
+.email-capture-primary {
+  background: #E8EDE6;
+  border-top: 1px solid rgba(91,107,84,0.15);
+  border-bottom: 1px solid rgba(91,107,84,0.15);
+}
+.email-capture-secondary {
+  background: #F5EDE4;
+  border-top: 1px solid rgba(184,118,90,0.12);
+  border-bottom: 1px solid rgba(184,118,90,0.12);
+}
+
+/* Two-column banner layout for both */
+.email-capture-inner,
 .email-capture-secondary-inner {
   max-width: 960px; margin: 0 auto;
   display: grid; grid-template-columns: 1fr 1fr;
-  gap: 48px; align-items: center;
+  gap: 40px; align-items: center;
 }
+
+/* Text column */
+.email-capture-eyebrow {
+  display: block; font-size: 10px; font-weight: 700;
+  letter-spacing: 2px; text-transform: uppercase;
+  color: #5B6B54; margin-bottom: 6px;
+}
+.email-capture-title,
 .email-capture-secondary-title {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: clamp(18px, 2vw, 24px); font-weight: 700;
-  color: #4A5A42; margin-bottom: 6px; line-height: 1.25;
+  color: #4A5A42; line-height: 1.25; margin: 0 0 6px;
 }
+.email-capture-desc,
 .email-capture-secondary-desc {
   font-size: 14px; color: #6B6B6B;
-  line-height: 1.6; margin: 0;
+  line-height: 1.55; margin: 0;
 }
 
+/* Strip extra margin beehiiv adds around its wrapper */
+.beehiiv-form-wrapper { margin: 0 !important; }
+.beehiiv-embed { width: 100% !important; display: block; }
+
 @media (max-width: 768px) {
-  .email-capture-primary { padding: 56px 24px; }
-  .email-capture-secondary { padding: 40px 24px; }
-  .email-capture-secondary-inner { grid-template-columns: 1fr; gap: 20px; }
+  .email-capture-primary,
+  .email-capture-secondary { padding: 36px 24px; }
+  .email-capture-inner,
+  .email-capture-secondary-inner { grid-template-columns: 1fr; gap: 16px; }
 }
