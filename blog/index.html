@@ -144,14 +144,15 @@
     aspect-ratio: 3 / 2;
     background: linear-gradient(135deg, #DCE6DF 0%, #ECE3CE 100%);
     position: relative;
-    display: flex; align-items: center; justify-content: center;
     overflow: hidden;
   }
   .blog-card-image svg {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);
     width: 40px; height: 40px;
     color: var(--wove-green); opacity: 0.35;
   }
   .blog-card-image img {
+    position: absolute; inset: 0;
     width: 100%; height: 100%; object-fit: cover;
   }
 
@@ -223,7 +224,7 @@
 
 <nav id="main-nav">
   <a href="../" class="nav-logo">
-    <img src="../images/logo.png" alt="Wove — non-toxic clothing scanner" class="nav-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <img src="/images/logo.png" alt="Wove — non-toxic clothing scanner" class="nav-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
     <div class="logo-placeholder" style="display:none">LOGO</div>
   </a>
   <div class="nav-links">
@@ -251,7 +252,7 @@
 
       <a href="./how-to-read-clothing-labels/" class="blog-card">
         <div class="blog-card-image">
-          <img src="../images/how-to-read-clothing-labels.jpg" alt="How to read a clothing label" loading="lazy">
+          <img src="/images/how-to-read-clothing-labels.jpg" alt="How to read a clothing label" loading="lazy">
         </div>
         <div class="blog-card-body">
           <div class="blog-card-cat">Fabric Guide</div>
@@ -267,7 +268,7 @@
 
       <a href="./pfas-in-clothing/" class="blog-card">
         <div class="blog-card-image">
-          <img src="../images/pfas-in-clothing.jpg" alt="PFAS in your clothing" loading="lazy">
+          <img src="/images/pfas-in-clothing.jpg" alt="PFAS in your clothing" loading="lazy">
         </div>
         <div class="blog-card-body">
           <div class="blog-card-cat">Chemical Safety</div>
@@ -283,7 +284,7 @@
 
       <a href="./microplastics-in-clothing/" class="blog-card">
         <div class="blog-card-image">
-          <img src="../images/microplastics-in-clothing.jpg" alt="Microplastics in your laundry" loading="lazy">
+          <img src="/images/microplastics-in-clothing.jpg" alt="Microplastics in your laundry" loading="lazy">
         </div>
         <div class="blog-card-body">
           <div class="blog-card-cat">Materials</div>
@@ -300,7 +301,7 @@
 
       <a href="./organic-cotton-guide/" class="blog-card">
         <div class="blog-card-image">
-          <img src="../images/organic-cotton-guide.jpg" alt="The organic cotton guide" loading="lazy">
+          <img src="/images/organic-cotton-guide.jpg" alt="The organic cotton guide" loading="lazy">
         </div>
         <div class="blog-card-body">
           <div class="blog-card-cat">Fabric Guide</div>
@@ -316,7 +317,7 @@
 
       <a href="./non-toxic-basics/" class="blog-card">
         <div class="blog-card-image">
-          <img src="../images/non-toxic-basics.jpg" alt="Non-toxic basics" loading="lazy">
+          <img src="/images/non-toxic-basics.jpg" alt="Non-toxic basics" loading="lazy">
         </div>
         <div class="blog-card-body">
           <div class="blog-card-cat">Wardrobe</div>
@@ -339,7 +340,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-brand-name">
-          <img src="../images/logo.png" alt="Wove — non-toxic clothing scanner" class="footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <img src="/images/logo.png" alt="Wove — non-toxic clothing scanner" class="footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
           <div class="logo-placeholder dark" style="display:none">LOGO</div>
         </div>
         <p>Shop consciously. Live comfortably. Wove brings transparency to the fashion industry — no ads, no brand deals, just the truth about your fabrics.</p>
