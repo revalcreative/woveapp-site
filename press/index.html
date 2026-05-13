@@ -248,9 +248,17 @@
     .socials svg { width: 14px; height: 14px; }
 
     /* FOOTER */
-    .site-footer { padding: 40px var(--content-pad); border-top: 1px solid var(--hairline); font-size: 13px; color: var(--ink-mute); text-align: center; }
-    .site-footer a { color: var(--ink-soft); }
-    .site-footer a:hover { color: var(--wove-green); }
+    .footer-logo-img { height: 36px; object-fit: contain; filter: brightness(10); }
+    footer { padding: 56px 48px 28px; background: #2A2A2A; color: rgba(255,255,255,0.55); font-family: 'Poppins', sans-serif; }
+    .footer-inner { max-width: 960px; margin: 0 auto; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 56px; margin-bottom: 40px; }
+    .footer-brand-name { margin-bottom: 12px; }
+    .footer-brand p { font-size: 13px; line-height: 1.7; max-width: 300px; }
+    .footer-col h4 { color: white; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 18px; }
+    .footer-col a { display: block; color: rgba(255,255,255,0.45); text-decoration: none; font-size: 13px; padding: 4px 0; transition: color 0.2s; }
+    .footer-col a:hover { color: white; }
+    .footer-bottom { padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 12px; text-align: center; color: rgba(255,255,255,0.3); }
+    @media (max-width: 960px) { .footer-grid { grid-template-columns: 1fr; gap: 28px; } }
   </style>
 </head>
 <body>
@@ -556,8 +564,30 @@
     </div>
   </section>
 
-  <footer class="site-footer">
-    <p>© 2026 Wove LLC · <a href="/about/">The Story</a> · <a href="/blog/">Blog</a> · <a href="/privacypolicy/">Privacy</a> · <a href="/terms/">Terms</a></p>
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-brand-name"><img src="../images/logo.png" alt="Wove — non-toxic clothing scanner" class="footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="logo-placeholder dark" style="display:none">LOGO</div></div>
+          <p>Shop consciously. Live comfortably. Wove brings transparency to the fashion industry — no ads, no brand deals, just the truth about your fabrics.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Project</h4>
+          <a href="../about/">The Story</a>
+          <a href="../wovescore/">Wove Score</a>
+          <a href="../contact/">Contact</a>
+          <a href="https://shopmy.us/shop/emmhemphill" target="_blank" rel="noopener">Shop Our Top Picks</a>
+        </div>
+        <div class="footer-col">
+          <h4>Learn</h4>
+          <a href="../blog/">Blog</a>
+          <a href="../press/">Press</a>
+          <a href="../privacypolicy/">Privacy Policy</a>
+          <a href="../terms/">Terms of Use</a>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 Wove LLC. Shop consciously. Live comfortably.</div>
+    </div>
   </footer>
 
   <script>
