@@ -1,12 +1,15 @@
 /* EMAIL CAPTURE SECTIONS — shared across all pages */
+
+/* PRIMARY — full-width green section, centered content */
 .email-capture-primary {
   padding: 96px 48px;
   background: #E8EDE6;
-  border-top: 1px solid rgba(91,107,84,0.12);
-  border-bottom: 1px solid rgba(91,107,84,0.12);
   text-align: center;
 }
-.email-capture-inner { max-width: 620px; margin: 0 auto; }
+.email-capture-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
 .email-capture-eyebrow {
   display: inline-block; font-size: 11px; font-weight: 700;
   letter-spacing: 2px; text-transform: uppercase;
@@ -14,28 +17,46 @@
 }
 .email-capture-title {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: clamp(22px, 3vw, 34px); color: #4A5A42;
-  margin-bottom: 12px; line-height: 1.25; font-weight: 700;
+  font-size: clamp(24px, 3.5vw, 38px); color: #4A5A42;
+  margin: 0 auto 14px; line-height: 1.2; font-weight: 700;
+  max-width: 640px;
 }
 .email-capture-desc {
   font-size: 16px; color: #6B6B6B;
-  margin-bottom: 32px; line-height: 1.65;
+  margin: 0 auto 36px; line-height: 1.65;
+  max-width: 520px;
 }
+
+/* Force beehiiv form to fill the container width */
+.email-capture-primary .beehiiv-form-wrapper,
+.email-capture-secondary .beehiiv-form-wrapper { width: 100%; }
+.email-capture-primary .beehiiv-embed,
+.email-capture-secondary .beehiiv-embed { width: 100% !important; }
+
+/* SECONDARY — two-column strip, text left / form right */
 .email-capture-secondary {
-  padding: 72px 48px; background: #fff;
+  padding: 64px 48px;
+  background: #fff;
   border-top: 1px solid rgba(0,0,0,0.06);
   border-bottom: 1px solid rgba(0,0,0,0.06);
-  text-align: center;
 }
-.email-capture-secondary-inner { max-width: 520px; margin: 0 auto; }
+.email-capture-secondary-inner {
+  max-width: 960px; margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 48px; align-items: center;
+}
 .email-capture-secondary-title {
-  font-size: 20px; font-weight: 600;
-  color: #333; margin-bottom: 8px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(20px, 2.5vw, 28px); font-weight: 700;
+  color: #4A5A42; margin-bottom: 8px; line-height: 1.25;
 }
 .email-capture-secondary-desc {
   font-size: 15px; color: #6B6B6B;
-  margin-bottom: 24px; line-height: 1.6;
+  line-height: 1.6;
 }
+
 @media (max-width: 768px) {
-  .email-capture-primary, .email-capture-secondary { padding: 64px 24px; }
+  .email-capture-primary { padding: 72px 24px; }
+  .email-capture-secondary { padding: 56px 24px; }
+  .email-capture-secondary-inner { grid-template-columns: 1fr; gap: 24px; }
 }
