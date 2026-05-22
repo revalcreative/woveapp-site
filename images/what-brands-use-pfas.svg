@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Brand report cards showing grades A through F for PFAS clothing policies">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2D4A3E"/>
+      <stop offset="100%" stop-color="#1a2e26"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Subtle grid texture -->
+  <g stroke="rgba(255,255,255,0.04)" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+    <line x1="0" y1="525" x2="1200" y2="525"/>
+    <line x1="200" y1="0" x2="200" y2="630"/>
+    <line x1="400" y1="0" x2="400" y2="630"/>
+    <line x1="600" y1="0" x2="600" y2="630"/>
+    <line x1="800" y1="0" x2="800" y2="630"/>
+    <line x1="1000" y1="0" x2="1000" y2="630"/>
+  </g>
+
+  <!-- Eyebrow label -->
+  <text x="100" y="110" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="rgba(255,255,255,0.45)" text-transform="uppercase">FABRIC SAFETY · BRAND GUIDE</text>
+
+  <!-- Main headline -->
+  <text x="100" y="185" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="400" fill="white">What Brands Use</text>
+  <text x="100" y="250" font-family="Georgia, 'Times New Roman', serif" font-size="52" font-weight="400" fill="white">PFAS in Clothing?</text>
+
+  <!-- Subhead -->
+  <text x="100" y="305" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.55)">An evidence-based look at brand testing, policy scorecards,</text>
+  <text x="100" y="328" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.55)">and how to verify before you buy.</text>
+
+  <!-- Grade cards -->
+  <!-- A -->
+  <rect x="100" y="390" width="130" height="160" rx="10" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <circle cx="165" cy="440" r="28" fill="#7a9b6e"/>
+  <text x="165" y="451" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="700" fill="white">A</text>
+  <text x="165" y="490" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.5)">PFAS eliminated</text>
+  <text x="165" y="506" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.5)">supply-chain wide</text>
+  <text x="165" y="530" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="10" font-style="italic" fill="rgba(255,255,255,0.3)">e.g. Levi's</text>
+
+  <!-- B -->
+  <rect x="250" y="390" width="130" height="160" rx="10" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <circle cx="315" cy="440" r="28" fill="#a4b87a"/>
+  <text x="315" y="451" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="700" fill="white">B</text>
+  <text x="315" y="490" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.5)">Clear phase-out</text>
+  <text x="315" y="506" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.5)">commitment</text>
+  <text x="315" y="530" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="10" font-style="italic" fill="rgba(255,255,255,0.3)">e.g. Patagonia</text>
+
+  <!-- D -->
+  <rect x="400" y="390" width="130" height="160" rx="10" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <circle cx="465" cy="440" r="28" fill="#c25555"/>
+  <text x="465" y="451" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="700" fill="white">D</text>
+  <text x="465" y="490" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.5)">Vague or no</text>
+  <text x="465" y="506" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.5)">commitment</text>
+  <text x="465" y="530" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="10" font-style="italic" fill="rgba(255,255,255,0.3)">e.g. The North Face</text>
+
+  <!-- F -->
+  <rect x="550" y="390" width="130" height="160" rx="10" fill="rgba(255,255,255,0.07)" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
+  <circle cx="615" cy="440" r="28" fill="#a83a3a"/>
+  <text x="615" y="451" text-anchor="middle" font-family="Georgia, serif" font-size="28" font-weight="700" fill="white">F</text>
+  <text x="615" y="490" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.5)">No public policy</text>
+  <text x="615" y="530" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="10" font-style="italic" fill="rgba(255,255,255,0.3)">e.g. Columbia</text>
+
+  <!-- Wove tag -->
+  <rect x="100" y="570" width="90" height="26" rx="13" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+  <text x="145" y="587" text-anchor="middle" font-family="Helvetica Neue, Arial, sans-serif" font-size="11" font-weight="600" fill="rgba(255,255,255,0.5)">woveapp.com</text>
+
+  <!-- Decorative water droplets (right side) -->
+  <g fill="#7ba9d9" opacity="0.18">
+    <path d="M950 180 Q938 205 938 218 A14 14 0 0 0 962 218 Q962 205 950 180 Z"/>
+    <path d="M1020 240 Q1010 262 1010 273 A12 12 0 0 0 1030 273 Q1030 262 1020 240 Z"/>
+    <path d="M900 310 Q890 330 890 340 A11 11 0 0 0 910 340 Q910 330 900 310 Z"/>
+    <path d="M1080 160 Q1068 185 1068 198 A14 14 0 0 0 1092 198 Q1092 185 1080 160 Z"/>
+    <path d="M970 380 Q962 398 962 407 A10 10 0 0 0 978 407 Q978 398 970 380 Z"/>
+    <path d="M1050 330 Q1040 352 1040 362 A12 12 0 0 0 1060 362 Q1060 352 1050 330 Z"/>
+    <path d="M870 200 Q861 220 861 230 A11 11 0 0 0 879 230 Q879 220 870 200 Z"/>
+  </g>
+</svg>
