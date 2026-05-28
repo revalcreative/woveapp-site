@@ -44,7 +44,7 @@
     --radius-full: 50px;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
+  html { scroll-behavior: smooth; scroll-padding-top: 128px; }
   body {
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--wove-text);
@@ -98,7 +98,7 @@
 
   /* PAGE HEADER */
   .page-header {
-    padding: 120px 48px 60px;
+    padding: 120px 48px 48px;
     background: var(--wove-cream);
     border-bottom: 1px solid var(--wove-border);
   }
@@ -117,22 +117,87 @@
     max-width: 520px; line-height: 1.7;
   }
 
-  /* BLOG GRID */
-  .blog-section { padding: 64px 48px 100px; }
-  .blog-section-inner { max-width: 960px; margin: 0 auto; }
-
-  .blog-section-label {
-    font-size: 11px; font-weight: 700; letter-spacing: 2px;
-    text-transform: uppercase; color: var(--wove-green);
-    margin-bottom: 28px; display: block;
+  /* CATEGORY NAV BAR */
+  .category-nav {
+    position: sticky; top: 68px; z-index: 90;
+    background: rgba(240, 235, 227, 0.95);
+    backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--wove-border);
+    padding: 0 48px;
+  }
+  .category-nav-inner {
+    max-width: 960px; margin: 0 auto;
+    display: flex; align-items: center; gap: 4px;
+    overflow-x: auto; scrollbar-width: none;
+    padding: 12px 0;
+  }
+  .category-nav-inner::-webkit-scrollbar { display: none; }
+  .cat-link {
+    display: inline-block; padding: 7px 16px;
+    border-radius: var(--radius-full);
+    font-size: 13px; font-weight: 500;
+    color: var(--wove-text-light); text-decoration: none;
+    white-space: nowrap; transition: all 0.2s;
+    border: 1px solid transparent;
+    flex-shrink: 0;
+  }
+  .cat-link:hover {
+    color: var(--wove-green-dark);
+    background: white;
+    border-color: var(--wove-border);
+  }
+  .cat-link.active {
+    background: var(--wove-green);
+    color: white;
+    border-color: var(--wove-green);
   }
 
+  /* BLOG SECTIONS */
+  .blog-section {
+    padding: 64px 48px;
+    border-bottom: 1px solid var(--wove-border);
+  }
+  .blog-section:last-of-type { border-bottom: none; padding-bottom: 100px; }
+  .blog-section-inner { max-width: 960px; margin: 0 auto; }
+  .section-header { margin-bottom: 32px; }
+  .section-eyebrow {
+    font-size: 10px; font-weight: 700; letter-spacing: 2.5px;
+    text-transform: uppercase; color: var(--wove-green);
+    display: block; margin-bottom: 6px;
+  }
+  .section-title {
+    font-size: clamp(22px, 2.5vw, 28px);
+    color: var(--wove-green-dark); margin-bottom: 4px;
+  }
+  .section-desc {
+    font-size: 14px; color: var(--wove-text-light); font-family: 'Poppins', sans-serif;
+  }
+
+  /* FEATURED GRID (Recent — 2 cols, taller) */
+  .featured-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .featured-grid .blog-card-image { min-height: 220px; }
+  @media (max-width: 640px) { .featured-grid { grid-template-columns: 1fr; } }
+
+  /* STANDARD GRID */
   .blog-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 28px;
+    gap: 24px;
   }
 
+  /* SINGLE-ROW GRID (for lone cards) */
+  .blog-grid-solo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 340px;
+  }
+
+  /* CARD */
   .blog-card {
     background: var(--wove-white);
     border-radius: var(--radius-card);
@@ -147,24 +212,14 @@
     transform: translateY(-4px);
     box-shadow: 0 16px 48px rgba(0,0,0,0.07);
   }
-
   .blog-card-image {
     background: linear-gradient(135deg, #DCE6DF 0%, #ECE3CE 100%);
-    overflow: hidden;
-  }
-  .blog-card-image svg {
-    display: block; margin: 40px auto;
-    width: 40px; height: 40px;
-    color: var(--wove-green); opacity: 0.35;
+    overflow: hidden; min-height: 160px;
   }
   .blog-card-image img {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 100%; height: auto; display: block;
   }
-
   .blog-card-body { padding: 24px; flex: 1; display: flex; flex-direction: column; }
-
   .blog-card-cat {
     font-size: 10px; font-weight: 700; letter-spacing: 1.8px;
     text-transform: uppercase; color: var(--terracotta);
@@ -184,6 +239,14 @@
     display: flex; gap: 16px; font-size: 12px;
     color: var(--wove-text-muted); padding-top: 16px;
     border-top: 1px solid var(--wove-border);
+  }
+
+  /* NEW badge */
+  .badge-new {
+    display: inline-block; background: var(--terracotta); color: white;
+    font-size: 9px; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; padding: 3px 8px; border-radius: 4px;
+    margin-left: 8px; vertical-align: middle; position: relative; top: -1px;
   }
 
   /* FOOTER */
@@ -221,9 +284,11 @@
   @media (max-width: 960px) {
     nav { padding: 0 24px; }
     .nav-links a:not(.nav-cta) { display: none; }
-    .page-header { padding: 100px 24px 48px; }
-    .blog-section { padding: 48px 24px 80px; }
+    .page-header { padding: 100px 24px 40px; }
+    .category-nav { padding: 0 24px; }
+    .blog-section { padding: 48px 24px; }
     .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+    footer { padding: 56px 24px 28px; }
   }
 </style>
 </head>
@@ -252,23 +317,87 @@
   </div>
 </div>
 
-<div class="blog-section">
+<!-- CATEGORY QUICK LINKS -->
+<nav class="category-nav" aria-label="Blog categories">
+  <div class="category-nav-inner">
+    <a href="#recent" class="cat-link active">Recently Published</a>
+    <a href="#pfas" class="cat-link">PFAS &amp; Chemicals</a>
+    <a href="#fabrics" class="cat-link">Fabric Guides</a>
+    <a href="#shopping" class="cat-link">Non-Toxic Shopping</a>
+  </div>
+</nav>
+
+<!-- RECENTLY PUBLISHED -->
+<section class="blog-section" id="recent">
   <div class="blog-section-inner">
-    <span class="blog-section-label">Fabric Guides</span>
-    <div class="blog-grid">
+    <div class="section-header">
+      <span class="section-eyebrow">Recently Published</span>
+      <h2 class="section-title">What's new from Wove</h2>
+    </div>
+    <div class="featured-grid">
 
       <a href="./pfas-free-rain-jackets/" class="blog-card">
         <div class="blog-card-image">
           <img src="/images/pfas-free-rain-jackets.svg" alt="PFAS-free rain jackets 2026 shopping guide" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-cat">Shopping Guide</div>
+          <div class="blog-card-cat">Shopping Guide <span class="badge-new">New</span></div>
           <div class="blog-card-title">PFAS-Free Rain Jackets: 2026 Shopping Guide</div>
           <div class="blog-card-excerpt">20+ verified brands — from technical alpine shells to kids' rain gear — with the certifications, finishes, and questions to verify each one before you buy.</div>
           <div class="blog-card-meta">
             <span>By Emily Hemphill</span>
             <span>·</span>
             <span>22 min read</span>
+            <span>·</span>
+            <span>May 2026</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="./what-brands-use-pfas/" class="blog-card">
+        <div class="blog-card-image">
+          <img src="/images/what-brands-use-pfas.svg" alt="What brands use PFAS in clothing — brand scorecard guide" loading="lazy">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Fabric Safety <span class="badge-new">New</span></div>
+          <div class="blog-card-title">What Brands Use PFAS in Clothing? An Evidence-Based Guide</div>
+          <div class="blog-card-excerpt">Which brands have shown up in independent PFAS testing, which have committed to phase the chemicals out, and how to verify any brand's current status before you buy.</div>
+          <div class="blog-card-meta">
+            <span>By Emily Hemphill</span>
+            <span>·</span>
+            <span>18 min read</span>
+            <span>·</span>
+            <span>May 2026</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- PFAS & CHEMICALS -->
+<section class="blog-section" id="pfas">
+  <div class="blog-section-inner">
+    <div class="section-header">
+      <span class="section-eyebrow">PFAS &amp; Chemicals</span>
+      <h2 class="section-title">Forever chemicals in clothing</h2>
+      <p class="section-desc">What they are, which brands use them, and how to avoid them.</p>
+    </div>
+    <div class="blog-grid">
+
+      <a href="./pfas-in-clothing/" class="blog-card">
+        <div class="blog-card-image">
+          <img src="/images/pfas-in-clothing.jpg" alt="PFAS in your clothing" loading="lazy">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Chemical Safety</div>
+          <div class="blog-card-title">PFAS in Clothing: What It Is and How to Avoid It</div>
+          <div class="blog-card-excerpt">A guide to forever chemicals in apparel — where they hide in rain jackets, activewear, and school uniforms, how to spot them on a label, and what safer alternatives look like.</div>
+          <div class="blog-card-meta">
+            <span>By Emily Hemphill</span>
+            <span>·</span>
+            <span>14 min read</span>
           </div>
         </div>
       </a>
@@ -289,6 +418,36 @@
         </div>
       </a>
 
+      <a href="./pfas-free-rain-jackets/" class="blog-card">
+        <div class="blog-card-image">
+          <img src="/images/pfas-free-rain-jackets.svg" alt="PFAS-free rain jackets 2026 shopping guide" loading="lazy">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Shopping Guide</div>
+          <div class="blog-card-title">PFAS-Free Rain Jackets: 2026 Shopping Guide</div>
+          <div class="blog-card-excerpt">20+ verified brands from technical alpine shells to kids' rain gear, with certifications and questions to verify each one before you buy.</div>
+          <div class="blog-card-meta">
+            <span>By Emily Hemphill</span>
+            <span>·</span>
+            <span>22 min read</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- FABRIC GUIDES -->
+<section class="blog-section" id="fabrics">
+  <div class="blog-section-inner">
+    <div class="section-header">
+      <span class="section-eyebrow">Fabric Guides</span>
+      <h2 class="section-title">Understanding what's in your clothes</h2>
+      <p class="section-desc">Labels, fibers, certifications, and what they actually mean.</p>
+    </div>
+    <div class="blog-grid">
+
       <a href="./how-to-read-clothing-labels/" class="blog-card">
         <div class="blog-card-image">
           <img src="/images/how-to-read-clothing-labels.jpg" alt="How to read a clothing label" loading="lazy">
@@ -305,18 +464,18 @@
         </div>
       </a>
 
-      <a href="./pfas-in-clothing/" class="blog-card">
+      <a href="./organic-cotton-guide/" class="blog-card">
         <div class="blog-card-image">
-          <img src="/images/pfas-in-clothing.jpg" alt="PFAS in your clothing" loading="lazy">
+          <img src="/images/organic-cotton-guide.jpg" alt="The organic cotton guide" loading="lazy">
         </div>
         <div class="blog-card-body">
-          <div class="blog-card-cat">Chemical Safety</div>
-          <div class="blog-card-title">PFAS in Clothing: What It Is and How to Avoid It</div>
-          <div class="blog-card-excerpt">A guide to forever chemicals in apparel — where they hide in rain jackets, activewear, and school uniforms, how to spot them on a label, and what safer alternatives look like.</div>
+          <div class="blog-card-cat">Fabric Guide</div>
+          <div class="blog-card-title">The Complete Guide to Organic Cotton</div>
+          <div class="blog-card-excerpt">What organic cotton actually is, how it differs from conventional cotton, what the certifications mean (GOTS, OCS, OEKO-TEX), and how to shop without getting greenwashed.</div>
           <div class="blog-card-meta">
             <span>By Emily Hemphill</span>
             <span>·</span>
-            <span>14 min read</span>
+            <span>13 min read</span>
           </div>
         </div>
       </a>
@@ -337,22 +496,19 @@
         </div>
       </a>
 
+    </div>
+  </div>
+</section>
 
-      <a href="./organic-cotton-guide/" class="blog-card">
-        <div class="blog-card-image">
-          <img src="/images/organic-cotton-guide.jpg" alt="The organic cotton guide" loading="lazy">
-        </div>
-        <div class="blog-card-body">
-          <div class="blog-card-cat">Fabric Guide</div>
-          <div class="blog-card-title">The Complete Guide to Organic Cotton</div>
-          <div class="blog-card-excerpt">What organic cotton actually is, how it differs from conventional cotton, what the certifications mean (GOTS, OCS, OEKO-TEX), and how to shop without getting greenwashed.</div>
-          <div class="blog-card-meta">
-            <span>By Emily Hemphill</span>
-            <span>·</span>
-            <span>13 min read</span>
-          </div>
-        </div>
-      </a>
+<!-- NON-TOXIC SHOPPING -->
+<section class="blog-section" id="shopping">
+  <div class="blog-section-inner">
+    <div class="section-header">
+      <span class="section-eyebrow">Non-Toxic Shopping</span>
+      <h2 class="section-title">Building a safer wardrobe</h2>
+      <p class="section-desc">Practical buying guides for the items closest to your body.</p>
+    </div>
+    <div class="blog-grid">
 
       <a href="./non-toxic-basics/" class="blog-card">
         <div class="blog-card-image">
@@ -370,9 +526,25 @@
         </div>
       </a>
 
+      <a href="./pfas-free-rain-jackets/" class="blog-card">
+        <div class="blog-card-image">
+          <img src="/images/pfas-free-rain-jackets.svg" alt="PFAS-free rain jackets 2026 shopping guide" loading="lazy">
+        </div>
+        <div class="blog-card-body">
+          <div class="blog-card-cat">Shopping Guide</div>
+          <div class="blog-card-title">PFAS-Free Rain Jackets: 2026 Shopping Guide</div>
+          <div class="blog-card-excerpt">20+ verified brands from technical alpine shells to kids' rain gear — curated, fact-checked, and organized by how you actually shop.</div>
+          <div class="blog-card-meta">
+            <span>By Emily Hemphill</span>
+            <span>·</span>
+            <span>22 min read</span>
+          </div>
+        </div>
+      </a>
+
     </div>
   </div>
-</div>
+</section>
 
 <footer>
   <div class="footer-inner">
@@ -399,13 +571,27 @@
         <a href="../terms/">Terms of Use</a>
       </div>
     </div>
-    <div class="footer-bottom">© 2025 Wove LLC. Shop consciously. Live comfortably.</div>
+    <div class="footer-bottom">© 2026 Wove LLC. Shop consciously. Live comfortably.</div>
   </div>
 </footer>
 
 <script>
   const nav = document.getElementById('main-nav');
   window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); });
+
+  // Highlight active category link on scroll
+  const sections = document.querySelectorAll('.blog-section[id]');
+  const catLinks = document.querySelectorAll('.cat-link');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        catLinks.forEach(l => l.classList.remove('active'));
+        const active = document.querySelector(`.cat-link[href="#${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+  sections.forEach(s => observer.observe(s));
 </script>
 </body>
 </html>
