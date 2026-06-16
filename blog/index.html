@@ -189,14 +189,6 @@
     gap: 24px;
   }
 
-  /* SINGLE-ROW GRID (for lone cards) */
-  .blog-grid-solo {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 24px;
-    max-width: 340px;
-  }
-
   /* CARD */
   .blog-card {
     background: var(--wove-white);
@@ -323,6 +315,7 @@
     <a href="#recent" class="cat-link active">Recently Published</a>
     <a href="#pfas" class="cat-link">PFAS &amp; Chemicals</a>
     <a href="#fabrics" class="cat-link">Fabric Guides</a>
+    <a href="#microplastics" class="cat-link">Microplastics</a>
     <a href="#shopping" class="cat-link">Non-Toxic Shopping</a>
   </div>
 </nav>
@@ -335,7 +328,7 @@
       <h2 class="section-title">What's new from Wove</h2>
     </div>
     <div class="featured-grid">
-
+<!-- INJECT:RECENT:START -->
       <a href="./pfas-in-activewear/" class="blog-card">
         <div class="blog-card-image">
           <img src="/images/pfas-in-activewear.svg" alt="PFAS in activewear — leggings, sports bras and workout clothes" loading="lazy">
@@ -371,7 +364,7 @@
           </div>
         </div>
       </a>
-
+<!-- INJECT:RECENT:END -->
     </div>
   </div>
 </section>
@@ -450,6 +443,8 @@
         </div>
       </a>
 
+<!-- INJECT:PFAS:START -->
+<!-- INJECT:PFAS:END -->
     </div>
   </div>
 </section>
@@ -512,6 +507,23 @@
         </div>
       </a>
 
+<!-- INJECT:FABRICS:START -->
+<!-- INJECT:FABRICS:END -->
+    </div>
+  </div>
+</section>
+
+<!-- MICROPLASTICS -->
+<section class="blog-section" id="microplastics">
+  <div class="blog-section-inner">
+    <div class="section-header">
+      <span class="section-eyebrow">Microplastics</span>
+      <h2 class="section-title">Microfibers, shedding &amp; laundry</h2>
+      <p class="section-desc">Which fabrics shed the most, how washing affects it, and what you can do.</p>
+    </div>
+    <div class="blog-grid">
+<!-- INJECT:MICROPLASTICS:START -->
+<!-- INJECT:MICROPLASTICS:END -->
     </div>
   </div>
 </section>
@@ -558,6 +570,8 @@
         </div>
       </a>
 
+<!-- INJECT:SHOPPING:START -->
+<!-- INJECT:SHOPPING:END -->
     </div>
   </div>
 </section>

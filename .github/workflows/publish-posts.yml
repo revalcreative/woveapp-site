@@ -1,0 +1,51 @@
+name: Publish Scheduled Blog Posts
+
+on:
+  schedule:
+    # 9:00 AM Eastern Time = 13:00 UTC (EDT) / 14:00 UTC (EST)
+    - cron: '0 13 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (print what would publish, but do not commit)'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PUBLISH_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run publish script
+        id: publish
+        run: |
+          python3 _scheduled/publish.py \
+            --dry-run=${{ github.event.inputs.dry_run || 'false' }} \
+            --date=$(date -u +%Y-%m-%d)
+
+      - name: Commit and push published posts
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          git config user.name  "Wove Publish Bot"
+          git config user.email "publish-bot@woveapp.com"
+          git add -A
+          # Only commit if there are staged changes
+          if ! git diff --cached --quiet; then
+            git commit -m "$(cat /tmp/publish-commit-msg.txt)"
+            git push
+          else
+            echo "No posts due today — nothing to commit."
+          fi
