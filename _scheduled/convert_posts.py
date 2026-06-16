@@ -19,8 +19,12 @@ import argparse
 import json
 import os
 import re
+import site
 import sys
 from pathlib import Path
+
+# Ensure user site-packages are on the path (fixes macOS system Python issues)
+sys.path.insert(0, site.getusersitepackages())
 
 try:
     import frontmatter
@@ -28,8 +32,12 @@ try:
     from markdown.extensions.tables import TableExtension
     from markdown.extensions.toc import TocExtension
 except ImportError:
-    print("Missing dependencies. Run: pip install markdown python-frontmatter")
-    sys.exit(1)
+    import subprocess
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "markdown", "python-frontmatter", "pyyaml"])
+    import frontmatter
+    import markdown
+    from markdown.extensions.tables import TableExtension
+    from markdown.extensions.toc import TocExtension
 
 # ── Publishing schedule (slug → date + category) ──────────────────────────────
 # Update dates if your calendar changes.

@@ -1,0 +1,24 @@
+{
+  "slug": "reduce-microplastics-from-laundry",
+  "date": "2026-08-11",
+  "category": "microplastics",
+  "title": "How to Reduce Microplastics From Your Laundry",
+  "description": "Laundry is one of the largest sources of microplastic pollution in households. Here's how to meaningfully reduce what leaves your washing machine.",
+  "lede": "Laundry is one of the largest sources of microplastic pollution in households. Here's how to meaningfully reduce what leaves your washing machine.",
+  "eyebrow": "Microplastics",
+  "excerpt": "Household laundry is one of the most significant pathways for microplastics to enter water systems. Synthetic fabrics shed tiny fibers with every wash, and stan…",
+  "hero_alt": "Illustration for: How to Reduce Microplastics From Your Laundry",
+  "related_posts": [
+    {
+      "slug": "do-leggings-release-microplastics",
+      "title": "Do Leggings Release Microplastics",
+      "cat": "Microplastics"
+    },
+    {
+      "slug": "fabrics-that-dont-shed-microplastics",
+      "title": "Fabrics That Dont Shed Microplastics",
+      "cat": "Microplastics"
+    }
+  ],
+  "published": false
+}
