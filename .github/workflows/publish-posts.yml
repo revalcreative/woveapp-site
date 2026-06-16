@@ -20,9 +20,9 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
         with:
-          token: ${{ secrets.PUBLISH_TOKEN }}
+          token: ${{ secrets.PUBLISH_TOKEN || github.token }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
