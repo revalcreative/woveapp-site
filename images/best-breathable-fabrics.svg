@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="Hero illustration for: Best Breathable Fabrics">
+  <defs>
+    <linearGradient id="bg-bbf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f1ea"/>
+      <stop offset="100%" stop-color="#e6e1d3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="520" fill="url(#bg-bbf)" rx="12"/>
+  <!-- corner hex motifs -->
+  <g stroke="#c9c0ab" stroke-width="1.5" fill="none" opacity="0.45">
+    <polygon points="80,60 108,44 136,60 136,92 108,108 80,92"/>
+    <line x1="136" y1="76" x2="168" y2="76"/>
+    <circle cx="178" cy="76" r="8"/>
+    <polygon points="1064,428 1092,412 1120,428 1120,460 1092,476 1064,460"/>
+    <line x1="1120" y1="444" x2="1152" y2="444"/>
+    <circle cx="1162" cy="444" r="8"/>
+    <polygon points="1090,55 1112,43 1134,55 1134,79 1112,91 1090,79"/>
+    <polygon points="66,420 88,408 110,420 110,444 88,456 66,444"/>
+  </g>
+
+  <g transform="translate(350,120)">
+    <rect x="0" y="0" width="500" height="240" rx="20" fill="#7a9b6e" opacity="0.2" stroke="#4a6d4a" stroke-width="1.5"/>
+    <!-- fabric swatch with airflow arrows -->
+    <rect x="175" y="40" width="150" height="160" rx="12" fill="#4a6d4a" opacity="0.8" stroke="#2D4A3E" stroke-width="2"/>
+    <line x1="175" y1="80" x2="325" y2="80" stroke="white" stroke-width="1.5" opacity="0.4"/>
+    <line x1="175" y1="120" x2="325" y2="120" stroke="white" stroke-width="1.5" opacity="0.4"/>
+    <line x1="175" y1="160" x2="325" y2="160" stroke="white" stroke-width="1.5" opacity="0.4"/>
+    <line x1="225" y1="40" x2="225" y2="200" stroke="white" stroke-width="1.5" opacity="0.4"/>
+    <line x1="275" y1="40" x2="275" y2="200" stroke="white" stroke-width="1.5" opacity="0.4"/>
+    <!-- air arrows left side -->
+    <path d="M40,80 L130,80" stroke="#2D4A3E" stroke-width="2.5" fill="none" marker-end="url(#arrowhead)"/>
+    <path d="M40,120 L130,120" stroke="#2D4A3E" stroke-width="2.5" fill="none"/>
+    <path d="M40,160 L130,160" stroke="#2D4A3E" stroke-width="2.5" fill="none"/>
+    <!-- air arrows right side -->
+    <path d="M370,80 L460,80" stroke="#2D4A3E" stroke-width="2.5" fill="none"/>
+    <path d="M370,120 L460,120" stroke="#2D4A3E" stroke-width="2.5" fill="none"/>
+    <path d="M370,160 L460,160" stroke="#2D4A3E" stroke-width="2.5" fill="none"/>
+    <!-- arrowheads -->
+    <polygon points="130,74 145,80 130,86" fill="#2D4A3E"/>
+    <polygon points="130,114 145,120 130,126" fill="#2D4A3E"/>
+    <polygon points="130,154 145,160 130,166" fill="#2D4A3E"/>
+    <polygon points="460,74 475,80 460,86" fill="#2D4A3E"/>
+    <polygon points="460,114 475,120 460,126" fill="#2D4A3E"/>
+    <polygon points="460,154 475,160 460,166" fill="#2D4A3E"/>
+    <text x="10" y="200" font-family="Helvetica,sans-serif" font-size="12" fill="#2d3a2d" opacity="0.6">air in</text>
+    <text x="445" y="200" font-family="Helvetica,sans-serif" font-size="12" fill="#2d3a2d" opacity="0.6">flows</text>
+  </g>
+  <text x="600" y="430" text-anchor="middle" font-family="Georgia,serif" font-size="17" fill="#2d3a2d" opacity="0.6">Best Breathable Fabrics for Hot Weather</text>
+
+</svg>

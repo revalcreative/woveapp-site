@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="Hero illustration for: Best Low-Tox Summer Fabrics">
+  <defs>
+    <linearGradient id="bg-bltf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f1ea"/>
+      <stop offset="100%" stop-color="#e6e1d3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="520" fill="url(#bg-bltf)" rx="12"/>
+  <!-- corner hex motifs -->
+  <g stroke="#c9c0ab" stroke-width="1.5" fill="none" opacity="0.45">
+    <polygon points="80,60 108,44 136,60 136,92 108,108 80,92"/>
+    <line x1="136" y1="76" x2="168" y2="76"/>
+    <circle cx="178" cy="76" r="8"/>
+    <polygon points="1064,428 1092,412 1120,428 1120,460 1092,476 1064,460"/>
+    <line x1="1120" y1="444" x2="1152" y2="444"/>
+    <circle cx="1162" cy="444" r="8"/>
+    <polygon points="1090,55 1112,43 1134,55 1134,79 1112,91 1090,79"/>
+    <polygon points="66,420 88,408 110,420 110,444 88,456 66,444"/>
+  </g>
+
+  <g transform="translate(320,130)">
+    <rect x="0" y="0" width="120" height="160" rx="12" fill="#7a9b6e" opacity="0.8"/>
+    <line x1="0" y1="32" x2="120" y2="32" stroke="white" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="64" x2="120" y2="64" stroke="white" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="96" x2="120" y2="96" stroke="white" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="128" x2="120" y2="128" stroke="white" stroke-width="1" opacity="0.4"/>
+    <line x1="40" y1="0" x2="40" y2="160" stroke="white" stroke-width="1" opacity="0.4"/>
+    <line x1="80" y1="0" x2="80" y2="160" stroke="white" stroke-width="1" opacity="0.4"/>
+    <text x="60" y="188" text-anchor="middle" font-family="Helvetica,sans-serif" font-size="13" fill="#2d3a2d">Linen</text>
+    <rect x="0" y="0" width="120" height="160" rx="12" fill="none" stroke="#2D4A3E" stroke-width="2"/>
+  </g>
+  <g transform="translate(460,110)">
+    <rect x="0" y="0" width="120" height="160" rx="12" fill="#4a6d4a" opacity="0.85"/>
+    <g opacity="0.3">
+      <path d="M10,10 Q60,-10 110,10" stroke="white" stroke-width="2" fill="none"/>
+      <path d="M10,30 Q60,10 110,30" stroke="white" stroke-width="2" fill="none"/>
+      <path d="M10,50 Q60,30 110,50" stroke="white" stroke-width="2" fill="none"/>
+      <path d="M10,70 Q60,50 110,70" stroke="white" stroke-width="2" fill="none"/>
+      <path d="M10,90 Q60,70 110,90" stroke="white" stroke-width="2" fill="none"/>
+      <path d="M10,110 Q60,90 110,110" stroke="white" stroke-width="2" fill="none"/>
+      <path d="M10,130 Q60,110 110,130" stroke="white" stroke-width="2" fill="none"/>
+      <path d="M10,150 Q60,130 110,150" stroke="white" stroke-width="2" fill="none"/>
+    </g>
+    <text x="60" y="188" text-anchor="middle" font-family="Helvetica,sans-serif" font-size="13" fill="#2d3a2d">Cotton</text>
+    <rect x="0" y="0" width="120" height="160" rx="12" fill="none" stroke="#2D4A3E" stroke-width="2"/>
+  </g>
+  <g transform="translate(600,130)">
+    <rect x="0" y="0" width="120" height="160" rx="12" fill="#2D4A3E" opacity="0.75"/>
+    <g opacity="0.35">
+      <line x1="20" y1="0" x2="0" y2="160" stroke="white" stroke-width="2"/>
+      <line x1="60" y1="0" x2="40" y2="160" stroke="white" stroke-width="2"/>
+      <line x1="100" y1="0" x2="80" y2="160" stroke="white" stroke-width="2"/>
+    </g>
+    <text x="60" y="188" text-anchor="middle" font-family="Helvetica,sans-serif" font-size="13" fill="#2d3a2d">Hemp</text>
+    <rect x="0" y="0" width="120" height="160" rx="12" fill="none" stroke="#2D4A3E" stroke-width="2"/>
+  </g>
+  <g transform="translate(740,130)">
+    <rect x="0" y="0" width="120" height="160" rx="12" fill="#B8765A" opacity="0.5"/>
+    <path d="M10,80 Q60,20 110,80 Q60,140 10,80 Z" fill="white" opacity="0.2"/>
+    <text x="60" y="188" text-anchor="middle" font-family="Helvetica,sans-serif" font-size="13" fill="#2d3a2d">Tencel</text>
+    <rect x="0" y="0" width="120" height="160" rx="12" fill="none" stroke="#2D4A3E" stroke-width="2"/>
+  </g>
+  <text x="600" y="430" text-anchor="middle" font-family="Georgia,serif" font-size="17" fill="#2d3a2d" opacity="0.6">Low-Tox Summer Fabrics</text>
+
+</svg>

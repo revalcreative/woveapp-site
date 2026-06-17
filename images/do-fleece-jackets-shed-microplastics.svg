@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="Hero illustration for: Do Fleece Jackets Shed Microplastics">
+  <defs>
+    <linearGradient id="bg-dfjm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f1ea"/>
+      <stop offset="100%" stop-color="#e6e1d3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="520" fill="url(#bg-dfjm)" rx="12"/>
+  <!-- corner hex motifs -->
+  <g stroke="#c9c0ab" stroke-width="1.5" fill="none" opacity="0.45">
+    <polygon points="80,60 108,44 136,60 136,92 108,108 80,92"/>
+    <line x1="136" y1="76" x2="168" y2="76"/>
+    <circle cx="178" cy="76" r="8"/>
+    <polygon points="1064,428 1092,412 1120,428 1120,460 1092,476 1064,460"/>
+    <line x1="1120" y1="444" x2="1152" y2="444"/>
+    <circle cx="1162" cy="444" r="8"/>
+    <polygon points="1090,55 1112,43 1134,55 1134,79 1112,91 1090,79"/>
+    <polygon points="66,420 88,408 110,420 110,444 88,456 66,444"/>
+  </g>
+
+  <g transform="translate(380,100)">
+    <rect x="30" y="0" width="180" height="240" rx="20" fill="#4a6d4a" stroke="#2D4A3E" stroke-width="2"/>
+    <path d="M30,0 Q0,20 0,60 L0,240 L30,240" fill="#7a9b6e" stroke="#2D4A3E" stroke-width="2"/>
+    <path d="M210,0 Q240,20 240,60 L240,240 L210,240" fill="#7a9b6e" stroke="#2D4A3E" stroke-width="2"/>
+    <rect x="30" y="0" width="180" height="50" rx="10" fill="#2D4A3E" stroke="#2D4A3E" stroke-width="2"/>
+    <g fill="none" stroke="white" stroke-width="1.5" opacity="0.3">
+      <path d="M50,70 Q75,55 100,70 Q125,85 150,70 Q175,55 200,70"/>
+      <path d="M50,100 Q75,85 100,100 Q125,115 150,100 Q175,85 200,100"/>
+      <path d="M50,130 Q75,115 100,130 Q125,145 150,130 Q175,115 200,130"/>
+      <path d="M50,160 Q75,145 100,160 Q125,175 150,160 Q175,145 200,160"/>
+      <path d="M50,190 Q75,175 100,190 Q125,205 150,190 Q175,175 200,190"/>
+      <path d="M50,220 Q75,205 100,220 Q125,235 150,220 Q175,205 200,220"/>
+    </g>
+    <text x="120" y="268" text-anchor="middle" font-family="Helvetica,sans-serif" font-size="12" fill="#2d3a2d">Fleece jacket</text>
+  </g>
+  <g opacity="0.65">
+    <circle cx="720" cy="150" r="5" fill="#B8765A"/>
+    <circle cx="750" cy="180" r="3" fill="#B8765A"/>
+    <circle cx="740" cy="210" r="6" fill="#B8765A"/>
+    <circle cx="780" cy="160" r="4" fill="#B8765A"/>
+    <circle cx="800" cy="200" r="5" fill="#B8765A"/>
+    <circle cx="770" cy="240" r="3" fill="#B8765A"/>
+    <circle cx="820" cy="170" r="4" fill="#B8765A"/>
+    <text x="770" y="290" text-anchor="middle" font-family="Helvetica,sans-serif" font-size="12" fill="#B8765A">microfibers</text>
+  </g>
+  <text x="600" y="430" text-anchor="middle" font-family="Georgia,serif" font-size="17" fill="#2d3a2d" opacity="0.6">Fleece Jackets &amp; Microplastic Shedding</text>
+
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="Hero illustration for: Fabric Construction and Microfiber Shedding">
+  <defs>
+    <linearGradient id="bg-fcms" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f1ea"/>
+      <stop offset="100%" stop-color="#e6e1d3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="520" fill="url(#bg-fcms)" rx="12"/>
+  <!-- corner hex motifs -->
+  <g stroke="#c9c0ab" stroke-width="1.5" fill="none" opacity="0.45">
+    <polygon points="80,60 108,44 136,60 136,92 108,108 80,92"/>
+    <line x1="136" y1="76" x2="168" y2="76"/>
+    <circle cx="178" cy="76" r="8"/>
+    <polygon points="1064,428 1092,412 1120,428 1120,460 1092,476 1064,460"/>
+    <line x1="1120" y1="444" x2="1152" y2="444"/>
+    <circle cx="1162" cy="444" r="8"/>
+    <polygon points="1090,55 1112,43 1134,55 1134,79 1112,91 1090,79"/>
+    <polygon points="66,420 88,408 110,420 110,444 88,456 66,444"/>
+  </g>
+
+  <g transform="translate(340,100)">
+    <!-- woven grid -->
+    <rect x="0" y="0" width="200" height="200" rx="8" fill="#2D4A3E" opacity="0.1" stroke="#c9c0ab"/>
+    <g stroke="#4a6d4a" stroke-width="8" opacity="0.7">
+      <line x1="0" y1="25" x2="200" y2="25"/>
+      <line x1="0" y1="75" x2="200" y2="75"/>
+      <line x1="0" y1="125" x2="200" y2="125"/>
+      <line x1="0" y1="175" x2="200" y2="175"/>
+    </g>
+    <g stroke="#7a9b6e" stroke-width="8" opacity="0.7">
+      <line x1="25" y1="0" x2="25" y2="200"/>
+      <line x1="75" y1="0" x2="75" y2="200"/>
+      <line x1="125" y1="0" x2="125" y2="200"/>
+      <line x1="175" y1="0" x2="175" y2="200"/>
+    </g>
+    <text x="100" y="228" text-anchor="middle" font-family="Helvetica,sans-serif" font-size="13" fill="#2d3a2d">Woven (low shedding)</text>
+    <!-- knit grid -->
+    <g transform="translate(300,0)">
+      <rect x="0" y="0" width="200" height="200" rx="8" fill="#B8765A" opacity="0.08" stroke="#c9c0ab"/>
+      <g fill="none" stroke="#B8765A" stroke-width="3" opacity="0.6">
+        <path d="M20,25 Q50,10 80,25 Q110,40 140,25 Q170,10 200,25"/>
+        <path d="M0,50 Q30,35 60,50 Q90,65 120,50 Q150,35 180,50 Q200,58 200,50"/>
+        <path d="M20,75 Q50,60 80,75 Q110,90 140,75 Q170,60 200,75"/>
+        <path d="M0,100 Q30,85 60,100 Q90,115 120,100 Q150,85 180,100"/>
+        <path d="M20,125 Q50,110 80,125 Q110,140 140,125 Q170,110 200,125"/>
+        <path d="M0,150 Q30,135 60,150 Q90,165 120,150 Q150,135 180,150"/>
+        <path d="M20,175 Q50,160 80,175 Q110,190 140,175 Q170,160 200,175"/>
+      </g>
+      <text x="100" y="228" text-anchor="middle" font-family="Helvetica,sans-serif" font-size="13" fill="#2d3a2d">Knit (higher shedding)</text>
+    </g>
+  </g>
+  <g opacity="0.5">
+    <circle cx="740" cy="200" r="3" fill="#B8765A"/>
+    <circle cx="760" cy="230" r="4" fill="#B8765A"/>
+    <circle cx="780" cy="180" r="3" fill="#B8765A"/>
+    <circle cx="800" cy="210" r="5" fill="#B8765A"/>
+    <circle cx="820" cy="250" r="3" fill="#B8765A"/>
+  </g>
+  <text x="600" y="430" text-anchor="middle" font-family="Georgia,serif" font-size="17" fill="#2d3a2d" opacity="0.6">How Construction Affects Microfiber Shedding</text>
+
+</svg>

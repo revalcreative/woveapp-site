@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="Hero illustration for: Do Leggings Release Microplastics">
+  <defs>
+    <linearGradient id="bg-dlrm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f1ea"/>
+      <stop offset="100%" stop-color="#e6e1d3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="520" fill="url(#bg-dlrm)" rx="12"/>
+  <!-- corner hex motifs -->
+  <g stroke="#c9c0ab" stroke-width="1.5" fill="none" opacity="0.45">
+    <polygon points="80,60 108,44 136,60 136,92 108,108 80,92"/>
+    <line x1="136" y1="76" x2="168" y2="76"/>
+    <circle cx="178" cy="76" r="8"/>
+    <polygon points="1064,428 1092,412 1120,428 1120,460 1092,476 1064,460"/>
+    <line x1="1120" y1="444" x2="1152" y2="444"/>
+    <circle cx="1162" cy="444" r="8"/>
+    <polygon points="1090,55 1112,43 1134,55 1134,79 1112,91 1090,79"/>
+    <polygon points="66,420 88,408 110,420 110,444 88,456 66,444"/>
+  </g>
+
+  <g transform="translate(420,100)">
+    <rect x="0" y="0" width="90" height="260" rx="20" fill="#2D4A3E" stroke="#4a6d4a" stroke-width="2"/>
+    <rect x="90" y="0" width="90" height="260" rx="20" fill="#4a6d4a" stroke="#2D4A3E" stroke-width="2"/>
+    <line x1="90" y1="0" x2="90" y2="260" stroke="#2D4A3E" stroke-width="2"/>
+    <rect x="0" y="0" width="180" height="40" rx="10" fill="#2D4A3E" stroke="#2D4A3E" stroke-width="2"/>
+    <text x="90" y="290" text-anchor="middle" font-family="Helvetica,sans-serif" font-size="13" fill="#2d3a2d">Leggings</text>
+  </g>
+  <g opacity="0.7">
+    <circle cx="680" cy="160" r="5" fill="#B8765A"/>
+    <circle cx="720" cy="200" r="3" fill="#B8765A"/>
+    <circle cx="700" cy="240" r="4" fill="#B8765A"/>
+    <circle cx="750" cy="180" r="6" fill="#B8765A" opacity="0.5"/>
+    <circle cx="770" cy="220" r="3" fill="#B8765A"/>
+    <circle cx="690" cy="280" r="5" fill="#B8765A" opacity="0.6"/>
+    <circle cx="730" cy="300" r="4" fill="#B8765A"/>
+    <circle cx="760" cy="260" r="3" fill="#B8765A"/>
+    <circle cx="800" cy="190" r="5" fill="#B8765A" opacity="0.4"/>
+    <circle cx="810" cy="240" r="4" fill="#B8765A" opacity="0.6"/>
+    <text x="760" y="370" text-anchor="middle" font-family="Helvetica,sans-serif" font-size="12" fill="#B8765A" opacity="0.8">microplastics</text>
+  </g>
+  <g stroke="#B8765A" stroke-width="1" opacity="0.3" fill="none">
+    <line x1="610" y1="180" x2="675" y2="163"/>
+    <line x1="615" y1="220" x2="695" y2="242"/>
+    <line x1="620" y1="260" x2="685" y2="278"/>
+  </g>
+
+</svg>

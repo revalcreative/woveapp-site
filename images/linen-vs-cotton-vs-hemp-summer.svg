@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="Hero illustration for: Linen vs Cotton vs Hemp">
+  <defs>
+    <linearGradient id="bg-lchs" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f1ea"/>
+      <stop offset="100%" stop-color="#e6e1d3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="520" fill="url(#bg-lchs)" rx="12"/>
+  <!-- corner hex motifs -->
+  <g stroke="#c9c0ab" stroke-width="1.5" fill="none" opacity="0.45">
+    <polygon points="80,60 108,44 136,60 136,92 108,108 80,92"/>
+    <line x1="136" y1="76" x2="168" y2="76"/>
+    <circle cx="178" cy="76" r="8"/>
+    <polygon points="1064,428 1092,412 1120,428 1120,460 1092,476 1064,460"/>
+    <line x1="1120" y1="444" x2="1152" y2="444"/>
+    <circle cx="1162" cy="444" r="8"/>
+    <polygon points="1090,55 1112,43 1134,55 1134,79 1112,91 1090,79"/>
+    <polygon points="66,420 88,408 110,420 110,444 88,456 66,444"/>
+  </g>
+
+  <g transform="translate(280,130)">
+    <rect x="0" y="0" width="150" height="200" rx="16" fill="#7a9b6e" stroke="#2D4A3E" stroke-width="2"/>
+    <line x1="0" y1="40" x2="150" y2="40" stroke="white" stroke-width="1.5" opacity="0.5"/>
+    <line x1="0" y1="80" x2="150" y2="80" stroke="white" stroke-width="1.5" opacity="0.5"/>
+    <line x1="0" y1="120" x2="150" y2="120" stroke="white" stroke-width="1.5" opacity="0.5"/>
+    <line x1="0" y1="160" x2="150" y2="160" stroke="white" stroke-width="1.5" opacity="0.5"/>
+    <line x1="50" y1="0" x2="50" y2="200" stroke="white" stroke-width="1.5" opacity="0.5"/>
+    <line x1="100" y1="0" x2="100" y2="200" stroke="white" stroke-width="1.5" opacity="0.5"/>
+    <text x="75" y="228" text-anchor="middle" font-family="Helvetica,sans-serif" font-size="14" fill="#2d3a2d">Linen</text>
+  </g>
+  <g transform="translate(525,110)">
+    <rect x="0" y="0" width="150" height="200" rx="16" fill="#4a6d4a" stroke="#2D4A3E" stroke-width="2"/>
+    <g opacity="0.3">
+      <path d="M10,20 Q75,0 140,20" stroke="white" stroke-width="2" fill="none"/>
+      <path d="M10,50 Q75,30 140,50" stroke="white" stroke-width="2" fill="none"/>
+      <path d="M10,80 Q75,60 140,80" stroke="white" stroke-width="2" fill="none"/>
+      <path d="M10,110 Q75,90 140,110" stroke="white" stroke-width="2" fill="none"/>
+      <path d="M10,140 Q75,120 140,140" stroke="white" stroke-width="2" fill="none"/>
+      <path d="M10,170 Q75,150 140,170" stroke="white" stroke-width="2" fill="none"/>
+    </g>
+    <text x="75" y="228" text-anchor="middle" font-family="Helvetica,sans-serif" font-size="14" fill="#2d3a2d">Cotton</text>
+  </g>
+  <g transform="translate(770,130)">
+    <rect x="0" y="0" width="150" height="200" rx="16" fill="#2D4A3E" stroke="#2D4A3E" stroke-width="2" opacity="0.8"/>
+    <g opacity="0.35">
+      <line x1="25" y1="0" x2="0" y2="200" stroke="white" stroke-width="2"/>
+      <line x1="75" y1="0" x2="50" y2="200" stroke="white" stroke-width="2"/>
+      <line x1="125" y1="0" x2="100" y2="200" stroke="white" stroke-width="2"/>
+    </g>
+    <text x="75" y="228" text-anchor="middle" font-family="Helvetica,sans-serif" font-size="14" fill="#2d3a2d">Hemp</text>
+  </g>
+  <text x="600" y="430" text-anchor="middle" font-family="Georgia,serif" font-size="17" fill="#2d3a2d" opacity="0.6">Summer Fabric Comparison</text>
+
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="Hero illustration for: How to Spot PFAS in Product Descriptions">
+  <defs>
+    <linearGradient id="bg-htsp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f1ea"/>
+      <stop offset="100%" stop-color="#e6e1d3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="520" fill="url(#bg-htsp)" rx="12"/>
+  <!-- corner hex motifs -->
+  <g stroke="#c9c0ab" stroke-width="1.5" fill="none" opacity="0.45">
+    <polygon points="80,60 108,44 136,60 136,92 108,108 80,92"/>
+    <line x1="136" y1="76" x2="168" y2="76"/>
+    <circle cx="178" cy="76" r="8"/>
+    <polygon points="1064,428 1092,412 1120,428 1120,460 1092,476 1064,460"/>
+    <line x1="1120" y1="444" x2="1152" y2="444"/>
+    <circle cx="1162" cy="444" r="8"/>
+    <polygon points="1090,55 1112,43 1134,55 1134,79 1112,91 1090,79"/>
+    <polygon points="66,420 88,408 110,420 110,444 88,456 66,444"/>
+  </g>
+
+  <g transform="translate(330,100)">
+    <rect x="0" y="0" width="540" height="260" rx="16" fill="white" opacity="0.65" stroke="#c9c0ab" stroke-width="1.5"/>
+    <g font-family="Helvetica,sans-serif" font-size="14" fill="#2d3a2d">
+      <text x="30" y="50" font-weight="bold" fill="#2D4A3E">Product Description</text>
+      <text x="30" y="80">✓ "PFAS-free" → Safe signal</text>
+      <text x="30" y="110" fill="#B8765A">⚠ "stain-resistant" → Investigate</text>
+      <text x="30" y="140" fill="#B8765A">⚠ "water-repellent" → Investigate</text>
+      <text x="30" y="170" fill="#B8765A">⚠ "DWR coating" → Investigate</text>
+      <text x="30" y="200">✓ "bluesign® certified" → Safe</text>
+      <text x="30" y="230">✓ "OEKO-TEX® 100" → Safe</text>
+    </g>
+  </g>
+  <text x="600" y="420" text-anchor="middle" font-family="Georgia,serif" font-size="17" fill="#2d3a2d" opacity="0.6">Spotting PFAS in Product Descriptions</text>
+
+</svg>

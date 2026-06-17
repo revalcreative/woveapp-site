@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="Hero illustration for: Non-Toxic Swimwear">
+  <defs>
+    <linearGradient id="bg-ntswim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f1ea"/>
+      <stop offset="100%" stop-color="#e6e1d3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="520" fill="url(#bg-ntswim)" rx="12"/>
+  <!-- corner hex motifs -->
+  <g stroke="#c9c0ab" stroke-width="1.5" fill="none" opacity="0.45">
+    <polygon points="80,60 108,44 136,60 136,92 108,108 80,92"/>
+    <line x1="136" y1="76" x2="168" y2="76"/>
+    <circle cx="178" cy="76" r="8"/>
+    <polygon points="1064,428 1092,412 1120,428 1120,460 1092,476 1064,460"/>
+    <line x1="1120" y1="444" x2="1152" y2="444"/>
+    <circle cx="1162" cy="444" r="8"/>
+    <polygon points="1090,55 1112,43 1134,55 1134,79 1112,91 1090,79"/>
+    <polygon points="66,420 88,408 110,420 110,444 88,456 66,444"/>
+  </g>
+
+  <ellipse cx="600" cy="290" rx="280" ry="180" fill="#e8ede6" opacity="0.5"/>
+  <g transform="translate(430,170)">
+    <path d="M0 60 Q60 0 140 0 Q220 0 280 60 L280 140 Q220 200 140 200 Q60 200 0 140 Z" fill="#5B6B54" opacity="0.15"/>
+    <path d="M60 30 Q140 -10 220 30 L240 80 Q140 40 60 80 Z" fill="#4a6d4a" stroke="#3D4D36" stroke-width="2"/>
+    <path d="M60 80 Q140 40 220 80 L220 160 Q140 200 60 160 Z" fill="#7a9b6e" stroke="#3D4D36" stroke-width="2"/>
+    <circle cx="70" cy="120" r="14" fill="#B8765A" opacity="0.7"/>
+    <circle cx="210" cy="120" r="14" fill="#B8765A" opacity="0.7"/>
+  </g>
+  <text x="600" y="430" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#2d3a2d" opacity="0.6">Non-Toxic Swimwear</text>
+  <g opacity="0.3">
+    <circle cx="350" cy="200" r="4" fill="#5B6B54"/>
+    <circle cx="370" cy="215" r="3" fill="#5B6B54"/>
+    <circle cx="340" cy="220" r="2" fill="#5B6B54"/>
+    <circle cx="850" cy="200" r="4" fill="#5B6B54"/>
+    <circle cx="870" cy="215" r="3" fill="#5B6B54"/>
+    <circle cx="840" cy="220" r="2" fill="#5B6B54"/>
+  </g>
+
+</svg>

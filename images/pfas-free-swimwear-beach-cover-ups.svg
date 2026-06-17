@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="Hero illustration for: PFAS-Free Swimwear and Beach Cover-Ups">
+  <defs>
+    <linearGradient id="bg-pfsb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f1ea"/>
+      <stop offset="100%" stop-color="#e6e1d3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="520" fill="url(#bg-pfsb)" rx="12"/>
+  <!-- corner hex motifs -->
+  <g stroke="#c9c0ab" stroke-width="1.5" fill="none" opacity="0.45">
+    <polygon points="80,60 108,44 136,60 136,92 108,108 80,92"/>
+    <line x1="136" y1="76" x2="168" y2="76"/>
+    <circle cx="178" cy="76" r="8"/>
+    <polygon points="1064,428 1092,412 1120,428 1120,460 1092,476 1064,460"/>
+    <line x1="1120" y1="444" x2="1152" y2="444"/>
+    <circle cx="1162" cy="444" r="8"/>
+    <polygon points="1090,55 1112,43 1134,55 1134,79 1112,91 1090,79"/>
+    <polygon points="66,420 88,408 110,420 110,444 88,456 66,444"/>
+  </g>
+
+  <g transform="translate(320,100)">
+    <ellipse cx="280" cy="200" rx="240" ry="160" fill="#7a9b6e" opacity="0.15" stroke="#4a6d4a" stroke-width="1"/>
+    <rect x="80" y="80" width="160" height="200" rx="20" fill="#4a6d4a" opacity="0.75" stroke="#2D4A3E" stroke-width="2"/>
+    <line x1="160" y1="80" x2="160" y2="280" stroke="#2D4A3E" stroke-width="1.5" opacity="0.5"/>
+    <rect x="80" y="80" width="160" height="40" rx="10" fill="#2D4A3E" opacity="0.8"/>
+    <text x="160" y="305" text-anchor="middle" font-family="Helvetica,sans-serif" font-size="12" fill="#2d3a2d">Swimwear</text>
+    <g transform="translate(300,60)">
+      <path d="M0,40 L120,0 L120,220 L0,260 Z" fill="#7a9b6e" opacity="0.7" stroke="#2D4A3E" stroke-width="2"/>
+      <line x1="0" y1="90" x2="120" y2="55" stroke="#2D4A3E" stroke-width="1" opacity="0.4"/>
+      <line x1="0" y1="140" x2="120" y2="105" stroke="#2D4A3E" stroke-width="1" opacity="0.4"/>
+      <line x1="0" y1="190" x2="120" y2="155" stroke="#2D4A3E" stroke-width="1" opacity="0.4"/>
+      <text x="60" y="288" text-anchor="middle" font-family="Helvetica,sans-serif" font-size="12" fill="#2d3a2d">Cover-up</text>
+    </g>
+    <circle cx="500" cy="100" r="16" fill="#2D4A3E" opacity="0.8"/>
+    <text x="500" y="106" text-anchor="middle" font-family="Helvetica,sans-serif" font-size="14" fill="white" font-weight="bold">✓</text>
+    <text x="500" y="130" text-anchor="middle" font-family="Helvetica,sans-serif" font-size="11" fill="#2d3a2d">PFAS-free</text>
+  </g>
+  <text x="600" y="430" text-anchor="middle" font-family="Georgia,serif" font-size="17" fill="#2d3a2d" opacity="0.6">PFAS-Free Swimwear &amp; Beach Cover-Ups</text>
+
+</svg>

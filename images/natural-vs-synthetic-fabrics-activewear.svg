@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-label="Hero illustration for: Natural vs Synthetic Fabrics for Activewear">
+  <defs>
+    <linearGradient id="bg-nvsa" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f1ea"/>
+      <stop offset="100%" stop-color="#e6e1d3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="520" fill="url(#bg-nvsa)" rx="12"/>
+  <!-- corner hex motifs -->
+  <g stroke="#c9c0ab" stroke-width="1.5" fill="none" opacity="0.45">
+    <polygon points="80,60 108,44 136,60 136,92 108,108 80,92"/>
+    <line x1="136" y1="76" x2="168" y2="76"/>
+    <circle cx="178" cy="76" r="8"/>
+    <polygon points="1064,428 1092,412 1120,428 1120,460 1092,476 1064,460"/>
+    <line x1="1120" y1="444" x2="1152" y2="444"/>
+    <circle cx="1162" cy="444" r="8"/>
+    <polygon points="1090,55 1112,43 1134,55 1134,79 1112,91 1090,79"/>
+    <polygon points="66,420 88,408 110,420 110,444 88,456 66,444"/>
+  </g>
+
+  <g transform="translate(300,110)">
+    <rect x="0" y="0" width="240" height="240" rx="20" fill="#4a6d4a" opacity="0.7" stroke="#2D4A3E" stroke-width="2"/>
+    <text x="120" y="50" text-anchor="middle" font-family="Helvetica,sans-serif" font-size="16" fill="white" font-weight="bold">Natural</text>
+    <g font-family="Helvetica,sans-serif" font-size="13" fill="white">
+      <text x="120" y="90" text-anchor="middle">Cotton · Hemp · Wool</text>
+      <text x="120" y="120" text-anchor="middle" opacity="0.8">✓ Low chemical risk</text>
+      <text x="120" y="148" text-anchor="middle" opacity="0.8">✓ Biodegradable</text>
+      <text x="120" y="176" text-anchor="middle" opacity="0.8">△ Less stretch</text>
+      <text x="120" y="204" text-anchor="middle" opacity="0.8">△ Slower dry</text>
+    </g>
+    <g transform="translate(360,0)">
+      <rect x="0" y="0" width="240" height="240" rx="20" fill="#B8765A" opacity="0.55" stroke="#B8765A" stroke-width="2"/>
+      <text x="120" y="50" text-anchor="middle" font-family="Helvetica,sans-serif" font-size="16" fill="white" font-weight="bold">Synthetic</text>
+      <g font-family="Helvetica,sans-serif" font-size="13" fill="white">
+        <text x="120" y="90" text-anchor="middle">Polyester · Nylon</text>
+        <text x="120" y="120" text-anchor="middle" opacity="0.8">✓ Performance</text>
+        <text x="120" y="148" text-anchor="middle" opacity="0.8">✓ Quick-dry</text>
+        <text x="120" y="176" text-anchor="middle" opacity="0.8">△ Microplastics</text>
+        <text x="120" y="204" text-anchor="middle" opacity="0.8">△ Chemical risk</text>
+      </g>
+    </g>
+  </g>
+  <text x="600" y="430" text-anchor="middle" font-family="Georgia,serif" font-size="17" fill="#2d3a2d" opacity="0.6">Natural vs. Synthetic for Activewear</text>
+
+</svg>
