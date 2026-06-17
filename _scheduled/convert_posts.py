@@ -111,6 +111,11 @@ def parse_md_file(filepath: Path):
 
 def md_to_html(md_text: str) -> str:
     """Convert markdown to HTML with extensions."""
+    # Strip leading H1 (the template already renders the title)
+    md_text = re.sub(r'^#\s+.+\n', '', md_text.lstrip(), count=1)
+    # Replace unfilled placeholders
+    md_text = md_text.replace('{{APPSTORE_LINK}}', 'https://apps.apple.com/us/app/wove-score/id6755356871')
+
     md = markdown.Markdown(extensions=[
         TableExtension(),
         TocExtension(anchorlink=True),
@@ -155,16 +160,46 @@ def derive_eyebrow(category: str, meta: dict) -> str:
     return label
 
 
+SLUG_TITLES = {
+    "non-toxic-swimwear":                       "Non-Toxic Swimwear: What to Look for Before You Buy",
+    "best-low-tox-summer-fabrics":              "The Best Low-Tox Summer Fabrics",
+    "do-leggings-release-microplastics":        "Do Leggings Release Microplastics?",
+    "linen-vs-cotton-vs-hemp-summer":           "Linen vs. Cotton vs. Hemp for Summer",
+    "pfas-clothing-laws-by-state":              "PFAS Clothing Laws by State",
+    "fabrics-that-dont-shed-microplastics":     "Fabrics That Don't Shed Microplastics",
+    "best-breathable-fabrics":                  "The Best Breathable Fabrics for Hot Weather",
+    "are-quick-dry-clothes-pfas-free":          "Are Quick-Dry Clothes PFAS-Free?",
+    "fabric-construction-microfiber-shedding":  "How Fabric Construction Affects Microfiber Shedding",
+    "best-fabrics-for-sensitive-skin":          "Best Fabrics for Sensitive Skin",
+    "how-to-spot-pfas-in-product-descriptions": "How to Spot PFAS in Product Descriptions",
+    "workout-clothes-less-microfiber-shedding": "Workout Clothes That Shed Fewer Microfibers",
+    "what-makes-a-fabric-non-toxic":            "What Makes a Fabric Non-Toxic?",
+    "pfas-in-performance-fabrics":              "PFAS in Performance Fabrics",
+    "reduce-microplastics-from-laundry":        "How to Reduce Microplastics from Laundry",
+    "sustainable-fabric-blends-explained":      "Sustainable Fabric Blends Explained",
+    "how-to-choose-safer-everyday-basics":      "How to Choose Safer Everyday Basics",
+    "do-fleece-jackets-shed-microplastics":     "Do Fleece Jackets Shed Microplastics?",
+    "natural-vs-synthetic-fabrics-activewear":  "Natural vs. Synthetic Fabrics for Activewear",
+    "questions-before-buying-synthetic-clothing":"Questions to Ask Before Buying Synthetic Clothing",
+    "pfas-free-swimwear-beach-cover-ups":       "PFAS-Free Swimwear & Beach Cover-Ups",
+    "how-to-wash-synthetics-safely":            "How to Wash Synthetics Safely",
+    "best-fabrics-for-everyday-layering":       "Best Fabrics for Everyday Layering",
+    "how-to-read-fiber-content-clothing-labels":"How to Read Fiber Content Clothing Labels",
+    "best-fabrics-summer-layers":               "Best Fabrics for Summer Layers",
+    "best-fabrics-for-sweaty-workouts":         "Best Fabrics for Sweaty Workouts",
+    "safer-clothing-checklist":                 "Safer Clothing Checklist",
+}
+
+
 def build_related(slug: str, category: str) -> list:
     """Return 2 related post slugs from same category."""
     same_cat = [s for s, v in SCHEDULE.items() if v["category"] == category and s != slug]
-    # Pick first 2 by date
     same_cat_sorted = sorted(same_cat, key=lambda s: SCHEDULE[s]["date"])
     related = []
     for rs in same_cat_sorted[:2]:
         related.append({
             "slug":  rs,
-            "title": rs.replace("-", " ").title(),  # placeholder — update manually
+            "title": SLUG_TITLES.get(rs, rs.replace("-", " ").title()),
             "cat":   CATEGORY_LABELS.get(category, "Wove Blog"),
         })
     return related
