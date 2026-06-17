@@ -116,7 +116,7 @@ def build_card_html(manifest: dict) -> str:
 
     return f"""        <a href="/blog/{slug}/" class="blog-card">
           <div class="blog-card-image">
-            <img src="/images/{slug}.svg" alt="{hero_alt}" loading="lazy" onerror="this.parentElement.style.display='none'">
+            <img src="/images/{slug}.png" alt="{hero_alt}" loading="lazy" onerror="this.parentElement.style.display='none'">
           </div>
           <div class="blog-card-body">
             <div class="blog-card-cat">{cat_label}</div>
