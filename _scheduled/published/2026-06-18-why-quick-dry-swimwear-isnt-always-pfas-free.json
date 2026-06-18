@@ -4,9 +4,9 @@
   "category": "pfas",
   "title": "Why Quick-Dry Swimwear Isn't Always PFAS-Free",
   "description": "Quick-dry swimwear sounds convenient, but it can hide PFAS finishes. Learn what quick-dry means, how PFAS shows up in swimwear, and what to look for instead.",
-  "lede": "Quick-dry swimwear is everywhere — and it sounds like a straightforward convenience feature. But \"quick-dry\" on a swimwear label doesn't always mean what it sounds like, and for some products it signals a chemical treatment that includes PFAS. Here's what the claim actually means and how to tell the difference.",
+  "lede": "Quick-dry swimwear is everywhere \u2014 and it sounds like a straightforward convenience feature. But \"quick-dry\" on a swimwear label doesn't always mean what it sounds like, and for some products it signals a chemical treatment that includes PFAS. Here's what the claim actually means and how to tell the difference.",
   "eyebrow": "PFAS & Fabric Safety",
-  "excerpt": "Quick-dry swimwear is everywhere — and it sounds like a straightforward convenience feature. But \"quick-dry\" on a swimwear label doesn't always mean w…",
+  "excerpt": "Quick-dry swimwear is everywhere \u2014 and it sounds like a straightforward convenience feature. But \"quick-dry\" on a swimwear label doesn't always mean w\u2026",
   "hero_alt": "Illustration for: Why Quick-Dry Swimwear Isn't Always PFAS-Free",
   "related_posts": [
     {
@@ -20,5 +20,6 @@
       "cat": "PFAS & Fabric Safety"
     }
   ],
-  "published": false
+  "published": true,
+  "published_at": "2026-06-18"
 }
