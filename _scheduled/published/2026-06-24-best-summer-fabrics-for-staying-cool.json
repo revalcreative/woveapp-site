@@ -4,9 +4,9 @@
   "category": "fabrics",
   "title": "Best Summer Fabrics for Staying Cool Without Overheating",
   "description": "Discover the best summer fabrics for staying cool and comfortable. Learn which natural and plant-based fabrics breathe best and which to avoid in peak heat.",
-  "lede": "If you've ever stepped outside in a polyester shirt on a humid day and immediately regretted it, you already understand why fabric choice matters in summer. The best summer fabrics for staying cool aren't about technology or performance claims — they're mostly about going back to what plants have been offering for thousands of years.",
+  "lede": "If you've ever stepped outside in a polyester shirt on a humid day and immediately regretted it, you already understand why fabric choice matters in summer. The best summer fabrics for staying cool aren't about technology or performance claims \u2014 they're mostly about going back to what plants have been offering for thousands of years.",
   "eyebrow": "Fabric Guide",
-  "excerpt": "If you've ever stepped outside in a polyester shirt on a humid day and immediately regretted it, you already understand why fabric choice matters in s…",
+  "excerpt": "If you've ever stepped outside in a polyester shirt on a humid day and immediately regretted it, you already understand why fabric choice matters in s\u2026",
   "hero_alt": "Illustration for: Best Summer Fabrics for Staying Cool Without Overheating",
   "related_posts": [
     {
@@ -20,5 +20,6 @@
       "cat": "Fabric Guide"
     }
   ],
-  "published": false
+  "published": true,
+  "published_at": "2026-06-24"
 }
