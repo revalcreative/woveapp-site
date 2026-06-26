@@ -6,7 +6,7 @@
   "description": "Summer heat is no time to be wearing synthetic fabrics that trap heat and carry unnecessary treatments. Here are the natural and lower-concern options worth knowing.",
   "lede": "Summer heat is no time to be wearing synthetic fabrics that trap heat and carry unnecessary treatments. Here are the natural and lower-concern options worth knowing.",
   "eyebrow": "Fabric Guide",
-  "excerpt": "Summer is actually the easiest season to wear lower-concern fabrics — natural fibers like linen, cotton, and hemp are perfectly suited to heat, breathe better t…",
+  "excerpt": "Summer is actually the easiest season to wear lower-concern fabrics \u2014 natural fibers like linen, cotton, and hemp are perfectly suited to heat, breathe better t\u2026",
   "hero_alt": "Illustration for: Best Low-Tox Summer Fabrics for Hot Days",
   "related_posts": [
     {
@@ -20,5 +20,6 @@
       "cat": "Fabric Guide"
     }
   ],
-  "published": false
+  "published": true,
+  "published_at": "2026-06-26"
 }
