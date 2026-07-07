@@ -6,7 +6,7 @@
   "description": "Which states are restricting PFAS in clothing and what those laws mean for your wardrobe. A clear breakdown for conscious shoppers.",
   "lede": "Which states are restricting PFAS in clothing and what those laws mean for your wardrobe. A clear breakdown for conscious shoppers.",
   "eyebrow": "PFAS & Fabric Safety",
-  "excerpt": "Legislation restricting PFAS in consumer products has been moving quickly — and clothing is increasingly in scope. If you've been wondering whether the jacket o…",
+  "excerpt": "Legislation restricting PFAS in consumer products has been moving quickly \u2014 and clothing is increasingly in scope. If you've been wondering whether the jacket o\u2026",
   "hero_alt": "Illustration for: PFAS Clothing Laws by State: What Shoppers Should Know",
   "related_posts": [
     {
@@ -20,5 +20,6 @@
       "cat": "PFAS & Fabric Safety"
     }
   ],
-  "published": false
+  "published": true,
+  "published_at": "2026-07-07"
 }
