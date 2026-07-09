@@ -6,7 +6,7 @@
   "description": "Some fabrics shed significantly fewer microplastics than others. Here's what to look for when you want lower-shedding clothing options.",
   "lede": "Some fabrics shed significantly fewer microplastics than others. Here's what to look for when you want lower-shedding clothing options.",
   "eyebrow": "Microplastics",
-  "excerpt": "Not all fabrics shed the same. Some synthetic fabrics are higher shedders by construction; some natural fabrics shed almost no plastic at all. Understanding the…",
+  "excerpt": "Not all fabrics shed the same. Some synthetic fabrics are higher shedders by construction; some natural fabrics shed almost no plastic at all. Understanding the\u2026",
   "hero_alt": "Illustration for: Fabrics That Don't Shed Microplastics as Easily",
   "related_posts": [
     {
@@ -20,5 +20,6 @@
       "cat": "Microplastics"
     }
   ],
-  "published": false
+  "published": true,
+  "published_at": "2026-07-09"
 }
