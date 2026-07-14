@@ -6,7 +6,7 @@
   "description": "Breathability affects how comfortable you feel in your clothes all day. Here's which fabrics actually breathe well and what to look for when shopping.",
   "lede": "Breathability affects how comfortable you feel in your clothes all day. Here's which fabrics actually breathe well and what to look for when shopping.",
   "eyebrow": "Fabric Guide",
-  "excerpt": "Breathability is one of those clothing qualities you notice most when it's missing — that trapped, overheated feeling in a fabric that won't let air through. He…",
+  "excerpt": "Breathability is one of those clothing qualities you notice most when it's missing \u2014 that trapped, overheated feeling in a fabric that won't let air through. He\u2026",
   "hero_alt": "Illustration for: Best Breathable Fabrics for Comfort and Everyday Wear",
   "related_posts": [
     {
@@ -20,5 +20,6 @@
       "cat": "Fabric Guide"
     }
   ],
-  "published": false
+  "published": true,
+  "published_at": "2026-07-14"
 }
