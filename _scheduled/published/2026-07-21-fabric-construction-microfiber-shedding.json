@@ -6,7 +6,7 @@
   "description": "The way a fabric is built matters as much as what it's made from. Here's how weave, knit structure, and finishing affect how much your clothing sheds.",
   "lede": "The way a fabric is built matters as much as what it's made from. Here's how weave, knit structure, and finishing affect how much your clothing sheds.",
   "eyebrow": "Microplastics",
-  "excerpt": "Most conversations about microplastic shedding focus on fiber type — polyester vs. cotton, synthetic vs. natural. But construction matters too. Two polyester ga…",
+  "excerpt": "Most conversations about microplastic shedding focus on fiber type \u2014 polyester vs. cotton, synthetic vs. natural. But construction matters too. Two polyester ga\u2026",
   "hero_alt": "Illustration for: How Fabric Construction Affects Microfiber Shedding",
   "related_posts": [
     {
@@ -20,5 +20,6 @@
       "cat": "Microplastics"
     }
   ],
-  "published": false
+  "published": true,
+  "published_at": "2026-07-21"
 }
