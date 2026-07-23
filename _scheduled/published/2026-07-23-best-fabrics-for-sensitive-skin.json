@@ -6,7 +6,7 @@
   "description": "If your skin reacts to certain clothing, the fiber content and fabric finish are usually where to look first. Here's what to avoid and what tends to work better.",
   "lede": "If your skin reacts to certain clothing, the fiber content and fabric finish are usually where to look first. Here's what to avoid and what tends to work better.",
   "eyebrow": "Fabric Guide",
-  "excerpt": "If certain clothing makes your skin itch, flush, or break out, you're not imagining it. The fiber content, fabric finish, and dye chemistry of clothing can all …",
+  "excerpt": "If certain clothing makes your skin itch, flush, or break out, you're not imagining it. The fiber content, fabric finish, and dye chemistry of clothing can all \u2026",
   "hero_alt": "Illustration for: Best Fabrics for Sensitive Skin",
   "related_posts": [
     {
@@ -20,5 +20,6 @@
       "cat": "Fabric Guide"
     }
   ],
-  "published": false
+  "published": true,
+  "published_at": "2026-07-23"
 }
