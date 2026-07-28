@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to Spot PFAS in Product Descriptions Before You Buy | Wove</title>
+<meta name="description" content="Learn the words, materials, and marketing claims that signal PFAS in clothing — and how to read product pages more critically before adding to cart." />
+<link rel="canonical" href="https://woveapp.com/blog/how-to-spot-pfas-in-product-descriptions/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://woveapp.com/blog/how-to-spot-pfas-in-product-descriptions/">
+<meta property="og:title" content="How to Spot PFAS in Product Descriptions Before You Buy | Wove">
+<meta property="og:description" content="Learn the words, materials, and marketing claims that signal PFAS in clothing — and how to read product pages more critically before adding to cart.">
+<meta property="og:image" content="https://woveapp.com/images/how-to-spot-pfas-in-product-descriptions.png">
+<meta property="og:site_name" content="Wove">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Spot PFAS in Product Descriptions Before You Buy | Wove">
+<meta name="twitter:description" content="Learn the words, materials, and marketing claims that signal PFAS in clothing — and how to read product pages more critically before adding to cart.">
+<meta name="twitter:image" content="https://woveapp.com/images/how-to-spot-pfas-in-product-descriptions.png">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-503P7ZDSXZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-503P7ZDSXZ');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream-50: #FBF7ED;
+  --cream-100: #F5EFE2;
+  --cream-200: #ECE3CE;
+  --cream-300: #DDD0B4;
+  --green-deep: #2D4A3E;
+  --green-700: #3D5C4F;
+  --green-500: #6B8B7B;
+  --green-300: #A4BCB0;
+  --green-100: #DCE6DF;
+  --terracotta: #B8765A;
+  --terracotta-soft: #D9A48E;
+  --ink: #1F1A14;
+  --ink-soft: #524A3D;
+  --ink-mute: #877D6A;
+  --border: #D9CFB8;
+  --border-soft: #E8DFCA;
+  --display: 'Fraunces', Georgia, serif;
+  --body: 'Lora', Georgia, serif;
+  --max-w: 1240px;
+  --wove-green: #5B6B54;
+  --wove-green-dark: #4A5A42;
+  --wove-green-deep-nav: #3D4D36;
+  --wove-cream: #F0EBE3;
+  --wove-charcoal: #2A2A2A;
+  --wove-text: #333333;
+  --wove-border: rgba(0,0,0,0.06);
+  --radius-full: 50px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+body {
+  font-family: var(--body);
+  background: var(--cream-50);
+  color: var(--ink);
+  line-height: 1.7;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+}
+.progress-bar {
+  position: fixed; top: 68px; left: 0;
+  height: 3px; width: 0%;
+  background: var(--green-deep);
+  z-index: 99; transition: width 0.1s ease-out;
+}
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(240,235,227,0.92);
+  backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  padding: 0 48px; height: 68px;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid var(--wove-border);
+  transition: box-shadow 0.3s;
+  font-family: 'Poppins', -apple-system, sans-serif;
+}
+nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.04); }
+.nav-logo { display: flex; align-items: center; text-decoration: none; }
+.nav-logo-img { height: 40px; object-fit: contain; }
+.logo-placeholder {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 120px; height: 44px; border: 2px dashed var(--wove-green); border-radius: 12px;
+  font-size: 11px; font-weight: 700; color: var(--wove-green);
+  letter-spacing: 1.5px; background: rgba(91,107,84,0.05);
+}
+.nav-links { display: flex; align-items: center; gap: 32px; }
+.nav-links a { text-decoration: none; color: var(--wove-text); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+.nav-links a:hover { color: var(--wove-green-dark); }
+.nav-cta {
+  background: var(--wove-green) !important; color: white !important;
+  padding: 10px 26px; border-radius: var(--radius-full);
+  font-weight: 600 !important; font-size: 13px !important; transition: all 0.25s !important;
+}
+.nav-cta:hover { background: var(--wove-green-deep-nav) !important; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(91,107,84,0.25); }
+@media (max-width: 960px) { nav { padding: 0 24px; } .nav-links a:not(.nav-cta) { display: none; } }
+
+/* AFFILIATE DISCLOSURE */
+.affiliate-disclosure {
+  max-width: var(--max-w); margin: 0 auto; padding: 80px 32px 0;
+  font-family: 'Poppins', sans-serif;
+}
+.affiliate-disclosure p {
+  font-size: 13px; color: var(--ink-mute); line-height: 1.6;
+  padding: 12px 16px; background: var(--cream-100);
+  border-radius: 6px; border-left: 3px solid var(--border); margin: 0;
+}
+
+/* ARTICLE HEADER */
+.article-header { max-width: var(--max-w); margin: 0 auto; padding: 32px 32px 40px; }
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: 'Poppins', sans-serif; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--terracotta);
+  margin-bottom: 20px;
+}
+.article-title {
+  font-family: var(--display); font-weight: 300; font-size: clamp(32px, 5vw, 54px);
+  color: var(--ink); line-height: 1.12; margin-bottom: 28px;
+  font-variation-settings: "opsz" 72;
+}
+.article-title em { font-style: italic; color: var(--green-deep); }
+.article-lede {
+  font-size: clamp(16px, 2vw, 20px); color: var(--ink-soft); line-height: 1.65;
+  max-width: 800px; margin-bottom: 24px; font-family: 'Poppins', sans-serif; font-weight: 300;
+}
+.article-meta {
+  display: flex; align-items: center; gap: 10px;
+  font-family: 'Poppins', sans-serif; font-size: 13px; color: var(--ink-mute);
+}
+.dot { opacity: 0.4; }
+
+/* HERO IMAGE */
+.hero-image { max-width: var(--max-w); margin: 0 auto 16px; padding: 0 32px; }
+.hero-image figure { border-radius: 20px; overflow: hidden; background: var(--cream-100); line-height: 0; }
+.hero-image img, .hero-image svg { width: 100%; height: auto; display: block; }
+
+/* ARTICLE GRID */
+.article-grid {
+  max-width: var(--max-w); margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 280px; gap: 56px;
+  padding: 0 32px 80px; align-items: start;
+}
+@media (max-width: 960px) { .article-grid { grid-template-columns: 1fr; } }
+.article-body { min-width: 0; }
+.article-body h2 {
+  font-family: var(--display); font-weight: 400; font-size: clamp(22px, 3vw, 30px);
+  color: var(--ink); line-height: 1.2; margin: 48px 0 18px;
+  font-variation-settings: "opsz" 72;
+}
+.article-body h3 {
+  font-family: 'Poppins', sans-serif; font-size: 17px; font-weight: 600;
+  color: var(--green-deep); margin: 32px 0 12px;
+}
+.article-body p { margin-bottom: 22px; }
+.article-body ul, .article-body ol { padding-left: 24px; margin-bottom: 22px; }
+.article-body li { margin-bottom: 8px; }
+.article-body a { color: var(--green-deep); text-decoration: underline; text-underline-offset: 3px; }
+.article-body strong { font-weight: 600; color: var(--ink); }
+.drop-cap::first-letter {
+  float: left; font-family: var(--display); font-size: 68px; line-height: 0.82;
+  margin: 8px 14px 0 0; color: var(--green-deep); font-weight: 300;
+  font-variation-settings: "opsz" 144;
+}
+
+/* CALLOUT BOXES */
+.callout {
+  background: var(--cream-100); border-left: 4px solid var(--green-deep);
+  border-radius: 0 12px 12px 0; padding: 20px 24px; margin: 32px 0;
+}
+.callout.terracotta { border-color: var(--terracotta); }
+.callout p { margin-bottom: 0; font-size: 16px; }
+
+/* TABLE */
+.article-body table { width: 100%; border-collapse: collapse; margin: 32px 0; font-size: 15px; font-family: 'Poppins', sans-serif; }
+.article-body th { background: var(--green-deep); color: white; padding: 10px 14px; text-align: left; font-weight: 600; font-size: 13px; }
+.article-body td { padding: 10px 14px; border-bottom: 1px solid var(--border-soft); }
+.article-body tr:nth-child(even) td { background: var(--cream-100); }
+
+/* SIDEBAR */
+.sidebar { position: sticky; top: 92px; }
+.toc-box {
+  background: white; border-radius: 16px; padding: 24px;
+  border: 1px solid var(--border-soft); margin-bottom: 24px;
+}
+.toc-box h4 { font-family: 'Poppins', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 14px; }
+.toc-list { list-style: none; padding: 0; }
+.toc-list li { padding: 5px 0; }
+.toc-list a { font-family: 'Poppins', sans-serif; font-size: 13px; color: var(--ink-soft); text-decoration: none; line-height: 1.5; }
+.toc-list a:hover { color: var(--green-deep); }
+
+/* APP CTA SIDEBAR */
+.app-cta-box {
+  background: var(--green-deep); border-radius: 16px; padding: 24px;
+  text-align: center; color: white;
+}
+.app-cta-box p { font-family: 'Poppins', sans-serif; font-size: 14px; line-height: 1.6; margin-bottom: 16px; opacity: 0.9; }
+.app-cta-box a {
+  display: inline-block; background: white; color: var(--green-deep);
+  font-family: 'Poppins', sans-serif; font-size: 13px; font-weight: 700;
+  padding: 12px 22px; border-radius: 50px; text-decoration: none; transition: all 0.2s;
+}
+.app-cta-box a:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+
+/* MOBILE TOC */
+.toc-mobile {
+  max-width: var(--max-w); margin: 0 auto 8px; padding: 0 32px;
+  font-family: 'Poppins', sans-serif;
+}
+.toc-mobile summary { cursor: pointer; font-size: 13px; font-weight: 600; color: var(--green-deep); padding: 12px 0; }
+@media (min-width: 961px) { .toc-mobile { display: none; } }
+
+/* ARTICLE FOOTER */
+.article-footer { max-width: var(--max-w); margin: 0 auto; padding: 0 32px 80px; }
+.related-section { border-top: 1px solid var(--border-soft); padding-top: 48px; }
+.section-label {
+  font-family: 'Poppins', sans-serif; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 10px;
+}
+.related-section h2 {
+  font-family: var(--display); font-weight: 300; font-size: 28px;
+  color: var(--ink); margin-bottom: 32px; font-variation-settings: "opsz" 72;
+}
+.related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 768px) { .related-grid { grid-template-columns: 1fr; } }
+.related-card {
+  padding: 24px; background: white; border-radius: 12px;
+  border: 1px solid var(--border-soft); text-decoration: none;
+  transition: border-color 0.2s, transform 0.2s; display: block;
+}
+.related-card:hover { border-color: var(--green-300); transform: translateY(-2px); }
+.related-cat { font-family: 'Poppins', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 10px; }
+.related-title { font-family: var(--display); font-weight: 400; font-size: 17px; color: var(--ink); line-height: 1.35; font-variation-settings: "opsz" 72; }
+
+/* FOOTER */
+footer.site-footer { padding: 56px 48px 28px; background: var(--wove-charcoal); color: rgba(255,255,255,0.55); font-family: 'Poppins', -apple-system, sans-serif; }
+.footer-inner { max-width: 960px; margin: 0 auto; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 56px; margin-bottom: 40px; }
+.footer-logo-img { height: 36px; object-fit: contain; filter: brightness(10); }
+.logo-placeholder.dark { display: inline-flex; align-items: center; justify-content: center; width: 120px; height: 44px; border: 2px dashed rgba(255,255,255,0.3); border-radius: 12px; font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.5); letter-spacing: 1.5px; background: rgba(255,255,255,0.05); }
+.footer-brand-name { margin-bottom: 12px; }
+.footer-brand p { font-size: 13px; line-height: 1.7; max-width: 300px; }
+.footer-col h4 { font-family: 'Poppins', sans-serif; color: white; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 18px; }
+.footer-col a { display: block; color: rgba(255,255,255,0.45); text-decoration: none; font-size: 13px; padding: 4px 0; transition: color 0.2s; }
+.footer-col a:hover { color: white; }
+.footer-bottom { padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 12px; text-align: center; color: rgba(255,255,255,0.3); }
+@media (max-width: 960px) { footer.site-footer { padding: 56px 24px 28px; } .footer-grid { grid-template-columns: 1fr; gap: 28px; } }
+@media (max-width: 768px) { .article-grid, .article-header, .hero-image, .toc-mobile, .article-footer, .affiliate-disclosure { padding-left: 20px; padding-right: 20px; } }
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav id="main-nav">
+  <a href="../../" class="nav-logo">
+    <img src="../../images/logo.png" alt="Wove" class="nav-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="logo-placeholder" style="display:none">LOGO</div>
+  </a>
+  <div class="nav-links">
+    <a href="../../about/">The Story</a>
+    <a href="../../#how-it-works">How It Works</a>
+    <a href="../../wovescore/">Wove Score</a>
+    <a href="../">Blog</a>
+    <a href="https://shopmy.us/shop/emmhemphill" target="_blank" rel="noopener">Shop Our Top Picks</a>
+    <a href="https://apps.apple.com/us/app/wove-score/id6755356871" class="nav-cta">Download App</a>
+  </div>
+</nav>
+
+<div class="affiliate-disclosure">
+  <p>This post contains affiliate links. If you purchase through them, I may earn a small commission at no cost to you — and only ever from brands I'd recommend regardless.</p>
+</div>
+
+<section class="article-header">
+  <div class="eyebrow">PFAS & Fabric Safety</div>
+  <h1 class="article-title">How to Spot PFAS in Product Descriptions Before You Buy</h1>
+  <p class="article-lede">Learn the words, materials, and marketing claims that signal PFAS in clothing — and how to read product pages more critically before adding to cart.</p>
+  <div class="article-meta">
+    <span>By Emily Hemphill</span>
+    <span class="dot">·</span>
+    <span>5 min read</span>
+    <span class="dot">·</span>
+    <span>Published July 2026</span>
+  </div>
+</section>
+
+<div class="hero-image">
+  <figure>
+    <img src="/images/how-to-spot-pfas-in-product-descriptions.png" alt="Illustration for: How to Spot PFAS in Product Descriptions Before You Buy" width="1200" height="520"
+         onerror="this.parentElement.style.background='var(--cream-200)';this.style.display='none'">
+  </figure>
+</div>
+
+<div class="article-grid">
+  <article class="article-body">
+<p class="drop-cap">Product pages are written to sell — not to disclose every chemical treatment applied to a garment. Learning to read between the lines can save you from unknowingly bringing PFAS into your wardrobe.</p>
+<p><svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a product description page with highlighted warning words" style="width:100%;max-width:700px;display:block;margin:2rem auto;"><br />
+<rect width="700" height="200" fill="#EAF3DE" rx="16"/><br />
+<rect x="40" y="30" width="340" height="140" fill="#F7F5EE" rx="10" stroke="#ccc" stroke-width="1"/><br />
+<text x="60" y="58" font-family="Georgia,serif" font-size="13" font-weight="700" fill="#173404">Hiking Jacket — Product Details</text><br />
+<rect x="55" y="70" width="130" height="20" rx="4" fill="#ffd6d6"/><br />
+<text x="60" y="84" font-family="Georgia,serif" font-size="11" fill="#8b0000">Water-repellent finish ⚠</text><br />
+<rect x="55" y="98" width="155" height="20" rx="4" fill="#ffd6d6"/><br />
+<text x="60" y="112" font-family="Georgia,serif" font-size="11" fill="#8b0000">DWR-coated outer shell ⚠</text><br />
+<text x="60" y="134" font-family="Georgia,serif" font-size="11" fill="#555">100% polyester</text><br />
+<text x="60" y="152" font-family="Georgia,serif" font-size="11" fill="#555">Machine wash cold</text><br />
+<rect x="420" y="55" width="240" height="110" fill="#173404" rx="10"/><br />
+<text x="540" y="82" font-family="Georgia,serif" font-size="12" fill="#EAF3DE" text-anchor="middle" font-weight="700">Red-flag phrases:</text><br />
+<text x="440" y="102" font-family="Georgia,serif" font-size="11" fill="#EAF3DE">• &ldquo;Water-repellent&rdquo; / &ldquo;DWR&rdquo;</text><br />
+<text x="440" y="120" font-family="Georgia,serif" font-size="11" fill="#EAF3DE">• &ldquo;Stain-resistant&rdquo;</text><br />
+<text x="440" y="138" font-family="Georgia,serif" font-size="11" fill="#EAF3DE">• &ldquo;Fluorocarbon treatment&rdquo;</text><br />
+<text x="440" y="156" font-family="Georgia,serif" font-size="11" fill="#EAF3DE">• &ldquo;Scotchgard™ / Teflon™&rdquo;</text><br />
+</svg></p>
+<h2 id="common-words-that-can-signal-pfas"><a class="toclink" href="#common-words-that-can-signal-pfas">Common Words That Can Signal PFAS</a></h2>
+<p>PFAS are used in clothing primarily as performance-enhancing coatings. The language brands use to describe those benefits is your first clue. Watch for:</p>
+<p><strong>Water and moisture-related terms:</strong><br />
+- Durable water repellent (DWR)<br />
+- Water-repellent finish<br />
+- Waterproof coating<br />
+- Moisture-resistant</p>
+<p><strong>Stain and soil-related terms:</strong><br />
+- Stain-resistant<br />
+- Soil-release finish<br />
+- Oil-repellent<br />
+- Scotchgard™ (3M&rsquo;s trademarked fluorochemical finish)<br />
+- Teflon™ EcoElite (DuPont&rsquo;s finish — note that some versions are now fluorine-free, but confirm)</p>
+<p><strong>Generic performance claims:</strong><br />
+- Easy care<br />
+- &ldquo;Stays cleaner longer&rdquo;<br />
+- Anti-soiling</p>
+<p>None of these phrases confirms that PFAS are present — stain resistance can be achieved with other chemistries. But these terms warrant a closer look before purchasing.</p>
+<h2 id="materials-and-finishes-to-watch-for"><a class="toclink" href="#materials-and-finishes-to-watch-for">Materials and Finishes to Watch For</a></h2>
+<p>Certain fabric types are more frequently treated with PFAS than others. When you see these materials in a product description, treat them as a prompt to investigate further:</p>
+<p><strong>Outerwear shell fabrics:</strong><br />
+- Gore-Tex® (Gore has committed to PFC-free products; check the specific product&rsquo;s compliance status)<br />
+- eVent® fabric<br />
+- Any fabric described as having a &ldquo;membrane&rdquo;</p>
+<p><strong>Performance fabrics:</strong><br />
+- &ldquo;Quick-dry&rdquo; nylon or polyester<br />
+- &ldquo;Performance&rdquo; or &ldquo;technical&rdquo; stretch fabrics<br />
+- &ldquo;Moisture-wicking&rdquo; fabrics treated for odor and stain resistance</p>
+<p><strong>Everyday fabrics with finishes:</strong><br />
+- Chinos, khakis, and trousers described as &ldquo;wrinkle-free&rdquo; or &ldquo;no-iron&rdquo;<br />
+- Dress shirts marketed as &ldquo;stain-resistant&rdquo;</p>
+<h2 id="what-brands-may-leave-out"><a class="toclink" href="#what-brands-may-leave-out">What Brands May Leave Out</a></h2>
+<p>Product pages are not required to disclose chemical treatments. This means there&rsquo;s often a significant information gap between what&rsquo;s on the page and what&rsquo;s on (or in) the fabric.</p>
+<p>Specifically, you may not see:<br />
+- Whether a DWR coating is fluorocarbon-based or fluorocarbon-free<br />
+- Which generation of PFAS chemistry is used (C8 compounds are more restricted than C6, but both raise concerns)<br />
+- Whether a water-resistant fabric is membrane-only (no chemical coating) or membrane plus treatment<br />
+- Updated formulation status for older product listings</p>
+<p>This gap isn&rsquo;t necessarily deceptive — brands often don&rsquo;t list standard processing chemistry the same way they&rsquo;d list materials. But it does mean the absence of a PFAS disclosure isn&rsquo;t the same as absence of PFAS.</p>
+<p><svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Side-by-side comparison of a product page that discloses PFAS-free status versus one that is vague" style="width:100%;max-width:700px;display:block;margin:2rem auto;"><br />
+<rect width="700" height="240" fill="#EAF3DE" rx="16"/><br />
+<text x="350" y="36" font-family="Georgia,serif" font-size="16" font-weight="700" fill="#173404" text-anchor="middle">Reading Product Page Claims</text><br />
+<rect x="30" y="55" width="295" height="160" fill="#d4edda" rx="10" stroke="#5a8a3c" stroke-width="2"/><br />
+<text x="178" y="80" font-family="Georgia,serif" font-size="13" font-weight="700" fill="#173404" text-anchor="middle">✓ Clearer</text><br />
+<text x="50" y="105" font-family="Georgia,serif" font-size="11" fill="#173404">&ldquo;PFC-free DWR coating&rdquo;</text><br />
+<text x="50" y="124" font-family="Georgia,serif" font-size="11" fill="#173404">&ldquo;Fluorocarbon-free water</text><br />
+<text x="50" y="138" font-family="Georgia,serif" font-size="11" fill="#173404">repellency&rdquo;</text><br />
+<text x="50" y="157" font-family="Georgia,serif" font-size="11" fill="#173404">&ldquo;bluesign® approved fabric&rdquo;</text><br />
+<text x="50" y="176" font-family="Georgia,serif" font-size="11" fill="#173404">&ldquo;OEKO-TEX® certified&rdquo;</text><br />
+<text x="50" y="196" font-family="Georgia,serif" font-size="11" fill="#173404">&ldquo;No fluorochemical treatments&rdquo;</text><br />
+<rect x="375" y="55" width="295" height="160" fill="#fde8e8" rx="10" stroke="#c0392b" stroke-width="2"/><br />
+<text x="522" y="80" font-family="Georgia,serif" font-size="13" font-weight="700" fill="#173404" text-anchor="middle">⚠ Investigate Further</text><br />
+<text x="395" y="105" font-family="Georgia,serif" font-size="11" fill="#173404">&ldquo;Water-repellent finish&rdquo;</text><br />
+<text x="395" y="124" font-family="Georgia,serif" font-size="11" fill="#173404">&ldquo;DWR treated&rdquo;</text><br />
+<text x="395" y="143" font-family="Georgia,serif" font-size="11" fill="#173404">&ldquo;Stain-resistant&rdquo;</text><br />
+<text x="395" y="162" font-family="Georgia,serif" font-size="11" fill="#173404">&ldquo;Performance coating&rdquo;</text><br />
+<text x="395" y="181" font-family="Georgia,serif" font-size="11" fill="#173404">(no chemical disclosure at all)</text><br />
+</svg></p>
+<h2 id="questions-to-ask-before-purchasing"><a class="toclink" href="#questions-to-ask-before-purchasing">Questions to Ask Before Purchasing</a></h2>
+<p>If a product description leaves you uncertain, these questions get you to a clear answer quickly.</p>
+<p><strong>For outerwear and performance gear:</strong><br />
+- Is the DWR coating on this product fluorocarbon-free?<br />
+- Has this jacket been tested as PFAS-free?<br />
+- Does this product carry bluesign® or OEKO-TEX® STANDARD 100 certification?</p>
+<p><strong>For everyday clothing:</strong><br />
+- Does this fabric have any stain-resistant or water-repellent chemical treatment applied?<br />
+- Is any surface finish on this garment fluorocarbon-based?</p>
+<p>Most brands with an honest answer will give you one — brands that have reformulated tend to be proud of it. Customer service teams at companies like Patagonia, Cotopaxi, and smaller sustainable brands are often equipped to answer directly. If a brand can&rsquo;t or won&rsquo;t answer, that&rsquo;s information too.</p>
+<h2 id="safer-alternatives-to-look-for"><a class="toclink" href="#safer-alternatives-to-look-for">Safer Alternatives to Look For</a></h2>
+<p>Once you know what to avoid, it&rsquo;s easier to spot what to look for. PFAS-free water repellency exists — the technology has improved significantly.</p>
+<p><strong>PFAS-free DWR alternatives:</strong><br />
+- Wax-based DWR (beeswax or paraffin)<br />
+- Silicone-based coatings<br />
+- Bio-based repellents (some derived from corn or castor oil)<br />
+- C0 fluorocarbon-free chemistry (some brands have adopted this as a bridge solution)</p>
+<p><strong>Certifications that restrict PFAS:</strong><br />
+- <strong>bluesign®</strong>: restricts per- and polyfluorinated compounds<br />
+- <strong>OEKO-TEX® STANDARD 100</strong>: tests for a restricted substance list that includes certain PFAS<br />
+- <strong>PFC-free labeling</strong>: some brands use this to signal no fluorocarbon content</p>
+<p><strong>Fabric choices that skip the issue entirely:</strong><br />
+- Wool and boiled wool (naturally water-resistant without coatings)<br />
+- Tightly woven cotton canvas (water-resistant by construction)<br />
+- Oilcloth and waxed canvas (traditional, non-PFAS repellency)</p>
+<h2 id="faq"><a class="toclink" href="#faq">FAQ</a></h2>
+<p><strong>Does &ldquo;water-resistant&rdquo; always mean PFAS?</strong><br />
+No — but it&rsquo;s a prompt to investigate. Water resistance can come from fabric construction, PFAS-based coatings, or PFAS-free alternative coatings. The product page often won&rsquo;t tell you which, so you may need to dig deeper or ask.</p>
+<p><strong>Is Gore-Tex® PFAS-free?</strong><br />
+Gore committed to eliminating PFCs (a subset of PFAS) from its products. Many Gore-Tex® products are now marketed as ePE or ePTFE-based without PFAS DWR. Check the specific product&rsquo;s claims, as older inventory may differ.</p>
+<p><strong>What does &ldquo;PFC-free&rdquo; mean on a label?</strong><br />
+PFCs (perfluorinated compounds) are a category within PFAS. A &ldquo;PFC-free&rdquo; claim means no fluorochemical coatings were intentionally used. It&rsquo;s a stronger signal than &ldquo;water-resistant&rdquo; alone.</p>
+<p><strong>Can I wash PFAS out of a jacket I already own?</strong><br />
+Washing won&rsquo;t remove PFAS from the fabric itself — and the wash water released contains microfibers and PFAS that enter the water system. The chemicals are bonded to the fabric during manufacturing.</p>
+<p><strong>Should I avoid all performance fabrics?</strong><br />
+Not necessarily. Many performance fabrics are untreated polyester or nylon — the microplastic shedding risk is separate from PFAS. For PFAS specifically, look for explicit &ldquo;PFC-free&rdquo; or &ldquo;PFAS-free&rdquo; language, or choose naturally high-performance fibers like merino wool.</p>
+<hr />
+<p><em>Related reading: <a href="https://woveapp.com/blog/pfas-in-clothing">PFAS in Clothing: What It Is and How to Avoid It</a> · <a href="https://woveapp.com/blog/how-to-read-clothing-labels">How to Read Clothing Labels</a></em></p>
+<hr />
+<p><strong>Use Wove to check clothing details faster.</strong> <a href="https://apps.apple.com/us/app/wove-score/id6755356871">Download Wove</a> and get an instant grade on fiber content and chemical concerns before you buy.</p>
+<hr />
+<h3 id="sources"><a class="toclink" href="#sources">Sources</a></h3>
+<ul>
+<li>Interstate Chemicals Clearinghouse: PFAS in Textiles</li>
+<li>Environmental Working Group: PFAS in Consumer Products</li>
+<li>NRDC: Phasing Out PFAS in Apparel</li>
+<li>Bluesign Technologies: Restricted Substances List</li>
+</ul>
+  </article>
+
+  <aside class="sidebar">
+    <div class="app-cta-box">
+      <p>Check any fabric's safety score — microplastics, PFAS, and more — before you buy.</p>
+      <a href="https://apps.apple.com/us/app/wove-score/id6755356871" target="_blank" rel="noopener">
+        Get the Wove App →
+      </a>
+    </div>
+  </aside>
+</div>
+
+<div class="article-footer">
+  <section class="related-section">
+    <div class="section-label">Keep Reading</div>
+    <h2>Related guides from Wove</h2>
+    <div class="related-grid">
+      <a href="/blog/non-toxic-swimwear/" class="related-card">
+        <div class="related-cat">PFAS & Fabric Safety</div>
+        <div class="related-title">Non-Toxic Swimwear: What to Look for Before You Buy</div>
+      </a>
+      <a href="/blog/pfas-clothing-laws-by-state/" class="related-card">
+        <div class="related-cat">PFAS & Fabric Safety</div>
+        <div class="related-title">PFAS Clothing Laws by State</div>
+      </a>
+
+    </div>
+  </section>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-name">
+          <img src="../../images/logo.png" alt="Wove" class="footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="logo-placeholder dark" style="display:none">LOGO</div>
+        </div>
+        <p>Shop consciously. Live comfortably. Wove brings transparency to the fashion industry — no ads, no brand deals, just the truth about your fabrics.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Project</h4>
+        <a href="../../about/">The Story</a>
+        <a href="../../wovescore/">Wove Score</a>
+        <a href="../../contact/">Contact</a>
+        <a href="https://shopmy.us/shop/emmhemphill" target="_blank" rel="noopener">Shop Our Top Picks</a>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <a href="../">Blog</a>
+        <a href="../../press/">Press</a>
+        <a href="../../privacypolicy/">Privacy Policy</a>
+        <a href="../../terms/">Terms of Use</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Wove LLC. Shop consciously. Live comfortably.</div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); });
+
+  const bar = document.getElementById('progressBar');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = (window.scrollY / (doc.scrollHeight - doc.clientHeight)) * 100;
+    bar.style.width = scrolled + '%';
+  });
+
+  document.querySelectorAll('a[href*="apps.apple.com"]').forEach(el => {
+    el.addEventListener('click', () => gtag('event', 'app_store_click', { location: 'how-to-spot-pfas-in-product-descriptions' }));
+  });
+</script>
+</body>
+</html>
