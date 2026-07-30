@@ -6,7 +6,7 @@
   "description": "Workout clothes are washed frequently, which means they shed more microplastics than items washed less often. Here's how to choose options that shed less.",
   "lede": "Workout clothes are washed frequently, which means they shed more microplastics than items washed less often. Here's how to choose options that shed less.",
   "eyebrow": "Microplastics",
-  "excerpt": "Activewear is washed after almost every use — which means it has more total wash cycles than most other items in your wardrobe, and sheds more cumulative microp…",
+  "excerpt": "Activewear is washed after almost every use \u2014 which means it has more total wash cycles than most other items in your wardrobe, and sheds more cumulative microp\u2026",
   "hero_alt": "Illustration for: Best Workout Clothes for Less Microfiber Shedding",
   "related_posts": [
     {
@@ -20,5 +20,6 @@
       "cat": "Microplastics"
     }
   ],
-  "published": false
+  "published": true,
+  "published_at": "2026-07-30"
 }
