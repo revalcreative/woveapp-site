@@ -3,10 +3,10 @@
   "date": "2026-08-13",
   "category": "fabrics",
   "title": "Sustainable Fabric Blends Explained: What Shoppers Should Know",
-  "description": "Fabric blends are everywhere — but not all blends are created equal. Here's how to evaluate whether a blend actually makes a garment better or just cheaper.",
-  "lede": "Fabric blends are everywhere — but not all blends are created equal. Here's how to evaluate whether a blend actually makes a garment better or just cheaper.",
+  "description": "Fabric blends are everywhere \u2014 but not all blends are created equal. Here's how to evaluate whether a blend actually makes a garment better or just cheaper.",
+  "lede": "Fabric blends are everywhere \u2014 but not all blends are created equal. Here's how to evaluate whether a blend actually makes a garment better or just cheaper.",
   "eyebrow": "Fabric Guide",
-  "excerpt": "Most garments are blends of two or more fibers. The question is whether that blend serves you — adding durability, stretch, or performance — or whether it's pri…",
+  "excerpt": "Most garments are blends of two or more fibers. The question is whether that blend serves you \u2014 adding durability, stretch, or performance \u2014 or whether it's pri\u2026",
   "hero_alt": "Illustration for: Sustainable Fabric Blends Explained: What Shoppers Should Know",
   "related_posts": [
     {
@@ -20,5 +20,6 @@
       "cat": "Fabric Guide"
     }
   ],
-  "published": false
+  "published": true,
+  "published_at": "2026-08-13"
 }
