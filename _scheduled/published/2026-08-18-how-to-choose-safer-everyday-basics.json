@@ -6,7 +6,7 @@
   "description": "Everyday clothing basics are worn close to the skin, washed often, and replaced regularly. Here's how to choose ones that hold up well and raise fewer concerns.",
   "lede": "Everyday clothing basics are worn close to the skin, washed often, and replaced regularly. Here's how to choose ones that hold up well and raise fewer concerns.",
   "eyebrow": "Shopping Guide",
-  "excerpt": "T-shirts, underwear, socks, and base layers are the clothing we're in contact with most — against skin, all day, washed frequently. They're also the easiest cat…",
+  "excerpt": "T-shirts, underwear, socks, and base layers are the clothing we're in contact with most \u2014 against skin, all day, washed frequently. They're also the easiest cat\u2026",
   "hero_alt": "Illustration for: How to Choose Safer Everyday Basics",
   "related_posts": [
     {
@@ -20,5 +20,6 @@
       "cat": "Shopping Guide"
     }
   ],
-  "published": false
+  "published": true,
+  "published_at": "2026-08-18"
 }
