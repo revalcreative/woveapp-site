@@ -6,7 +6,7 @@
   "description": "Fleece is one of the highest-shedding fabrics available. Here's what's happening when you wash your fleece jacket and what you can do about it.",
   "lede": "Fleece is one of the highest-shedding fabrics available. Here's what's happening when you wash your fleece jacket and what you can do about it.",
   "eyebrow": "Microplastics",
-  "excerpt": "Yes — and significantly. Fleece is one of the highest-shedding fabric types in common use. A single wash of a fleece jacket can release hundreds of thousands of…",
+  "excerpt": "Yes \u2014 and significantly. Fleece is one of the highest-shedding fabric types in common use. A single wash of a fleece jacket can release hundreds of thousands of\u2026",
   "hero_alt": "Illustration for: Do Fleece Jackets Shed Microplastics?",
   "related_posts": [
     {
@@ -20,5 +20,6 @@
       "cat": "Microplastics"
     }
   ],
-  "published": false
+  "published": true,
+  "published_at": "2026-08-20"
 }
