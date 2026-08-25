@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Natural vs Synthetic Fabrics for Activewear | Wove</title>
+<meta name="description" content="Natural and synthetic fabrics each have real trade-offs for activewear. Here's an honest comparison so you can choose based on what actually matters to you." />
+<link rel="canonical" href="https://woveapp.com/blog/natural-vs-synthetic-fabrics-activewear/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://woveapp.com/blog/natural-vs-synthetic-fabrics-activewear/">
+<meta property="og:title" content="Natural vs Synthetic Fabrics for Activewear | Wove">
+<meta property="og:description" content="Natural and synthetic fabrics each have real trade-offs for activewear. Here's an honest comparison so you can choose based on what actually matters to you.">
+<meta property="og:image" content="https://woveapp.com/images/natural-vs-synthetic-fabrics-activewear.png">
+<meta property="og:site_name" content="Wove">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Natural vs Synthetic Fabrics for Activewear | Wove">
+<meta name="twitter:description" content="Natural and synthetic fabrics each have real trade-offs for activewear. Here's an honest comparison so you can choose based on what actually matters to you.">
+<meta name="twitter:image" content="https://woveapp.com/images/natural-vs-synthetic-fabrics-activewear.png">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-503P7ZDSXZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-503P7ZDSXZ');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream-50: #FBF7ED;
+  --cream-100: #F5EFE2;
+  --cream-200: #ECE3CE;
+  --cream-300: #DDD0B4;
+  --green-deep: #2D4A3E;
+  --green-700: #3D5C4F;
+  --green-500: #6B8B7B;
+  --green-300: #A4BCB0;
+  --green-100: #DCE6DF;
+  --terracotta: #B8765A;
+  --terracotta-soft: #D9A48E;
+  --ink: #1F1A14;
+  --ink-soft: #524A3D;
+  --ink-mute: #877D6A;
+  --border: #D9CFB8;
+  --border-soft: #E8DFCA;
+  --display: 'Fraunces', Georgia, serif;
+  --body: 'Lora', Georgia, serif;
+  --max-w: 1240px;
+  --wove-green: #5B6B54;
+  --wove-green-dark: #4A5A42;
+  --wove-green-deep-nav: #3D4D36;
+  --wove-cream: #F0EBE3;
+  --wove-charcoal: #2A2A2A;
+  --wove-text: #333333;
+  --wove-border: rgba(0,0,0,0.06);
+  --radius-full: 50px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+body {
+  font-family: var(--body);
+  background: var(--cream-50);
+  color: var(--ink);
+  line-height: 1.7;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+}
+.progress-bar {
+  position: fixed; top: 68px; left: 0;
+  height: 3px; width: 0%;
+  background: var(--green-deep);
+  z-index: 99; transition: width 0.1s ease-out;
+}
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(240,235,227,0.92);
+  backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  padding: 0 48px; height: 68px;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid var(--wove-border);
+  transition: box-shadow 0.3s;
+  font-family: 'Poppins', -apple-system, sans-serif;
+}
+nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.04); }
+.nav-logo { display: flex; align-items: center; text-decoration: none; }
+.nav-logo-img { height: 40px; object-fit: contain; }
+.logo-placeholder {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 120px; height: 44px; border: 2px dashed var(--wove-green); border-radius: 12px;
+  font-size: 11px; font-weight: 700; color: var(--wove-green);
+  letter-spacing: 1.5px; background: rgba(91,107,84,0.05);
+}
+.nav-links { display: flex; align-items: center; gap: 32px; }
+.nav-links a { text-decoration: none; color: var(--wove-text); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+.nav-links a:hover { color: var(--wove-green-dark); }
+.nav-cta {
+  background: var(--wove-green) !important; color: white !important;
+  padding: 10px 26px; border-radius: var(--radius-full);
+  font-weight: 600 !important; font-size: 13px !important; transition: all 0.25s !important;
+}
+.nav-cta:hover { background: var(--wove-green-deep-nav) !important; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(91,107,84,0.25); }
+@media (max-width: 960px) { nav { padding: 0 24px; } .nav-links a:not(.nav-cta) { display: none; } }
+
+/* AFFILIATE DISCLOSURE */
+.affiliate-disclosure {
+  max-width: var(--max-w); margin: 0 auto; padding: 80px 32px 0;
+  font-family: 'Poppins', sans-serif;
+}
+.affiliate-disclosure p {
+  font-size: 13px; color: var(--ink-mute); line-height: 1.6;
+  padding: 12px 16px; background: var(--cream-100);
+  border-radius: 6px; border-left: 3px solid var(--border); margin: 0;
+}
+
+/* ARTICLE HEADER */
+.article-header { max-width: var(--max-w); margin: 0 auto; padding: 32px 32px 40px; }
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: 'Poppins', sans-serif; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--terracotta);
+  margin-bottom: 20px;
+}
+.article-title {
+  font-family: var(--display); font-weight: 300; font-size: clamp(32px, 5vw, 54px);
+  color: var(--ink); line-height: 1.12; margin-bottom: 28px;
+  font-variation-settings: "opsz" 72;
+}
+.article-title em { font-style: italic; color: var(--green-deep); }
+.article-lede {
+  font-size: clamp(16px, 2vw, 20px); color: var(--ink-soft); line-height: 1.65;
+  max-width: 800px; margin-bottom: 24px; font-family: 'Poppins', sans-serif; font-weight: 300;
+}
+.article-meta {
+  display: flex; align-items: center; gap: 10px;
+  font-family: 'Poppins', sans-serif; font-size: 13px; color: var(--ink-mute);
+}
+.dot { opacity: 0.4; }
+
+/* HERO IMAGE */
+.hero-image { max-width: var(--max-w); margin: 0 auto 16px; padding: 0 32px; }
+.hero-image figure { border-radius: 20px; overflow: hidden; background: var(--cream-100); line-height: 0; }
+.hero-image img, .hero-image svg { width: 100%; height: auto; display: block; }
+
+/* ARTICLE GRID */
+.article-grid {
+  max-width: var(--max-w); margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 280px; gap: 56px;
+  padding: 0 32px 80px; align-items: start;
+}
+@media (max-width: 960px) { .article-grid { grid-template-columns: 1fr; } }
+.article-body { min-width: 0; }
+.article-body h2 {
+  font-family: var(--display); font-weight: 400; font-size: clamp(22px, 3vw, 30px);
+  color: var(--ink); line-height: 1.2; margin: 48px 0 18px;
+  font-variation-settings: "opsz" 72;
+}
+.article-body h3 {
+  font-family: 'Poppins', sans-serif; font-size: 17px; font-weight: 600;
+  color: var(--green-deep); margin: 32px 0 12px;
+}
+.article-body p { margin-bottom: 22px; }
+.article-body ul, .article-body ol { padding-left: 24px; margin-bottom: 22px; }
+.article-body li { margin-bottom: 8px; }
+.article-body a { color: var(--green-deep); text-decoration: underline; text-underline-offset: 3px; }
+.article-body strong { font-weight: 600; color: var(--ink); }
+.drop-cap::first-letter {
+  float: left; font-family: var(--display); font-size: 68px; line-height: 0.82;
+  margin: 8px 14px 0 0; color: var(--green-deep); font-weight: 300;
+  font-variation-settings: "opsz" 144;
+}
+
+/* CALLOUT BOXES */
+.callout {
+  background: var(--cream-100); border-left: 4px solid var(--green-deep);
+  border-radius: 0 12px 12px 0; padding: 20px 24px; margin: 32px 0;
+}
+.callout.terracotta { border-color: var(--terracotta); }
+.callout p { margin-bottom: 0; font-size: 16px; }
+
+/* TABLE */
+.article-body table { width: 100%; border-collapse: collapse; margin: 32px 0; font-size: 15px; font-family: 'Poppins', sans-serif; }
+.article-body th { background: var(--green-deep); color: white; padding: 10px 14px; text-align: left; font-weight: 600; font-size: 13px; }
+.article-body td { padding: 10px 14px; border-bottom: 1px solid var(--border-soft); }
+.article-body tr:nth-child(even) td { background: var(--cream-100); }
+
+/* SIDEBAR */
+.sidebar { position: sticky; top: 92px; }
+.toc-box {
+  background: white; border-radius: 16px; padding: 24px;
+  border: 1px solid var(--border-soft); margin-bottom: 24px;
+}
+.toc-box h4 { font-family: 'Poppins', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 14px; }
+.toc-list { list-style: none; padding: 0; }
+.toc-list li { padding: 5px 0; }
+.toc-list a { font-family: 'Poppins', sans-serif; font-size: 13px; color: var(--ink-soft); text-decoration: none; line-height: 1.5; }
+.toc-list a:hover { color: var(--green-deep); }
+
+/* APP CTA SIDEBAR */
+.app-cta-box {
+  background: var(--green-deep); border-radius: 16px; padding: 24px;
+  text-align: center; color: white;
+}
+.app-cta-box p { font-family: 'Poppins', sans-serif; font-size: 14px; line-height: 1.6; margin-bottom: 16px; opacity: 0.9; }
+.app-cta-box a {
+  display: inline-block; background: white; color: var(--green-deep);
+  font-family: 'Poppins', sans-serif; font-size: 13px; font-weight: 700;
+  padding: 12px 22px; border-radius: 50px; text-decoration: none; transition: all 0.2s;
+}
+.app-cta-box a:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+
+/* MOBILE TOC */
+.toc-mobile {
+  max-width: var(--max-w); margin: 0 auto 8px; padding: 0 32px;
+  font-family: 'Poppins', sans-serif;
+}
+.toc-mobile summary { cursor: pointer; font-size: 13px; font-weight: 600; color: var(--green-deep); padding: 12px 0; }
+@media (min-width: 961px) { .toc-mobile { display: none; } }
+
+/* ARTICLE FOOTER */
+.article-footer { max-width: var(--max-w); margin: 0 auto; padding: 0 32px 80px; }
+.related-section { border-top: 1px solid var(--border-soft); padding-top: 48px; }
+.section-label {
+  font-family: 'Poppins', sans-serif; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 10px;
+}
+.related-section h2 {
+  font-family: var(--display); font-weight: 300; font-size: 28px;
+  color: var(--ink); margin-bottom: 32px; font-variation-settings: "opsz" 72;
+}
+.related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 768px) { .related-grid { grid-template-columns: 1fr; } }
+.related-card {
+  padding: 24px; background: white; border-radius: 12px;
+  border: 1px solid var(--border-soft); text-decoration: none;
+  transition: border-color 0.2s, transform 0.2s; display: block;
+}
+.related-card:hover { border-color: var(--green-300); transform: translateY(-2px); }
+.related-cat { font-family: 'Poppins', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 10px; }
+.related-title { font-family: var(--display); font-weight: 400; font-size: 17px; color: var(--ink); line-height: 1.35; font-variation-settings: "opsz" 72; }
+
+/* FOOTER */
+footer.site-footer { padding: 56px 48px 28px; background: var(--wove-charcoal); color: rgba(255,255,255,0.55); font-family: 'Poppins', -apple-system, sans-serif; }
+.footer-inner { max-width: 960px; margin: 0 auto; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 56px; margin-bottom: 40px; }
+.footer-logo-img { height: 36px; object-fit: contain; filter: brightness(10); }
+.logo-placeholder.dark { display: inline-flex; align-items: center; justify-content: center; width: 120px; height: 44px; border: 2px dashed rgba(255,255,255,0.3); border-radius: 12px; font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.5); letter-spacing: 1.5px; background: rgba(255,255,255,0.05); }
+.footer-brand-name { margin-bottom: 12px; }
+.footer-brand p { font-size: 13px; line-height: 1.7; max-width: 300px; }
+.footer-col h4 { font-family: 'Poppins', sans-serif; color: white; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 18px; }
+.footer-col a { display: block; color: rgba(255,255,255,0.45); text-decoration: none; font-size: 13px; padding: 4px 0; transition: color 0.2s; }
+.footer-col a:hover { color: white; }
+.footer-bottom { padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 12px; text-align: center; color: rgba(255,255,255,0.3); }
+@media (max-width: 960px) { footer.site-footer { padding: 56px 24px 28px; } .footer-grid { grid-template-columns: 1fr; gap: 28px; } }
+@media (max-width: 768px) { .article-grid, .article-header, .hero-image, .toc-mobile, .article-footer, .affiliate-disclosure { padding-left: 20px; padding-right: 20px; } }
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav id="main-nav">
+  <a href="../../" class="nav-logo">
+    <img src="../../images/logo.png" alt="Wove" class="nav-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="logo-placeholder" style="display:none">LOGO</div>
+  </a>
+  <div class="nav-links">
+    <a href="../../about/">The Story</a>
+    <a href="../../#how-it-works">How It Works</a>
+    <a href="../../wovescore/">Wove Score</a>
+    <a href="../">Blog</a>
+    <a href="https://shopmy.us/shop/emmhemphill" target="_blank" rel="noopener">Shop Our Top Picks</a>
+    <a href="https://apps.apple.com/us/app/wove-score/id6755356871" class="nav-cta">Download App</a>
+  </div>
+</nav>
+
+<div class="affiliate-disclosure">
+  <p>This post contains affiliate links. If you purchase through them, I may earn a small commission at no cost to you — and only ever from brands I'd recommend regardless.</p>
+</div>
+
+<section class="article-header">
+  <div class="eyebrow">Fabric Guide</div>
+  <h1 class="article-title">Natural vs Synthetic Fabrics for Activewear</h1>
+  <p class="article-lede">Natural and synthetic fabrics each have real trade-offs for activewear. Here's an honest comparison so you can choose based on what actually matters to you.</p>
+  <div class="article-meta">
+    <span>By Emily Hemphill</span>
+    <span class="dot">·</span>
+    <span>5 min read</span>
+    <span class="dot">·</span>
+    <span>Published August 2026</span>
+  </div>
+</section>
+
+<div class="hero-image">
+  <figure>
+    <img src="/images/natural-vs-synthetic-fabrics-activewear.png" alt="Illustration for: Natural vs Synthetic Fabrics for Activewear" width="1200" height="520"
+         onerror="this.parentElement.style.background='var(--cream-200)';this.style.display='none'">
+  </figure>
+</div>
+
+<div class="article-grid">
+  <article class="article-body">
+<p class="drop-cap">The activewear industry has been built almost entirely on synthetic fabrics — polyester, nylon, spandex. But natural fibers like merino wool and organic cotton are increasingly present in athletic categories, and the comparison isn&rsquo;t as simple as &ldquo;synthetics win for performance.&rdquo; Here&rsquo;s an honest look at both sides.</p>
+<p><svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Side-by-side overview of natural vs synthetic fabric properties for activewear" style="width:100%;max-width:700px;display:block;margin:2rem auto;"><br />
+<rect width="700" height="200" fill="#EAF3DE" rx="16"/><br />
+<text x="350" y="36" font-family="Georgia,serif" font-size="16" font-weight="700" fill="#173404" text-anchor="middle">Natural vs. Synthetic: Activewear Overview</text><br />
+<rect x="25" y="55" width="305" height="125" fill="#173404" rx="12"/><br />
+<text x="178" y="80" font-family="Georgia,serif" font-size="14" fill="#F7F5EE" text-anchor="middle" font-weight="700">Natural Fibers</text><br />
+<text x="45" y="104" font-family="Georgia,serif" font-size="12" fill="#EAF3DE">✓ No microplastic shedding</text><br />
+<text x="45" y="122" font-family="Georgia,serif" font-size="12" fill="#EAF3DE">✓ Natural odor resistance</text><br />
+<text x="45" y="140" font-family="Georgia,serif" font-size="12" fill="#EAF3DE">✓ Temperature regulation</text><br />
+<text x="45" y="158" font-family="Georgia,serif" font-size="12" fill="#c8f7b5">↑ Higher cost per piece</text><br />
+<rect x="370" y="55" width="305" height="125" fill="#5a8a3c" rx="12"/><br />
+<text x="522" y="80" font-family="Georgia,serif" font-size="14" fill="#F7F5EE" text-anchor="middle" font-weight="700">Synthetic Fibers</text><br />
+<text x="390" y="104" font-family="Georgia,serif" font-size="12" fill="#EAF3DE">✓ Fast-drying performance</text><br />
+<text x="390" y="122" font-family="Georgia,serif" font-size="12" fill="#EAF3DE">✓ Affordable &amp; widely available</text><br />
+<text x="390" y="140" font-family="Georgia,serif" font-size="12" fill="#EAF3DE">✓ Stretch and durability</text><br />
+<text x="390" y="158" font-family="Georgia,serif" font-size="12" fill="#c8f7b5">↑ Sheds microplastics</text><br />
+</svg></p>
+<h2 id="performance-differences-to-know"><a class="toclink" href="#performance-differences-to-know">Performance Differences to Know</a></h2>
+<h3 id="moisture-management"><a class="toclink" href="#moisture-management">Moisture Management</a></h3>
+<p><strong>Synthetic:</strong> Polyester and nylon are hydrophobic — they don&rsquo;t absorb water. Sweat sits on the fiber surface and is spread across the fabric face, where it evaporates. This is what &ldquo;moisture-wicking&rdquo; means in the context of synthetics. It works well for steady-state sweat.</p>
+<p><strong>Merino:</strong> Merino absorbs moisture vapor into its fiber structure (it can hold up to 30% of its weight in moisture before feeling wet). This buffering effect means it doesn&rsquo;t feel as immediately clammy when you start sweating, and it keeps temperature more stable.</p>
+<p><strong>Cotton:</strong> Absorbs moisture but holds it — you end up wet and cold. Not ideal for high-intensity use. For low-intensity movement in warm weather, fine.</p>
+<h3 id="odor"><a class="toclink" href="#odor">Odor</a></h3>
+<p><strong>Synthetic:</strong> Polyester and nylon accumulate bacteria in their fiber structure because the fibers don&rsquo;t absorb moisture — the bacteria live in the humid environment between fiber and skin. Many synthetic activewear pieces develop persistent odor over time even after washing.</p>
+<p><strong>Merino:</strong> Naturally odor-resistant. The protein structure of merino fiber inhibits bacterial growth; the moisture-absorption cycle doesn&rsquo;t create the same bacterial habitat as synthetic. Many people wear merino base layers 3–4 times before washing.</p>
+<h3 id="drying-speed"><a class="toclink" href="#drying-speed">Drying Speed</a></h3>
+<p><strong>Synthetic:</strong> Dries very quickly because it doesn&rsquo;t absorb water — there&rsquo;s very little moisture in the fiber to evaporate.</p>
+<p><strong>Merino:</strong> Dries slower than synthetic but faster than cotton. The moisture-absorbed-into-fiber structure means it takes longer for that moisture to fully release.</p>
+<h3 id="temperature-regulation"><a class="toclink" href="#temperature-regulation">Temperature Regulation</a></h3>
+<p><strong>Merino:</strong> Regulates in both directions — insulates when cold, breathes and wicks when warm. It&rsquo;s used in both winter base layers and summer hiking shirts for this reason.</p>
+<p><strong>Synthetic:</strong> Performs well in a narrower temperature range. Excellent for warm conditions and high output; less comfortable when you stop moving and body heat isn&rsquo;t being generated.</p>
+<h2 id="comfort-breathability-and-stretch"><a class="toclink" href="#comfort-breathability-and-stretch">Comfort, Breathability, and Stretch</a></h2>
+<p><strong>Skin feel:</strong> Fine merino (15–18 micron) is extremely soft against skin. Many people who think they&rsquo;re sensitive to wool can wear fine merino comfortably. Quality polyester and nylon can be smooth and comfortable, but some people find synthetics feel clammy or sticky when sweating.</p>
+<p><strong>Breathability:</strong> Linen, merino, and loose-weave cotton breathe better than most synthetic knits. Within synthetics, loose-knit constructions breathe more than tight ones.</p>
+<p><strong>Stretch:</strong> Synthetic fabrics, especially nylon, have more inherent stretch than most natural fibers. Spandex (elastane) is added to natural fiber garments to achieve meaningful stretch. A natural fiber activewear piece typically needs some synthetic content for form-fitting use.</p>
+<p><svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Comparison chart of natural and synthetic fibers across six activewear performance dimensions" style="width:100%;max-width:700px;display:block;margin:2rem auto;"><br />
+<rect width="700" height="240" fill="#EAF3DE" rx="16"/><br />
+<text x="350" y="32" font-family="Georgia,serif" font-size="15" font-weight="700" fill="#173404" text-anchor="middle">Activewear Fabric Performance Matrix</text><br />
+<rect x="25" y="46" width="650" height="28" fill="#173404" rx="6"/><br />
+<text x="130" y="65" font-family="Georgia,serif" font-size="11" fill="#F7F5EE" font-weight="700" text-anchor="middle">Property</text><br />
+<text x="270" y="65" font-family="Georgia,serif" font-size="11" fill="#F7F5EE" font-weight="700" text-anchor="middle">Merino</text><br />
+<text x="390" y="65" font-family="Georgia,serif" font-size="11" fill="#F7F5EE" font-weight="700" text-anchor="middle">Polyester</text><br />
+<text x="510" y="65" font-family="Georgia,serif" font-size="11" fill="#F7F5EE" font-weight="700" text-anchor="middle">Org. Cotton</text><br />
+<text x="630" y="65" font-family="Georgia,serif" font-size="11" fill="#F7F5EE" font-weight="700" text-anchor="middle">Nylon</text><br />
+<text x="130" y="95" font-family="Georgia,serif" font-size="11" fill="#173404" text-anchor="middle">Odor Resistance</text><br />
+<text x="270" y="95" font-family="Georgia,serif" font-size="11" fill="#5a8a3c" text-anchor="middle">Excellent</text><br />
+<text x="390" y="95" font-family="Georgia,serif" font-size="11" fill="#c0392b" text-anchor="middle">Poor</text><br />
+<text x="510" y="95" font-family="Georgia,serif" font-size="11" fill="#8aab6e" text-anchor="middle">Good</text><br />
+<text x="630" y="95" font-family="Georgia,serif" font-size="11" fill="#e67e22" text-anchor="middle">Moderate</text><br />
+<line x1="25" y1="105" x2="675" y2="105" stroke="#ddd" stroke-width="1"/><br />
+<text x="130" y="124" font-family="Georgia,serif" font-size="11" fill="#173404" text-anchor="middle">Microplastic Shed</text><br />
+<text x="270" y="124" font-family="Georgia,serif" font-size="11" fill="#5a8a3c" text-anchor="middle">None (not plastic)</text><br />
+<text x="390" y="124" font-family="Georgia,serif" font-size="11" fill="#c0392b" text-anchor="middle">Moderate-High</text><br />
+<text x="510" y="124" font-family="Georgia,serif" font-size="11" fill="#5a8a3c" text-anchor="middle">None (not plastic)</text><br />
+<text x="630" y="124" font-family="Georgia,serif" font-size="11" fill="#c0392b" text-anchor="middle">Moderate</text><br />
+<line x1="25" y1="134" x2="675" y2="134" stroke="#ddd" stroke-width="1"/><br />
+<text x="130" y="153" font-family="Georgia,serif" font-size="11" fill="#173404" text-anchor="middle">Drying Speed</text><br />
+<text x="270" y="153" font-family="Georgia,serif" font-size="11" fill="#8aab6e" text-anchor="middle">Good</text><br />
+<text x="390" y="153" font-family="Georgia,serif" font-size="11" fill="#5a8a3c" text-anchor="middle">Excellent</text><br />
+<text x="510" y="153" font-family="Georgia,serif" font-size="11" fill="#c0392b" text-anchor="middle">Slow</text><br />
+<text x="630" y="153" font-family="Georgia,serif" font-size="11" fill="#5a8a3c" text-anchor="middle">Excellent</text><br />
+<line x1="25" y1="163" x2="675" y2="163" stroke="#ddd" stroke-width="1"/><br />
+<text x="130" y="182" font-family="Georgia,serif" font-size="11" fill="#173404" text-anchor="middle">Temp Regulation</text><br />
+<text x="270" y="182" font-family="Georgia,serif" font-size="11" fill="#5a8a3c" text-anchor="middle">Excellent</text><br />
+<text x="390" y="182" font-family="Georgia,serif" font-size="11" fill="#e67e22" text-anchor="middle">Limited</text><br />
+<text x="510" y="182" font-family="Georgia,serif" font-size="11" fill="#8aab6e" text-anchor="middle">Good</text><br />
+<text x="630" y="182" font-family="Georgia,serif" font-size="11" fill="#e67e22" text-anchor="middle">Limited</text><br />
+<line x1="25" y1="192" x2="675" y2="192" stroke="#ddd" stroke-width="1"/><br />
+<text x="130" y="211" font-family="Georgia,serif" font-size="11" fill="#173404" text-anchor="middle">PFAS Concern</text><br />
+<text x="270" y="211" font-family="Georgia,serif" font-size="11" fill="#5a8a3c" text-anchor="middle">Very Low</text><br />
+<text x="390" y="211" font-family="Georgia,serif" font-size="11" fill="#8aab6e" text-anchor="middle">Low-Mod (check)</text><br />
+<text x="510" y="211" font-family="Georgia,serif" font-size="11" fill="#5a8a3c" text-anchor="middle">Very Low</text><br />
+<text x="630" y="211" font-family="Georgia,serif" font-size="11" fill="#8aab6e" text-anchor="middle">Low-Mod (check)</text><br />
+</svg></p>
+<h2 id="microplastic-and-pfas-considerations"><a class="toclink" href="#microplastic-and-pfas-considerations">Microplastic and PFAS Considerations</a></h2>
+<h3 id="microplastics"><a class="toclink" href="#microplastics">Microplastics</a></h3>
+<p>Natural fibers don&rsquo;t shed microplastics. Synthetic fibers shed polymer particles with every wash. For activewear — washed frequently — this is one of the highest-impact variables in cumulative microplastic output from a wardrobe. Switching your most-washed synthetic activewear to merino or organic cotton is one of the single highest-impact fabric choices you can make.</p>
+<h3 id="pfas"><a class="toclink" href="#pfas">PFAS</a></h3>
+<p>PFAS concerns in activewear come from chemical treatments — water resistance, stain resistance — not from the fiber itself. A plain merino base layer has no PFAS concern. A &ldquo;stain-resistant&rdquo; nylon running jacket might. Look for PFAS-free or bluesign® certified claims on any activewear that carries water-resistance or stain-resistance claims.</p>
+<h2 id="how-to-choose-based-on-use-case"><a class="toclink" href="#how-to-choose-based-on-use-case">How to Choose Based on Use Case</a></h2>
+<p><strong>Running (road or trail):</strong> If you prioritize drying speed and low weight, certified performance synthetics work well. If you want natural odor resistance and multi-day wear, merino is the better choice. Many trail runners use merino base layers with certified synthetic shells.</p>
+<p><strong>Yoga and Pilates:</strong> Low to moderate sweat levels mean the drying-speed advantage of synthetics matters less. Merino, bamboo viscose, and organic cotton with spandex are all comfortable choices.</p>
+<p><strong>HIIT and gym work:</strong> High sweat output favors synthetic&rsquo;s drying speed. For these sessions, certified bluesign® synthetics used with a Guppyfriend bag is a reasonable approach.</p>
+<p><strong>Hiking and outdoor:</strong> Merino is the consensus top performer for multi-activity outdoor use. Temperature regulation, odor resistance, and comfort across conditions are its strengths.</p>
+<h2 id="faq"><a class="toclink" href="#faq">FAQ</a></h2>
+<p><strong>Can I replace all my synthetic activewear with natural fibers?</strong><br />
+Gradually, yes. The main limitation is cost — quality merino activewear costs more than comparable synthetics. Focus the switch on your most-frequently-worn pieces first.</p>
+<p><strong>Is there natural activewear with meaningful stretch?</strong><br />
+Yes. Organic cotton + 5% spandex is the most common. Merino knits have some natural stretch; blended with a small % of nylon or spandex, they offer more.</p>
+<p><strong>Does natural fiber activewear last as long?</strong><br />
+Quality merino is durable if cared for properly. It doesn&rsquo;t tolerate rough machine washing as well as synthetics — gentle cycles and air drying extend its life significantly.</p>
+<p><strong>Are PFAS common in all activewear?</strong><br />
+No. PFAS are associated with water-resistant or stain-resistant treatments. Plain performance base layers and leggings without these claims are lower concern.</p>
+<hr />
+<p><em>Related reading: <a href="https://woveapp.com/blog/best-natural-fiber-workout-clothes">Best Natural Fiber Workout Clothes</a> · <a href="https://woveapp.com/blog/pfas-in-activewear">PFAS in Activewear</a></em></p>
+<hr />
+<p><strong>Scan activewear with Wove.</strong> <a href="https://apps.apple.com/us/app/wove-score/id6755356871">Download Wove</a> and get an instant fiber and chemical grade on any piece of activewear.</p>
+<hr />
+<h3 id="sources"><a class="toclink" href="#sources">Sources</a></h3>
+<ul>
+<li>Textile Exchange: Preferred Fiber and Materials Report 2025</li>
+<li>Wool Research Organisation: Merino Performance Properties</li>
+<li>Patagonia: Microplastics and Fabric Research</li>
+<li>Bluesign Technologies: Certified Activewear Standards</li>
+</ul>
+  </article>
+
+  <aside class="sidebar">
+    <div class="app-cta-box">
+      <p>Check any fabric's safety score — microplastics, PFAS, and more — before you buy.</p>
+      <a href="https://apps.apple.com/us/app/wove-score/id6755356871" target="_blank" rel="noopener">
+        Get the Wove App →
+      </a>
+    </div>
+  </aside>
+</div>
+
+<div class="article-footer">
+  <section class="related-section">
+    <div class="section-label">Keep Reading</div>
+    <h2>Related guides from Wove</h2>
+    <div class="related-grid">
+      <a href="/blog/best-low-tox-summer-fabrics/" class="related-card">
+        <div class="related-cat">Fabric Guide</div>
+        <div class="related-title">The Best Low-Tox Summer Fabrics</div>
+      </a>
+      <a href="/blog/linen-vs-cotton-vs-hemp-summer/" class="related-card">
+        <div class="related-cat">Fabric Guide</div>
+        <div class="related-title">Linen vs. Cotton vs. Hemp for Summer</div>
+      </a>
+
+    </div>
+  </section>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-name">
+          <img src="../../images/logo.png" alt="Wove" class="footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="logo-placeholder dark" style="display:none">LOGO</div>
+        </div>
+        <p>Shop consciously. Live comfortably. Wove brings transparency to the fashion industry — no ads, no brand deals, just the truth about your fabrics.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Project</h4>
+        <a href="../../about/">The Story</a>
+        <a href="../../wovescore/">Wove Score</a>
+        <a href="../../contact/">Contact</a>
+        <a href="https://shopmy.us/shop/emmhemphill" target="_blank" rel="noopener">Shop Our Top Picks</a>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <a href="../">Blog</a>
+        <a href="../../press/">Press</a>
+        <a href="../../privacypolicy/">Privacy Policy</a>
+        <a href="../../terms/">Terms of Use</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Wove LLC. Shop consciously. Live comfortably.</div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); });
+
+  const bar = document.getElementById('progressBar');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = (window.scrollY / (doc.scrollHeight - doc.clientHeight)) * 100;
+    bar.style.width = scrolled + '%';
+  });
+
+  document.querySelectorAll('a[href*="apps.apple.com"]').forEach(el => {
+    el.addEventListener('click', () => gtag('event', 'app_store_click', { location: 'natural-vs-synthetic-fabrics-activewear' }));
+  });
+</script>
+</body>
+</html>

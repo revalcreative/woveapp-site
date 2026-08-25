@@ -6,7 +6,7 @@
   "description": "Natural and synthetic fabrics each have real trade-offs for activewear. Here's an honest comparison so you can choose based on what actually matters to you.",
   "lede": "Natural and synthetic fabrics each have real trade-offs for activewear. Here's an honest comparison so you can choose based on what actually matters to you.",
   "eyebrow": "Fabric Guide",
-  "excerpt": "The activewear industry has been built almost entirely on synthetic fabrics — polyester, nylon, spandex. But natural fibers like merino wool and organic cotton …",
+  "excerpt": "The activewear industry has been built almost entirely on synthetic fabrics \u2014 polyester, nylon, spandex. But natural fibers like merino wool and organic cotton \u2026",
   "hero_alt": "Illustration for: Natural vs Synthetic Fabrics for Activewear",
   "related_posts": [
     {
@@ -20,5 +20,6 @@
       "cat": "Fabric Guide"
     }
   ],
-  "published": false
+  "published": true,
+  "published_at": "2026-08-25"
 }
