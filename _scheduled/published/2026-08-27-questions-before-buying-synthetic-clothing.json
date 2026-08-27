@@ -3,10 +3,10 @@
   "date": "2026-08-27",
   "category": "shopping",
   "title": "Questions to Ask Before Buying Synthetic Clothing",
-  "description": "Synthetic fabrics deserve a closer look before you buy. Here are the questions that help you understand what you're actually getting — and what you're not.",
-  "lede": "Synthetic fabrics deserve a closer look before you buy. Here are the questions that help you understand what you're actually getting — and what you're not.",
+  "description": "Synthetic fabrics deserve a closer look before you buy. Here are the questions that help you understand what you're actually getting \u2014 and what you're not.",
+  "lede": "Synthetic fabrics deserve a closer look before you buy. Here are the questions that help you understand what you're actually getting \u2014 and what you're not.",
   "eyebrow": "Shopping Guide",
-  "excerpt": "Synthetic fabrics make up the majority of what's sold in most stores — and that's not necessarily a problem. But they come with trade-offs worth understanding b…",
+  "excerpt": "Synthetic fabrics make up the majority of what's sold in most stores \u2014 and that's not necessarily a problem. But they come with trade-offs worth understanding b\u2026",
   "hero_alt": "Illustration for: Questions to Ask Before Buying Synthetic Clothing",
   "related_posts": [
     {
@@ -20,5 +20,6 @@
       "cat": "Shopping Guide"
     }
   ],
-  "published": false
+  "published": true,
+  "published_at": "2026-08-27"
 }
