@@ -6,7 +6,7 @@
   "description": "Swimwear and beachwear can carry PFAS treatments that accelerate off-gassing in chlorine and heat. Here's how to find PFAS-free options that still perform.",
   "lede": "Swimwear and beachwear can carry PFAS treatments that accelerate off-gassing in chlorine and heat. Here's how to find PFAS-free options that still perform.",
   "eyebrow": "PFAS & Fabric Safety",
-  "excerpt": "Most swimwear is made from synthetic fabrics — nylon, polyester, spandex — that don't inherently require PFAS. The concern comes from additional performance tre…",
+  "excerpt": "Most swimwear is made from synthetic fabrics \u2014 nylon, polyester, spandex \u2014 that don't inherently require PFAS. The concern comes from additional performance tre\u2026",
   "hero_alt": "Illustration for: How to Choose PFAS-Free Swimwear and Beach Cover-Ups",
   "related_posts": [
     {
@@ -20,5 +20,6 @@
       "cat": "PFAS & Fabric Safety"
     }
   ],
-  "published": false
+  "published": true,
+  "published_at": "2026-09-01"
 }
