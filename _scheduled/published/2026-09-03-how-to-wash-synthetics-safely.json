@@ -6,7 +6,7 @@
   "description": "Every time you wash synthetic clothing, microplastics enter the water supply. Here's how to reduce shedding without getting rid of clothes you already own.",
   "lede": "Every time you wash synthetic clothing, microplastics enter the water supply. Here's how to reduce shedding without getting rid of clothes you already own.",
   "eyebrow": "Microplastics",
-  "excerpt": "Most people know synthetic fabrics shed microplastics — but not everyone knows that how you wash them can significantly affect how much they shed. Small changes…",
+  "excerpt": "Most people know synthetic fabrics shed microplastics \u2014 but not everyone knows that how you wash them can significantly affect how much they shed. Small changes\u2026",
   "hero_alt": "Illustration for: How to Wash Synthetics Safely and Reduce Microfiber Shedding",
   "related_posts": [
     {
@@ -20,5 +20,6 @@
       "cat": "Microplastics"
     }
   ],
-  "published": false
+  "published": true,
+  "published_at": "2026-09-03"
 }
