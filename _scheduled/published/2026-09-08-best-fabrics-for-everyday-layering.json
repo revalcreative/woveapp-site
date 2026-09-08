@@ -6,7 +6,7 @@
   "description": "Good layering fabrics work across temperature changes, don't bulk up, and feel comfortable all day. Here's which fibers do this best for everyday wear.",
   "lede": "Good layering fabrics work across temperature changes, don't bulk up, and feel comfortable all day. Here's which fibers do this best for everyday wear.",
   "eyebrow": "Fabric Guide",
-  "excerpt": "Everyday layering — not outdoor technical layering — is about moving through temperature changes throughout the day: an air-conditioned office, an outdoor lunch…",
+  "excerpt": "Everyday layering \u2014 not outdoor technical layering \u2014 is about moving through temperature changes throughout the day: an air-conditioned office, an outdoor lunch\u2026",
   "hero_alt": "Illustration for: Best Fabrics for Everyday Layering",
   "related_posts": [
     {
@@ -20,5 +20,6 @@
       "cat": "Fabric Guide"
     }
   ],
-  "published": false
+  "published": true,
+  "published_at": "2026-09-08"
 }
