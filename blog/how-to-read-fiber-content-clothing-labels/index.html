@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>How to Read Fiber Content on Clothing Labels | Wove</title>
+<meta name="description" content="The fiber content label tells you what your clothes are made of — but knowing what those numbers and names mean takes a bit of decoding. Here's how to read them." />
+<link rel="canonical" href="https://woveapp.com/blog/how-to-read-fiber-content-clothing-labels/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://woveapp.com/blog/how-to-read-fiber-content-clothing-labels/">
+<meta property="og:title" content="How to Read Fiber Content on Clothing Labels | Wove">
+<meta property="og:description" content="The fiber content label tells you what your clothes are made of — but knowing what those numbers and names mean takes a bit of decoding. Here's how to read them.">
+<meta property="og:image" content="https://woveapp.com/images/how-to-read-fiber-content-clothing-labels.png">
+<meta property="og:site_name" content="Wove">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to Read Fiber Content on Clothing Labels | Wove">
+<meta name="twitter:description" content="The fiber content label tells you what your clothes are made of — but knowing what those numbers and names mean takes a bit of decoding. Here's how to read them.">
+<meta name="twitter:image" content="https://woveapp.com/images/how-to-read-fiber-content-clothing-labels.png">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-503P7ZDSXZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-503P7ZDSXZ');
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream-50: #FBF7ED;
+  --cream-100: #F5EFE2;
+  --cream-200: #ECE3CE;
+  --cream-300: #DDD0B4;
+  --green-deep: #2D4A3E;
+  --green-700: #3D5C4F;
+  --green-500: #6B8B7B;
+  --green-300: #A4BCB0;
+  --green-100: #DCE6DF;
+  --terracotta: #B8765A;
+  --terracotta-soft: #D9A48E;
+  --ink: #1F1A14;
+  --ink-soft: #524A3D;
+  --ink-mute: #877D6A;
+  --border: #D9CFB8;
+  --border-soft: #E8DFCA;
+  --display: 'Fraunces', Georgia, serif;
+  --body: 'Lora', Georgia, serif;
+  --max-w: 1240px;
+  --wove-green: #5B6B54;
+  --wove-green-dark: #4A5A42;
+  --wove-green-deep-nav: #3D4D36;
+  --wove-cream: #F0EBE3;
+  --wove-charcoal: #2A2A2A;
+  --wove-text: #333333;
+  --wove-border: rgba(0,0,0,0.06);
+  --radius-full: 50px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+body {
+  font-family: var(--body);
+  background: var(--cream-50);
+  color: var(--ink);
+  line-height: 1.7;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+}
+.progress-bar {
+  position: fixed; top: 68px; left: 0;
+  height: 3px; width: 0%;
+  background: var(--green-deep);
+  z-index: 99; transition: width 0.1s ease-out;
+}
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(240,235,227,0.92);
+  backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  padding: 0 48px; height: 68px;
+  display: flex; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid var(--wove-border);
+  transition: box-shadow 0.3s;
+  font-family: 'Poppins', -apple-system, sans-serif;
+}
+nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.04); }
+.nav-logo { display: flex; align-items: center; text-decoration: none; }
+.nav-logo-img { height: 40px; object-fit: contain; }
+.logo-placeholder {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 120px; height: 44px; border: 2px dashed var(--wove-green); border-radius: 12px;
+  font-size: 11px; font-weight: 700; color: var(--wove-green);
+  letter-spacing: 1.5px; background: rgba(91,107,84,0.05);
+}
+.nav-links { display: flex; align-items: center; gap: 32px; }
+.nav-links a { text-decoration: none; color: var(--wove-text); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+.nav-links a:hover { color: var(--wove-green-dark); }
+.nav-cta {
+  background: var(--wove-green) !important; color: white !important;
+  padding: 10px 26px; border-radius: var(--radius-full);
+  font-weight: 600 !important; font-size: 13px !important; transition: all 0.25s !important;
+}
+.nav-cta:hover { background: var(--wove-green-deep-nav) !important; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(91,107,84,0.25); }
+@media (max-width: 960px) { nav { padding: 0 24px; } .nav-links a:not(.nav-cta) { display: none; } }
+
+/* AFFILIATE DISCLOSURE */
+.affiliate-disclosure {
+  max-width: var(--max-w); margin: 0 auto; padding: 80px 32px 0;
+  font-family: 'Poppins', sans-serif;
+}
+.affiliate-disclosure p {
+  font-size: 13px; color: var(--ink-mute); line-height: 1.6;
+  padding: 12px 16px; background: var(--cream-100);
+  border-radius: 6px; border-left: 3px solid var(--border); margin: 0;
+}
+
+/* ARTICLE HEADER */
+.article-header { max-width: var(--max-w); margin: 0 auto; padding: 32px 32px 40px; }
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: 'Poppins', sans-serif; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--terracotta);
+  margin-bottom: 20px;
+}
+.article-title {
+  font-family: var(--display); font-weight: 300; font-size: clamp(32px, 5vw, 54px);
+  color: var(--ink); line-height: 1.12; margin-bottom: 28px;
+  font-variation-settings: "opsz" 72;
+}
+.article-title em { font-style: italic; color: var(--green-deep); }
+.article-lede {
+  font-size: clamp(16px, 2vw, 20px); color: var(--ink-soft); line-height: 1.65;
+  max-width: 800px; margin-bottom: 24px; font-family: 'Poppins', sans-serif; font-weight: 300;
+}
+.article-meta {
+  display: flex; align-items: center; gap: 10px;
+  font-family: 'Poppins', sans-serif; font-size: 13px; color: var(--ink-mute);
+}
+.dot { opacity: 0.4; }
+
+/* HERO IMAGE */
+.hero-image { max-width: var(--max-w); margin: 0 auto 16px; padding: 0 32px; }
+.hero-image figure { border-radius: 20px; overflow: hidden; background: var(--cream-100); line-height: 0; }
+.hero-image img, .hero-image svg { width: 100%; height: auto; display: block; }
+
+/* ARTICLE GRID */
+.article-grid {
+  max-width: var(--max-w); margin: 0 auto;
+  display: grid; grid-template-columns: 1fr 280px; gap: 56px;
+  padding: 0 32px 80px; align-items: start;
+}
+@media (max-width: 960px) { .article-grid { grid-template-columns: 1fr; } }
+.article-body { min-width: 0; }
+.article-body h2 {
+  font-family: var(--display); font-weight: 400; font-size: clamp(22px, 3vw, 30px);
+  color: var(--ink); line-height: 1.2; margin: 48px 0 18px;
+  font-variation-settings: "opsz" 72;
+}
+.article-body h3 {
+  font-family: 'Poppins', sans-serif; font-size: 17px; font-weight: 600;
+  color: var(--green-deep); margin: 32px 0 12px;
+}
+.article-body p { margin-bottom: 22px; }
+.article-body ul, .article-body ol { padding-left: 24px; margin-bottom: 22px; }
+.article-body li { margin-bottom: 8px; }
+.article-body a { color: var(--green-deep); text-decoration: underline; text-underline-offset: 3px; }
+.article-body strong { font-weight: 600; color: var(--ink); }
+.drop-cap::first-letter {
+  float: left; font-family: var(--display); font-size: 68px; line-height: 0.82;
+  margin: 8px 14px 0 0; color: var(--green-deep); font-weight: 300;
+  font-variation-settings: "opsz" 144;
+}
+
+/* CALLOUT BOXES */
+.callout {
+  background: var(--cream-100); border-left: 4px solid var(--green-deep);
+  border-radius: 0 12px 12px 0; padding: 20px 24px; margin: 32px 0;
+}
+.callout.terracotta { border-color: var(--terracotta); }
+.callout p { margin-bottom: 0; font-size: 16px; }
+
+/* TABLE */
+.article-body table { width: 100%; border-collapse: collapse; margin: 32px 0; font-size: 15px; font-family: 'Poppins', sans-serif; }
+.article-body th { background: var(--green-deep); color: white; padding: 10px 14px; text-align: left; font-weight: 600; font-size: 13px; }
+.article-body td { padding: 10px 14px; border-bottom: 1px solid var(--border-soft); }
+.article-body tr:nth-child(even) td { background: var(--cream-100); }
+
+/* SIDEBAR */
+.sidebar { position: sticky; top: 92px; }
+.toc-box {
+  background: white; border-radius: 16px; padding: 24px;
+  border: 1px solid var(--border-soft); margin-bottom: 24px;
+}
+.toc-box h4 { font-family: 'Poppins', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-mute); margin-bottom: 14px; }
+.toc-list { list-style: none; padding: 0; }
+.toc-list li { padding: 5px 0; }
+.toc-list a { font-family: 'Poppins', sans-serif; font-size: 13px; color: var(--ink-soft); text-decoration: none; line-height: 1.5; }
+.toc-list a:hover { color: var(--green-deep); }
+
+/* APP CTA SIDEBAR */
+.app-cta-box {
+  background: var(--green-deep); border-radius: 16px; padding: 24px;
+  text-align: center; color: white;
+}
+.app-cta-box p { font-family: 'Poppins', sans-serif; font-size: 14px; line-height: 1.6; margin-bottom: 16px; opacity: 0.9; }
+.app-cta-box a {
+  display: inline-block; background: white; color: var(--green-deep);
+  font-family: 'Poppins', sans-serif; font-size: 13px; font-weight: 700;
+  padding: 12px 22px; border-radius: 50px; text-decoration: none; transition: all 0.2s;
+}
+.app-cta-box a:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+
+/* MOBILE TOC */
+.toc-mobile {
+  max-width: var(--max-w); margin: 0 auto 8px; padding: 0 32px;
+  font-family: 'Poppins', sans-serif;
+}
+.toc-mobile summary { cursor: pointer; font-size: 13px; font-weight: 600; color: var(--green-deep); padding: 12px 0; }
+@media (min-width: 961px) { .toc-mobile { display: none; } }
+
+/* ARTICLE FOOTER */
+.article-footer { max-width: var(--max-w); margin: 0 auto; padding: 0 32px 80px; }
+.related-section { border-top: 1px solid var(--border-soft); padding-top: 48px; }
+.section-label {
+  font-family: 'Poppins', sans-serif; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 10px;
+}
+.related-section h2 {
+  font-family: var(--display); font-weight: 300; font-size: 28px;
+  color: var(--ink); margin-bottom: 32px; font-variation-settings: "opsz" 72;
+}
+.related-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 768px) { .related-grid { grid-template-columns: 1fr; } }
+.related-card {
+  padding: 24px; background: white; border-radius: 12px;
+  border: 1px solid var(--border-soft); text-decoration: none;
+  transition: border-color 0.2s, transform 0.2s; display: block;
+}
+.related-card:hover { border-color: var(--green-300); transform: translateY(-2px); }
+.related-cat { font-family: 'Poppins', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--terracotta); margin-bottom: 10px; }
+.related-title { font-family: var(--display); font-weight: 400; font-size: 17px; color: var(--ink); line-height: 1.35; font-variation-settings: "opsz" 72; }
+
+/* FOOTER */
+footer.site-footer { padding: 56px 48px 28px; background: var(--wove-charcoal); color: rgba(255,255,255,0.55); font-family: 'Poppins', -apple-system, sans-serif; }
+.footer-inner { max-width: 960px; margin: 0 auto; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 56px; margin-bottom: 40px; }
+.footer-logo-img { height: 36px; object-fit: contain; filter: brightness(10); }
+.logo-placeholder.dark { display: inline-flex; align-items: center; justify-content: center; width: 120px; height: 44px; border: 2px dashed rgba(255,255,255,0.3); border-radius: 12px; font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.5); letter-spacing: 1.5px; background: rgba(255,255,255,0.05); }
+.footer-brand-name { margin-bottom: 12px; }
+.footer-brand p { font-size: 13px; line-height: 1.7; max-width: 300px; }
+.footer-col h4 { font-family: 'Poppins', sans-serif; color: white; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 18px; }
+.footer-col a { display: block; color: rgba(255,255,255,0.45); text-decoration: none; font-size: 13px; padding: 4px 0; transition: color 0.2s; }
+.footer-col a:hover { color: white; }
+.footer-bottom { padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08); font-size: 12px; text-align: center; color: rgba(255,255,255,0.3); }
+@media (max-width: 960px) { footer.site-footer { padding: 56px 24px 28px; } .footer-grid { grid-template-columns: 1fr; gap: 28px; } }
+@media (max-width: 768px) { .article-grid, .article-header, .hero-image, .toc-mobile, .article-footer, .affiliate-disclosure { padding-left: 20px; padding-right: 20px; } }
+</style>
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<nav id="main-nav">
+  <a href="../../" class="nav-logo">
+    <img src="../../images/logo.png" alt="Wove" class="nav-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="logo-placeholder" style="display:none">LOGO</div>
+  </a>
+  <div class="nav-links">
+    <a href="../../about/">The Story</a>
+    <a href="../../#how-it-works">How It Works</a>
+    <a href="../../wovescore/">Wove Score</a>
+    <a href="../">Blog</a>
+    <a href="https://shopmy.us/shop/emmhemphill" target="_blank" rel="noopener">Shop Our Top Picks</a>
+    <a href="https://apps.apple.com/us/app/wove-score/id6755356871" class="nav-cta">Download App</a>
+  </div>
+</nav>
+
+<div class="affiliate-disclosure">
+  <p>This post contains affiliate links. If you purchase through them, I may earn a small commission at no cost to you — and only ever from brands I'd recommend regardless.</p>
+</div>
+
+<section class="article-header">
+  <div class="eyebrow">Shopping Guide</div>
+  <h1 class="article-title">How to Read Fiber Content on Clothing Labels</h1>
+  <p class="article-lede">The fiber content label tells you what your clothes are made of — but knowing what those numbers and names mean takes a bit of decoding. Here's how to read them.</p>
+  <div class="article-meta">
+    <span>By Emily Hemphill</span>
+    <span class="dot">·</span>
+    <span>5 min read</span>
+    <span class="dot">·</span>
+    <span>Published September 2026</span>
+  </div>
+</section>
+
+<div class="hero-image">
+  <figure>
+    <img src="/images/how-to-read-fiber-content-clothing-labels.png" alt="Illustration for: How to Read Fiber Content on Clothing Labels" width="1200" height="520"
+         onerror="this.parentElement.style.background='var(--cream-200)';this.style.display='none'">
+  </figure>
+</div>
+
+<div class="article-grid">
+  <article class="article-body">
+<p class="drop-cap">Every garment sold in the United States is required by law to have a fiber content label. Most people glance at it and move on. Knowing how to actually read it — what the percentages mean, what the fiber names tell you, and what the label leaves out — changes how you shop.</p>
+<p><svg viewBox="0 0 700 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Annotated clothing label showing fiber content, care instructions, and country of origin sections" style="width:100%;max-width:700px;display:block;margin:2rem auto;"><br />
+<rect width="700" height="210" fill="#EAF3DE" rx="16"/><br />
+<rect x="200" y="25" width="300" height="165" fill="#F7F5EE" stroke="#173404" stroke-width="2" rx="6"/><br />
+<text x="350" y="55" font-family="Georgia,serif" font-size="13" font-weight="700" fill="#173404" text-anchor="middle">WOVE BRAND</text><br />
+<line x1="220" y1="64" x2="480" y2="64" stroke="#ccc" stroke-width="1"/><br />
+<text x="230" y="85" font-family="Georgia,serif" font-size="12" fill="#173404" font-weight="700">Content:</text><br />
+<text x="230" y="103" font-family="Georgia,serif" font-size="12" fill="#173404">55% Linen</text><br />
+<text x="230" y="119" font-family="Georgia,serif" font-size="12" fill="#173404">42% Organic Cotton</text><br />
+<text x="230" y="135" font-family="Georgia,serif" font-size="12" fill="#173404">3% Spandex</text><br />
+<line x1="220" y1="144" x2="480" y2="144" stroke="#ccc" stroke-width="1"/><br />
+<text x="230" y="160" font-family="Georgia,serif" font-size="11" fill="#555">Machine wash cold · Made in Portugal</text><br />
+<rect x="502" y="65" width="140" height="42" fill="#173404" rx="6"/><br />
+<text x="572" y="82" font-family="Georgia,serif" font-size="10" fill="#F7F5EE" text-anchor="middle">Fibers listed</text><br />
+<text x="572" y="96" font-family="Georgia,serif" font-size="10" fill="#F7F5EE" text-anchor="middle">highest % first</text><br />
+<line x1="502" y1="86" x2="480" y2="100" stroke="#173404" stroke-width="1.5"/><br />
+<rect x="502" y="125" width="140" height="42" fill="#5a8a3c" rx="6"/><br />
+<text x="572" y="142" font-family="Georgia,serif" font-size="10" fill="#F7F5EE" text-anchor="middle">Small % = stretch</text><br />
+<text x="572" y="156" font-family="Georgia,serif" font-size="10" fill="#F7F5EE" text-anchor="middle">or structure aid</text><br />
+<line x1="502" y1="140" x2="480" y2="133" stroke="#5a8a3c" stroke-width="1.5"/><br />
+</svg></p>
+<h2 id="where-to-find-fiber-content"><a class="toclink" href="#where-to-find-fiber-content">Where to Find Fiber Content</a></h2>
+<p>In the United States, the Textile Fiber Products Identification Act requires all garments to include a label listing fiber content by percentage, the country of manufacture, and the manufacturer&rsquo;s name or RN (Registered Number). This label is typically sewn into the collar, side seam, or waistband.</p>
+<p>Some brands have moved to &ldquo;tagless&rdquo; printing directly on the interior of the garment — the same information is required; it&rsquo;s just printed rather than sewn.</p>
+<p>For garments sold online, fiber content is required to be listed on the product page. This is the same information as the physical label.</p>
+<h2 id="how-to-decode-common-materials"><a class="toclink" href="#how-to-decode-common-materials">How to Decode Common Materials</a></h2>
+<p>The label lists fibers from highest to lowest percentage. Here&rsquo;s what the most common names mean:</p>
+<p><strong>Cotton:</strong> Natural plant fiber. Soft, breathable, absorbent. &ldquo;Cotton&rdquo; alone on a label doesn&rsquo;t specify conventional or organic — look for GOTS certification for organic cotton assurance.</p>
+<p><strong>Polyester:</strong> Synthetic petroleum-derived polymer. Durable, moisture-wicking, wrinkle-resistant. Sheds microplastics during washing.</p>
+<p><strong>Nylon:</strong> Synthetic polymer, often used for strength and stretch in outerwear, swimwear, and activewear. Also sheds microplastics.</p>
+<p><strong>Wool:</strong> Natural protein fiber from sheep. &ldquo;Wool&rdquo; can mean many grades — merino (fine, soft), Shetland (medium, textured), or commodity wool (coarser). The label won&rsquo;t tell you the micron count.</p>
+<p><strong>Merino Wool:</strong> Fine-grade wool, typically listed separately from generic &ldquo;wool&rdquo; when the brand wants to signal quality. Softer and higher-performing than standard wool.</p>
+<p><strong>Linen:</strong> Natural fiber from flax. Breathable, durable, slightly textured. Gets softer with washing.</p>
+<p><strong>Silk:</strong> Natural protein fiber, smooth and lightweight. May be listed as &ldquo;silk&rdquo; or by specific type (charmeuse, habotai, chiffon — these are weave types, not separate fibers).</p>
+<p><strong>Spandex / Elastane / Lycra®:</strong> Synthetic elastic fiber. Usually present in small percentages (2–10%) to add stretch. Lycra® is DuPont&rsquo;s brand name for elastane.</p>
+<p><strong>Rayon / Viscose:</strong> Semi-synthetic fiber made from cellulose (usually wood pulp). Soft and drapey. Requires significant chemical processing — look for OEKO-TEX® certification.</p>
+<p><strong>Modal:</strong> A type of rayon made specifically from beech wood pulp. Softer than standard rayon. OEKO-TEX® certification is meaningful here.</p>
+<p><strong>Tencel® / Lyocell:</strong> Semi-synthetic made from wood pulp (often eucalyptus) in a more closed-loop process than standard viscose. Generally considered lower-impact processing.</p>
+<p><strong>Acrylic:</strong> Synthetic wool substitute. Soft but sheds significantly more microplastics than most synthetics. Common in sweaters and fleece.</p>
+<p><svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Quick reference grid showing common fiber names organized by natural, semi-synthetic, and synthetic categories" style="width:100%;max-width:700px;display:block;margin:2rem auto;"><br />
+<rect width="700" height="250" fill="#EAF3DE" rx="16"/><br />
+<text x="350" y="34" font-family="Georgia,serif" font-size="16" font-weight="700" fill="#173404" text-anchor="middle">Fiber Label Quick Reference</text><br />
+<rect x="25" y="50" width="200" height="178" fill="#173404" rx="10"/><br />
+<text x="125" y="74" font-family="Georgia,serif" font-size="13" fill="#F7F5EE" text-anchor="middle" font-weight="700">Natural</text><br />
+<text x="45" y="98" font-family="Georgia,serif" font-size="12" fill="#EAF3DE">Cotton / Organic Cotton</text><br />
+<text x="45" y="118" font-family="Georgia,serif" font-size="12" fill="#EAF3DE">Wool / Merino Wool</text><br />
+<text x="45" y="138" font-family="Georgia,serif" font-size="12" fill="#EAF3DE">Linen</text><br />
+<text x="45" y="158" font-family="Georgia,serif" font-size="12" fill="#EAF3DE">Silk</text><br />
+<text x="45" y="178" font-family="Georgia,serif" font-size="12" fill="#EAF3DE">Hemp</text><br />
+<text x="45" y="198" font-family="Georgia,serif" font-size="12" fill="#EAF3DE">Cashmere / Alpaca</text><br />
+<text x="45" y="218" font-family="Georgia,serif" font-size="10" fill="#c8f7b5">Plant or animal origin</text><br />
+<rect x="247" y="50" width="200" height="178" fill="#5a8a3c" rx="10"/><br />
+<text x="347" y="74" font-family="Georgia,serif" font-size="13" fill="#F7F5EE" text-anchor="middle" font-weight="700">Semi-Synthetic</text><br />
+<text x="267" y="98" font-family="Georgia,serif" font-size="12" fill="#EAF3DE">Rayon / Viscose</text><br />
+<text x="267" y="118" font-family="Georgia,serif" font-size="12" fill="#EAF3DE">Modal</text><br />
+<text x="267" y="138" font-family="Georgia,serif" font-size="12" fill="#EAF3DE">Lyocell / Tencel®</text><br />
+<text x="267" y="158" font-family="Georgia,serif" font-size="12" fill="#EAF3DE">Bamboo Viscose</text><br />
+<text x="267" y="178" font-family="Georgia,serif" font-size="12" fill="#EAF3DE">Cupro</text><br />
+<text x="267" y="218" font-family="Georgia,serif" font-size="10" fill="#c8f7b5">Cellulose + chemical process</text><br />
+<rect x="469" y="50" width="206" height="178" fill="#8aab6e" rx="10"/><br />
+<text x="572" y="74" font-family="Georgia,serif" font-size="13" fill="#F7F5EE" text-anchor="middle" font-weight="700">Synthetic</text><br />
+<text x="489" y="98" font-family="Georgia,serif" font-size="12" fill="#F7F5EE">Polyester</text><br />
+<text x="489" y="118" font-family="Georgia,serif" font-size="12" fill="#F7F5EE">Nylon</text><br />
+<text x="489" y="138" font-family="Georgia,serif" font-size="12" fill="#F7F5EE">Acrylic</text><br />
+<text x="489" y="158" font-family="Georgia,serif" font-size="12" fill="#F7F5EE">Spandex / Elastane</text><br />
+<text x="489" y="178" font-family="Georgia,serif" font-size="12" fill="#F7F5EE">Polypropylene</text><br />
+<text x="572" y="218" font-family="Georgia,serif" font-size="10" fill="#173404" text-anchor="middle">Petroleum-derived polymers</text><br />
+</svg></p>
+<h2 id="what-blends-can-tell-you"><a class="toclink" href="#what-blends-can-tell-you">What Blends Can Tell You</a></h2>
+<p>A blended fabric has two or more fibers. The percentages tell you what&rsquo;s dominant and what&rsquo;s supplemental.</p>
+<p><strong>High natural fiber content (70%+):</strong> The garment&rsquo;s performance and feel will be largely determined by that natural fiber. A 72% cotton / 25% polyester / 3% spandex t-shirt will feel mostly like cotton.</p>
+<p><strong>Small synthetic percentage (2–5%):</strong> Usually spandex for stretch. Doesn&rsquo;t significantly change the feel or chemical profile of the primary fiber.</p>
+<p><strong>Higher synthetic percentage (30–50%):</strong> Meaningfully affects performance (durability, moisture management, price) and the garment&rsquo;s microplastic shedding during washing.</p>
+<p><strong>Equal parts blend:</strong> A 50/50 cotton/polyester blend exhibits properties of both. Wrinkles less than pure cotton; breathes better than pure polyester.</p>
+<p>When evaluating blends, consider: what purpose does each fiber serve? A small polyester percentage in a linen shirt is typically for durability; a 50% polyester content is more likely a cost driver.</p>
+<h2 id="what-labels-dont-tell-you"><a class="toclink" href="#what-labels-dont-tell-you">What Labels Don&rsquo;t Tell You</a></h2>
+<p>The fiber content label is required by law — but it doesn&rsquo;t tell you everything:</p>
+<p><strong>Chemical finishes:</strong> PFAS coatings, stain-resistant treatments, wrinkle-free resins, and antimicrobial treatments are applied to the fabric after it&rsquo;s formed and aren&rsquo;t reflected in fiber content.</p>
+<p><strong>Dye chemistry:</strong> The label doesn&rsquo;t specify which dye class was used.</p>
+<p><strong>Fiber quality:</strong> &ldquo;Wool&rdquo; can mean coarse or fine. &ldquo;Cotton&rdquo; can mean short-staple commodity cotton or long-staple premium cotton. The label doesn&rsquo;t indicate quality grade.</p>
+<p><strong>Country of fiber origin vs. manufacturing:</strong> &ldquo;Made in Portugal&rdquo; refers to where the garment was assembled, not necessarily where the fiber was grown or the fabric woven.</p>
+<p><strong>Certification status:</strong> The label won&rsquo;t tell you if it&rsquo;s GOTS or OEKO-TEX® certified — that&rsquo;s found on hangtags, brand websites, or certification databases.</p>
+<h2 id="faq"><a class="toclink" href="#faq">FAQ</a></h2>
+<p><strong>What does &ldquo;other fibers&rdquo; mean on a label?</strong><br />
+Labels can list &ldquo;other fibers&rdquo; for any component under 5% if that&rsquo;s accurate. This is legal but limits visibility. Ask the brand if you want specifics.</p>
+<p><strong>Why does &ldquo;bamboo&rdquo; on a label say &ldquo;viscose&rdquo; in parentheses?</strong><br />
+The FTC requires that bamboo-derived fabric be labeled with its actual fiber name: viscose (or rayon) from bamboo. &ldquo;Bamboo fabric&rdquo; alone is a marketing term; viscose/rayon is what the fiber legally is after processing.</p>
+<p><strong>Does a higher cotton percentage always mean better quality?</strong><br />
+Not necessarily. A 100% cotton t-shirt in cheap commodity cotton isn&rsquo;t better than a 95% organic cotton / 5% spandex in long-staple organic. Percentage tells you composition; certification and brand transparency tell you more about quality.</p>
+<p><strong>What&rsquo;s the difference between Lyocell and Tencel®?</strong><br />
+Tencel® is Lenzing AG&rsquo;s brand name for their lyocell fiber. All Tencel® is lyocell; not all lyocell is Tencel®. Tencel® carries additional claims about production process; generic lyocell doesn&rsquo;t.</p>
+<hr />
+<p><em>Related reading: <a href="https://woveapp.com/blog/how-to-read-clothing-labels">How to Read Clothing Labels</a> · <a href="https://woveapp.com/blog/sustainable-fabric-blends-explained">Sustainable Fabric Blends Explained</a></em></p>
+<hr />
+<p><strong>Check labels with Wove.</strong> <a href="https://apps.apple.com/us/app/wove-score/id6755356871">Download Wove</a> and get an instant fiber and chemical grade on any garment — no label decoding required.</p>
+<hr />
+<h3 id="sources"><a class="toclink" href="#sources">Sources</a></h3>
+<ul>
+<li>U.S. Federal Trade Commission: Textile Fiber Products Identification Act</li>
+<li>GOTS: Certification Database</li>
+<li>OEKO-TEX®: STANDARD 100 Overview</li>
+<li>Lenzing AG: Tencel® and Modal Fiber Information</li>
+</ul>
+  </article>
+
+  <aside class="sidebar">
+    <div class="app-cta-box">
+      <p>Check any fabric's safety score — microplastics, PFAS, and more — before you buy.</p>
+      <a href="https://apps.apple.com/us/app/wove-score/id6755356871" target="_blank" rel="noopener">
+        Get the Wove App →
+      </a>
+    </div>
+  </aside>
+</div>
+
+<div class="article-footer">
+  <section class="related-section">
+    <div class="section-label">Keep Reading</div>
+    <h2>Related guides from Wove</h2>
+    <div class="related-grid">
+      <a href="/blog/how-to-choose-safer-everyday-basics/" class="related-card">
+        <div class="related-cat">Shopping Guide</div>
+        <div class="related-title">How to Choose Safer Everyday Basics</div>
+      </a>
+      <a href="/blog/questions-before-buying-synthetic-clothing/" class="related-card">
+        <div class="related-cat">Shopping Guide</div>
+        <div class="related-title">Questions to Ask Before Buying Synthetic Clothing</div>
+      </a>
+
+    </div>
+  </section>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-name">
+          <img src="../../images/logo.png" alt="Wove" class="footer-logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="logo-placeholder dark" style="display:none">LOGO</div>
+        </div>
+        <p>Shop consciously. Live comfortably. Wove brings transparency to the fashion industry — no ads, no brand deals, just the truth about your fabrics.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Project</h4>
+        <a href="../../about/">The Story</a>
+        <a href="../../wovescore/">Wove Score</a>
+        <a href="../../contact/">Contact</a>
+        <a href="https://shopmy.us/shop/emmhemphill" target="_blank" rel="noopener">Shop Our Top Picks</a>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <a href="../">Blog</a>
+        <a href="../../press/">Press</a>
+        <a href="../../privacypolicy/">Privacy Policy</a>
+        <a href="../../terms/">Terms of Use</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Wove LLC. Shop consciously. Live comfortably.</div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('main-nav');
+  window.addEventListener('scroll', () => { nav.classList.toggle('scrolled', window.scrollY > 20); });
+
+  const bar = document.getElementById('progressBar');
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const scrolled = (window.scrollY / (doc.scrollHeight - doc.clientHeight)) * 100;
+    bar.style.width = scrolled + '%';
+  });
+
+  document.querySelectorAll('a[href*="apps.apple.com"]').forEach(el => {
+    el.addEventListener('click', () => gtag('event', 'app_store_click', { location: 'how-to-read-fiber-content-clothing-labels' }));
+  });
+</script>
+</body>
+</html>

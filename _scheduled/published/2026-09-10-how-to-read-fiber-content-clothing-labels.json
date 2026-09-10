@@ -3,10 +3,10 @@
   "date": "2026-09-10",
   "category": "shopping",
   "title": "How to Read Fiber Content on Clothing Labels",
-  "description": "The fiber content label tells you what your clothes are made of — but knowing what those numbers and names mean takes a bit of decoding. Here's how to read them.",
-  "lede": "The fiber content label tells you what your clothes are made of — but knowing what those numbers and names mean takes a bit of decoding. Here's how to read them.",
+  "description": "The fiber content label tells you what your clothes are made of \u2014 but knowing what those numbers and names mean takes a bit of decoding. Here's how to read them.",
+  "lede": "The fiber content label tells you what your clothes are made of \u2014 but knowing what those numbers and names mean takes a bit of decoding. Here's how to read them.",
   "eyebrow": "Shopping Guide",
-  "excerpt": "Every garment sold in the United States is required by law to have a fiber content label. Most people glance at it and move on. Knowing how to actually read it …",
+  "excerpt": "Every garment sold in the United States is required by law to have a fiber content label. Most people glance at it and move on. Knowing how to actually read it \u2026",
   "hero_alt": "Illustration for: How to Read Fiber Content on Clothing Labels",
   "related_posts": [
     {
@@ -20,5 +20,6 @@
       "cat": "Shopping Guide"
     }
   ],
-  "published": false
+  "published": true,
+  "published_at": "2026-09-10"
 }
