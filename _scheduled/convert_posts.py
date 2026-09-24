@@ -115,6 +115,7 @@ def md_to_html(md_text: str) -> str:
     md_text = re.sub(r'^#\s+.+\n', '', md_text.lstrip(), count=1)
     # Replace unfilled placeholders
     md_text = md_text.replace('{{APPSTORE_LINK}}', 'https://apps.apple.com/us/app/wove-score/id6755356871')
+    md_text = md_text.replace('{{PLAYSTORE_LINK}}', 'https://play.google.com/store/apps/details?id=app.rork.fabricfiber_score')
 
     md = markdown.Markdown(extensions=[
         TableExtension(),

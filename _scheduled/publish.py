@@ -98,6 +98,8 @@ def build_post_html(manifest: dict, body_html: str, template: str) -> str:
         "{{HERO_ALT}}":     hero_alt,
         "{{BODY}}":         body_html,
         "{{RELATED}}":      related_html,
+        "{{APPSTORE_LINK}}":  "https://apps.apple.com/us/app/wove-score/id6755356871",
+        "{{PLAYSTORE_LINK}}": "https://play.google.com/store/apps/details?id=app.rork.fabricfiber_score",
     }
     html = template
     for token, value in replacements.items():
