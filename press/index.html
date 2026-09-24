@@ -272,6 +272,21 @@
     <a href="https://apps.apple.com/us/app/wove-score/id6755356871" class="nav-cta">Download App</a>
   </div>
 </nav>
+<script>
+  // Send the nav download button to the right store for this device; desktop goes to the download section
+  (function() {
+    var a = document.querySelector('.nav-cta, .funnel-nav-cta');
+    if (!a) return;
+    var ua = navigator.userAgent;
+    if (/android/i.test(ua)) {
+      a.href = 'https://play.google.com/store/apps/details?id=app.rork.fabricfiber_score';
+    } else if (!(/iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1))) {
+      a.href = '/#download';
+      a.removeAttribute('target');
+      a.removeAttribute('rel');
+    }
+  })();
+</script>
 
   <!-- HERO -->
   <section class="hero">
@@ -320,7 +335,7 @@
                 <span class="bp-meta-label">Short version</span>
                 <span class="bp-meta-count">100 words</span>
               </div>
-              <p class="bp-text" id="bp-short">Wove is an independent iOS app that helps people understand what their clothing is actually made of. Using a photo, URL, screenshot, or product description, Wove instantly scores any garment from A+ to F based on fiber composition, microplastic shedding risk, PFAS chemical concerns, and overall sustainability. Founded in Charlotte, NC by Emily Hemphill, Wove takes no advertising, no brand sponsorships, and no paid placements — every score is earned, never purchased. The app is free to download, with optional premium tiers, and is currently available on the Apple App Store. An Android version is in development. Learn more at woveapp.com.</p>
+              <p class="bp-text" id="bp-short">Wove is an independent iOS and Android app that helps people understand what their clothing is actually made of. Using a photo, URL, screenshot, or product description, Wove instantly scores any garment from A+ to F based on fiber composition, microplastic shedding risk, PFAS chemical concerns, and overall sustainability. Founded in Charlotte, NC by Emily Hemphill, Wove takes no advertising, no brand sponsorships, and no paid placements — every score is earned, never purchased. The app is free to download, with optional premium tiers, and is available on the Apple App Store and Google Play. Learn more at woveapp.com.</p>
               <button class="copy-btn" data-copy-target="bp-short" aria-label="Copy short boilerplate">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                 <span>Copy</span>
@@ -331,7 +346,7 @@
                 <span class="bp-meta-label">Long version</span>
                 <span class="bp-meta-count">300 words</span>
               </div>
-              <p class="bp-text" id="bp-long">Wove is an independent technology company building transparency tools for the fashion industry, starting with a clothing scanner app that reveals what your fabrics are really made of. The Wove app, available on the Apple App Store, lets users scan any clothing item — by photo, URL, screenshot, or product description — and instantly see a Wove Score from A+ to F. Each score reflects the garment's fiber composition, microplastic shedding risk, presence of PFAS "forever chemicals," and overall sustainability. When a product falls short, Wove surfaces healthier alternatives, so users can shop consciously without spending hours decoding labels. Wove was founded in Charlotte, NC by Emily Hemphill after a frustrating search for cotton trousers turned up nothing but polyester. What began as a personal quest became a mission: make it easy for anyone to know what's touching their skin. Unlike many sustainability tools, Wove is completely independent. The company takes no advertising revenue, no brand sponsorships, and no paid placements. No manufacturer can influence a score, and user data is never sold. The app is free to download, with optional premium tiers at $3.99/month or $25/year. An Android version is currently in development, with a waitlist open at woveapp.com.</p>
+              <p class="bp-text" id="bp-long">Wove is an independent technology company building transparency tools for the fashion industry, starting with a clothing scanner app that reveals what your fabrics are really made of. The Wove app, available on the Apple App Store and Google Play, lets users scan any clothing item — by photo, URL, screenshot, or product description — and instantly see a Wove Score from A+ to F. Each score reflects the garment's fiber composition, microplastic shedding risk, presence of PFAS "forever chemicals," and overall sustainability. When a product falls short, Wove surfaces healthier alternatives, so users can shop consciously without spending hours decoding labels. Wove was founded in Charlotte, NC by Emily Hemphill after a frustrating search for cotton trousers turned up nothing but polyester. What began as a personal quest became a mission: make it easy for anyone to know what's touching their skin. Unlike many sustainability tools, Wove is completely independent. The company takes no advertising revenue, no brand sponsorships, and no paid placements. No manufacturer can influence a score, and user data is never sold. The app is free to download, with optional premium tiers at $3.99/month or $25/year.</p>
               <button class="copy-btn" data-copy-target="bp-long" aria-label="Copy long boilerplate">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                 <span>Copy</span>
@@ -509,7 +524,7 @@
           <div class="fact-sheet">
             <dl>
               <dt>Product</dt><dd>Wove — non-toxic clothing scanner</dd>
-              <dt>Platform</dt><dd>iOS (Apple App Store) · Android in development</dd>
+              <dt>Platform</dt><dd>iOS (Apple App Store) · Android (Google Play)</dd>
               <dt>Launch date</dt><dd>March 5, 2026</dd>
               <dt>Pricing</dt><dd>Free to download · Premium $3.99/month or $25/year</dd>
               <dt>Core features</dt><dd>Wove Score (A+ to F) · fiber composition breakdown · microplastic shedding risk · PFAS chemical detection · sustainability rating · healthier alternative recommendations</dd>
@@ -520,6 +535,7 @@
               <dt>Company</dt><dd>Wove LLC</dd>
               <dt>Website</dt><dd><a href="https://woveapp.com">woveapp.com</a></dd>
               <dt>App Store</dt><dd><a href="https://apps.apple.com/us/app/wove-score/id6755356871">apps.apple.com/us/app/wove-score</a></dd>
+              <dt>Google Play</dt><dd><a href="https://play.google.com/store/apps/details?id=app.rork.fabricfiber_score">play.google.com/store/apps/details?id=app.rork.fabricfiber_score</a></dd>
             </dl>
           </div>
         </div>

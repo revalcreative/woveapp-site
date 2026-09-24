@@ -115,15 +115,6 @@
     }
     .cta-app-store:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
     .cta-app-store svg { flex-shrink: 0; }
-    .cta-waitlist {
-      display: inline-block;
-      background: transparent; color: rgba(255,255,255,0.85);
-      border: 1.5px solid rgba(255,255,255,0.35);
-      padding: 13px 26px; border-radius: var(--radius-full);
-      font-size: 15px; font-weight: 500; font-family: inherit;
-      cursor: pointer; transition: border-color 0.2s, color 0.2s;
-    }
-    .cta-waitlist:hover { border-color: white; color: white; }
     .hero-trust {
       margin-top: 32px;
       font-size: 12px; color: rgba(255,255,255,0.4);
@@ -422,6 +413,21 @@
   </a>
   <a href="https://apps.apple.com/us/app/wove-score/id6755356871" class="funnel-nav-cta" target="_blank" rel="noopener">Download →</a>
 </nav>
+<script>
+  // Send the nav download button to the right store for this device; desktop goes to the download section
+  (function() {
+    var a = document.querySelector('.nav-cta, .funnel-nav-cta');
+    if (!a) return;
+    var ua = navigator.userAgent;
+    if (/android/i.test(ua)) {
+      a.href = 'https://play.google.com/store/apps/details?id=app.rork.fabricfiber_score';
+    } else if (!(/iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1))) {
+      a.href = '#download';
+      a.removeAttribute('target');
+      a.removeAttribute('rel');
+    }
+  })();
+</script>
 
 
 <!-- SECTION 1: HERO -->
@@ -436,7 +442,10 @@
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
           Download on App Store
         </a>
-        <button id="android-waitlist-trigger" class="cta-waitlist">Join Android Waitlist →</button>
+        <a href="https://play.google.com/store/apps/details?id=app.rork.fabricfiber_score" class="cta-app-store" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 1.8c-.3.3-.4.7-.4 1.2v18c0 .5.1.9.4 1.2L13.4 12 3.6 1.8zm10.9 11.3l2.8 2.8-11.9 6.8 9.1-9.6zm0-2.2L5.4 1.3l11.9 6.8-2.8 2.8zm3.9 4.1l-3-3 3-3 3.4 1.9c1 .6 1 1.5 0 2.1l-3.4 2z"/></svg>
+          Get it on Google Play
+        </a>
       </div>
       <div class="hero-trust">
         <span>Free to start</span>
@@ -611,7 +620,7 @@
 
 
 <!-- SECTION 8: FINAL CTA -->
-<section class="final-cta">
+<section class="final-cta" id="download">
   <h2>Start scanning today.<br>Try it free.</h2>
   <p>Join thousands of conscious shoppers who already know what's in their wardrobe.</p>
   <div class="final-cta-buttons">
@@ -619,7 +628,10 @@
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
       Download on App Store
     </a>
-    <button id="android-waitlist-trigger-2" class="cta-waitlist">Join Android Waitlist →</button>
+    <a href="https://play.google.com/store/apps/details?id=app.rork.fabricfiber_score" class="cta-app-store" target="_blank" rel="noopener">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 1.8c-.3.3-.4.7-.4 1.2v18c0 .5.1.9.4 1.2L13.4 12 3.6 1.8zm10.9 11.3l2.8 2.8-11.9 6.8 9.1-9.6zm0-2.2L5.4 1.3l11.9 6.8-2.8 2.8zm3.9 4.1l-3-3 3-3 3.4 1.9c1 .6 1 1.5 0 2.1l-3.4 2z"/></svg>
+      Get it on Google Play
+    </a>
   </div>
 </section>
 
@@ -636,9 +648,6 @@
 </footer>
 
 
-<!-- beehiiv Android waitlist popup -->
-<script src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="502dc667-05e6-42bd-8144-34c8abbe5902" data-beehiiv-form-trigger-selector="#android-waitlist-trigger, #android-waitlist-trigger-2"></script>
-
 <script>
   // GA4 event tracking
   document.querySelectorAll('a[href*="apps.apple.com"]').forEach(function(el) {
@@ -646,9 +655,9 @@
       gtag('event', 'app_store_click', { location: 'get_page' });
     });
   });
-  document.querySelectorAll('#android-waitlist-trigger, #android-waitlist-trigger-2').forEach(function(el) {
+  document.querySelectorAll('a[href*="play.google.com"]').forEach(function(el) {
     el.addEventListener('click', function() {
-      gtag('event', 'android_waitlist_click', { location: 'get_page' });
+      gtag('event', 'play_store_click', { location: 'get_page' });
     });
   });
 </script>

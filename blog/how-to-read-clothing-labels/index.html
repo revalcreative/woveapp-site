@@ -785,6 +785,21 @@ footer.site-footer {
     <a href="https://apps.apple.com/us/app/wove-score/id6755356871" class="nav-cta">Download App</a>
   </div>
 </nav>
+<script>
+  // Send the nav download button to the right store for this device; desktop goes to the download section
+  (function() {
+    var a = document.querySelector('.nav-cta, .funnel-nav-cta');
+    if (!a) return;
+    var ua = navigator.userAgent;
+    if (/android/i.test(ua)) {
+      a.href = 'https://play.google.com/store/apps/details?id=app.rork.fabricfiber_score';
+    } else if (!(/iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1))) {
+      a.href = '/#download';
+      a.removeAttribute('target');
+      a.removeAttribute('rel');
+    }
+  })();
+</script>
 
 <!-- ARTICLE HEADER -->
 <section class="article-header">

@@ -38,7 +38,8 @@
         "url": "https://woveapp.com/images/logo.png"
       },
       "sameAs": [
-        "https://apps.apple.com/us/app/wove-score/id6755356871"
+        "https://apps.apple.com/us/app/wove-score/id6755356871",
+        "https://play.google.com/store/apps/details?id=app.rork.fabricfiber_score"
       ]
     },
     {
@@ -46,7 +47,7 @@
       "@id": "https://woveapp.com/#app",
       "name": "Wove",
       "description": "Scan any clothing item to instantly see its Wove Score based on fabric composition, microplastic risk, PFAS concerns, and sustainability.",
-      "operatingSystem": "iOS",
+      "operatingSystem": "iOS, Android",
       "applicationCategory": "LifestyleApplication",
       "offers": {
         "@type": "Offer",
@@ -232,22 +233,6 @@
     display: flex; gap: 14px; flex-wrap: wrap; align-items: center;
     animation: fadeUp 0.6s ease 0.3s both;
   }
-  .android-waitlist {
-    display: flex; flex-direction: column; justify-content: center;
-    gap: 2px; padding-left: 20px;
-    border-left: 1px solid var(--wove-border);
-  }
-  .android-waitlist-platform {
-    font-size: 13px; color: var(--wove-text-light); margin: 0;
-  }
-  .android-waitlist-link {
-    font-size: 14px; font-weight: 600; color: var(--wove-green-dark);
-    text-decoration: underline; text-underline-offset: 3px;
-    transition: color 0.2s; cursor: pointer;
-    background: none; border: none; padding: 0;
-    font-family: inherit;
-  }
-  .android-waitlist-link:hover { color: var(--wove-green); }
   .hero-visual {
     display: flex; justify-content: center;
     animation: fadeUp 0.8s ease 0.3s both;
@@ -528,6 +513,21 @@
     <a href="https://apps.apple.com/us/app/wove-score/id6755356871" class="nav-cta">Download App</a>
   </div>
 </nav>
+<script>
+  // Send the nav download button to the right store for this device; desktop goes to the download section
+  (function() {
+    var a = document.querySelector('.nav-cta, .funnel-nav-cta');
+    if (!a) return;
+    var ua = navigator.userAgent;
+    if (/android/i.test(ua)) {
+      a.href = 'https://play.google.com/store/apps/details?id=app.rork.fabricfiber_score';
+    } else if (!(/iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1))) {
+      a.href = '#download';
+      a.removeAttribute('target');
+      a.removeAttribute('rel');
+    }
+  })();
+</script>
 
 <section class="hero">
   <div class="hero-inner">
@@ -542,10 +542,9 @@
         <a href="https://apps.apple.com/us/app/wove-score/id6755356871" class="app-store-placeholder">
           <img src="./images/app-store-badge.svg" alt="Download Wove on the App Store" class="store-badge-img" onerror="this.onerror=null;this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="placeholder-box store-badge" style="display:none">APP STORE BADGE</div>
         </a>
-        <div class="android-waitlist">
-          <p class="android-waitlist-platform">On Android?</p>
-          <button id="android-waitlist-trigger" class="android-waitlist-link">Join the waitlist &rarr;</button>
-        </div>
+        <a href="https://play.google.com/store/apps/details?id=app.rork.fabricfiber_score" class="app-store-placeholder">
+          <img src="./images/google-play-badge.svg" alt="Get Wove on Google Play" class="store-badge-img">
+        </a>
       </div>
     </div>
     <div class="hero-visual">
@@ -734,12 +733,15 @@
   </div>
 </section>
 
-<section class="section-cta">
+<section class="section-cta" id="download">
   <h2>Start building a cleaner closet</h2>
   <p>One scan at a time. Free to download, free from influence.</p>
   <div class="cta-buttons">
     <a href="https://apps.apple.com/us/app/wove-score/id6755356871" class="app-store-placeholder">
       <img src="./images/app-store-badge-white.svg" alt="Download Wove on the App Store" class="store-badge-img" onerror="this.onerror=null;this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="placeholder-box store-badge cta-badge" style="display:none">APP STORE BADGE</div>
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=app.rork.fabricfiber_score" class="app-store-placeholder">
+      <img src="./images/google-play-badge-white.svg" alt="Get Wove on Google Play" class="store-badge-img">
     </a>
     <a href="./wovescore/" class="btn-outline-white">Learn How Scoring Works →</a>
   </div>
@@ -806,10 +808,11 @@
       gtag('event', 'app_store_click', { location: el.closest('section') ? el.closest('section').className : 'nav' });
     });
   });
-  // Android waitlist click
-  var waitlistBtn = document.getElementById('android-waitlist-trigger');
-  if (waitlistBtn) waitlistBtn.addEventListener('click', function() {
-    gtag('event', 'android_waitlist_click');
+  // Google Play clicks
+  document.querySelectorAll('a[href*="play.google.com"]').forEach(function(el) {
+    el.addEventListener('click', function() {
+      gtag('event', 'play_store_click', { location: el.closest('section') ? el.closest('section').className : 'nav' });
+    });
   });
   // PDF download
   document.querySelectorAll('a[href$=".pdf"]').forEach(function(el) {
